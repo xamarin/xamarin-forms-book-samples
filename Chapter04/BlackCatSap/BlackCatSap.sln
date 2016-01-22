@@ -18,7 +18,6 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		BlackCatSap\BlackCatSap\BlackCatSap.projitems*{6ed5b755-afdb-4223-95ba-6df1b928e5f0}*SharedItemsImports = 13
-		BlackCatSap\BlackCatSap\BlackCatSap.projitems*{53060dba-022d-419f-8b9e-e5c8ec5817e6}*SharedItemsImports = 4
 		BlackCatSap\BlackCatSap\BlackCatSap.projitems*{964cac83-114a-4033-a5ec-4d71e3388554}*SharedItemsImports = 4
 		BlackCatSap\BlackCatSap\BlackCatSap.projitems*{36b9e827-31b8-4b6d-839d-f9f47c042f0f}*SharedItemsImports = 4
 		BlackCatSap\BlackCatSap\BlackCatSap.projitems*{9e9d6b82-df7e-4655-b9b4-55e8fe5bf050}*SharedItemsImports = 4

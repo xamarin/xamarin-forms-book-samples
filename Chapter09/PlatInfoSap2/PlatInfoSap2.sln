@@ -23,7 +23,6 @@ Global
 		PlatInfoSap2\PlatInfoSap2\PlatInfoSap2.projitems*{26623de7-75b2-433b-a5fa-bf23f1ee062e}*SharedItemsImports = 4
 		PlatInfoSap2\PlatInfoSap2\PlatInfoSap2.projitems*{ac90e37d-7b69-4aab-993c-2e2d24dde473}*SharedItemsImports = 4
 		PlatInfoSap2\PlatInfoSap2\PlatInfoSap2.projitems*{052b2f4e-a797-493b-8c0c-b7dee460be63}*SharedItemsImports = 4
-		PlatInfoSap2\PlatInfoSap2\PlatInfoSap2.projitems*{12086316-0024-4ca8-a3eb-0ec9a3b68d9a}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU

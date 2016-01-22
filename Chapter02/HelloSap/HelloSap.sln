@@ -22,7 +22,6 @@ Global
 		HelloSap\HelloSap\HelloSap.projitems*{64f836ff-494c-4b02-a877-01b8e443d556}*SharedItemsImports = 4
 		HelloSap\HelloSap\HelloSap.projitems*{ed08665e-d5d4-4589-96b0-78ec22f9a196}*SharedItemsImports = 4
 		HelloSap\HelloSap\HelloSap.projitems*{62174f83-cd49-463c-a4f0-c99491a741f5}*SharedItemsImports = 4
-		HelloSap\HelloSap\HelloSap.projitems*{75edecce-9f1b-497d-b59e-9a73d8c2b04a}*SharedItemsImports = 4
 		HelloSap\HelloSap\HelloSap.projitems*{bf4c4583-5758-414a-9cac-9d8a9370d157}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
