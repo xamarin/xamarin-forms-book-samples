@@ -10,7 +10,7 @@
             <OnPlatform x:TypeArguments="x:String"
                         iOS="This is an iOS device"
                         Android="This is an Android device"
-                        WinPhone="This is a Windows Phone device" />
+                        WinPhone="This is a Windows device" />
         </Label.Text>
     </Label>
 </ContentPage>
