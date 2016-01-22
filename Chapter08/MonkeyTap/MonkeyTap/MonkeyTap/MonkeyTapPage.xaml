@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MonkeyTap.MonkeyTapPage">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" 
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+    
+    <StackLayout>
+        <BoxView x:Name="boxview0"
+                 VerticalOptions="FillAndExpand">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBoxViewTapped" />                
+            </BoxView.GestureRecognizers>
+        </BoxView>
+        
+        <BoxView x:Name="boxview1"
+                 VerticalOptions="FillAndExpand">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBoxViewTapped" />                
+            </BoxView.GestureRecognizers>
+        </BoxView>
+        
+        <Button x:Name="startGameButton"
+                Text="Begin"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Clicked="OnStartGameButtonClicked" />
+        
+        <BoxView x:Name="boxview2"
+                 VerticalOptions="FillAndExpand">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBoxViewTapped" />                
+            </BoxView.GestureRecognizers>
+        </BoxView>
+        
+        <BoxView x:Name="boxview3"
+                 VerticalOptions="FillAndExpand">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBoxViewTapped" />                
+            </BoxView.GestureRecognizers>
+        </BoxView>
+    </StackLayout>
+</ContentPage>

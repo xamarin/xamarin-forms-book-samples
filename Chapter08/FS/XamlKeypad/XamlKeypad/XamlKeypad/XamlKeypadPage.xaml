@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlKeypad.XamlKeypadPage">
+
+    <StackLayout VerticalOptions="Center"
+                 HorizontalOptions="Center">
+
+        <Label x:Name="displayLabel"
+               FontSize="Large"
+               VerticalOptions="Center"
+               HorizontalTextAlignment="End" />
+
+        <Button x:Name="backspaceButton"
+                Text="&#x21E6;"
+                FontSize="Large"
+                IsEnabled="False"
+                Clicked="OnBackspaceButtonClicked" />
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="7" StyleId="7" FontSize="Large"
+                    Clicked="OnDigitButtonClicked" />
+            <Button Text="8" StyleId="8" FontSize="Large"
+                    Clicked="OnDigitButtonClicked" />
+            <Button Text="9" StyleId="9" FontSize="Large"
+                    Clicked="OnDigitButtonClicked" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="4" StyleId="4" FontSize="Large"
+                    Clicked="OnDigitButtonClicked" />
+            <Button Text="5" StyleId="5" FontSize="Large"
+                    Clicked="OnDigitButtonClicked" />
+            <Button Text="6" StyleId="6" FontSize="Large"
+                    Clicked="OnDigitButtonClicked" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="1" StyleId="1" FontSize="Large"
+                    Clicked="OnDigitButtonClicked" />
+            <Button Text="2" StyleId="2" FontSize="Large"
+                    Clicked="OnDigitButtonClicked" />
+            <Button Text="3" StyleId="3" FontSize="Large"
+                    Clicked="OnDigitButtonClicked" />
+        </StackLayout>
+
+        <Button Text="0" StyleId="0" FontSize="Large"
+                Clicked="OnDigitButtonClicked" />
+
+    </StackLayout>
+</ContentPage>
