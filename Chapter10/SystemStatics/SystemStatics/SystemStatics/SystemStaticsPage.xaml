@@ -20,7 +20,7 @@
 
         <Label VerticalOptions="CenterAndExpand"
                HorizontalTextAlignment="Center"
-               FontSize="Large">
+               FontSize="Medium">
             <Label.FormattedText>
                 <FormattedString>
                     <Span Text="Three lines of text" />
@@ -28,7 +28,7 @@
                     <Span Text="separated by" />
                     <Span Text="{x:Static sys:Environment.NewLine}" />
                     <Span Text="Environment.NewLine"
-                          FontSize="Large"
+                          FontSize="Medium"
                           FontAttributes="Italic" />
                     <Span Text=" strings" />
                 </FormattedString>
