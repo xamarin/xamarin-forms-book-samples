@@ -1,7 +1,9 @@
 # xamarin-forms-book-samples
 Sample code for the Evolve Edition of *Creating Mobile Apps with Xamarin.Forms*.
 
-Chapters of the book are not yet available
+This repo is currently private. It will be made public during Evolve week.
+
+Draft chapters are in the corporate Xamarin dropbox at \Education\Documentation\Content\Xamarin-Forms-Book\7-Evolve-2016-Edition.
 
 ## Notes
 
