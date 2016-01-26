@@ -22,7 +22,7 @@ type NamedFontSizesPage() =
                                                                fontSize),
                                           FontSize = fontSize))
         if namedSize <> Array.last(namedSizes)
-            then formattedString.Spans.Add(Span(Text = "\n\n"))
+            then formattedString.Spans.Add(Span(Text = Environment.NewLine + Environment.NewLine))
 
     do base.Content <- Label(FormattedText = formattedString,
                              VerticalOptions = LayoutOptions.Center,

@@ -30,7 +30,7 @@ namespace NamedFontSizes
                 {
                     formattedString.Spans.Add(new Span
                         {
-                            Text = "\n\n"
+                            Text = Environment.NewLine + Environment.NewLine
                         });
                 }
             }

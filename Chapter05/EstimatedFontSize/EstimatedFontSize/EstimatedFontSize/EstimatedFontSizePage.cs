@@ -35,11 +35,11 @@ namespace EstimatedFontSize
             // Get View whose size is changing.
             View view = (View)sender;
 
-            // Two values as multiples of font size
+            // Define two values as multiples of font size.
             double lineHeight = Device.OnPlatform(1.2, 1.2, 1.3);
             double charWidth = 0.5;
 
-            // Format the text and get its length
+            // Format the text and get its character length.
             text = String.Format(text, lineHeight, charWidth, view.Width, view.Height);
             int charCount = text.Length;
 
