@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          x:Class="Xamarin.FormsBook.Toolkit.PickerCell"
+          x:Name="cell">
+    <ViewCell.View>
+        <StackLayout Orientation="Horizontal"
+                     BindingContext="{x:Reference cell}"
+                     Padding="16, 0">
+        
+            <Label Text="{Binding Label}"
+                   VerticalOptions="Center" />
+
+            <Picker x:Name="picker"
+                    Title="{Binding Title}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="FillAndExpand"
+                    SelectedIndexChanged="OnPickerSelectedIndexChanged" />
+        
+        </StackLayout>
+    </ViewCell.View>
+</ViewCell>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="CheckBoxDemo.CheckBoxDemoPage">
+
+    <StackLayout Padding="10, 0">
+        <StackLayout HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand">
+            
+            <toolkit:CheckBox Text="Italic"
+                              FontSize="Large"
+                              CheckedChanged="OnItalicCheckBoxChanged" />
+
+            <toolkit:CheckBox Text="Boldface"
+                              FontSize="Large"
+                              CheckedChanged="OnBoldCheckBoxChanged" />
+        </StackLayout>
+
+        <Label x:Name="label"
+               Text=
+"Just a little passage of some sample text that can be formatted
+in italic or boldface by toggling the two custom CheckBox views."
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+</ContentPage>

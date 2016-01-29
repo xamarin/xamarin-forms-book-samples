@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwitchDemo.SwitchDemoPage">
+
+    <StackLayout Padding="10, 0">
+        <StackLayout HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand">
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="End">
+                <Label Text="Italic: "
+                       VerticalOptions="Center" />
+                <Switch Toggled="OnItalicSwitchToggled"
+                        VerticalOptions="Center" />
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="End">
+                <Label Text="Boldface: "
+                       VerticalOptions="Center" />
+                <Switch Toggled="OnBoldSwitchToggled"
+                        VerticalOptions="Center" />        
+            </StackLayout>
+        </StackLayout>
+
+        <Label x:Name="label"
+               Text=
+"Just a little passage of some sample text that can be formatted
+in italic or boldface by toggling the two Switch elements."
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="CenterAndExpand" />
+        
+    </StackLayout>
+</ContentPage>

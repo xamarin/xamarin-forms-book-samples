@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local=
+               "clr-namespace:DeviceIndependentBitmapSize;assembly=DeviceIndependentBitmapSize"
+             x:Class="DeviceIndependentBitmapSize.DeviceIndependentBitmapSizePage">
+    
+    <StackLayout>
+        <Label Text="1200 x 900 Pixel Bitmap"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center" />
+
+        <Image Source=
+            "{local:ImageResource DeviceIndependentBitmapSize.Images.Sculpture_1200x900.jpg}"
+               HorizontalOptions="Center"
+               SizeChanged="OnImageSizeChanged">
+            <Image.WidthRequest>
+                <!-- 1.5 inches -->
+                <OnPlatform x:TypeArguments="x:Double"
+                            iOS="240"
+                            Android="240"
+                            WinPhone="360" />
+            </Image.WidthRequest>
+        </Image>
+
+        <Label x:Name="label"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>

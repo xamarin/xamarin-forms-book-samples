@@ -15,12 +15,19 @@
 
             <Color x:Key="textColor">Red</Color>
 
+            <OnPlatform x:Key="backgroundColor" x:TypeArguments="Color"
+                        Android="#404040" />
+
+            <OnPlatform x:Key="borderColor" x:TypeArguments="Color"
+                        Android="White"
+                        WinPhone="Black" />
+
             <x:String x:Key="fontSize">Large</x:String>
         </ResourceDictionary>
     </ContentPage.Resources>
     
     <StackLayout>
-        <Button Text=" Do this! ">
+        <Button Text=" Carpe diem ">
             <Button.HorizontalOptions>
                 <StaticResourceExtension Key="horzOptions" />
             </Button.HorizontalOptions>
@@ -37,23 +44,35 @@
                 <StaticResourceExtension Key="textColor" />
             </Button.TextColor>
 
+            <Button.BackgroundColor>
+                <StaticResourceExtension Key="backgroundColor" />
+            </Button.BackgroundColor>
+
+            <Button.BorderColor>
+                <StaticResourceExtension Key="borderColor" />
+            </Button.BorderColor>
+
             <Button.FontSize>
                 <StaticResourceExtension Key="fontSize" />
             </Button.FontSize>
         </Button>
 
-        <Button Text=" Do that! "
+        <Button Text=" Sapere aude "
                 HorizontalOptions="{StaticResource Key=horzOptions}"
                 VerticalOptions="{StaticResource Key=vertOptions}"
                 BorderWidth="{StaticResource Key=borderWidth}"
                 TextColor="{StaticResource Key=textColor}"
+                BackgroundColor="{StaticResource Key=backgroundColor}"
+                BorderColor="{StaticResource Key=borderColor}"
                 FontSize="{StaticResource Key=fontSize}" />
 
-        <Button Text=" Do the other thing! "
+        <Button Text=" Discere faciendo "
                 HorizontalOptions="{StaticResource horzOptions}"
                 VerticalOptions="{StaticResource vertOptions}"
                 BorderWidth="{StaticResource borderWidth}"
                 TextColor="{StaticResource textColor}"
+                BackgroundColor="{StaticResource backgroundColor}"
+                BorderColor="{StaticResource borderColor}"
                 FontSize="{StaticResource fontSize}" />
     </StackLayout>
 </ContentPage>

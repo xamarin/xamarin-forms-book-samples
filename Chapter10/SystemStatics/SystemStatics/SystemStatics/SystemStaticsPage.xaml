@@ -14,7 +14,8 @@
             </Button.BackgroundColor>            
             <Button.BorderColor>
                 <OnPlatform x:TypeArguments="Color"
-                            Android="White" />
+                            Android="White"
+                            WinPhone="Black" />
             </Button.BorderColor>
         </Button>
 

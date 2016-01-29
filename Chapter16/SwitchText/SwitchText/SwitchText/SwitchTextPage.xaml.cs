@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+
+namespace SwitchText
+{
+    public partial class SwitchTextPage : ContentPage
+    {
+        public SwitchTextPage()
+        {
+            // Ensure link to Toolkit library.
+            new Xamarin.FormsBook.Toolkit.BoolToStringConverter();
+
+            InitializeComponent();
+        }
+    }
+}

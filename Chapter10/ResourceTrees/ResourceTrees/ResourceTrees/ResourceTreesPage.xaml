@@ -15,16 +15,18 @@
                         x:TypeArguments="Color"
                         iOS="Red"
                         Android="Pink"
-                        WinPhone="Aqua" />
+                        WinPhone="Blue" />
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <StackLayout>
-        <Button Text=" Do this! "                    
+        <Button Text=" Carpe diem "                    
                 HorizontalOptions="{StaticResource horzOptions}"
                 VerticalOptions="{StaticResource vertOptions}"
                 BorderWidth="{StaticResource borderWidth}"
                 TextColor="{StaticResource textColor}"
+                BackgroundColor="{StaticResource backgroundColor}"
+                BorderColor="{StaticResource borderColor}"
                 FontSize="{StaticResource fontSize}" />
 
         <StackLayout>
@@ -40,10 +42,12 @@
                     TextColor="{StaticResource textColor}"
                     FontSize="{StaticResource fontSize}" />
 
-            <Button Text=" Do that! "
+            <Button Text=" Sapere aude "
                     HorizontalOptions="{StaticResource horzOptions}"
                     BorderWidth="{StaticResource borderWidth}"
                     TextColor="{StaticResource textColor}"
+                    BackgroundColor="{StaticResource backgroundColor}"
+                    BorderColor="{StaticResource borderColor}"
                     FontSize="{StaticResource fontSize}" />
 
             <Label Text="The second of two labels"
@@ -52,11 +56,13 @@
                     FontSize="{StaticResource fontSize}" />
         </StackLayout>
 
-        <Button Text=" Do the other thing! "
+        <Button Text=" Discere faciendo "
                 HorizontalOptions="{StaticResource horzOptions}"
                 VerticalOptions="{StaticResource vertOptions}"
                 BorderWidth="{StaticResource borderWidth}"
                 TextColor="{StaticResource textColor}"
+                BackgroundColor="{StaticResource backgroundColor}"
+                BorderColor="{StaticResource borderColor}"
                 FontSize="{StaticResource fontSize}" />
     </StackLayout>
 </ContentPage>

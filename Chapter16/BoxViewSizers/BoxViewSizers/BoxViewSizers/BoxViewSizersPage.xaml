@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BoxViewSizers.BoxViewSizersPage"
+             Padding="10, 0">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="BoxView">
+                <Setter Property="Color" Value="Accent" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+
+            <Style TargetType="Slider">
+                <Setter Property="Maximum" Value="300" />
+            </Style>
+
+            <Style TargetType="Stepper">
+                <Setter Property="Maximum" Value="300" />
+                <Setter Property="Increment" Value="10" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <BoxView WidthRequest="{Binding Source={x:Reference slider},
+                                            Path=Value}" />
+            <Slider x:Name="slider" />
+        </StackLayout>
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <BoxView x:Name="boxView1" />
+            <Slider Value="{Binding Source={x:Reference boxView1},
+                                    Path=WidthRequest}" />
+        </StackLayout>
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <BoxView WidthRequest="{Binding Source={x:Reference stepper},
+                                            Path=Value}" />
+            <Stepper x:Name="stepper" />
+        </StackLayout>
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <BoxView x:Name="boxView2" />
+            <Stepper Value="{Binding Source={x:Reference boxView2},
+                                     Path=WidthRequest}" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

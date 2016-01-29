@@ -13,29 +13,29 @@
     <StackLayout>
         <Label Text="StaticResource on Label.Text:"
                VerticalOptions="EndAndExpand"
-               FontSize="Large" />
+               FontSize="Medium" />
         
         <Label Text="{StaticResource currentDateTime}"
                VerticalOptions="StartAndExpand"
                HorizontalTextAlignment="Center"
-               FontSize="Large" />
+               FontSize="Medium" />
 
         <Label Text="DynamicResource on Label.Text:"
                VerticalOptions="EndAndExpand"
-               FontSize="Large" />
+               FontSize="Medium" />
 
         <Label Text="{DynamicResource currentDateTime}"
                VerticalOptions="StartAndExpand"
                HorizontalTextAlignment="Center"
-               FontSize="Large" />
+               FontSize="Medium" />
         
         <Label Text="StaticResource on Span.Text:"
                VerticalOptions="EndAndExpand"
-               FontSize="Large" />
+               FontSize="Medium" />
 
         <Label VerticalOptions="StartAndExpand"
                HorizontalTextAlignment="Center"
-               FontSize="Large">
+               FontSize="Medium">
             <Label.FormattedText>
                 <FormattedString>
                     <Span Text="{StaticResource currentDateTime}" />
@@ -47,11 +47,11 @@
 
         <!--<Label Text="DynamicResource on Span.Text:"
                VerticalOptions="EndAndExpand"
-               FontSize="Large" />
+               FontSize="Medium" />
 
         <Label VerticalOptions="StartAndExpand"
                HorizontalTextAlignment="Center"
-               FontSize="Large">
+               FontSize="Medium">
             <Label.FormattedText>
                 <FormattedString>
                     <Span Text="{DynamicResource currentDateTime}" />

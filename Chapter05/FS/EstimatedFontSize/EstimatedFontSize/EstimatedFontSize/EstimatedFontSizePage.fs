@@ -20,11 +20,11 @@ type EstimatedFontSizePage() =
                     paragraph with ?3 lines and about ?4 characters \
                     per line. Does it work?"
 
-        // Define two values as multiples of font size..
+        // Define two values as multiples of font size.
         let lineHeight = Device.OnPlatform(1.2, 1.2, 1.3)
         let charWidth = 0.5
 
-        // Format the text and get its character length..
+        // Format the text and get its character length.
         let text = String.Format(text, lineHeight, charWidth, contentView.Width, contentView.Height)
         let charCount = text.Length
         

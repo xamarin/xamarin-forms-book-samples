@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="NewCheckBoxDemo.NewCheckBoxDemoPage">
+
+    <StackLayout Padding="10, 0">
+        <StackLayout HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand">
+
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="toolkit:NewCheckBox">
+                        <Setter Property="FontSize" Value="Large" />
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+            
+            <toolkit:NewCheckBox Text="Italic"
+                                 TextColor="Aqua"
+                                 FontSize="Large"
+                                 FontAttributes="Italic"
+                                 CheckedChanged="OnItalicCheckBoxChanged" />
+
+            <toolkit:NewCheckBox Text="Boldface"
+                                 FontSize="Large"
+                                 TextColor="Green"
+                                 FontAttributes="Bold"
+                                 CheckedChanged="OnBoldCheckBoxChanged" />
+            
+            <toolkit:NewCheckBox x:Name="centerCheckBox"
+                                 Text="Center Text" />
+        </StackLayout>
+
+        <Label x:Name="label"
+               Text=
+"Just a little passage of some sample text that can be formatted
+in italic or boldface by toggling the two custom CheckBox views."
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand">
+            <Label.HorizontalTextAlignment>
+                <Binding Source="{x:Reference centerCheckBox}"
+                         Path="IsChecked">
+                    <Binding.Converter>
+                        <toolkit:BoolToObjectConverter x:TypeArguments="TextAlignment"
+                                                       TrueObject="Center"
+                                                       FalseObject="Start" />
+                    </Binding.Converter>
+                </Binding>
+            </Label.HorizontalTextAlignment>
+        </Label>
+        
+    </StackLayout>
+</ContentPage>

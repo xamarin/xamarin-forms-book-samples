@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BindingSourceXaml.BindingSourceXamlPage"
+             Padding="10, 0">
+    <StackLayout>
+        <Label Text="Binding Source Demo"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center"
+               Opacity="{Binding Source={x:Reference Name=slider}, 
+                                 Path=Value}" />
+
+        <Slider x:Name="slider"
+                VerticalOptions="CenterAndExpand" />
+    </StackLayout>    
+</ContentPage>

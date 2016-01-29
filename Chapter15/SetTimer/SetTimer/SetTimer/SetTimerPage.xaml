@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SetTimer.SetTimerPage"
+             Padding="50">
+
+    <StackLayout Spacing="20"
+                 VerticalOptions="Center">
+        <TimePicker x:Name="timePicker"
+                    PropertyChanged="OnTimePickerPropertyChanged" />
+        
+        <Switch x:Name="switch"
+                HorizontalOptions="End"
+                Toggled="OnSwitchToggled" />
+        
+        <Entry x:Name="entry"
+               Text="Sample Timer"
+               Placeholder="label" />
+    </StackLayout>
+</ContentPage>

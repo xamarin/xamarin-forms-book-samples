@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AbsoluteXamlDemo.AbsoluteXamlDemoPage">
+
+    <AbsoluteLayout Padding="50">
+        <BoxView Color="Accent"
+                 AbsoluteLayout.LayoutBounds="0, 10, 200, 5" />
+
+        <BoxView Color="Accent"
+                 AbsoluteLayout.LayoutBounds="0, 20, 200, 5" />
+
+        <BoxView Color="Accent"
+                 AbsoluteLayout.LayoutBounds="10, 0, 5, 65" />
+
+        <BoxView Color="Accent"
+                 AbsoluteLayout.LayoutBounds="20, 0, 5, 65" />
+
+        <Label Text="Stylish Header"
+               FontSize="24"
+               AbsoluteLayout.LayoutBounds="30, 25, AutoSize, AutoSize" />
+
+        <Label AbsoluteLayout.LayoutBounds="0, 80, AutoSize, AutoSize">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Although " />
+                    <Span Text="AbsoluteLayout"
+                          FontAttributes="Italic" />
+                    <Span Text=
+" is usually employed for purposes other
+than the display of text using " />
+                    <Span Text="Label"
+                          FontAttributes="Italic" />
+                    <Span Text=
+", obviously it can be used in that way.
+The text continues to wrap nicely
+within the bounds of the container
+and any padding that might be applied." />
+
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </AbsoluteLayout>
+</ContentPage>

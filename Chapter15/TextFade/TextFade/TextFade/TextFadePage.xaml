@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TextFade.TextFadePage"
+             Padding="10, 0, 10, 20">
+
+    <StackLayout>
+        <AbsoluteLayout VerticalOptions="CenterAndExpand">
+            <Label x:Name="label1"
+                   Text="TEXT"
+                   FontSize="Large"
+                   AbsoluteLayout.LayoutBounds="0, 0.5"
+                   AbsoluteLayout.LayoutFlags="PositionProportional" />
+        
+            <Label x:Name="label2"
+                   Text="FADE"
+                   FontSize="Large"
+                   Opacity="0"
+                   AbsoluteLayout.LayoutBounds="0, 0.5"
+                   AbsoluteLayout.LayoutFlags="PositionProportional" />
+        </AbsoluteLayout>
+        
+        <Slider ValueChanged="OnSliderValueChanged" />
+        
+    </StackLayout>
+</ContentPage>
