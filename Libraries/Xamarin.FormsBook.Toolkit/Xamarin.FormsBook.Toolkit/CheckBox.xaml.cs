@@ -6,8 +6,10 @@ namespace Xamarin.FormsBook.Toolkit
     public partial class CheckBox : ContentView
     {
         public static readonly BindableProperty TextProperty = 
-            BindableProperty.Create<CheckBox, string>(
-                checkbox => checkbox.Text,  
+            BindableProperty.Create(
+                "Text",
+                typeof(string),
+                typeof(CheckBox),
                 null, 
                 propertyChanged: (bindable, oldValue, newValue) =>
                 {
@@ -15,31 +17,35 @@ namespace Xamarin.FormsBook.Toolkit
                 });
 
         public static readonly BindableProperty FontSizeProperty =
-            BindableProperty.Create<CheckBox, double>(
-                checkbox => checkbox.FontSize,
+            BindableProperty.Create(
+                "FontSize",
+                typeof(double),
+                typeof(CheckBox),
                 Device.GetNamedSize(NamedSize.Default, typeof(Label)),
                 propertyChanged: (bindable, oldValue, newValue) =>
                 {
                     CheckBox checkbox = (CheckBox)bindable;
-                    checkbox.boxLabel.FontSize = newValue;
-                    checkbox.textLabel.FontSize = newValue;
+                    checkbox.boxLabel.FontSize = (double)newValue;
+                    checkbox.textLabel.FontSize = (double)newValue;
                 });
                                     
         public static readonly BindableProperty IsCheckedProperty =
-            BindableProperty.Create<CheckBox, bool>(
-                checkbox => checkbox.IsChecked,
+            BindableProperty.Create(
+                "IsChecked",
+                typeof(bool),
+                typeof(CheckBox),
                 false,
                 propertyChanged: (bindable, oldValue, newValue) =>
                 {
                     // Set the graphic.
                     CheckBox checkbox = (CheckBox)bindable;
-                    checkbox.boxLabel.Text = newValue ? "\u2611" : "\u2610";
+                    checkbox.boxLabel.Text = (bool)newValue ? "\u2611" : "\u2610";
 
                     // Fire the event.
                     EventHandler<bool> eventHandler = checkbox.CheckedChanged;
                     if (eventHandler != null)
                     {
-                        eventHandler(checkbox, newValue);
+                        eventHandler(checkbox, (bool)newValue);
                     }
                 });
                                                     

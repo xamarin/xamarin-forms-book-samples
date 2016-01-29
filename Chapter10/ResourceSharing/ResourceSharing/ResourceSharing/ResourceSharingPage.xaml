@@ -15,10 +15,12 @@
 
             <Color x:Key="textColor">Red</Color>
 
-            <OnPlatform x:Key="backgroundColor" x:TypeArguments="Color"
+            <OnPlatform x:Key="backgroundColor"
+                        x:TypeArguments="Color"
                         Android="#404040" />
 
-            <OnPlatform x:Key="borderColor" x:TypeArguments="Color"
+            <OnPlatform x:Key="borderColor"
+                        x:TypeArguments="Color"
                         Android="White"
                         WinPhone="Black" />
 

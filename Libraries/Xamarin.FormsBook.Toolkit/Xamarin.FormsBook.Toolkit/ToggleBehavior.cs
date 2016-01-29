@@ -8,7 +8,8 @@ namespace Xamarin.FormsBook.Toolkit
         TapGestureRecognizer tapRecognizer;
 
         public static readonly BindableProperty IsToggledProperty =
-            BindableProperty.Create<ToggleBehavior, bool>(tb => tb.IsToggled, false);
+            BindableProperty.Create(
+                "IsToggled", typeof(bool), typeof(ToggleBehavior), false);
 
         public bool IsToggled
         {

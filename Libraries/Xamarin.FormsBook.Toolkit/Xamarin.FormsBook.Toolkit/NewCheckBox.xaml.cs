@@ -14,8 +14,10 @@ namespace Xamarin.FormsBook.Toolkit
 
         // Text property.
         public static readonly BindableProperty TextProperty = 
-            BindableProperty.Create<NewCheckBox, string>(
-                checkbox => checkbox.Text,  
+            BindableProperty.Create(
+                "Text",
+                typeof(string),
+                typeof(NewCheckBox),
                 null);
 
         public string Text
@@ -26,8 +28,10 @@ namespace Xamarin.FormsBook.Toolkit
 
         // TextColor property.
         public static readonly BindableProperty TextColorProperty =
-            BindableProperty.Create<NewCheckBox, Color>(
-                checkbox => checkbox.TextColor,
+            BindableProperty.Create(
+                "TextColor",
+                typeof(Color),
+                typeof(NewCheckBox),
                 Color.Default);
 
         public Color TextColor
@@ -38,8 +42,10 @@ namespace Xamarin.FormsBook.Toolkit
 
         // FontSize property.
         public static readonly BindableProperty FontSizeProperty =
-            BindableProperty.Create<NewCheckBox, double>(
-                checkbox => checkbox.FontSize,
+            BindableProperty.Create(
+                "FontSize",
+                typeof(double),
+                typeof(NewCheckBox),
                 Device.GetNamedSize(NamedSize.Default, typeof(Label)));
 
         [TypeConverter(typeof(FontSizeConverter))]
@@ -51,8 +57,10 @@ namespace Xamarin.FormsBook.Toolkit
 
         // FontAttributes property.
         public static readonly BindableProperty FontAttributesProperty =
-            BindableProperty.Create<NewCheckBox, FontAttributes>(
-                checkbox => checkbox.FontAttributes,
+            BindableProperty.Create(
+                "FontAttributes",
+                typeof(FontAttributes),
+                typeof(NewCheckBox),
                 FontAttributes.None);
 
         public FontAttributes FontAttributes
@@ -63,8 +71,10 @@ namespace Xamarin.FormsBook.Toolkit
 
         // IsChecked property.
         public static readonly BindableProperty IsCheckedProperty =
-            BindableProperty.Create<NewCheckBox, bool>(
-                checkbox => checkbox.IsChecked,
+            BindableProperty.Create(
+                "IsChecked",
+                typeof(bool),
+                typeof(NewCheckBox),
                 false,
                 propertyChanged: (bindable, oldValue, newValue) =>
                 {
@@ -73,7 +83,7 @@ namespace Xamarin.FormsBook.Toolkit
                     EventHandler<bool> eventHandler = checkbox.CheckedChanged;
                     if (eventHandler != null)
                     {
-                        eventHandler(checkbox, newValue);
+                        eventHandler(checkbox, (bool)newValue);
                     }
                 });
 

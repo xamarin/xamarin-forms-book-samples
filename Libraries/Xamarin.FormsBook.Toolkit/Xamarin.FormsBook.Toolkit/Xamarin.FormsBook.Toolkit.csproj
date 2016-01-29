@@ -37,7 +37,6 @@
   <ItemGroup>
     <Compile Include="AdderViewModel.cs" />
     <Compile Include="AltLabel.cs" />
-    <Compile Include="AltLabelGeneric.cs" />
     <Compile Include="AnalogClockViewModel.cs" />
     <Compile Include="BaseTwoLogConverter.cs" />
     <Compile Include="BezierSpline.cs" />
@@ -90,6 +89,7 @@
     <Compile Include="ThresholdToObjectConverter.cs" />
     <Compile Include="ToggleBase.cs" />
     <Compile Include="ToggleBehavior.cs" />
+    <Compile Include="Toolkit.cs" />
     <Compile Include="TranslateAction.cs" />
     <Compile Include="ValidEmailBehavior.cs" />
     <Compile Include="ViewModelBase.cs" />

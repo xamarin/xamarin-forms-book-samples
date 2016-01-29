@@ -7,7 +7,7 @@ namespace CustomExtensionDemo
     {
         public App()
         {
-            new Xamarin.FormsBook.Toolkit.HslColorExtension();
+            Xamarin.FormsBook.Toolkit.Toolkit.Init();
 
             MainPage = new CustomExtensionDemoPage();
         }

@@ -5,15 +5,16 @@
     <Application.Resources>
         <ResourceDictionary>
             <x:Double x:Key="borderWidth">3</x:Double>
+            <x:String x:Key="fontSize">Large</x:String>
 
-            <OnPlatform x:Key="backgroundColor" x:TypeArguments="Color"
+            <OnPlatform x:Key="backgroundColor"
+                        x:TypeArguments="Color"
                         Android="#404040" />
 
-            <OnPlatform x:Key="borderColor" x:TypeArguments="Color"
+            <OnPlatform x:Key="borderColor"
+                        x:TypeArguments="Color"
                         Android="White"
                         WinPhone="Black" />
-
-            <x:String x:Key="fontSize">Large</x:String>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -14,7 +14,8 @@ namespace MonkeyTapWithSound.WinRuntimeShared
 
         public void PlaySound(int samplingRate, byte[] pcmData)
         {
-            AudioEncodingProperties audioProps = AudioEncodingProperties.CreatePcm((uint)samplingRate, 1, 16);
+            AudioEncodingProperties audioProps = 
+                AudioEncodingProperties.CreatePcm((uint)samplingRate, 1, 16);
             AudioStreamDescriptor audioDesc = new AudioStreamDescriptor(audioProps);
             MediaStreamSource mss = new MediaStreamSource(audioDesc);
             
@@ -25,7 +26,8 @@ namespace MonkeyTapWithSound.WinRuntimeShared
                     return;
 
                 IBuffer ibuffer = pcmData.AsBuffer();
-                MediaStreamSample sample = MediaStreamSample.CreateFromBuffer(ibuffer, TimeSpan.Zero);
+                MediaStreamSample sample = 
+                    MediaStreamSample.CreateFromBuffer(ibuffer, TimeSpan.Zero);
                 sample.Duration = TimeSpan.FromSeconds(pcmData.Length / 2.0 / samplingRate);
                 args.Request.Sample = sample;
                 samplePlayed = true;

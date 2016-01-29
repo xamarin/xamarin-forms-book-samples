@@ -10,19 +10,6 @@
                 <Setter Property="VerticalOptions" Value="CenterAndExpand" />
                 <Setter Property="BorderWidth" Value="3" />
                 <Setter Property="TextColor" Value="Red" />
-                <Setter Property="BackgroundColor">
-                    <Setter.Value>
-                        <OnPlatform x:TypeArguments="Color"
-                                    Android="#404040" />        
-                    </Setter.Value>
-                </Setter>
-                <Setter Property="BorderColor">
-                    <Setter.Value>
-                        <OnPlatform x:TypeArguments="Color"
-                                    Android="White"
-                                    WinPhone="Black" />
-                    </Setter.Value>
-                </Setter>                
                 <Setter Property="FontSize" Value="Large" />
             </Style>
         </ResourceDictionary>

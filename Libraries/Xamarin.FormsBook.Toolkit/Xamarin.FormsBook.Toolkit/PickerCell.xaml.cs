@@ -8,29 +8,29 @@ namespace Xamarin.FormsBook.Toolkit
     public partial class PickerCell : ViewCell
     {
         public static readonly BindableProperty LabelProperty =
-            BindableProperty.Create<PickerCell, string>(
-                cell => cell.Label, default(string));
+            BindableProperty.Create(
+                "Label", typeof(string), typeof(PickerCell), default(string));
 
         public static readonly BindableProperty TitleProperty = 
-            BindableProperty.Create<PickerCell, string> 
-                (cell => cell.Title, default(string));
+            BindableProperty.Create(
+                "Title", typeof(string), typeof(PickerCell), default(string));
 
         public static readonly BindableProperty SelectedValueProperty =
-            BindableProperty.Create<PickerCell, string>
-                (cell => cell.SelectedValue, 
-                null, BindingMode.TwoWay, null,
+            BindableProperty.Create(
+                "SelectedValue", typeof(string), typeof(PickerCell), null, 
+                BindingMode.TwoWay,
                 propertyChanged: (sender, oldValue, newValue) =>
                     {
                         PickerCell pickerCell = (PickerCell)sender;
 
-                        if (String.IsNullOrEmpty(newValue))
+                        if (String.IsNullOrEmpty((string)newValue))
                         {
                             pickerCell.picker.SelectedIndex = -1;
                         }
                         else
                         {
                             pickerCell.picker.SelectedIndex = 
-                                    pickerCell.Items.IndexOf(newValue);
+                                    pickerCell.Items.IndexOf((string)newValue);
                     }
               });
 
