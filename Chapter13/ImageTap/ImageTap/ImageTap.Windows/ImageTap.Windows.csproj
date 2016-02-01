@@ -128,17 +128,36 @@
     <Content Include="Images\Scream.scale-180.jpg" />
     <Content Include="Images\Scream.scale-240.jpg" />
     <Content Include="Images\Venus.scale-100.jpg" />
+    <Content Include="Images\Venus.scale-110.jpg" />
+    <Content Include="Images\Venus.scale-120.jpg" />
+    <Content Include="Images\Venus.scale-125.jpg" />
+    <Content Include="Images\Venus.scale-130.jpg" />
     <Content Include="Images\Venus.scale-140.jpg" />
     <Content Include="Images\Venus.scale-150.jpg" />
     <Content Include="Images\Venus.scale-160.jpg" />
+    <Content Include="Images\Venus.scale-170.jpg" />
+    <Content Include="Images\Venus.scale-175.jpg" />
     <Content Include="Images\Venus.scale-180.jpg" />
+    <Content Include="Images\Venus.scale-190.jpg" />
     <Content Include="Images\Venus.scale-200.jpg" />
+    <Content Include="Images\Venus.scale-210.jpg" />
     <Content Include="Images\Venus.scale-220.jpg" />
+    <Content Include="Images\Venus.scale-225.jpg" />
     <Content Include="Images\Venus.scale-230.jpg" />
     <Content Include="Images\Venus.scale-240.jpg" />
     <Content Include="Images\Venus.scale-250.jpg" />
+    <Content Include="Images\Venus.scale-260.jpg" />
+    <Content Include="Images\Venus.scale-270.jpg" />
+    <Content Include="Images\Venus.scale-275.jpg" />
+    <Content Include="Images\Venus.scale-280.jpg" />
+    <Content Include="Images\Venus.scale-290.jpg" />
+    <Content Include="Images\Venus.scale-300.jpg" />
     <Content Include="Images\Venus.scale-320.jpg" />
+    <Content Include="Images\Venus.scale-390.jpg" />
+    <Content Include="Images\Venus.scale-400.jpg" />
+    <Content Include="Images\Venus.scale-410.jpg" />
     <Content Include="Images\Venus.scale-480.jpg" />
+    <Content Include="Images\Venus.scale-640.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
