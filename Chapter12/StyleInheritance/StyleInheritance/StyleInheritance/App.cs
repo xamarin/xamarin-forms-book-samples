@@ -7,6 +7,8 @@ namespace StyleInheritance
     {
         public App()
         {
+            Xamarin.FormsBook.Toolkit.Toolkit.Init();
+
             MainPage = new StyleInheritancePage();
         }
 

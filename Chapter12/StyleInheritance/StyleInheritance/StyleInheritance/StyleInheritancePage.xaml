@@ -29,14 +29,7 @@
                 <Setter Property="TextColor" Value="Blue" />
                 <Setter Property="FontSize" Value="Large" />
                 <Setter Property="BorderColor" Value="Blue" />
-                <Setter Property="BorderWidth">
-                    <Setter.Value>
-                        <OnPlatform x:TypeArguments="x:Double"
-                                    iOS="1"
-                                    Android="2"
-                                    WinPhone="3" />
-                    </Setter.Value>
-                </Setter>
+                <Setter Property="BorderWidth" Value="2" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>

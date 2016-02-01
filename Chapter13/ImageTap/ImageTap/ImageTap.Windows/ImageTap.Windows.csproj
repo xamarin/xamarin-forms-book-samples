@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -129,8 +129,16 @@
     <Content Include="Images\Scream.scale-240.jpg" />
     <Content Include="Images\Venus.scale-100.jpg" />
     <Content Include="Images\Venus.scale-140.jpg" />
+    <Content Include="Images\Venus.scale-150.jpg" />
+    <Content Include="Images\Venus.scale-160.jpg" />
     <Content Include="Images\Venus.scale-180.jpg" />
+    <Content Include="Images\Venus.scale-200.jpg" />
+    <Content Include="Images\Venus.scale-220.jpg" />
+    <Content Include="Images\Venus.scale-230.jpg" />
     <Content Include="Images\Venus.scale-240.jpg" />
+    <Content Include="Images\Venus.scale-250.jpg" />
+    <Content Include="Images\Venus.scale-320.jpg" />
+    <Content Include="Images\Venus.scale-480.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

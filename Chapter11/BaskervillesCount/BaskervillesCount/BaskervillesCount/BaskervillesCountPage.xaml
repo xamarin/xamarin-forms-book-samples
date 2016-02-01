@@ -9,7 +9,6 @@
     <StackLayout>
         <toolkit:CountedLabel x:Name="countedLabel"
                               VerticalOptions="CenterAndExpand"
-                              PropertyChanged="OnCountedLabelPropertyChanged"
                               Text=
 "Mr. Sherlock Holmes, who was usually very late in
 the mornings, save upon those not infrequent

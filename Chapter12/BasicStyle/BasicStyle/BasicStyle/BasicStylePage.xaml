@@ -8,9 +8,7 @@
             <Style x:Key="buttonStyle" TargetType="Button">
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="VerticalOptions" Value="CenterAndExpand" />
-                <Setter Property="BorderWidth" Value="3" />
-                <Setter Property="TextColor" Value="Red" />
-                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="BackgroundColor" Value="Pink" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -18,10 +16,14 @@
     <StackLayout>
         <Button Text=" Carpe diem "
                 Style="{StaticResource buttonStyle}" />
+
+        <Label Text="A bit of text" Style="{StaticResource buttonStyle}" />
         
         <Button Text=" Sapere aude "
                 Style="{StaticResource buttonStyle}" />
         
+        <Label Text="Another bit of text" Style="{StaticResource buttonStyle}" />
+
         <Button Text=" Discere faciendo "
                 Style="{StaticResource buttonStyle}" />
     </StackLayout>

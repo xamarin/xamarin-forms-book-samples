@@ -31,15 +31,8 @@
                     </Style>
 
                     <Style TargetType="Image">
-                        <Setter Property="WidthRequest">
-                            <Setter.Value>
-                                <!-- 1.5 inches -->
-                                <OnPlatform x:TypeArguments="x:Double"
-                                            iOS="240"
-                                            Android="240"
-                                            WinPhone="360" />
-                            </Setter.Value>
-                        </Setter>
+                        <!-- 1.5 inches wide -->
+                        <Setter Property="WidthRequest" Value="240" />
                     </Style>
                 
                     <!-- 1/4 inch indent for poetry -->

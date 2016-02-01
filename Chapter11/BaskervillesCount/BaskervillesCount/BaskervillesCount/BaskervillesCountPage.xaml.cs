@@ -1,5 +1,4 @@
 using System;
-using System.ComponentModel;
 using Xamarin.Forms;
 
 namespace BaskervillesCount
@@ -12,12 +11,6 @@ namespace BaskervillesCount
 
             int wordCount = countedLabel.WordCount;
             wordCountLabel.Text = wordCount + " words";
-        }
-
-        void OnCountedLabelPropertyChanged(object sender, 
-                                           PropertyChangedEventArgs args)
-        {
-            wordCountLabel.Text = countedLabel.WordCount + " words";
         }
     }
 }

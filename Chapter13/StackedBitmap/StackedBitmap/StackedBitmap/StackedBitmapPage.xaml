@@ -5,17 +5,17 @@
              x:Class="StackedBitmap.StackedBitmapPage">
     
     <StackLayout>
-        <Label Text="400 x 300 Pixel Bitmap"
-               FontSize="Large"
+        <Label Text="320 x 240 Pixel Bitmap"
+               FontSize="Medium"
                VerticalOptions="CenterAndExpand"
                HorizontalOptions="Center" />
         
-        <Image Source="{local:ImageResource StackedBitmap.Images.Sculpture_400x300.jpg}"
+        <Image Source="{local:ImageResource StackedBitmap.Images.Sculpture_320x240.jpg}"
                BackgroundColor="Aqua"
                SizeChanged="OnImageSizeChanged" />
 
         <Label x:Name="label"
-               FontSize="Large"
+               FontSize="Medium"
                VerticalOptions="CenterAndExpand"
                HorizontalOptions="Center" />
     </StackLayout>

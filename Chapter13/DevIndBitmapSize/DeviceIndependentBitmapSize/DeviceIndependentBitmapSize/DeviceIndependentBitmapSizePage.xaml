@@ -7,25 +7,19 @@
     
     <StackLayout>
         <Label Text="1200 x 900 Pixel Bitmap"
-               FontSize="Large"
+               FontSize="Medium"
                VerticalOptions="CenterAndExpand"
                HorizontalOptions="Center" />
 
+        <!-- 1.5 inches wide -->
         <Image Source=
             "{local:ImageResource DeviceIndependentBitmapSize.Images.Sculpture_1200x900.jpg}"
                HorizontalOptions="Center"
-               SizeChanged="OnImageSizeChanged">
-            <Image.WidthRequest>
-                <!-- 1.5 inches -->
-                <OnPlatform x:TypeArguments="x:Double"
-                            iOS="240"
-                            Android="240"
-                            WinPhone="360" />
-            </Image.WidthRequest>
-        </Image>
+               WidthRequest="240"
+               SizeChanged="OnImageSizeChanged" />
 
         <Label x:Name="label"
-               FontSize="Large"
+               FontSize="Medium"
                VerticalOptions="CenterAndExpand"
                HorizontalOptions="Center" />
     </StackLayout>

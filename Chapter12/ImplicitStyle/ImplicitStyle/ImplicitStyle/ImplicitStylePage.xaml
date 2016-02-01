@@ -11,6 +11,19 @@
                 <Setter Property="BorderWidth" Value="3" />
                 <Setter Property="TextColor" Value="Red" />
                 <Setter Property="FontSize" Value="Large" />
+                <Setter Property="BackgroundColor">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="Color"
+                                    Android="#404040" />
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="BorderColor">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="Color"
+                                    Android="White"
+                                    WinPhone="Black" />
+                    </Setter.Value>
+                </Setter>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>

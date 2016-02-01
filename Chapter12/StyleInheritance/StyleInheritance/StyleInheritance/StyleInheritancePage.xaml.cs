@@ -12,9 +12,6 @@ namespace StyleInheritance
     {
         public StyleInheritancePage()
         {
-            // Access external library to ensure linking.
-            var x = new Xamarin.FormsBook.Toolkit.AltLabel();
-
             InitializeComponent();
         }
     }

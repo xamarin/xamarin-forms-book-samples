@@ -37,6 +37,20 @@ namespace BasicStyleCode
                             {
                                 Property = Button.FontSizeProperty,
                                 Value = Device.GetNamedSize(NamedSize.Large, typeof(Button))
+                            },
+                            new Setter
+                            {
+                                Property = VisualElement.BackgroundColorProperty,
+                                Value = Device.OnPlatform(Color.Default, 
+                                                          Color.FromRgb(0x40, 0x40, 0x40), 
+                                                          Color.Default)
+                            },
+                            new Setter
+                            {
+                                Property = Button.BorderColorProperty,
+                                Value = Device.OnPlatform(Color.Default,
+                                                          Color.White,
+                                                          Color.Black)
                             }
                         }
                     }
