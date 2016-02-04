@@ -10,5 +10,7 @@
         <Image x:Name="image2"
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand" />
+
+        <Label x:Name="errorMessage" />
     </StackLayout>
 </ContentPage>

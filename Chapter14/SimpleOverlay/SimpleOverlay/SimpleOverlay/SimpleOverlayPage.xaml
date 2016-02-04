@@ -9,7 +9,7 @@
 "This might be a page full of user-interface objects except
 that the only functional user-interface object on the page
 is a Button."
-                   FontSize="Large"
+                   FontSize="Medium"
                    VerticalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Center" />
 
@@ -28,7 +28,7 @@ is a Button."
 "This continues the page full of user-interface objects except
 that the only functional user-interface object on the page
 is the Button."
-                   FontSize="Large"
+                   FontSize="Medium"
                    VerticalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Center" />
         </StackLayout> 

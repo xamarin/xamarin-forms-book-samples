@@ -30,17 +30,13 @@
                         <Setter Property="TextColor" Value="Black" />
                     </Style>
 
+                    <!-- 1.5 inch image width -->
                     <Style TargetType="Image">
-                        <!-- 1.5 inches wide -->
                         <Setter Property="WidthRequest" Value="240" />
                     </Style>
                 
                     <!-- 1/4 inch indent for poetry -->
-                    <OnPlatform x:Key="poemIndent"
-                                x:TypeArguments="Thickness"
-                                iOS="40, 0, 0, 0"
-                                Android="40, 0, 0, 0"
-                                WinPhone="60, 0, 0, 0" />
+                    <Thickness x:Key="poemIndent">40, 0, 0, 0</Thickness>
                 </ResourceDictionary>
             </StackLayout.Resources>
             

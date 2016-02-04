@@ -15,7 +15,8 @@
             </Button.BackgroundColor>
             <Button.BorderColor>
                 <OnPlatform x:TypeArguments="Color"
-                            Android="#C0C0C0" />
+                            Android="#C0C0C0"
+                            WinPhone="Black" />
             </Button.BorderColor>
         </Button>
 
@@ -26,7 +27,7 @@
                 <StackLayout.Resources>
                     <ResourceDictionary>
                         <Style TargetType="Label">
-                            <Setter Property="FontSize" Value="Large" />
+                            <Setter Property="FontSize" Value="Medium" />
                         </Style>
                     </ResourceDictionary>
                 </StackLayout.Resources>

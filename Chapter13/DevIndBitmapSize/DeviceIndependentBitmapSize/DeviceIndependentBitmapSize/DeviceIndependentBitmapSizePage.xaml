@@ -11,11 +11,11 @@
                VerticalOptions="CenterAndExpand"
                HorizontalOptions="Center" />
 
-        <!-- 1.5 inches wide -->
+        <!-- 1.5 inch image width -->
         <Image Source=
             "{local:ImageResource DeviceIndependentBitmapSize.Images.Sculpture_1200x900.jpg}"
-               HorizontalOptions="Center"
                WidthRequest="240"
+               HorizontalOptions="Center"
                SizeChanged="OnImageSizeChanged" />
 
         <Label x:Name="label"

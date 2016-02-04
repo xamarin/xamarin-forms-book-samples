@@ -27,7 +27,7 @@ namespace ImageBrowser
             InitializeComponent();
 
             // Get list of stock photos.
-            Uri uri = new Uri("http://docs.xamarin.com/demo/stock.json");
+            Uri uri = new Uri("http://developer.xamarin.com/demo/stock.json");
             request = WebRequest.Create(uri);
             request.BeginGetResponse(WebRequestCallback, null);
         }

@@ -4,11 +4,7 @@
              x:Class="SliderDemo.SliderDemoPage">
     
     <StackLayout Padding="10, 0">
-        <Slider 
-            
-            x:Name="slider"
-            
-            ValueChanged="OnSliderValueChanged"
+        <Slider ValueChanged="OnSliderValueChanged"
                 VerticalOptions="CenterAndExpand" />
 
         <Label x:Name="label"

@@ -27,6 +27,15 @@ namespace BitmapStreams
             request.BeginGetResponse((IAsyncResult arg) =>
                 {
                     Stream stream = request.EndGetResponse(arg).GetResponseStream();
+
+                    if (Device.OS == TargetPlatform.WinPhone ||
+                        Device.OS == TargetPlatform.Windows)
+                    {
+                        MemoryStream memStream = new MemoryStream();
+                        stream.CopyTo(memStream);
+                        memStream.Seek(0, SeekOrigin.Begin);
+                        stream = memStream;
+                    }
                     ImageSource imageSource = ImageSource.FromStream(() => stream);
                     Device.BeginInvokeOnMainThread(() => image2.Source = imageSource);
                 }, null);
