@@ -5,28 +5,13 @@
              Title="Just Notes">
 
     <StackLayout>
-        <ContentView>
-            <OnPlatform x:TypeArguments="View">
-                <OnPlatform.WinPhone>
-                    <Label Text="Just Notes"
-                           FontSize="Large"
-                           HorizontalOptions="Center" />
-                </OnPlatform.WinPhone>
-            </OnPlatform>
-        </ContentView>
-
         <AbsoluteLayout VerticalOptions="FillAndExpand">
             <Editor x:Name="editor"
                     Keyboard="Text"
                     AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
                     AbsoluteLayout.LayoutFlags="All"
                     Focused="OnEditorFocused"
-                    Unfocused="OnEditorUnfocused">
-                <Editor.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color"
-                                WinPhone="#D0D0D0" />
-                </Editor.BackgroundColor>
-            </Editor>
+                    Unfocused="OnEditorUnfocused" />
         </AbsoluteLayout>
     </StackLayout>
 </ContentPage>

@@ -3,16 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReverseBinding.ReverseBindingPage"
              Padding="10, 0">
-    <StackLayout>
-        <Label x:Name="label"
-               Text="Reverse Binding Demo"
-               FontSize="Large"
-               VerticalOptions="CenterAndExpand"
-               HorizontalOptions="Center" />
 
-        <Slider VerticalOptions="CenterAndExpand"
-                Value="{Binding Source={x:Reference label},
-                                Mode=TwoWay,
-                                Path=Opacity}" />
-    </StackLayout>    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="StackLayout">
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="Text" Value="TEXT" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout VerticalOptions="Fill">
+        <StackLayout>
+            <Label x:Name="label1" />
+            <Slider Maximum="50"
+                    Value="{Binding Source={x:Reference label1},
+                                    Path=FontSize}" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label x:Name="label2" />
+            <Slider Maximum="50"
+                    Value="{Binding Source={x:Reference label2},
+                                    Path=FontSize,
+                                    Mode=OneWay}" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label x:Name="label3" />
+            <Slider Maximum="50"
+                    Value="{Binding Source={x:Reference label3},
+                                    Path=FontSize,
+                                    Mode=OneWayToSource}" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label x:Name="label4" />
+            <Slider Maximum="50"
+                    Value="{Binding Source={x:Reference label4},
+                                    Path=FontSize,
+                                    Mode=TwoWay}" />
+        </StackLayout>
+    </StackLayout>
 </ContentPage>

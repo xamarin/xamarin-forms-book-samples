@@ -6,19 +6,12 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Label">
-                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="FontSize" Value="Medium" />
                 <Setter Property="VerticalOptions" Value="Center" />
             </Style>
             
             <Style TargetType="Entry">
-                <Setter Property="WidthRequest">
-                    <Setter.Value>
-                        <OnPlatform x:TypeArguments="x:Double"
-                                    iOS="180"
-                                    Android="180"
-                                    WinPhone="240" />
-                    </Setter.Value>
-                </Setter>
+                <Setter Property="WidthRequest" Value="180" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>

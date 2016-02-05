@@ -52,7 +52,7 @@
         </StackLayout>
 
         <Label x:Name="resultLabel"
-               FontSize="Large"
+               FontSize="Medium"
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand" />
     </StackLayout>
