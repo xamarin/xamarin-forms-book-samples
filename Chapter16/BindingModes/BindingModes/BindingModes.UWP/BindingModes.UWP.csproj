@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{91B45E0E-D3F2-4114-B0B6-FD434B992412}</ProjectGuid>
+    <ProjectGuid>{05E029D1-6D4C-4649-AAC5-674E8B37341F}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BindingModes.UWP</RootNamespace>

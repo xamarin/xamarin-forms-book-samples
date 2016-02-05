@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6C3D5643-5BCD-4CEB-9C96-A2921CF14F89}</ProjectGuid>
+    <ProjectGuid>{3E2BE8FC-9DD2-4B5F-95C3-9249BBFA2021}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BindingModes</RootNamespace>

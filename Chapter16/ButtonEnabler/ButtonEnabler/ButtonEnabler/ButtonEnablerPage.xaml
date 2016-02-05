@@ -18,7 +18,7 @@
                Placeholder="text to enable button" />
 
         <Button Text="Save or Send (or something)"
-                FontSize="Large"
+                FontSize="Medium"
                 HorizontalOptions="Center"
                 IsEnabled="{Binding Source={x:Reference entry},
                                     Path=Text.Length,

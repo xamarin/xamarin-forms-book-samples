@@ -13,7 +13,7 @@
                                            FalseText="Not now" />
 
             <Style TargetType="Label">
-                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="FontSize" Value="Medium" />
                 <Setter Property="VerticalOptions" Value="Center" />
             </Style>
         </ResourceDictionary>
