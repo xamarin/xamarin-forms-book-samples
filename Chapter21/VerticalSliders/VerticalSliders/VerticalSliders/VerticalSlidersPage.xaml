@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VerticalSliders.VerticalSlidersPage">
+
+    <StackLayout VerticalOptions="Center"
+                 Spacing="50"
+                 Rotation="-90">
+        
+        <Slider Value="0.25" />
+
+        <Slider Value="0.5" />
+
+        <Slider Value="0.75" />
+    </StackLayout>
+ </ContentPage>

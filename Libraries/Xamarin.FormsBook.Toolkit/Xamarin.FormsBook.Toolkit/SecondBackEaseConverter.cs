@@ -16,12 +16,12 @@ namespace Xamarin.FormsBook.Toolkit
             // Back-ease in and out functions from http://robertpenner.com/easing/
             if (t < 0.5)
             {
-                t /= 0.5;
+                t *= 2;
                 v = 0.5 * t * t * ((1.7 + 1) * t - 1.7);
             }
             else
             {
-                t = (t - 0.5) / 0.5;
+                t = 2 * (t - 0.5);
                 v = 0.5 * (1 + ((t - 1) * (t - 1) * ((1.7 + 1) * (t - 1) + 1.7) + 1));
             }
 
