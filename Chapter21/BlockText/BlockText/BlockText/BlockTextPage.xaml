@@ -8,14 +8,7 @@
             <ResourceDictionary>
                 <Style TargetType="Label">
                     <Setter Property="Text" Value="DEPTH" />
-                    <Setter Property="FontSize">
-                        <Setter.Value>
-                            <OnPlatform x:TypeArguments="x:Double"
-                                        iOS="72"
-                                        Android="72"
-                                        WinPhone="108" />
-                        </Setter.Value>
-                    </Setter>
+                    <Setter Property="FontSize" Value="72" />
                     <Setter Property="FontAttributes" Value="Bold" />
                     <Setter Property="TextColor" Value="Gray" />
                     <Setter Property="HorizontalOptions" Value="Center" />

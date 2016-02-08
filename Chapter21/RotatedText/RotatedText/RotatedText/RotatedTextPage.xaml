@@ -7,14 +7,7 @@
             <ResourceDictionary>
                 <Style TargetType="Label">
                     <Setter Property="Text" Value="     ROTATE" />
-                    <Setter Property="FontSize">
-                        <Setter.Value>
-                            <OnPlatform x:TypeArguments="x:Double"
-                                        iOS="32"
-                                        Android="32"
-                                        WinPhone="48" />
-                        </Setter.Value>
-                    </Setter>
+                    <Setter Property="FontSize" Value="32" />
                     <Setter Property="Grid.Column" Value="1" />
                     <Setter Property="VerticalOptions" Value="Center" />
                     <Setter Property="HorizontalOptions" Value="Start" />

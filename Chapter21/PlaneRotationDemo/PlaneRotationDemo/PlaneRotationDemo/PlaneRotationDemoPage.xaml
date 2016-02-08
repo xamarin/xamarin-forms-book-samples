@@ -3,12 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PlaneRotationDemo.PlaneRotationDemoPage">
     <StackLayout Padding="20, 10">
-
         <Frame x:Name="frame"
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand"
-               OutlineColor="Accent"
->
+               OutlineColor="Accent">
             <Label Text="TEXT"
                    FontSize="Large" />
         </Frame>

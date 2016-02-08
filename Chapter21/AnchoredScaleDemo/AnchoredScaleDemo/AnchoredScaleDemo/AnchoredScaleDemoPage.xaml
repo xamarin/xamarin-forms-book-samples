@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AnchoredScaleDemo.AnchoredScaleDemoPage">
     <StackLayout Padding="20, 10">
-
         <Frame x:Name="frame"
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand"

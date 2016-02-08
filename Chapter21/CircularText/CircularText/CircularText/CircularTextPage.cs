@@ -21,7 +21,7 @@ namespace CircularText
             // Create the Labels.
             string text = "Xamarin.Forms makes me want to code more with ";
             labels = new Label[text.Length];
-            double fontSize = 1.5 * Device.GetNamedSize(NamedSize.Large, typeof(Label));
+            double fontSize = 32;
             int countSized = 0;
 
             for (int index = 0; index < text.Length; index++)
@@ -30,7 +30,8 @@ namespace CircularText
 
                 Label label = new Label
                 {
-                    Text = ch == ' ' ? "\u00A0" : ch.ToString(),
+                    Text = ch == ' ' ? "-" : ch.ToString(),
+                    Opacity = ch == ' ' ? 0 : 1,
                     FontSize = fontSize,
                 };
                 label.SizeChanged += (sender, args) =>
