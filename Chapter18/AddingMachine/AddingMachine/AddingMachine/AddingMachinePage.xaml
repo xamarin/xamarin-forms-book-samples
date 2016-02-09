@@ -34,22 +34,10 @@
               Grid.Row="1" Grid.Column="0"
               RowSpacing="2"
               ColumnSpacing="2"
+              WidthRequest="240"
+              HeightRequest="360"
               VerticalOptions="Center"
               HorizontalOptions="Center">
-
-            <Grid.WidthRequest>
-                <OnPlatform x:TypeArguments="x:Double"
-                            iOS="240"
-                            Android="240"
-                            WinPhone="360" />
-            </Grid.WidthRequest>
-        
-            <Grid.HeightRequest>
-                <OnPlatform x:TypeArguments="x:Double"
-                            iOS="360"
-                            Android="360"
-                            WinPhone="540" />
-            </Grid.HeightRequest>
 
             <Grid.Resources>
                 <ResourceDictionary>
