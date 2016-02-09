@@ -44,17 +44,17 @@
                      Padding="10, 5">
             
             <StackLayout VerticalOptions="CenterAndExpand">
-                <Slider Value="{Binding Hue, Mode=TwoWay}" />
+                <Slider Value="{Binding Hue}" />
                 <Label Text="{Binding Hue, StringFormat='Hue = {0:F2}'}" />
             </StackLayout>
 
             <StackLayout VerticalOptions="CenterAndExpand">
-                <Slider Value="{Binding Saturation, Mode=TwoWay}" />
+                <Slider Value="{Binding Saturation}" />
                 <Label Text="{Binding Saturation, StringFormat='Saturation = {0:F2}'}" />
             </StackLayout>
 
             <StackLayout VerticalOptions="CenterAndExpand">
-                <Slider Value="{Binding Luminosity, Mode=TwoWay}" />
+                <Slider Value="{Binding Luminosity}" />
                 <Label Text="{Binding Luminosity, StringFormat='Luminosity = {0:F2}'}" />
             </StackLayout>
         </StackLayout>

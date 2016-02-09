@@ -18,8 +18,8 @@
     <StackLayout BindingContext="{StaticResource viewModel}">
         
         <StackLayout VerticalOptions="CenterAndExpand">
-            <Slider Value="{Binding Multiplicand, Mode=TwoWay}" />
-            <Slider Value="{Binding Multiplier, Mode=TwoWay}" />
+            <Slider Value="{Binding Multiplicand}" />
+            <Slider Value="{Binding Multiplier}" />
         </StackLayout>
 
         <StackLayout Orientation="Horizontal"
