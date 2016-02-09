@@ -11,14 +11,14 @@
             <OnPlatform x:TypeArguments="x:Double"
                         iOS="180"
                         Android="180"
-                        WinPhone="270" />
+                        WinPhone="240" />
         </Grid.WidthRequest>
         
         <Grid.HeightRequest>
             <OnPlatform x:TypeArguments="x:Double"
                         iOS="300"
                         Android="300"
-                        WinPhone="450" />
+                        WinPhone="400" />
         </Grid.HeightRequest>
 
         <Grid.Resources>
