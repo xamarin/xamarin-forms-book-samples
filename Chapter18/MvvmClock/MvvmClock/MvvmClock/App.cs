@@ -7,6 +7,8 @@ namespace MvvmClock
     {
         public App()
         {
+            Xamarin.FormsBook.Toolkit.Toolkit.Init();
+ 
             MainPage = new MvvmClockPage();
         }
 

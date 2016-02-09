@@ -7,9 +7,6 @@ namespace HslSliders
     {
         public HslSlidersPage()
         {
-            // Ensure link to library.
-            new Xamarin.FormsBook.Toolkit.ColorViewModel();
-
             InitializeComponent();
         }
 
