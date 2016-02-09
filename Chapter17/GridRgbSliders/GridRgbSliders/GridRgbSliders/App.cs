@@ -7,6 +7,8 @@ namespace GridRgbSliders
     {
         public App()
         {
+            Xamarin.FormsBook.Toolkit.Toolkit.Init();
+
             MainPage = new GridRgbSlidersPage();
         }
 

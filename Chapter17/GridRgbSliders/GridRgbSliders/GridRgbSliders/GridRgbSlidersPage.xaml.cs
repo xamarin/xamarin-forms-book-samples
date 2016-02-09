@@ -7,9 +7,6 @@ namespace GridRgbSliders
     {
         public GridRgbSlidersPage()
         {
-            // Ensure link to Toolkit library.
-            new Xamarin.FormsBook.Toolkit.DoubleToIntConverter();
-
             InitializeComponent();
         }
 
