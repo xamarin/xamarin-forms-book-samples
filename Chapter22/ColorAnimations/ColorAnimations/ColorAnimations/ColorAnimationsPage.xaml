@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ColorAnimations.ColorAnimationsPage">
+
+    <StackLayout>
+        <Label x:Name="label"
+               Text="TEXT"
+               FontSize="48"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Button Text="Rainbow Background"
+                Clicked="OnRainbowBackgroundButtonClicked"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+        
+        <Button Text="BoxView Color"
+                Clicked="OnBoxViewColorButtonClicked"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+
+        <StackLayout Orientation="Horizontal">
+            <BoxView x:Name="boxView1"
+                     Color="Blue"
+                     HeightRequest="100"
+                     HorizontalOptions="FillAndExpand" />
+
+            <BoxView x:Name="boxView2"
+                     Color="Blue"
+                     HeightRequest="100"
+                     HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

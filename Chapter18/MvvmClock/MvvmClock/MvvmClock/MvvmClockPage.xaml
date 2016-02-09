@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="MvvmClock.MvvmClockPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:DateTimeViewModel x:Key="dateTimeViewModel" />
+
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout VerticalOptions="Center">
+        <Label Text="{Binding Source={x:Static sys:DateTime.Now},
+                              StringFormat='This program started at {0:F}'}" />
+
+        <Label Text="But now..." />
+
+        <Label Text="{Binding Source={StaticResource dateTimeViewModel},
+                              Path=DateTime.Hour,
+                              StringFormat='The hour is {0}'}" />
+
+        <Label Text="{Binding Source={StaticResource dateTimeViewModel},
+                              Path=DateTime.Minute,
+                              StringFormat='The minute is {0}'}" />
+        
+        <Label Text="{Binding Source={StaticResource dateTimeViewModel},
+                              Path=DateTime.Second,
+                              StringFormat='The seconds are {0}'}" />
+        
+        <Label Text="{Binding Source={StaticResource dateTimeViewModel},
+                              Path=DateTime.Millisecond,
+                              StringFormat='The milliseconds are {0}'}" />
+    </StackLayout>
+</ContentPage>

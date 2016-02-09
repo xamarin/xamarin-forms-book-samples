@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RotationBreakdown.RotationBreakdownPage"
+             BackgroundColor="White"
+             Padding="20">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Style TargetType="BoxView">
+                    <Setter Property="WidthRequest" Value="200" />
+                    <Setter Property="HeightRequest" Value="20" />
+                    <Setter Property="HorizontalOptions" Value="Center" />
+                    <Setter Property="VerticalOptions" Value="Center" />
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+
+        <Label Text="Within a minute you should see flashes of red as the 
+rotation angles on two BoxView elements fall out of sync and a hidden 
+BoxView comes into view. The two rotation angles then continue to deviate."
+               Grid.Row="0"
+               HorizontalTextAlignment="Center" />
+
+        <BoxView x:Name="underBoxView" Grid.Row="1" Color="Red" />
+
+        <BoxView x:Name="overBoxView" Grid.Row="1" Color="White" />
+
+        <Label x:Name="label"
+               Text=" "
+               Grid.Row="2"
+               FontSize="Large"
+               TextColor="Black"
+               HorizontalTextAlignment="Center" />
+    </Grid>
+</ContentPage>

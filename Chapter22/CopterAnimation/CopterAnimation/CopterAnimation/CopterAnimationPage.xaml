@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CopterAnimation.CopterAnimationPage">
+    <ContentView x:Name="revolveTarget"
+                 HorizontalOptions="Fill"
+                 VerticalOptions="Center">
+        <ContentView x:Name="copterView"
+                     HorizontalOptions="End">
+            <AbsoluteLayout>
+                <BoxView AbsoluteLayout.LayoutBounds="20, 0, 20, 60"
+                         Color="Accent" />
+
+                <BoxView AbsoluteLayout.LayoutBounds="0, 20, 60, 20"
+                         Color="Accent" />
+            </AbsoluteLayout>
+        </ContentView>
+    </ContentView>
+</ContentPage>

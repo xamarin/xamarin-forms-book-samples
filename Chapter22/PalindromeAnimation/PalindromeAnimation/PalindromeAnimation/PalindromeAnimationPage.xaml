@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PalindromeAnimation.PalindromeAnimationPage"
+             SizeChanged="OnPageSizeChanged">
+    
+    <StackLayout x:Name="stackLayout"
+                 Orientation="Horizontal"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"
+                 Spacing="0" />
+</ContentPage>
