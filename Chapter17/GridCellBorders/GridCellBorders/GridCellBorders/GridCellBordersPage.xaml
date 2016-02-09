@@ -13,11 +13,7 @@
     <Grid>
         <Grid.Resources>
             <ResourceDictionary>
-                <OnPlatform x:Key="borderThickness"
-                            x:TypeArguments="x:Double"
-                            iOS="1"
-                            Android="1"
-                            WinPhone="1.5" />
+                <x:Double x:Key="borderThickness">1</x:Double>
 
                 <Style x:Key="baseBorderStyle" TargetType="BoxView">
                     <Setter Property="Color" Value="Accent" />

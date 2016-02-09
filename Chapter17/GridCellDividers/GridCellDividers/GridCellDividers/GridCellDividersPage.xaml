@@ -13,11 +13,7 @@
     <Grid>
         <Grid.Resources>
             <ResourceDictionary>
-                <OnPlatform x:Key="dividerThickness"
-                            x:TypeArguments="GridLength"
-                            iOS="2"
-                            Android="2"
-                            WinPhone="3" />
+                <GridLength x:Key="dividerThickness">2</GridLength>
                 
                 <Style TargetType="BoxView">
                     <Setter Property="Color" Value="Accent" />
