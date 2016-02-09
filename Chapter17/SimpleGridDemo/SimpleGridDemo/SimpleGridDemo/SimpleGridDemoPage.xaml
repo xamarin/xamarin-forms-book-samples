@@ -38,7 +38,7 @@
                 <OnPlatform x:TypeArguments="ImageSource"
                             iOS="Icon-60.png"
                             Android="icon.png"
-                            WinPhone="Assets/ApplicationIcon.png" />
+                            WinPhone="Assets/StoreLogo.png" />
             </Image.Source>
         </Image>
 

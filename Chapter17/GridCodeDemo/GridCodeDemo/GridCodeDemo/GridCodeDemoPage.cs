@@ -43,7 +43,7 @@ namespace GridCodeDemo
                     BackgroundColor = Color.Gray,
                     Source = Device.OnPlatform("Icon-60.png",
                                                "icon.png",
-                                               "Assets/ApplicationIcon.png")
+                                               "Assets/StoreLogo.png")
                 },
                 0,          // left
                 2,          // right
