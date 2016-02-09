@@ -30,7 +30,7 @@ namespace BoxViewClock
         {
             InitializeComponent();
 
-            // Create the tick marks (to be sized and positioned later)
+            // Create the tick marks (to be sized and positioned later).
             for (int i = 0; i < tickMarks.Length; i++)
             {
                 tickMarks[i] = new BoxView { Color = Color.Black };
