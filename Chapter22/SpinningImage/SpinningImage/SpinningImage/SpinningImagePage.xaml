@@ -4,7 +4,7 @@
              x:Class="SpinningImage.SpinningImagePage">
     
     <Image x:Name="image"
-           Source="http://docs.xamarin.com/demo/IMG_0563.JPG"
+           Source="https://developer.xamarin.com/demo/IMG_0563.JPG"
            Scale="0.5" />           
 
 </ContentPage>

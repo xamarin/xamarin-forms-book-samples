@@ -2,10 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PlatformVisuals.PlatformVisualsPage"
-             Title="Visuals">
+             Title="Demo">
 
     <StackLayout Padding="10,0">
         <Label Text="Hello, Xamarin.Forms!"
+               FontSize="Large"
                VerticalOptions="CenterAndExpand"
                HorizontalOptions="Center" />
 
@@ -25,7 +26,7 @@
                 <OnPlatform x:TypeArguments="FileImageSource"
                             iOS="edit.png"
                             Android="ic_action_edit.png"
-                            WinPhone="Images/edit.png" />
+                            WinPhone="Images/Icon76.png" />
             </ToolbarItem.Icon>
         </ToolbarItem>
 
@@ -34,7 +35,7 @@
                 <OnPlatform x:TypeArguments="FileImageSource"
                             iOS="search.png"
                             Android="ic_action_search.png"
-                            WinPhone="Images/feature.search.png" />
+                            WinPhone="Images/Icon95.png" />
             </ToolbarItem.Icon>
         </ToolbarItem>
 
@@ -43,12 +44,35 @@
                 <OnPlatform x:TypeArguments="FileImageSource"
                             iOS="reload.png"
                             Android="ic_action_refresh.png"
-                            WinPhone="Images/refresh.png" />
+                            WinPhone="Images/Icon114.png" />
             </ToolbarItem.Icon>
         </ToolbarItem>
 
-        <ToolbarItem Text="explore" Order="Secondary" />
-        <ToolbarItem Text="discover" Order="Secondary" />
-        <ToolbarItem Text="evolve" Order="Secondary" />
+        <ToolbarItem Text="explore" Order="Secondary">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="search.png"
+                            Android="ic_action_search.png"
+                            WinPhone="Images/Icon1F440.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+        
+        <ToolbarItem Text="discover" Order="Secondary">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="search.png"
+                            Android="ic_action_search.png"
+                            WinPhone="Images/Icon1F52D.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+        
+        <ToolbarItem Text="evolve" Order="Secondary">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="search.png"
+                            Android="ic_action_search.png"
+                            WinPhone="Images/Icon1F435.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
     </ContentPage.ToolbarItems>
 </ContentPage>

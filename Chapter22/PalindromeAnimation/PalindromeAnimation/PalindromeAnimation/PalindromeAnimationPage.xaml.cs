@@ -90,7 +90,7 @@ namespace PalindromeAnimation
                     previousLabel = label;
                 }
 
-                // Rotate the entire stack
+                // Rotate the entire stack.
                 stackLayout.AnchorY = 1; 
                 await stackLayout.RelRotateTo(180, 1000);
 
