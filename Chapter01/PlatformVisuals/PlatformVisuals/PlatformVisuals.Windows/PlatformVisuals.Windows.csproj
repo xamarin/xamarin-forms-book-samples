@@ -126,9 +126,6 @@
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Images\edit.png" />
     <Content Include="Images\feature.search.png" />
-    <Content Include="Images\Icon1F435.png" />
-    <Content Include="Images\Icon1F440.png" />
-    <Content Include="Images\Icon1F52D.png" />
     <Content Include="Images\refresh.png" />
   </ItemGroup>
   <ItemGroup>

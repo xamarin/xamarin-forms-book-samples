@@ -113,14 +113,6 @@
   <ItemGroup>
     <Content Include="Images\edit.png" />
     <Content Include="Images\feature.search.png" />
-    <Content Include="Images\Icon114.png" />
-    <Content Include="Images\Icon133.png" />
-    <Content Include="Images\Icon152.png" />
-    <Content Include="Images\Icon1F435.png" />
-    <Content Include="Images\Icon1F440.png" />
-    <Content Include="Images\Icon1F52D.png" />
-    <Content Include="Images\Icon76.png" />
-    <Content Include="Images\Icon95.png" />
     <Content Include="Images\refresh.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
