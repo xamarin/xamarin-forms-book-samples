@@ -38,6 +38,9 @@
     <Compile Include="AdderViewModel.cs" />
     <Compile Include="AltLabel.cs" />
     <Compile Include="AnalogClockViewModel.cs" />
+    <Compile Include="AnimatedCartesianLayout.cs" />
+    <Compile Include="AspectRatio.cs" />
+    <Compile Include="AspectRatioTypeConverter.cs" />
     <Compile Include="BaseTwoLogConverter.cs" />
     <Compile Include="BezierSpline.cs" />
     <Compile Include="BezierTangent.cs" />
@@ -46,6 +49,7 @@
     <Compile Include="BoolToColorConverter.cs" />
     <Compile Include="BoolToObjectConverter.cs" />
     <Compile Include="BoolToStringConverter.cs" />
+    <Compile Include="CartesianLayout.cs" />
     <Compile Include="CheckBox.xaml.cs">
       <DependentUpon>CheckBox.xaml</DependentUpon>
     </Compile>
@@ -93,8 +97,11 @@
     <Compile Include="ToggleBehavior.cs" />
     <Compile Include="Toolkit.cs" />
     <Compile Include="TranslateAction.cs" />
+    <Compile Include="UniformGridLayout.cs" />
     <Compile Include="ValidEmailBehavior.cs" />
     <Compile Include="ViewModelBase.cs" />
+    <Compile Include="WrapLayout.cs" />
+    <Compile Include="WrapOrientation.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CheckBox.xaml">

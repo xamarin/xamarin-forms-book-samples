@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ExploreChildSizes.RadioButton">
     <Label Text="{Binding Name}"
-           FontSize="Large">
+           FontSize="Medium">
         <Label.GestureRecognizers>
             <TapGestureRecognizer Command="{Binding Command}"
                                   CommandParameter="{Binding Value}"/>

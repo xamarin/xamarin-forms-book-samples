@@ -30,7 +30,7 @@
 
                         <StackLayout HorizontalOptions="Start">
                             <Label Text="Child VerticalOptions"
-                                   FontSize="Large" />
+                                   FontSize="Medium" />
                             <BoxView Color="Accent"
                                      HeightRequest="3" />
                         </StackLayout>
@@ -53,7 +53,7 @@
 
                         <StackLayout HorizontalOptions="Start">
                             <Label Text="Child HorizontalOptions"
-                                   FontSize="Large" />
+                                   FontSize="Medium" />
                             <BoxView Color="Accent"
                                      HeightRequest="3" />
                         </StackLayout>
