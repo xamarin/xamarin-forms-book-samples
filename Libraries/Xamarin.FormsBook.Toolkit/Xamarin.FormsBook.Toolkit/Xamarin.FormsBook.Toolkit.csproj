@@ -79,6 +79,8 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RadioBehavior.cs" />
+    <Compile Include="RadioButtonItem.cs" />
+    <Compile Include="RadioButtonManager.cs" />
     <Compile Include="RotateAction.cs" />
     <Compile Include="ScaleAction.cs" />
     <Compile Include="ScaleUpAndDownAction.cs" />
