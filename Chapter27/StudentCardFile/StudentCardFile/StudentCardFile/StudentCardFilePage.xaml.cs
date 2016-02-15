@@ -72,7 +72,10 @@ namespace StudentCardFile
             // Expose a new child.
             if (!retractOnly)
             {
-                overlapLayout.RaiseChild(tappedChild);
+                // Raise child.
+                overlapLayout.Children.Remove(tappedChild);
+                overlapLayout.Children.Add(tappedChild);
+
                 exposedChild = tappedChild;
             }
         }
