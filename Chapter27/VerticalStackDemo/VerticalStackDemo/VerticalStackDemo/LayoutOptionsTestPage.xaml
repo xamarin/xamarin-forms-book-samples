@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:VerticalStackDemo;assembly=VerticalStackDemo"
+             x:Class="VerticalStackDemo.LayoutOptionsTestPage"
+             Title="Test Layout Options">
+
+    <local:VerticalStack Padding="50, 0"
+                         VerticalOptions="Center">
+        <Button Text="Default" />
+
+        <Button Text="Start"
+                HorizontalOptions="Start" />
+
+        <Button Text="Center"
+                HorizontalOptions="Center" />
+
+        <Button Text="End"
+                HorizontalOptions="End" />
+
+        <Button Text="Fill"
+                HorizontalOptions="Fill" />
+    </local:VerticalStack>
+</ContentPage>

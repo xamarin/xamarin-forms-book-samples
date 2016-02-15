@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="UnitCube.UnitCubePage">
+
+    <toolkit:CartesianLayout BackgroundColor="Yellow"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center">
+        <toolkit:CartesianLayout.Resources>
+            <ResourceDictionary>
+                <Style  x:Key="baseStyle" TargetType="BoxView">
+                    <Setter Property="Color" Value="Blue" />
+                    <Setter Property="toolkit:CartesianLayout.Thickness" Value="3" />
+                </Style>
+
+                <Style x:Key="hiddenStyle" TargetType="BoxView" 
+                       BasedOn="{StaticResource baseStyle}">
+                    <Setter Property="Opacity" Value="0.25" />
+                </Style>
+
+                <!-- Implicit style. -->
+                <Style TargetType="BoxView" 
+                       BasedOn="{StaticResource baseStyle}" />
+                
+            </ResourceDictionary>
+        </toolkit:CartesianLayout.Resources>
+        
+        <!-- Three "hidden" edges first in the background -->
+        <!-- Rear edges -->
+        <BoxView toolkit:CartesianLayout.Point1="0.25, 0.75"
+                 toolkit:CartesianLayout.Point2="0.25, -0.25"
+                 Style="{StaticResource hiddenStyle}" />
+
+        <BoxView toolkit:CartesianLayout.Point1="0.25, -0.25"
+                 toolkit:CartesianLayout.Point2="-0.75, -0.25"
+                 Style="{StaticResource hiddenStyle}" />
+        
+        <!-- Front to rear edge -->
+        <BoxView toolkit:CartesianLayout.Point1="0.5, -0.5"
+                 toolkit:CartesianLayout.Point2="0.25, -0.25"
+                 Style="{StaticResource hiddenStyle}" />
+
+        <!-- Front edges -->        
+        <BoxView toolkit:CartesianLayout.Point1="-0.5, 0.5"
+                 toolkit:CartesianLayout.Point2="0.5, 0.5" />
+
+        <BoxView toolkit:CartesianLayout.Point1="0.5, 0.5"
+                 toolkit:CartesianLayout.Point2="0.5, -0.5" />
+
+        <BoxView toolkit:CartesianLayout.Point1="0.5, -0.5"
+                 toolkit:CartesianLayout.Point2="-0.5, -0.5" />
+
+        <BoxView toolkit:CartesianLayout.Point1="-0.5, -0.5"
+                 toolkit:CartesianLayout.Point2="-0.5, 0.5" />
+
+        <!-- Rear edges -->
+        <BoxView toolkit:CartesianLayout.Point1="-0.75, 0.75"
+                 toolkit:CartesianLayout.Point2="0.25, 0.75" />
+
+        <BoxView toolkit:CartesianLayout.Point1="-0.75, -0.25"
+                 toolkit:CartesianLayout.Point2="-0.75, 0.75" />
+
+        <!-- Front to rear edges -->
+        <BoxView toolkit:CartesianLayout.Point1="-0.5, 0.5"
+                 toolkit:CartesianLayout.Point2="-0.75, 0.75" />
+
+        <BoxView toolkit:CartesianLayout.Point1="0.5, 0.5"
+                 toolkit:CartesianLayout.Point2="0.25, 0.75" />
+
+        <BoxView toolkit:CartesianLayout.Point1="-0.5, -0.5"
+                 toolkit:CartesianLayout.Point2="-0.75, -0.25" />
+    </toolkit:CartesianLayout>
+</ContentPage>
