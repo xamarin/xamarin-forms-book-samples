@@ -6,24 +6,30 @@ namespace ExploreChildSizes
     class OpenBoxView : BoxView
     {
         static readonly BindablePropertyKey ConstraintKey =
-            BindableProperty.CreateReadOnly<OpenBoxView, Size>
-                (openLabel => openLabel.Constraint,
+            BindableProperty.CreateReadOnly(
+                "Constraint",
+                typeof(Size),
+                typeof(OpenBoxView),
                 new Size());
 
         public static readonly BindableProperty ConstraintProperty = 
             ConstraintKey.BindableProperty;
 
         static readonly BindablePropertyKey SizeRequestKey =
-            BindableProperty.CreateReadOnly<OpenBoxView, SizeRequest>
-                (openLabel => openLabel.SizeRequest,
+            BindableProperty.CreateReadOnly(
+                "SizeRequest",
+                typeof(SizeRequest),
+                typeof(OpenBoxView),
                 new SizeRequest());
 
         public static readonly BindableProperty SizeRequestProperty = 
             SizeRequestKey.BindableProperty;
 
         static readonly BindablePropertyKey ElementBoundsKey =
-            BindableProperty.CreateReadOnly<OpenBoxView, Rectangle>
-                (openLabel => openLabel.ElementBounds,
+            BindableProperty.CreateReadOnly(
+                "ElementBounds",
+                typeof(Rectangle),
+                typeof(OpenBoxView),
                 new Rectangle());
 
         public static readonly BindableProperty ElementBoundsProperty = 

@@ -6,32 +6,40 @@ namespace ExploreChildSizes
     class OpenStackLayout : StackLayout
     {
         static readonly BindablePropertyKey ConstraintKey =
-            BindableProperty.CreateReadOnly<OpenStackLayout, Size>
-                (openLabel => openLabel.Constraint,
+            BindableProperty.CreateReadOnly(
+                "Constraint",
+                typeof(Size),
+                typeof(OpenStackLayout),
                 new Size());
 
         public static readonly BindableProperty ConstraintProperty = 
             ConstraintKey.BindableProperty;
 
         static readonly BindablePropertyKey SizeRequestKey =
-            BindableProperty.CreateReadOnly<OpenStackLayout, SizeRequest>
-                (openLabel => openLabel.SizeRequest,
+            BindableProperty.CreateReadOnly(
+                "SizeRequest",
+                typeof(SizeRequest),
+                typeof(OpenStackLayout),
                 new SizeRequest());
 
         public static readonly BindableProperty SizeRequestProperty = 
             SizeRequestKey.BindableProperty;
 
         static readonly BindablePropertyKey ElementBoundsKey =
-            BindableProperty.CreateReadOnly<OpenStackLayout, Rectangle>
-                (openLabel => openLabel.ElementBounds,
+            BindableProperty.CreateReadOnly(
+                "ElementBounds",
+                typeof(Rectangle),
+                typeof(OpenStackLayout),
                 new Rectangle());
 
         public static readonly BindableProperty ElementBoundsProperty = 
             ElementBoundsKey.BindableProperty;
 
         static readonly BindablePropertyKey LayoutBoundsKey =
-            BindableProperty.CreateReadOnly<OpenStackLayout, Rectangle>
-                (openLabel => openLabel.LayoutBounds,
+            BindableProperty.CreateReadOnly(
+                "LayoutBounds",
+                typeof(Rectangle),
+                typeof(OpenStackLayout),
                 new Rectangle());
 
         public static readonly BindableProperty LayoutBoundsProperty = 
