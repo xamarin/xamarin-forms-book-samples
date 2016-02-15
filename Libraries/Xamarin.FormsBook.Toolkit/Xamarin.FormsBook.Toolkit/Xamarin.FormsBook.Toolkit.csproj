@@ -78,6 +78,7 @@
     <Compile Include="NumericValidationAction.cs" />
     <Compile Include="NumericValidationBehavior.cs" />
     <Compile Include="ObjectToIndexConverter.cs" />
+    <Compile Include="OverlapLayout.cs" />
     <Compile Include="PickerCell.xaml.cs">
       <DependentUpon>PickerCell.xaml</DependentUpon>
     </Compile>
