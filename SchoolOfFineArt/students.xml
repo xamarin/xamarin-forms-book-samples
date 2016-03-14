@@ -3,47 +3,245 @@
   <School>School of Fine Art</School>
   <Students>
     <Student>
-      <FullName>Kim Abercrombie</FullName>
-      <FirstName>Kim</FirstName>
+      <FullName>Adam Harmetz</FullName>
+      <FirstName>Adam</FirstName>
       <MiddleName />
-      <LastName>Abercrombie</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/KimAbercrombie.png</PhotoFilename>
-      <GradePointAverage>2.22</GradePointAverage>
+      <LastName>Harmetz</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/AdamHarmetz.png</PhotoFilename>
+      <GradePointAverage>3.01</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Alan Brewer</FullName>
+      <FirstName>Alan</FirstName>
+      <MiddleName />
+      <LastName>Brewer</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/AlanBrewer.png</PhotoFilename>
+      <GradePointAverage>1.17</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Alex J. Simmons</FullName>
+      <FirstName>Alex</FirstName>
+      <MiddleName>J.</MiddleName>
+      <LastName>Simmons</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/AlexSimmons.png</PhotoFilename>
+      <GradePointAverage>3.31</GradePointAverage>
     </Student>
     <Student>
       <FullName>Amy E. Alberts</FullName>
       <FirstName>Amy</FirstName>
       <MiddleName>E.</MiddleName>
       <LastName>Alberts</LastName>
-      <Sex>ale</Sex>
+      <Sex>Female</Sex>
       <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/AmyAlberts.png</PhotoFilename>
       <GradePointAverage>3.53</GradePointAverage>
     </Student>
     <Student>
-      <FullName>Nancy Anderson</FullName>
-      <FirstName>Nancy</FirstName>
+      <FullName>Amy Strande</FullName>
+      <FirstName>Amy</FirstName>
       <MiddleName />
-      <LastName>Anderson</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/NancyAnderson.png</PhotoFilename>
-      <GradePointAverage>2.67</GradePointAverage>
+      <LastName>Strande</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/AmyStrande.png</PhotoFilename>
+      <GradePointAverage>3.77</GradePointAverage>
     </Student>
     <Student>
-      <FullName>Shir Aviv-Reuven</FullName>
-      <FirstName>Shir</FirstName>
+      <FullName>Andreas Hanefeld Dziegiel</FullName>
+      <FirstName>Andreas</FirstName>
+      <MiddleName>Hanefeld</MiddleName>
+      <LastName>Dziegiel</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/AndreasDziegiel.png</PhotoFilename>
+      <GradePointAverage>1.88</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Arvind B. Rao</FullName>
+      <FirstName>Arvind</FirstName>
+      <MiddleName>B.</MiddleName>
+      <LastName>Rao</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/ArvindRao.png</PhotoFilename>
+      <GradePointAverage>3.19</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Barbara Zighetti</FullName>
+      <FirstName>Barbara</FirstName>
       <MiddleName />
-      <LastName>Aviv-Reuven</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/ShirAviv-Reuven.png</PhotoFilename>
-      <GradePointAverage>3.27</GradePointAverage>
+      <LastName>Zighetti</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/BarbaraZighetti.png</PhotoFilename>
+      <GradePointAverage>3.62</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Chad Niswonger</FullName>
+      <FirstName>Chad</FirstName>
+      <MiddleName />
+      <LastName>Niswonger</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/ChadNiswonger.png</PhotoFilename>
+      <GradePointAverage>3.5</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Cliff Didcock</FullName>
+      <FirstName>Cliff</FirstName>
+      <MiddleName />
+      <LastName>Didcock</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/CliffDidcock.png</PhotoFilename>
+      <GradePointAverage>2.26</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Cynthia Carey</FullName>
+      <FirstName>Cynthia</FirstName>
+      <MiddleName />
+      <LastName>Carey</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/CynthiaCarey.png</PhotoFilename>
+      <GradePointAverage>3.04</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Eliot J. Graff</FullName>
+      <FirstName>Eliot</FirstName>
+      <MiddleName>J.</MiddleName>
+      <LastName>Graff</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/EliotGraff.png</PhotoFilename>
+      <GradePointAverage>2.2</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Endre Bognar</FullName>
+      <FirstName>Endre</FirstName>
+      <MiddleName />
+      <LastName>Bognar</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/EndreBognar.png</PhotoFilename>
+      <GradePointAverage>1.29</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Guy Gilbert</FullName>
+      <FirstName>Guy</FirstName>
+      <MiddleName />
+      <LastName>Gilbert</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/GuyGilbert.png</PhotoFilename>
+      <GradePointAverage>2.9</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Isabelle Scemla</FullName>
+      <FirstName>Isabelle</FirstName>
+      <MiddleName />
+      <LastName>Scemla</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/IsabelleScemla.png</PhotoFilename>
+      <GradePointAverage>2.43</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Ivo Haemels</FullName>
+      <FirstName>Ivo</FirstName>
+      <MiddleName />
+      <LastName>Haemels</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/IvoHaemels.png</PhotoFilename>
+      <GradePointAverage>1.02</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Jacek Maśliński</FullName>
+      <FirstName>Jacek</FirstName>
+      <MiddleName />
+      <LastName>Maśliński</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JacekMaśliński.png</PhotoFilename>
+      <GradePointAverage>2.15</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Jack S. Richins</FullName>
+      <FirstName>Jack</FirstName>
+      <MiddleName>S.</MiddleName>
+      <LastName>Richins</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JackRichins.png</PhotoFilename>
+      <GradePointAverage>2.52</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>James Hendergart</FullName>
+      <FirstName>James</FirstName>
+      <MiddleName />
+      <LastName>Hendergart</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JamesHendergart.png</PhotoFilename>
+      <GradePointAverage>2.51</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Jason Kozleski</FullName>
+      <FirstName>Jason</FirstName>
+      <MiddleName />
+      <LastName>Kozleski</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JasonKozleski.png</PhotoFilename>
+      <GradePointAverage>3</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Jeff Phillips</FullName>
+      <FirstName>Jeff</FirstName>
+      <MiddleName />
+      <LastName>Phillips</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JeffPhillips.png</PhotoFilename>
+      <GradePointAverage>1.2</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Jenny Liu</FullName>
+      <FirstName>Jenny</FirstName>
+      <MiddleName />
+      <LastName>Liu</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JennyLiu.png</PhotoFilename>
+      <GradePointAverage>2.79</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Jesse Merriam</FullName>
+      <FirstName>Jesse</FirstName>
+      <MiddleName />
+      <LastName>Merriam</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JesseMerriam.png</PhotoFilename>
+      <GradePointAverage>2.74</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>John Yokim</FullName>
+      <FirstName>John</FirstName>
+      <MiddleName />
+      <LastName>Yokim</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JohnYokim.png</PhotoFilename>
+      <GradePointAverage>2.06</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Jón Harry Óskarsson</FullName>
+      <FirstName>Jón</FirstName>
+      <MiddleName>Harry</MiddleName>
+      <LastName>Óskarsson</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JónÓskarsson.png</PhotoFilename>
+      <GradePointAverage>2.02</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Jonathan Poon</FullName>
+      <FirstName>Jonathan</FirstName>
+      <MiddleName />
+      <LastName>Poon</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JonathanPoon.png</PhotoFilename>
+      <GradePointAverage>2.78</GradePointAverage>
     </Student>
     <Student>
       <FullName>Josh Barnhill</FullName>
       <FirstName>Josh</FirstName>
       <MiddleName />
       <LastName>Barnhill</LastName>
-      <Sex>ale</Sex>
+      <Sex>Male</Sex>
       <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JoshBarnhill.png</PhotoFilename>
       <GradePointAverage>2.93</GradePointAverage>
     </Student>
@@ -52,540 +250,342 @@
       <FirstName>Karen</FirstName>
       <MiddleName />
       <LastName>Berg</LastName>
-      <Sex>ale</Sex>
+      <Sex>Female</Sex>
       <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/KarenBerg.png</PhotoFilename>
       <GradePointAverage>2.17</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Endre Bognar</FullName>
-      <FirstName>Endre</FirstName>
-      <MiddleName />
-      <LastName>Bognar</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/EndreBognar.png</PhotoFilename>
-      <GradePointAverage>1.29</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Alan Brewer</FullName>
-      <FirstName>Alan</FirstName>
-      <MiddleName />
-      <LastName>Brewer</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/AlanBrewer.png</PhotoFilename>
-      <GradePointAverage>1.17</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Tzipi Butnaru</FullName>
-      <FirstName>Tzipi</FirstName>
-      <MiddleName />
-      <LastName>Butnaru</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/TzipiButnaru.png</PhotoFilename>
-      <GradePointAverage>3.76</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Cynthia Carey</FullName>
-      <FirstName>Cynthia</FirstName>
-      <MiddleName />
-      <LastName>Carey</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/CynthiaCarey.png</PhotoFilename>
-      <GradePointAverage>3.04</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Lucia Ceckova</FullName>
-      <FirstName>Lucia</FirstName>
-      <MiddleName />
-      <LastName>Ceckova</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/LuciaCeckova.png</PhotoFilename>
-      <GradePointAverage>3.77</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Ray Chow</FullName>
-      <FirstName>Ray</FirstName>
-      <MiddleName />
-      <LastName>Chow</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/RayChow.png</PhotoFilename>
-      <GradePointAverage>1.74</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Robin Counts</FullName>
-      <FirstName>Robin</FirstName>
-      <MiddleName />
-      <LastName>Counts</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/RobinCounts.png</PhotoFilename>
-      <GradePointAverage>1.15</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Sara Davis</FullName>
-      <FirstName>Sara</FirstName>
-      <MiddleName />
-      <LastName>Davis</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/SaraDavis.png</PhotoFilename>
-      <GradePointAverage>3.2</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Cliff Didcock</FullName>
-      <FirstName>Cliff</FirstName>
-      <MiddleName />
-      <LastName>Didcock</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/CliffDidcock.png</PhotoFilename>
-      <GradePointAverage>2.26</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Andreas Hanefeld Dziegiel</FullName>
-      <FirstName>Andreas</FirstName>
-      <MiddleName>Hanefeld</MiddleName>
-      <LastName>Dziegiel</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/AndreasDziegiel.png</PhotoFilename>
-      <GradePointAverage>1.88</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Modesto Estrada</FullName>
-      <FirstName>Modesto</FirstName>
-      <MiddleName />
-      <LastName>Estrada</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/ModestoEstrada.png</PhotoFilename>
-      <GradePointAverage>1.13</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Raymond Fong</FullName>
-      <FirstName>Raymond</FirstName>
-      <MiddleName />
-      <LastName>Fong</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/RaymondFong.png</PhotoFilename>
-      <GradePointAverage>3.36</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Mike Gahrns</FullName>
-      <FirstName>Mike</FirstName>
-      <MiddleName />
-      <LastName>Gahrns</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/MikeGahrns.png</PhotoFilename>
-      <GradePointAverage>3.31</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Guy Gilbert</FullName>
-      <FirstName>Guy</FirstName>
-      <MiddleName />
-      <LastName>Gilbert</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/GuyGilbert.png</PhotoFilename>
-      <GradePointAverage>2.9</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Eliot J. Graff</FullName>
-      <FirstName>Eliot</FirstName>
-      <MiddleName>J.</MiddleName>
-      <LastName>Graff</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/EliotGraff.png</PhotoFilename>
-      <GradePointAverage>2.2</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Ivo Haemels</FullName>
-      <FirstName>Ivo</FirstName>
-      <MiddleName />
-      <LastName>Haemels</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/IvoHaemels.png</PhotoFilename>
-      <GradePointAverage>1.02</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Adam Harmetz</FullName>
-      <FirstName>Adam</FirstName>
-      <MiddleName />
-      <LastName>Harmetz</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/AdamHarmetz.png</PhotoFilename>
-      <GradePointAverage>3.01</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>James Hendergart</FullName>
-      <FirstName>James</FirstName>
-      <MiddleName />
-      <LastName>Hendergart</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JamesHendergart.png</PhotoFilename>
-      <GradePointAverage>2.51</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Patrick Hines</FullName>
-      <FirstName>Patrick</FirstName>
-      <MiddleName />
-      <LastName>Hines</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/PatrickHines.png</PhotoFilename>
-      <GradePointAverage>3.04</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Raman Iyer</FullName>
-      <FirstName>Raman</FirstName>
-      <MiddleName />
-      <LastName>Iyer</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/RamanIyer.png</PhotoFilename>
-      <GradePointAverage>3.41</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Thomas Søndergaard Jensen</FullName>
-      <FirstName>Thomas</FirstName>
-      <MiddleName>Søndergaard</MiddleName>
-      <LastName>Jensen</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/ThomasJensen.png</PhotoFilename>
-      <GradePointAverage>2.08</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Sandeep Kaliyath</FullName>
-      <FirstName>Sandeep</FirstName>
-      <MiddleName />
-      <LastName>Kaliyath</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/SandeepKaliyath.png</PhotoFilename>
-      <GradePointAverage>3.55</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Kendall Keil</FullName>
-      <FirstName>Kendall</FirstName>
-      <MiddleName />
-      <LastName>Keil</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/KendallKeil.png</PhotoFilename>
-      <GradePointAverage>2.17</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Michael Khoury</FullName>
-      <FirstName>Michael</FirstName>
-      <MiddleName />
-      <LastName>Khoury</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/MichaelKhoury.png</PhotoFilename>
-      <GradePointAverage>1.2</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Paul Koch</FullName>
-      <FirstName>Paul</FirstName>
-      <MiddleName />
-      <LastName>Koch</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/PaulKoch.png</PhotoFilename>
-      <GradePointAverage>3.64</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Jason Kozleski</FullName>
-      <FirstName>Jason</FirstName>
-      <MiddleName />
-      <LastName>Kozleski</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JasonKozleski.png</PhotoFilename>
-      <GradePointAverage>3</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Katka Kutejova</FullName>
-      <FirstName>Katka</FirstName>
-      <MiddleName />
-      <LastName>Kutejova</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/KatkaKutejova.png</PhotoFilename>
-      <GradePointAverage>2.21</GradePointAverage>
     </Student>
     <Student>
       <FullName>Karina Leal</FullName>
       <FirstName>Karina</FirstName>
       <MiddleName />
       <LastName>Leal</LastName>
-      <Sex>ale</Sex>
+      <Sex>Female</Sex>
       <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/KarinaLeal.png</PhotoFilename>
       <GradePointAverage>2.57</GradePointAverage>
     </Student>
     <Student>
-      <FullName>Jenny Liu</FullName>
-      <FirstName>Jenny</FirstName>
+      <FullName>Katka Kutejova</FullName>
+      <FirstName>Katka</FirstName>
       <MiddleName />
-      <LastName>Liu</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JennyLiu.png</PhotoFilename>
-      <GradePointAverage>2.79</GradePointAverage>
+      <LastName>Kutejova</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/KatkaKutejova.png</PhotoFilename>
+      <GradePointAverage>2.21</GradePointAverage>
     </Student>
     <Student>
-      <FullName>Richard Lum</FullName>
-      <FirstName>Richard</FirstName>
+      <FullName>Kendall Keil</FullName>
+      <FirstName>Kendall</FirstName>
       <MiddleName />
-      <LastName>Lum</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/RichardLum.png</PhotoFilename>
-      <GradePointAverage>3.85</GradePointAverage>
+      <LastName>Keil</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/KendallKeil.png</PhotoFilename>
+      <GradePointAverage>2.17</GradePointAverage>
     </Student>
     <Student>
-      <FullName>Zrinka Makovac</FullName>
-      <FirstName>Zrinka</FirstName>
+      <FullName>Kim Abercrombie</FullName>
+      <FirstName>Kim</FirstName>
       <MiddleName />
-      <LastName>Makovac</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/ZrinkaMakovac.png</PhotoFilename>
-      <GradePointAverage>2.73</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Jacek Maśliński</FullName>
-      <FirstName>Jacek</FirstName>
-      <MiddleName />
-      <LastName>Maśliński</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JacekMaśliński.png</PhotoFilename>
-      <GradePointAverage>2.15</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Jesse Merriam</FullName>
-      <FirstName>Jesse</FirstName>
-      <MiddleName />
-      <LastName>Merriam</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JesseMerriam.png</PhotoFilename>
-      <GradePointAverage>2.74</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Linda Mitchell</FullName>
-      <FirstName>Linda</FirstName>
-      <MiddleName />
-      <LastName>Mitchell</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/LindaMitchell.png</PhotoFilename>
-      <GradePointAverage>1.31</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Liberty Munson</FullName>
-      <FirstName>Liberty</FirstName>
-      <MiddleName />
-      <LastName>Munson</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/LibertyMunson.png</PhotoFilename>
-      <GradePointAverage>2.87</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Chad Niswonger</FullName>
-      <FirstName>Chad</FirstName>
-      <MiddleName />
-      <LastName>Niswonger</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/ChadNiswonger.png</PhotoFilename>
-      <GradePointAverage>3.5</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Jón Harry Óskarsson</FullName>
-      <FirstName>Jón</FirstName>
-      <MiddleName>Harry</MiddleName>
-      <LastName>Óskarsson</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JónÓskarsson.png</PhotoFilename>
-      <GradePointAverage>2.02</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Pannarat Pattanapitakkul</FullName>
-      <FirstName>Pannarat</FirstName>
-      <MiddleName />
-      <LastName>Pattanapitakkul</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/PannaratPattanapitakkul.png</PhotoFilename>
-      <GradePointAverage>3.31</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Jeff Phillips</FullName>
-      <FirstName>Jeff</FirstName>
-      <MiddleName />
-      <LastName>Phillips</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JeffPhillips.png</PhotoFilename>
-      <GradePointAverage>1.2</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Jonathan Poon</FullName>
-      <FirstName>Jonathan</FirstName>
-      <MiddleName />
-      <LastName>Poon</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JonathanPoon.png</PhotoFilename>
-      <GradePointAverage>2.78</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Arvind B. Rao</FullName>
-      <FirstName>Arvind</FirstName>
-      <MiddleName>B.</MiddleName>
-      <LastName>Rao</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/ArvindRao.png</PhotoFilename>
-      <GradePointAverage>3.19</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Jack S. Richins</FullName>
-      <FirstName>Jack</FirstName>
-      <MiddleName>S.</MiddleName>
-      <LastName>Richins</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JackRichins.png</PhotoFilename>
-      <GradePointAverage>2.52</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Pablo Rovira Diez</FullName>
-      <FirstName>Pablo</FirstName>
-      <MiddleName />
-      <LastName>Rovira Diez</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/PabloRovira Diez.png</PhotoFilename>
-      <GradePointAverage>1.22</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Sharon Salavaria</FullName>
-      <FirstName>Sharon</FirstName>
-      <MiddleName />
-      <LastName>Salavaria</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/SharonSalavaria.png</PhotoFilename>
-      <GradePointAverage>3.29</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Isabelle Scemla</FullName>
-      <FirstName>Isabelle</FirstName>
-      <MiddleName />
-      <LastName>Scemla</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/IsabelleScemla.png</PhotoFilename>
-      <GradePointAverage>2.43</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Niraj Shah</FullName>
-      <FirstName>Niraj</FirstName>
-      <MiddleName />
-      <LastName>Shah</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/NirajShah.png</PhotoFilename>
-      <GradePointAverage>1.58</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Alex J. Simmons</FullName>
-      <FirstName>Alex</FirstName>
-      <MiddleName>J.</MiddleName>
-      <LastName>Simmons</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/AlexSimmons.png</PhotoFilename>
-      <GradePointAverage>3.31</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Samantha Smith</FullName>
-      <FirstName>Samantha</FirstName>
-      <MiddleName />
-      <LastName>Smith</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/SamanthaSmith.png</PhotoFilename>
-      <GradePointAverage>1.32</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Mahesh Sreenivas</FullName>
-      <FirstName>Mahesh</FirstName>
-      <MiddleName />
-      <LastName>Sreenivas</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/MaheshSreenivas.png</PhotoFilename>
-      <GradePointAverage>2.66</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Amy Strande</FullName>
-      <FirstName>Amy</FirstName>
-      <MiddleName />
-      <LastName>Strande</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/AmyStrande.png</PhotoFilename>
-      <GradePointAverage>3.77</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Oliver Szimmetat</FullName>
-      <FirstName>Oliver</FirstName>
-      <MiddleName />
-      <LastName>Szimmetat</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/OliverSzimmetat.png</PhotoFilename>
-      <GradePointAverage>2.07</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Linda Timm</FullName>
-      <FirstName>Linda</FirstName>
-      <MiddleName />
-      <LastName>Timm</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/LindaTimm.png</PhotoFilename>
-      <GradePointAverage>1.75</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Michael Tucker</FullName>
-      <FirstName>Michael</FirstName>
-      <MiddleName />
-      <LastName>Tucker</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/MichaelTucker.png</PhotoFilename>
-      <GradePointAverage>1.05</GradePointAverage>
-    </Student>
-    <Student>
-      <FullName>Raja D. Venugopal</FullName>
-      <FirstName>Raja</FirstName>
-      <MiddleName>D.</MiddleName>
-      <LastName>Venugopal</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/RajaVenugopal.png</PhotoFilename>
-      <GradePointAverage>3.58</GradePointAverage>
+      <LastName>Abercrombie</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/KimAbercrombie.png</PhotoFilename>
+      <GradePointAverage>2.22</GradePointAverage>
     </Student>
     <Student>
       <FullName>Larry Waldman</FullName>
       <FirstName>Larry</FirstName>
       <MiddleName />
       <LastName>Waldman</LastName>
-      <Sex>ale</Sex>
+      <Sex>Male</Sex>
       <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/LarryWaldman.png</PhotoFilename>
       <GradePointAverage>2.54</GradePointAverage>
     </Student>
     <Student>
-      <FullName>Tom Werner</FullName>
-      <FirstName>Tom</FirstName>
+      <FullName>Liberty Munson</FullName>
+      <FirstName>Liberty</FirstName>
       <MiddleName />
-      <LastName>Werner</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/TomWerner.png</PhotoFilename>
-      <GradePointAverage>1.4</GradePointAverage>
+      <LastName>Munson</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/LibertyMunson.png</PhotoFilename>
+      <GradePointAverage>2.87</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Linda Mitchell</FullName>
+      <FirstName>Linda</FirstName>
+      <MiddleName />
+      <LastName>Mitchell</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/LindaMitchell.png</PhotoFilename>
+      <GradePointAverage>1.31</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Linda Timm</FullName>
+      <FirstName>Linda</FirstName>
+      <MiddleName />
+      <LastName>Timm</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/LindaTimm.png</PhotoFilename>
+      <GradePointAverage>1.75</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Lucia Ceckova</FullName>
+      <FirstName>Lucia</FirstName>
+      <MiddleName />
+      <LastName>Ceckova</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/LuciaCeckova.png</PhotoFilename>
+      <GradePointAverage>3.77</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Mahesh Sreenivas</FullName>
+      <FirstName>Mahesh</FirstName>
+      <MiddleName />
+      <LastName>Sreenivas</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/MaheshSreenivas.png</PhotoFilename>
+      <GradePointAverage>2.66</GradePointAverage>
     </Student>
     <Student>
       <FullName>Mariusz Wolodzko</FullName>
       <FirstName>Mariusz</FirstName>
       <MiddleName />
       <LastName>Wolodzko</LastName>
-      <Sex>ale</Sex>
+      <Sex>Male</Sex>
       <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/MariuszWolodzko.png</PhotoFilename>
       <GradePointAverage>3.68</GradePointAverage>
     </Student>
     <Student>
-      <FullName>John Yokim</FullName>
-      <FirstName>John</FirstName>
+      <FullName>Michael Khoury</FullName>
+      <FirstName>Michael</FirstName>
       <MiddleName />
-      <LastName>Yokim</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/JohnYokim.png</PhotoFilename>
-      <GradePointAverage>2.06</GradePointAverage>
+      <LastName>Khoury</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/MichaelKhoury.png</PhotoFilename>
+      <GradePointAverage>1.2</GradePointAverage>
     </Student>
     <Student>
-      <FullName>Barbara Zighetti</FullName>
-      <FirstName>Barbara</FirstName>
+      <FullName>Michael Tucker</FullName>
+      <FirstName>Michael</FirstName>
       <MiddleName />
-      <LastName>Zighetti</LastName>
-      <Sex>ale</Sex>
-      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/BarbaraZighetti.png</PhotoFilename>
-      <GradePointAverage>3.62</GradePointAverage>
+      <LastName>Tucker</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/MichaelTucker.png</PhotoFilename>
+      <GradePointAverage>1.05</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Mike Gahrns</FullName>
+      <FirstName>Mike</FirstName>
+      <MiddleName />
+      <LastName>Gahrns</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/MikeGahrns.png</PhotoFilename>
+      <GradePointAverage>3.31</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Modesto Estrada</FullName>
+      <FirstName>Modesto</FirstName>
+      <MiddleName />
+      <LastName>Estrada</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/ModestoEstrada.png</PhotoFilename>
+      <GradePointAverage>1.13</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Nancy Anderson</FullName>
+      <FirstName>Nancy</FirstName>
+      <MiddleName />
+      <LastName>Anderson</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/NancyAnderson.png</PhotoFilename>
+      <GradePointAverage>2.67</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Niraj Shah</FullName>
+      <FirstName>Niraj</FirstName>
+      <MiddleName />
+      <LastName>Shah</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/NirajShah.png</PhotoFilename>
+      <GradePointAverage>1.58</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Oliver Szimmetat</FullName>
+      <FirstName>Oliver</FirstName>
+      <MiddleName />
+      <LastName>Szimmetat</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/OliverSzimmetat.png</PhotoFilename>
+      <GradePointAverage>2.07</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Pablo Rovira Diez</FullName>
+      <FirstName>Pablo</FirstName>
+      <MiddleName />
+      <LastName>Rovira Diez</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/PabloRovira Diez.png</PhotoFilename>
+      <GradePointAverage>1.22</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Pannarat Pattanapitakkul</FullName>
+      <FirstName>Pannarat</FirstName>
+      <MiddleName />
+      <LastName>Pattanapitakkul</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/PannaratPattanapitakkul.png</PhotoFilename>
+      <GradePointAverage>3.31</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Patrick Hines</FullName>
+      <FirstName>Patrick</FirstName>
+      <MiddleName />
+      <LastName>Hines</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/PatrickHines.png</PhotoFilename>
+      <GradePointAverage>3.04</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Paul Koch</FullName>
+      <FirstName>Paul</FirstName>
+      <MiddleName />
+      <LastName>Koch</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/PaulKoch.png</PhotoFilename>
+      <GradePointAverage>3.64</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Raja D. Venugopal</FullName>
+      <FirstName>Raja</FirstName>
+      <MiddleName>D.</MiddleName>
+      <LastName>Venugopal</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/RajaVenugopal.png</PhotoFilename>
+      <GradePointAverage>3.58</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Raman Iyer</FullName>
+      <FirstName>Raman</FirstName>
+      <MiddleName />
+      <LastName>Iyer</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/RamanIyer.png</PhotoFilename>
+      <GradePointAverage>3.41</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Ray Chow</FullName>
+      <FirstName>Ray</FirstName>
+      <MiddleName />
+      <LastName>Chow</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/RayChow.png</PhotoFilename>
+      <GradePointAverage>1.74</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Raymond Fong</FullName>
+      <FirstName>Raymond</FirstName>
+      <MiddleName />
+      <LastName>Fong</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/RaymondFong.png</PhotoFilename>
+      <GradePointAverage>3.36</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Richard Lum</FullName>
+      <FirstName>Richard</FirstName>
+      <MiddleName />
+      <LastName>Lum</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/RichardLum.png</PhotoFilename>
+      <GradePointAverage>3.85</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Robin Counts</FullName>
+      <FirstName>Robin</FirstName>
+      <MiddleName />
+      <LastName>Counts</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/RobinCounts.png</PhotoFilename>
+      <GradePointAverage>1.15</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Samantha Smith</FullName>
+      <FirstName>Samantha</FirstName>
+      <MiddleName />
+      <LastName>Smith</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/SamanthaSmith.png</PhotoFilename>
+      <GradePointAverage>1.32</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Sandeep Kaliyath</FullName>
+      <FirstName>Sandeep</FirstName>
+      <MiddleName />
+      <LastName>Kaliyath</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/SandeepKaliyath.png</PhotoFilename>
+      <GradePointAverage>3.55</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Sara Davis</FullName>
+      <FirstName>Sara</FirstName>
+      <MiddleName />
+      <LastName>Davis</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/SaraDavis.png</PhotoFilename>
+      <GradePointAverage>3.2</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Sharon Salavaria</FullName>
+      <FirstName>Sharon</FirstName>
+      <MiddleName />
+      <LastName>Salavaria</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/SharonSalavaria.png</PhotoFilename>
+      <GradePointAverage>3.29</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Shir Aviv-Reuven</FullName>
+      <FirstName>Shir</FirstName>
+      <MiddleName />
+      <LastName>Aviv-Reuven</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/ShirAviv-Reuven.png</PhotoFilename>
+      <GradePointAverage>3.27</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Thomas Søndergaard Jensen</FullName>
+      <FirstName>Thomas</FirstName>
+      <MiddleName>Søndergaard</MiddleName>
+      <LastName>Jensen</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/ThomasJensen.png</PhotoFilename>
+      <GradePointAverage>2.08</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Tom Werner</FullName>
+      <FirstName>Tom</FirstName>
+      <MiddleName />
+      <LastName>Werner</LastName>
+      <Sex>Male</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/TomWerner.png</PhotoFilename>
+      <GradePointAverage>1.4</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Tzipi Butnaru</FullName>
+      <FirstName>Tzipi</FirstName>
+      <MiddleName />
+      <LastName>Butnaru</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/TzipiButnaru.png</PhotoFilename>
+      <GradePointAverage>3.76</GradePointAverage>
+    </Student>
+    <Student>
+      <FullName>Zrinka Makovac</FullName>
+      <FirstName>Zrinka</FirstName>
+      <MiddleName />
+      <LastName>Makovac</LastName>
+      <Sex>Female</Sex>
+      <PhotoFilename>http://xamarin.github.io/xamarin-forms-book-samples/SchoolOfFineArt/ZrinkaMakovac.png</PhotoFilename>
+      <GradePointAverage>2.73</GradePointAverage>
     </Student>
   </Students>
 </StudentBody>
