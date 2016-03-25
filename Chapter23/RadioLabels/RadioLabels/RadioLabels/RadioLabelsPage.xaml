@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             xmlns:local="clr-namespace:RadioLabels"
+             x:Class="RadioLabels.RadioLabelsPage"
+             Padding="0, 50, 0, 0">
+
+    <StackLayout>
+        <Grid>
+            <Grid.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="Label">
+                        <Setter Property="FontSize" Value="Medium" />
+                        <Setter Property="HorizontalTextAlignment" Value="Center" />
+                    </Style>
+                </ResourceDictionary>
+            </Grid.Resources>
+
+            <Label Text="Small"
+                   TextColor="Gray"
+                   Grid.Column="0">
+                <Label.Behaviors>
+                    <toolkit:RadioBehavior x:Name="smallRadio" />
+                </Label.Behaviors>
+
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label"
+                                 Binding="{Binding Source={x:Reference smallRadio},
+                                                   Path=IsChecked}"
+                                 Value="True">
+                        <Setter Property="TextColor" Value="Green" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+
+            <Label Text="Medium"
+                   TextColor="Gray"
+                   Grid.Column="1">
+                <Label.Behaviors>
+                    <toolkit:RadioBehavior x:Name="mediumRadio"
+                                           IsChecked="True" />
+                </Label.Behaviors>
+
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label"
+                                 Binding="{Binding Source={x:Reference mediumRadio},
+                                                   Path=IsChecked}"
+                                 Value="True">
+                        <Setter Property="TextColor" Value="Green" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+                
+            <Label Text="Large"
+                   TextColor="Gray"
+                   Grid.Column="2">
+                <Label.Behaviors>
+                    <toolkit:RadioBehavior x:Name="largeRadio" />
+                </Label.Behaviors>
+
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label"
+                                 Binding="{Binding Source={x:Reference largeRadio},
+                                                   Path=IsChecked}"
+                                 Value="True">
+                        <Setter Property="TextColor" Value="Green" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+        </Grid>
+
+        <Grid VerticalOptions="CenterAndExpand"
+              HorizontalOptions="Center">
+
+            <Image Source="{local:ImageResource RadioLabels.Images.tee200.png}"
+                   IsVisible="{Binding Source={x:Reference smallRadio},
+                                       Path=IsChecked}" />
+
+            <Image Source="{local:ImageResource RadioLabels.Images.tee250.png}"
+                   IsVisible="{Binding Source={x:Reference mediumRadio},
+                                       Path=IsChecked}" />
+            
+            <Image Source="{local:ImageResource RadioLabels.Images.tee300.png}"
+                   IsVisible="{Binding Source={x:Reference largeRadio},
+                                       Path=IsChecked}" />
+        </Grid>
+    </StackLayout>	
+</ContentPage>

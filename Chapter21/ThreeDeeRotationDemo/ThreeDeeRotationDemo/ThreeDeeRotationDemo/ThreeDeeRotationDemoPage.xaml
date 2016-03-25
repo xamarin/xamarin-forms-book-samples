@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThreeDeeRotationDemo.ThreeDeeRotationDemoPage">
+    <StackLayout Padding="20, 10">
+        <Frame x:Name="frame"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               OutlineColor="Accent">
+            
+            <Label Text="TEXT"
+                   FontSize="72" />
+        </Frame>
+
+        <Slider x:Name="rotationXSlider"
+                Maximum="360"
+                Value="{Binding Source={x:Reference frame},
+                                Path=RotationX}" />
+
+        <Label Text="{Binding Source={x:Reference rotationXSlider},
+                              Path=Value,
+                              StringFormat='RotationX = {0:F0}'}"
+               HorizontalTextAlignment="Center" />
+
+        <Slider x:Name="rotationYSlider"
+                Maximum="360"
+                Value="{Binding Source={x:Reference frame},
+                                Path=RotationY}" />
+
+        <Label Text="{Binding Source={x:Reference rotationYSlider},
+                              Path=Value,
+                              StringFormat='RotationY = {0:F0}'}"
+               HorizontalTextAlignment="Center" />
+
+        <Slider x:Name="rotationZSlider"
+                Maximum="360"
+                Value="{Binding Source={x:Reference frame},
+                                Path=Rotation}" />
+
+        <Label Text="{Binding Source={x:Reference rotationZSlider},
+                              Path=Value,
+                              StringFormat='Rotation(Z) = {0:F0}'}"
+               HorizontalTextAlignment="Center" />
+
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center">
+            <Stepper x:Name="anchorXStepper"
+                     Minimum="-1"
+                     Maximum="2"
+                     Increment="0.25"
+                     Value="{Binding Source={x:Reference frame},
+                                     Path=AnchorX}" />
+
+            <Label Text="{Binding Source={x:Reference anchorXStepper},
+                                  Path=Value,
+                                  StringFormat='AnchorX = {0:F2}'}"
+                   VerticalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center">
+            <Stepper x:Name="anchorYStepper"
+                     Minimum="-1"
+                     Maximum="2"
+                     Increment="0.25"
+                     Value="{Binding Source={x:Reference frame},
+                                     Path=AnchorY}" />
+
+            <Label Text="{Binding Source={x:Reference anchorYStepper},
+                                  Path=Value,
+                                  StringFormat='AnchorY = {0:F2}'}"
+                   VerticalOptions="Center"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

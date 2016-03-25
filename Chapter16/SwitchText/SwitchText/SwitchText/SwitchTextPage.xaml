@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="SwitchText.SwitchTextPage"
+             Padding="10, 0">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:BoolToStringConverter x:Key="boolToString"
+                                           TrueText="Let's do it"
+                                           FalseText="Not now" />
+
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <!-- First Switch with text. -->
+        <StackLayout Orientation="Horizontal"
+                     VerticalOptions="CenterAndExpand">
+            <Label Text="Learn more?" />
+            
+            <Switch x:Name="switch1"
+                    VerticalOptions="Center" />
+
+            <Label Text="{Binding Source={x:Reference switch1},
+                                  Path=IsToggled,
+                                  Converter={StaticResource boolToString}}"
+                   HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+
+        <!-- Second Switch with text. -->
+        <StackLayout Orientation="Horizontal"
+                     VerticalOptions="CenterAndExpand">
+            <Label Text="Subscribe?" />
+            
+            <Switch x:Name="switch2"
+                    VerticalOptions="Center" />
+
+            <Label Text="{Binding Source={x:Reference switch2},
+                                  Path=IsToggled,
+                                  Converter={StaticResource boolToString}}"
+                   HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+        
+        <!-- Third Switch with text and color. -->
+        <StackLayout Orientation="Horizontal"
+                     VerticalOptions="CenterAndExpand">
+            <Label Text="Leave page?" />
+
+            <Switch x:Name="switch3"
+                    VerticalOptions="Center" />
+
+            <Label HorizontalOptions="FillAndExpand">
+                <Label.Text>
+                    <Binding Source="{x:Reference switch3}"
+                             Path="IsToggled">
+                        <Binding.Converter>
+                            <toolkit:BoolToStringConverter TrueText="Yes" 
+                                                           FalseText="No" />
+                        </Binding.Converter>
+                    </Binding>
+                </Label.Text>
+
+                <Label.TextColor>
+                    <Binding Source="{x:Reference switch3}"
+                             Path="IsToggled">
+                        <Binding.Converter>
+                            <toolkit:BoolToColorConverter TrueColor="Green" 
+                                                          FalseColor="Red" />
+                        </Binding.Converter>
+                    </Binding>
+                </Label.TextColor>
+            </Label>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

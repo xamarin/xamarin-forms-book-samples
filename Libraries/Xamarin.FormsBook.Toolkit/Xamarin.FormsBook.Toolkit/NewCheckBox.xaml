@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="clr-namespace:Xamarin.FormsBook.Toolkit"
+             x:Class="Xamarin.FormsBook.Toolkit.NewCheckBox"
+             x:Name="checkbox">
+    
+    <StackLayout Orientation="Horizontal"
+                 BindingContext="{x:Reference checkbox}">
+
+        <Label x:Name="boxLabel" Text="&#x2610;"
+                                 TextColor="{Binding TextColor}"
+                                 FontSize="{Binding FontSize}">
+            <Label.Text>
+                <Binding Path="IsChecked">
+                    <Binding.Converter>
+                        <toolkit:BoolToStringConverter TrueText="&#x2611;"
+                                                       FalseText="&#x2610;" />
+                    </Binding.Converter>
+                </Binding>
+            </Label.Text>
+        </Label>
+        
+        <Label x:Name="textLabel" Text="{Binding Path=Text}"
+                                  TextColor="{Binding TextColor}"
+                                  FontSize="{Binding FontSize}"
+                                  FontAttributes="{Binding FontAttributes}" />
+    </StackLayout>
+
+    <ContentView.GestureRecognizers>
+        <TapGestureRecognizer Tapped="OnCheckBoxTapped" />
+    </ContentView.GestureRecognizers>
+</ContentView>

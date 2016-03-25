@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:toolkit=
+                "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="MultiTabbedColors.MultiTabbedColorsPage"
+             ItemsSource="{x:Static toolkit:NamedColor.All}">
+
+    <TabbedPage.ItemTemplate>
+        <DataTemplate>
+            <ContentPage Title="{Binding Name}">
+                <ContentPage.Padding>
+                    <OnPlatform x:TypeArguments="Thickness"
+                                iOS="0, 20, 0, 0" />
+                </ContentPage.Padding>
+            
+                <StackLayout>
+                    <Label Text="{Binding FriendlyName}"
+                           Style="{DynamicResource TitleStyle}"
+                           HorizontalTextAlignment="Center" />
+                
+                    <ScrollView VerticalOptions="FillAndExpand">
+                        <StackLayout>
+                            <BoxView Color="{Binding Color}"
+                                     WidthRequest="144"
+                                     HeightRequest="144"
+                                     VerticalOptions="CenterAndExpand"
+                                     HorizontalOptions="Center" />
+
+                            <StackLayout VerticalOptions="CenterAndExpand"
+                                         HorizontalOptions="Center">
+                                <StackLayout.Resources>
+                                    <ResourceDictionary>
+                                        <Style TargetType="Label">
+                                            <Setter Property="HorizontalTextAlignment" 
+                                                    Value="End" />
+                                        </Style>
+                                    </ResourceDictionary>
+                                </StackLayout.Resources>
+
+                                <Label Text="{Binding Color.R, 
+                                                      StringFormat='Red = {0:F2}'}" />
+                                <Label Text="{Binding Color.G, 
+                                                      StringFormat='Green = {0:F2}'}" />
+                                <Label Text="{Binding Color.B, 
+                                                      StringFormat='Blue = {0:F2}'}" />
+                                <Label Text="{Binding Color.A, 
+                                                      StringFormat='Alpha = {0:F2}'}" />
+                                <Label Text=" " />
+                                <Label Text="{Binding Color.Hue, 
+                                                      StringFormat='Hue = {0:F2}'}" />
+                                <Label Text="{Binding Color.Saturation, 
+                                                      StringFormat='Saturation = {0:F2}'}" />
+                                <Label Text="{Binding Color.Luminosity, 
+                                                      StringFormat='Luminosity = {0:F2}'}" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+            </ContentPage>
+        </DataTemplate>
+    </TabbedPage.ItemTemplate>
+</TabbedPage>

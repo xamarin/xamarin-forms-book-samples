@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlatformVisuals.PlatformVisualsPage"
+             Title="Visuals">
+
+    <StackLayout Padding="10,0">
+        <Label Text="Hello, Xamarin.Forms!"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center" />
+
+        <Button Text = "Click Me!"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center" />
+
+        <Switch VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center" />
+
+        <Slider VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="edit" Order="Primary">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="edit.png"
+                            Android="ic_action_edit.png"
+                            WinPhone="Images/edit.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+        <ToolbarItem Text="search" Order="Primary">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="search.png"
+                            Android="ic_action_search.png"
+                            WinPhone="Images/feature.search.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+        <ToolbarItem Text="refresh" Order="Primary">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="reload.png"
+                            Android="ic_action_refresh.png"
+                            WinPhone="Images/refresh.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+        <ToolbarItem Text="explore" Order="Secondary" />
+        <ToolbarItem Text="discover" Order="Secondary" />
+        <ToolbarItem Text="evolve" Order="Secondary" />
+    </ContentPage.ToolbarItems>
+</ContentPage>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TranslationDemo.TranslationDemoPage">
+    <StackLayout Padding="20, 10">
+        <Frame x:Name="frame"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               OutlineColor="Accent">
+            
+            <Label Text="TEXT"
+                   FontSize="Large" />
+        </Frame>
+
+        <Slider x:Name="xSlider"
+                Minimum="-200"
+                Maximum="200"
+                Value="{Binding Source={x:Reference frame},
+                                Path=TranslationX}" />
+
+        <Label Text="{Binding Source={x:Reference xSlider},
+                              Path=Value,
+                              StringFormat='TranslationX = {0:F0}'}"
+               HorizontalTextAlignment="Center" />
+
+        <Slider x:Name="ySlider"
+                Minimum="-200"
+                Maximum="200"
+                Value="{Binding Source={x:Reference frame},
+                                Path=TranslationY}" />
+
+        <Label Text="{Binding Source={x:Reference ySlider},
+                              Path=Value,
+                              StringFormat='TranslationY = {0:F0}'}"
+               HorizontalTextAlignment="Center" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RotatedText.RotatedTextPage">
+    <Grid>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Style TargetType="Label">
+                    <Setter Property="Text" Value="     ROTATE" />
+                    <Setter Property="FontSize" Value="32" />
+                    <Setter Property="Grid.Column" Value="1" />
+                    <Setter Property="VerticalOptions" Value="Center" />
+                    <Setter Property="HorizontalOptions" Value="Start" />
+                    <Setter Property="AnchorX" Value="0" />
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+
+        <Label Rotation="0" />
+        <Label Rotation="22.5" />
+        <Label Rotation="45" />
+        <Label Rotation="67.5" />
+        <Label Rotation="90" />
+        <Label Rotation="112.5" />
+        <Label Rotation="135" />
+        <Label Rotation="157.5" />
+        <Label Rotation="180" />
+        <Label Rotation="202.5" />
+        <Label Rotation="225" />
+        <Label Rotation="246.5" />
+        <Label Rotation="270" />
+        <Label Rotation="292.5" />
+        <Label Rotation="315" />
+        <Label Rotation="337.5" />
+    </Grid>
+</ContentPage>

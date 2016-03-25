@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StyleHierarchy.App">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="visualStyle" TargetType="VisualElement">
+                <Setter Property="BackgroundColor" Value="Pink" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

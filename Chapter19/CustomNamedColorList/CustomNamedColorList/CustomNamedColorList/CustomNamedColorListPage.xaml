@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="CustomNamedColorList.CustomNamedColorListPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="10, 20, 10, 0"
+                    Android="10, 0"
+                    WinPhone="10, 0" />
+    </ContentPage.Padding>
+
+    <ListView SeparatorVisibility="None"
+              ItemsSource="{x:Static toolkit:NamedColor.All}">
+        <ListView.RowHeight>
+            <OnPlatform x:TypeArguments="x:Int32"
+                        iOS="80"
+                        Android="80"
+                        WinPhone="90" />
+        </ListView.RowHeight>
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <ContentView Padding="5">
+                        <Frame OutlineColor="Accent"
+                                Padding="10">
+                            <StackLayout Orientation="Horizontal">
+                                <BoxView x:Name="boxView"
+                                         Color="{Binding Color}"
+                                         WidthRequest="50"
+                                         HeightRequest="50" />
+                                <StackLayout>
+                                    <Label Text="{Binding FriendlyName}"
+                                           FontSize="22"
+                                           VerticalOptions="StartAndExpand" />
+                                    <Label Text="{Binding RgbDisplay, StringFormat='RGB = {0}'}"
+                                           FontSize="16"
+                                           VerticalOptions="CenterAndExpand" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </ContentView>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

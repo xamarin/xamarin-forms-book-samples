@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ConditionalSection"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="ConditionalSection.ConditionalSectionPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+
+    <StackLayout>
+        <TableView x:Name="tableView"
+                   Intent="Form">
+            <TableRoot>
+                <TableSection Title="Personal Information">
+                    <EntryCell Label="Name:"
+                               Text="{Binding Name}"
+                               Placeholder="Enter name"
+                               Keyboard="Text" />
+
+                    <EntryCell Label="Email:"
+                               Text="{Binding EmailAddress}"
+                               Placeholder="Enter email address"
+                               Keyboard="Email" />
+
+                    <EntryCell Label="Phone:"
+                               Text="{Binding PhoneNumber}"
+                               Placeholder="Enter phone number"
+                               Keyboard="Telephone" />
+
+                    <toolkit:PickerCell Label="Age Range:"
+                                        Title="Age Range"
+                                        SelectedValue="{Binding AgeRange}">
+                        <x:String>10 - 19</x:String>
+                        <x:String>20 - 29</x:String>
+                        <x:String>30 - 39</x:String>
+                        <x:String>40 - 49</x:String>
+                        <x:String>50 - 59</x:String>
+                        <x:String>60 - 99</x:String>
+                    </toolkit:PickerCell>
+
+                    <SwitchCell x:Name="isProgrammerSwitch"
+                                Text="Are you a programmer?"
+                                On="{Binding IsProgrammer}" />
+
+                </TableSection>
+                
+                <TableSection x:Name="programmerInfoSection"
+                              Title="Programmer Information">
+                    <toolkit:PickerCell Label="Language:"
+                                        Title="Language"
+                                        SelectedValue="{Binding Language}">
+                        <x:String>C</x:String>
+                        <x:String>C++</x:String>
+                        <x:String>C#</x:String>
+                        <x:String>Objective C</x:String>
+                        <x:String>Java</x:String>
+                        <x:String>Other</x:String>
+                    </toolkit:PickerCell>
+
+                    <toolkit:PickerCell Label="Platform:"
+                                        Title="Platform"
+                                        SelectedValue="{Binding Platform}">
+                        <x:String>iPhone</x:String>
+                        <x:String>Android</x:String>
+                        <x:String>Windows Phone</x:String>
+                        <x:String>Other</x:String>
+                    </toolkit:PickerCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </StackLayout>
+</ContentPage>

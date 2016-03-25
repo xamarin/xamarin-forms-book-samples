@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TryAwaitableAnimation.TryAwaitableAnimationPage">
+    <StackLayout>
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Style TargetType="Button">
+                    <Setter Property="Text" Value="Tap Me!" />
+                    <Setter Property="FontSize" Value="Large" />
+                    <Setter Property="HorizontalOptions" Value="Center" />
+                    <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+
+        <Button Clicked="OnButtonClicked" StyleId="5000" />
+
+        <Button Clicked="OnButtonClicked" StyleId="2500" />
+
+        <Button Clicked="OnButtonClicked" StyleId="1000" />
+    </StackLayout>
+</ContentPage>

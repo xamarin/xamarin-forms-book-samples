@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataTransfer2.DataTransfer2HomePage"
+             Title="Home Page">
+    <Grid>
+        <Button Text="Add New Item"
+                Grid.Row="0"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="OnGetInfoButtonClicked" />
+        
+        <ListView x:Name="listView" 
+                  Grid.Row="1"
+                  ItemSelected="OnListViewItemSelected" />
+    </Grid>
+</ContentPage>

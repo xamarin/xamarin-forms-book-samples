@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackRestoreDemo.DemoModalPage"
+             Title="Modal Page">
+
+    <StackLayout>
+        <Label Text="Modal Page"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center" />
+
+        <Grid VerticalOptions="CenterAndExpand">
+            <Stepper x:Name="stepper"
+                     Grid.Column="0"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Text="{Binding Source={x:Reference stepper},
+                                  Path=Value,
+                                  StringFormat='{0:F0}'}"
+                   FontSize="Large"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+        </Grid>
+
+        <Button Text="Go Back"
+                FontSize="Large"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnGoBackClicked" />
+
+        <Button x:Name="gotoModalButton"
+                Text="Go to Modal Page"
+                FontSize="Large"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnGoToModalPageClicked" />
+
+    </StackLayout>
+</ContentPage>

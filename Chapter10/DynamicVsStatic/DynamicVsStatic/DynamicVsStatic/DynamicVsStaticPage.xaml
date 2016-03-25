@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DynamicVsStatic.DynamicVsStaticPage"
+             Padding="5, 0">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:String x:Key="currentDateTime">Not actually a DateTime</x:String>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Label Text="StaticResource on Label.Text:"
+               VerticalOptions="EndAndExpand"
+               FontSize="Medium" />
+        
+        <Label Text="{StaticResource currentDateTime}"
+               VerticalOptions="StartAndExpand"
+               HorizontalTextAlignment="Center"
+               FontSize="Medium" />
+
+        <Label Text="DynamicResource on Label.Text:"
+               VerticalOptions="EndAndExpand"
+               FontSize="Medium" />
+
+        <Label Text="{DynamicResource currentDateTime}"
+               VerticalOptions="StartAndExpand"
+               HorizontalTextAlignment="Center"
+               FontSize="Medium" />
+        
+        <Label Text="StaticResource on Span.Text:"
+               VerticalOptions="EndAndExpand"
+               FontSize="Medium" />
+
+        <Label VerticalOptions="StartAndExpand"
+               HorizontalTextAlignment="Center"
+               FontSize="Medium">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="{StaticResource currentDateTime}" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        
+        <!-- This raises a run-time exception! -->
+
+        <!--<Label Text="DynamicResource on Span.Text:"
+               VerticalOptions="EndAndExpand"
+               FontSize="Medium" />
+
+        <Label VerticalOptions="StartAndExpand"
+               HorizontalTextAlignment="Center"
+               FontSize="Medium">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="{DynamicResource currentDateTime}" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>-->
+        
+    </StackLayout>
+</ContentPage>

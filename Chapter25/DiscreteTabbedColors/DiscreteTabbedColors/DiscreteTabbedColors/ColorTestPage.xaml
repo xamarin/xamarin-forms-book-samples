@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DiscreteTabbedColors.ColorTestPage"
+             Title="Test">
+    <ContentPage.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource"
+                    iOS="ic_action_gamepad.png" />
+    </ContentPage.Icon>
+
+    <StackLayout Padding="20, 40">
+        <Label Text="{Binding Red, StringFormat='Red = {0:F2}'}"
+               HorizontalOptions="Center" />
+
+        <Slider Value="{Binding Red, Mode=TwoWay}" />
+
+        <Label Text="{Binding Green, StringFormat='Green = {0:F2}'}"
+               HorizontalOptions="Center" />
+
+        <Slider Value="{Binding Green, Mode=TwoWay}" />
+
+        <Label Text="{Binding Blue, StringFormat='Blue = {0:F2}'}"
+               HorizontalOptions="Center" />
+
+        <Slider Value="{Binding Blue, Mode=TwoWay}" />
+
+        <BoxView Color="{Binding Color}"
+                 VerticalOptions="FillAndExpand" />
+    </StackLayout>
+</ContentPage>

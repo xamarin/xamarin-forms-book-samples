@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="StyleInheritance.StyleInheritancePage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="visualStyle" TargetType="VisualElement">
+                <Setter Property="BackgroundColor" 
+                        Value="{toolkit:HslColor H=0, S=1, L=0.8}" />
+            </Style>
+
+            <Style x:Key="baseStyle" TargetType="View" 
+                   BasedOn="{StaticResource visualStyle}">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            </Style>
+
+            <Style x:Key="labelStyle" TargetType="toolkit:AltLabel"
+                   BasedOn="{StaticResource baseStyle}">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="PointSize" Value="12" />
+            </Style>
+
+            <Style x:Key="buttonStyle" TargetType="Button"
+                   BasedOn="{StaticResource baseStyle}">
+                <Setter Property="TextColor" Value="Blue" />
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="BorderColor" Value="Blue" />
+                <Setter Property="BorderWidth" Value="2" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Style>
+        <StaticResourceExtension Key="visualStyle" />
+    </ContentPage.Style>
+
+    <StackLayout>
+        <Button Text=" Carpe diem "
+                Style="{StaticResource buttonStyle}" />
+
+        <toolkit:AltLabel Text ="A bit of text"
+                          Style="{StaticResource labelStyle}" />
+
+        <Button Text=" Sapere aude "
+                Style="{StaticResource buttonStyle}" />
+
+        <toolkit:AltLabel Text ="Another bit of text"
+                          Style="{StaticResource labelStyle}" />
+
+        <Button Text=" Discere faciendo "
+                Style="{StaticResource buttonStyle}" />
+    </StackLayout>
+</ContentPage>
+            

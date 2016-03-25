@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:toolkit=
+                  "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+                  x:Class="ColorsDetails.ColorDetailsPage"
+                  IsPresented="True"
+                  x:Name="page">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Colors">
+            <ContentPage.Padding>
+                <OnPlatform x:TypeArguments="Thickness"
+                            iOS="0, 20, 0, 0" />
+            </ContentPage.Padding>
+
+            <ListView x:Name="listView"
+                      SeparatorVisibility="None"
+                      ItemsSource="{x:Static toolkit:NamedColor.All}"
+                      ItemTapped="OnListViewItemTapped">
+                <ListView.RowHeight>
+                    <OnPlatform x:TypeArguments="x:Int32"
+                                iOS="80"
+                                Android="80"
+                                WinPhone="90" />
+                </ListView.RowHeight>
+                
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ContentView Padding="5">
+                                <Frame OutlineColor="Accent"
+                                       Padding="10">
+                                    <StackLayout Orientation="Horizontal">
+                                        <BoxView x:Name="boxView"
+                                                 Color="{Binding Color}"
+                                                 WidthRequest="50"
+                                                 HeightRequest="50" />
+                                        <StackLayout>
+                                            <Label Text="{Binding Name}"
+                                                   FontSize="Medium"
+                                                   VerticalOptions="StartAndExpand" />
+                                            <Label Text="{Binding RgbDisplay, 
+                                                                  StringFormat='RGB = {0}'}"
+                                                   FontSize="Small"
+                                                   VerticalOptions="CenterAndExpand" />
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </ContentView>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage Title="Color"
+                             BindingContext="{Binding Source={x:Reference listView},
+                                                      Path=SelectedItem}">
+                    <ContentPage.Padding>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                    iOS="0, 20, 0, 0" />
+                    </ContentPage.Padding>
+
+                    <StackLayout>
+                        <Label Text="{Binding FriendlyName}"
+                               Style="{DynamicResource TitleStyle}"
+                               HorizontalTextAlignment="Center" />
+
+                        <ScrollView VerticalOptions="FillAndExpand">
+                            <StackLayout>
+                                <BoxView Color="{Binding Color}"
+                                         WidthRequest="144"
+                                         HeightRequest="144"
+                                         VerticalOptions="CenterAndExpand"
+                                         HorizontalOptions="Center" />
+
+                                <StackLayout VerticalOptions="CenterAndExpand"
+                                             HorizontalOptions="Center">
+                                    <StackLayout.Resources>
+                                        <ResourceDictionary>
+                                            <Style TargetType="Label">
+                                                <Setter Property="HorizontalTextAlignment" 
+                                                        Value="End" />
+                                            </Style>
+                                        </ResourceDictionary>
+                                    </StackLayout.Resources>
+
+                                    <Label Text="{Binding Color.R, 
+                                                          StringFormat='Red = {0:F2}'}" />
+                                    <Label Text="{Binding Color.G, 
+                                                          StringFormat='Green = {0:F2}'}" />
+                                    <Label Text="{Binding Color.B, 
+                                                          StringFormat='Blue = {0:F2}'}" />
+                                    <Label Text="{Binding Color.A, 
+                                                          StringFormat='Alpha = {0:F2}'}" />
+                                    <Label Text=" " />
+                                    <Label Text="{Binding Color.Hue, 
+                                                          StringFormat='Hue = {0:F2}'}" />
+                                    <Label Text="{Binding Color.Saturation, 
+                                                          StringFormat='Saturation = {0:F2}'}" />
+                                    <Label Text="{Binding Color.Luminosity, 
+                                                          StringFormat='Luminosity = {0:F2}'}" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                
+                        <Button x:Name="returnButton"
+                                Text="Return to list"
+                                HorizontalOptions="Center"
+                                Clicked="OnReturnButtonClicked">
+                            <Button.IsEnabled>
+                                <Binding Source="{x:Reference page}"
+                                            Path="IsPresented">
+                                    <Binding.Converter>
+                                        <toolkit:BooleanNegationConverter />
+                                    </Binding.Converter>
+                                </Binding>
+                            </Button.IsEnabled>
+                        </Button>
+                    </StackLayout>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

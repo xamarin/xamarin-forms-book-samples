@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:school="clr-namespace:SchoolOfFineArt;assembly=SchoolOfFineArt"
+             x:Class="GenderColors.GenderColorsPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+    
+    <ContentPage.BindingContext>
+        <school:SchoolViewModel />
+    </ContentPage.BindingContext>
+           
+    <StackLayout BindingContext="{Binding StudentBody}">
+        <Label Text="{Binding School}" 
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+
+        <ListView ItemsSource="{Binding Students}"
+                  VerticalOptions="FillAndExpand">
+            <ListView.RowHeight>
+                <OnPlatform x:TypeArguments="x:Int32"
+                            iOS="70"
+                            Android="70"
+                            WinPhone="100" />
+            </ListView.RowHeight>
+            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="0, 5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0"
+                                   Source="{Binding PhotoFilename}"
+                                   VerticalOptions="Center" />
+
+                            <StackLayout Grid.Column="1"
+                                         VerticalOptions="Center">
+                                <Label Text="{Binding FullName}"
+                                       FontSize="22"
+                                       TextColor="Pink">
+                                    <Label.Triggers>
+                                        <DataTrigger TargetType="Label"
+                                                     Binding="{Binding Sex}"
+                                                     Value="Male">
+                                            <Setter Property="TextColor" Value="#8080FF" />
+                                        </DataTrigger>
+                                    </Label.Triggers>
+                                </Label>
+
+                                <Label Text="{Binding GradePointAverage,
+                                                      StringFormat='G.P.A. = {0:F2}'}"
+                                       FontSize="16" />
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="PickerBinding.PickerBindingPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+
+    <StackLayout Padding="20"
+                 Spacing="50">
+
+        <Label x:Name="label"
+               Text="Sample Text"
+               FontSize="16" />
+
+        <Picker Title="Font Size">
+            <Picker.Items>
+                <x:String>Font Size = 8</x:String>
+                <x:String>Font Size = 10</x:String>
+                <x:String>Font Size = 12</x:String>
+                <x:String>Font Size = 14</x:String>
+                <x:String>Font Size = 16</x:String>
+                <x:String>Font Size = 20</x:String>
+                <x:String>Font Size = 24</x:String>
+                <x:String>Font Size = 30</x:String>
+            </Picker.Items>
+
+            <Picker.SelectedIndex>
+                <Binding Source="{x:Reference label}"
+                         Path="FontSize">
+                    <Binding.Converter>
+                        <toolkit:ObjectToIndexConverter x:TypeArguments="x:Double">
+                            <x:Double>8</x:Double>
+                            <x:Double>10</x:Double>
+                            <x:Double>12</x:Double>
+                            <x:Double>14</x:Double>
+                            <x:Double>16</x:Double>
+                            <x:Double>20</x:Double>
+                            <x:Double>24</x:Double>
+                            <x:Double>30</x:Double>
+                        </toolkit:ObjectToIndexConverter>
+                    </Binding.Converter>
+                </Binding>
+            </Picker.SelectedIndex>
+        </Picker>
+    </StackLayout>
+</ContentPage>

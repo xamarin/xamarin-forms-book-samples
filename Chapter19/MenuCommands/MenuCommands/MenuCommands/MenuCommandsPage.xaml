@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MenuCommands.MenuCommandsPage"
+             x:Name="page">
+    
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+    
+    <StackLayout>
+        <TableView Intent="Menu"
+                   VerticalOptions="Fill"
+                   BindingContext="{x:Reference page}">
+            <TableRoot>
+                <TableSection Title="Move the Box">
+                    <TextCell Text="Left"
+                              Command="{Binding MoveCommand}"
+                              CommandParameter="left" />
+                    
+                    <TextCell Text="Up"
+                              Command="{Binding MoveCommand}"
+                              CommandParameter="up" />
+                    
+                    <TextCell Text="Right"
+                              Command="{Binding MoveCommand}"
+                              CommandParameter="right" />
+                    
+                    <TextCell Text="Down"
+                              Command="{Binding MoveCommand}"
+                              CommandParameter="down" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    
+        <AbsoluteLayout BackgroundColor="Maroon"
+                        VerticalOptions="FillAndExpand">
+            <BoxView x:Name="boxView"
+                     Color="Blue"
+                     AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.2, 0.2" />
+        </AbsoluteLayout>
+    </StackLayout>
+</ContentPage>

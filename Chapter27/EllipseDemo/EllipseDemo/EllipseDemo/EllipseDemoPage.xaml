@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:platform=
+                 "clr-namespace:Xamarin.FormsBook.Platform;assembly=Xamarin.FormsBook.Platform"
+             x:Class="EllipseDemo.EllipseDemoPage">
+    <Grid>
+        <platform:EllipseView Color="Aqua" />
+
+        <StackLayout>
+            <StackLayout.Padding>
+                <OnPlatform x:TypeArguments="Thickness"
+                            iOS="0, 20, 0, 0" />
+            </StackLayout.Padding>
+
+            <platform:EllipseView Color="Red"
+                                  WidthRequest="40"
+                                  HeightRequest="80"
+                                  HorizontalOptions="Center" />
+
+            <platform:EllipseView Color="Green"
+                                  WidthRequest="160"
+                                  HeightRequest="80"
+                                  HorizontalOptions="Start" />
+
+            <platform:EllipseView Color="Blue"
+                                  WidthRequest="160"
+                                  HeightRequest="80"
+                                  HorizontalOptions="End" />
+
+            <platform:EllipseView Color="#80FF0000"
+                                  HorizontalOptions="Center" />
+
+            <ContentView Padding="50"
+                         VerticalOptions="FillAndExpand">
+
+                <platform:EllipseView Color="Red"
+                                      BackgroundColor="#80FF0000" />
+                
+            </ContentView>
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReverseBinding.ReverseBindingPage"
+             Padding="10, 0">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="StackLayout">
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout VerticalOptions="Fill">
+        <StackLayout>
+            <Label x:Name="label1"
+                   Text="Default" />
+            <Slider Maximum="50"
+                    Value="{Binding Source={x:Reference label1},
+                                    Path=FontSize}" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label x:Name="label2"
+                   Text="OneWay" />
+            <Slider Maximum="50"
+                    Value="{Binding Source={x:Reference label2},
+                                    Path=FontSize,
+                                    Mode=OneWay}" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label x:Name="label3"
+                   Text="OneWayToSource" />
+            <Slider Maximum="50"
+                    Value="{Binding Source={x:Reference label3},
+                                    Path=FontSize,
+                                    Mode=OneWayToSource}" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label x:Name="label4"
+                   Text="TwoWay" />
+            <Slider Maximum="50"
+                    Value="{Binding Source={x:Reference label4},
+                                    Path=FontSize,
+                                    Mode=TwoWay}" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

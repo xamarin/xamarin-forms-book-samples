@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="TraditionalRadios.TraditionalRadiosPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:String x:Key="uncheckedRadio">&#x25CB;</x:String>
+            <x:String x:Key="checkedRadio">&#x25C9;</x:String>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid VerticalOptions="Center" Padding="5, 0">
+        <!-- Left column -->
+        <StackLayout Grid.Column="0" Spacing="24">
+            
+            <!-- Header -->
+            <StackLayout HorizontalOptions="Start" Spacing="0">
+                <Label Text="Choose Platform" />
+                <BoxView Color="Accent" HeightRequest="1" />
+            </StackLayout>
+
+            <!-- Stack of radio buttons -->
+            <StackLayout Spacing="12">
+
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout.Behaviors>
+                        <toolkit:RadioBehavior x:Name="iosRadio"
+                                               GroupName="platformGroup" />
+                    </StackLayout.Behaviors>
+
+                    <Label Text="{StaticResource uncheckedRadio}">
+                        <Label.Triggers>
+                            <DataTrigger TargetType="Label"
+                                         Binding="{Binding Source={x:Reference iosRadio},
+                                                           Path=IsChecked}"
+                                         Value="True">
+                                <Setter Property="Text" Value="{StaticResource checkedRadio}" />
+                            </DataTrigger>
+                        </Label.Triggers>
+                    </Label>
+                    <Label Text="iOS" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout.Behaviors>
+                        <toolkit:RadioBehavior x:Name="androidRadio"
+                                               GroupName="platformGroup" />
+                    </StackLayout.Behaviors>
+
+                    <Label Text="{StaticResource uncheckedRadio}">
+                        <Label.Triggers>
+                            <DataTrigger TargetType="Label"
+                                         Binding="{Binding Source={x:Reference androidRadio},
+                                                           Path=IsChecked}"
+                                         Value="True">
+                                <Setter Property="Text" Value="{StaticResource checkedRadio}" />
+                            </DataTrigger>
+                        </Label.Triggers>
+                    </Label>
+                    <Label Text="Android" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout.Behaviors>
+                        <toolkit:RadioBehavior x:Name="winPhoneRadio"
+                                               GroupName="platformGroup" />
+                    </StackLayout.Behaviors>
+
+                    <Label Text="{StaticResource uncheckedRadio}">
+                        <Label.Triggers>
+                            <DataTrigger TargetType="Label"
+                                         Binding="{Binding Source={x:Reference winPhoneRadio},
+                                                           Path=IsChecked}"
+                                         Value="True">
+                                <Setter Property="Text" Value="{StaticResource checkedRadio}" />
+                            </DataTrigger>
+                        </Label.Triggers>
+                    </Label>
+                    <Label Text="Windows Phone" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <!-- Left column -->
+        <StackLayout Grid.Column="1" Spacing="24">
+
+            <!-- Header -->
+            <StackLayout HorizontalOptions="Start" Spacing="0">
+                <Label Text="Choose Language" />
+                <BoxView Color="Accent" HeightRequest="1" />
+            </StackLayout>
+
+            <!-- Stack of radio buttons -->
+            <StackLayout Spacing="12">
+
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout.Behaviors>
+                        <toolkit:RadioBehavior x:Name="objectiveCRadio"
+                                               GroupName="languageGroup" />
+                    </StackLayout.Behaviors>
+
+                    <Label Text="{StaticResource uncheckedRadio}">
+                        <Label.Triggers>
+                            <DataTrigger TargetType="Label"
+                                         Binding="{Binding Source={x:Reference objectiveCRadio},
+                                                           Path=IsChecked}"
+                                         Value="True">
+                                <Setter Property="Text" Value="{StaticResource checkedRadio}" />
+                            </DataTrigger>
+                        </Label.Triggers>
+                    </Label>
+                    <Label Text="Objective-C" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout.Behaviors>
+                        <toolkit:RadioBehavior x:Name="javaRadio"
+                                               GroupName="languageGroup" />
+                    </StackLayout.Behaviors>
+
+                    <Label Text="{StaticResource uncheckedRadio}">
+                        <Label.Triggers>
+                            <DataTrigger TargetType="Label"
+                                         Binding="{Binding Source={x:Reference javaRadio},
+                                                           Path=IsChecked}"
+                                         Value="True">
+                                <Setter Property="Text" Value="{StaticResource checkedRadio}" />
+                            </DataTrigger>
+                        </Label.Triggers>
+                    </Label>
+                    <Label Text="Java" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout.Behaviors>
+                        <toolkit:RadioBehavior x:Name="cSharpRadio"
+                                               GroupName="languageGroup" />
+                    </StackLayout.Behaviors>
+
+                    <Label Text="{StaticResource uncheckedRadio}">
+                        <Label.Triggers>
+                            <DataTrigger TargetType="Label"
+                                         Binding="{Binding Source={x:Reference cSharpRadio},
+                                                           Path=IsChecked}"
+                                         Value="True">
+                                <Setter Property="Text" Value="{StaticResource checkedRadio}" />
+                            </DataTrigger>
+                        </Label.Triggers>
+                    </Label>
+                    <Label Text="C&#x266F;" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

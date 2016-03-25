@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuadaticEquations.QuadraticEquationsPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+            
+            <Style TargetType="Entry">
+                <Setter Property="WidthRequest" Value="180" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <!-- Entry section -->
+        <StackLayout Padding="20, 0, 0, 0"
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="Center">
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="entryA"
+                       TextChanged="OnEntryTextChanged"
+                       Completed="OnEntryCompleted" />
+                <Label Text=" x&#178; +" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="entryB"
+                       TextChanged="OnEntryTextChanged"
+                       Completed="OnEntryCompleted" />
+                <Label Text=" x +" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="entryC"
+                       TextChanged="OnEntryTextChanged"
+                       Completed="OnEntryCompleted" />
+                <Label Text=" = 0" />
+            </StackLayout>
+        </StackLayout>
+        
+        <!-- Button -->
+        <Button x:Name="solveButton"
+                Text="Solve for x"
+                FontSize="Large"
+                IsEnabled="False"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnSolveButtonClicked" />
+
+        <!-- Results section -->
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="Center">
+            <Label x:Name="solution1Label"
+                   HorizontalTextAlignment="Center" />
+
+            <Label x:Name="solution2Label"
+                   HorizontalTextAlignment="Center" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

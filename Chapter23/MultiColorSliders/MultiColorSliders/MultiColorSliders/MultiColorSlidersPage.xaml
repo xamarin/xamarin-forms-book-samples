@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="MultiColorSliders.MultiColorSlidersPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0"  />
+    </ContentPage.Padding>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:ColorViewModel x:Key="colorViewModel" />
+      
+            <toolkit:DoubleToIntConverter x:Key="doubleToInt" />
+
+            <Style x:Key="baseStyle" TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="unselectedStyle" TargetType="Label"
+                   BasedOn="{StaticResource baseStyle}">
+                <Setter Property="TextColor" Value="Gray" />
+            </Style>
+
+            <Style x:Key="selectedStyle" TargetType="Label"
+                   BasedOn="{StaticResource baseStyle}">
+                <Setter Property="TextColor" Value="Accent" />
+                <Setter Property="Scale" Value="1.5" />
+            </Style>
+                   
+            <!-- Implicit style for labels underneath sliders -->            
+            <Style TargetType="Label" BasedOn="{StaticResource baseStyle}" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.BindingContext>
+            <toolkit:ColorViewModel Alpha="1" />
+        </Grid.BindingContext>
+
+        <!-- The GridOrientationBehavior takes care of the row and 
+                column definitions, and the row and column settings 
+                of the two Grid children. -->
+        <Grid.Behaviors>
+            <toolkit:GridOrientationBehavior />
+        </Grid.Behaviors>
+
+        <!-- First child of Grid is on top or at left. -->
+        <BoxView Color="{Binding Color}" />
+
+        <!-- Second child of Grid is on bottom or at right. -->
+        <StackLayout Padding="10">
+
+            <!-- Three-column Grid for radio labels -->
+            <Grid>
+                <Label Text="RGB Hex" Grid.Column="0"
+                       Style="{StaticResource unselectedStyle}">
+                    <Label.Behaviors>
+                        <toolkit:RadioBehavior x:Name="hexRadio"
+                                               IsChecked="true" />
+                    </Label.Behaviors>
+
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label"
+                                     Binding="{Binding Source={x:Reference hexRadio},
+                                                       Path=IsChecked}"
+                                     Value="True">
+                            <Setter Property="Style" Value="{StaticResource selectedStyle}" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+
+                <Label Text="RGB Float" Grid.Column="1"
+                       Style="{StaticResource unselectedStyle}">
+                    <Label.Behaviors>
+                        <toolkit:RadioBehavior x:Name="floatRadio" />
+                    </Label.Behaviors>
+
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label"
+                                     Binding="{Binding Source={x:Reference floatRadio},
+                                                       Path=IsChecked}"
+                                     Value="True">
+                            <Setter Property="Style" Value="{StaticResource selectedStyle}" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+
+                <Label Text="HSL" Grid.Column="2"
+                       Style="{StaticResource unselectedStyle}">
+                    <Label.Behaviors>    
+                        <toolkit:RadioBehavior x:Name="hslRadio" />
+                    </Label.Behaviors>
+
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label"
+                                     Binding="{Binding Source={x:Reference hslRadio},
+                                                       Path=IsChecked}"
+                                     Value="True">
+                            <Setter Property="Style" Value="{StaticResource selectedStyle}" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+            </Grid>
+
+            <!-- Single-cell Grid for three sets of sliders and labels -->
+            <Grid>
+
+                <!-- StackLayout for RGB Hex sliders and labels -->
+                <StackLayout>
+                    <StackLayout.Triggers>
+                        <DataTrigger TargetType="StackLayout"
+                                     Binding="{Binding Source={x:Reference hexRadio},
+                                                       Path=IsChecked}"
+                                     Value="True">
+                            <DataTrigger.EnterActions>
+                                <toolkit:FadeEnableAction Enable="True" />
+                            </DataTrigger.EnterActions>
+
+                            <DataTrigger.ExitActions>
+                                <toolkit:FadeEnableAction Enable="False" />
+                            </DataTrigger.ExitActions>
+                        </DataTrigger>
+                    </StackLayout.Triggers>
+           
+                    <Slider Value="{Binding Red, Mode=TwoWay}" />
+
+                    <Label Text="{Binding Red, StringFormat='Red = {0:X2}',
+                                          Converter={StaticResource doubleToInt},
+                                          ConverterParameter=255}" />
+        
+                    <Slider Value="{Binding Green, Mode=TwoWay}" />
+
+                    <Label Text="{Binding Green, StringFormat='Green = {0:X2}',
+                                          Converter={StaticResource doubleToInt},
+                                          ConverterParameter=255}" />
+
+                    <Slider Value="{Binding Blue, Mode=TwoWay}" />
+
+                    <Label Text="{Binding Blue, StringFormat='Blue = {0:X2}',
+                                          Converter={StaticResource doubleToInt},
+                                          ConverterParameter=255}" />
+                </StackLayout>
+
+                <!-- StackLayout for RGB float sliders and labels -->
+                <StackLayout IsVisible="False">
+                    <StackLayout.Triggers>
+                        <DataTrigger TargetType="StackLayout"
+                                     Binding="{Binding Source={x:Reference floatRadio},
+                                                       Path=IsChecked}"
+                                     Value="True">
+                        <DataTrigger.EnterActions>
+                            <toolkit:FadeEnableAction Enable="True" />
+                        </DataTrigger.EnterActions>
+
+                        <DataTrigger.ExitActions>
+                            <toolkit:FadeEnableAction Enable="False" />
+                        </DataTrigger.ExitActions>
+                    </DataTrigger>
+                    </StackLayout.Triggers>
+
+                    <Slider Value="{Binding Red, Mode=TwoWay}" />
+                    <Label Text="{Binding Red, StringFormat='Red = {0:F2}'}" />
+                    <Slider Value="{Binding Green, Mode=TwoWay}" />
+                    <Label Text="{Binding Green, StringFormat='Green = {0:F2}'}" />
+                    <Slider Value="{Binding Blue, Mode=TwoWay}" />
+                    <Label Text="{Binding Blue, StringFormat='Blue = {0:F2}'}" />
+                </StackLayout>
+
+                <!-- StackLayout for HSL sliders and labels -->
+                <StackLayout IsVisible="False">
+                    <StackLayout.Triggers>
+                        <DataTrigger TargetType="StackLayout"
+                                        Binding="{Binding Source={x:Reference hslRadio},
+                                                        Path=IsChecked}"
+                                        Value="True">
+                            <DataTrigger.EnterActions>
+                                <toolkit:FadeEnableAction Enable="True" />
+                            </DataTrigger.EnterActions>
+
+                            <DataTrigger.ExitActions>
+                                <toolkit:FadeEnableAction Enable="False" />
+                            </DataTrigger.ExitActions>
+                        </DataTrigger>
+                    </StackLayout.Triggers>
+
+                    <!-- Trio of Slider and Label elements -->
+                    
+                    <Slider Value="{Binding Hue, Mode=TwoWay}" />
+                    <Label Text="{Binding Hue, StringFormat='Hue = {0:F2}'}" />
+                    <Slider Value="{Binding Saturation, Mode=TwoWay}" />
+                    <Label Text="{Binding Saturation, StringFormat='Saturation = {0:F2}'}" />
+                    <Slider Value="{Binding Luminosity, Mode=TwoWay}" />
+                    <Label Text="{Binding Luminosity, StringFormat='Luminosity = {0:F2}'}" />
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </Grid>
+</ContentPage>

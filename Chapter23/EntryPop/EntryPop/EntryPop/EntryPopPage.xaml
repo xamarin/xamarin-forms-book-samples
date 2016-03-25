@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EntryPop.EntryPopPage"
+             Padding="20, 50, 120, 0">
+
+    <StackLayout Spacing="20">
+        <Entry Placeholder="enter name"
+               AnchorX="0">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="Scale" Value="1.5" />
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
+
+        <Entry Placeholder="enter address"
+               AnchorX="0">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="Scale" Value="1.5" />
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
+
+        <Entry Placeholder="enter city and state"
+               AnchorX="0">
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                    <Setter Property="Scale" Value="1.5" />
+                </Trigger>
+            </Entry.Triggers>
+        </Entry>
+    </StackLayout>
+</ContentPage>

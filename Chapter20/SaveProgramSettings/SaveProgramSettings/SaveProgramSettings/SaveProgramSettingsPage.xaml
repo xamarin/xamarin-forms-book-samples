@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="SaveProgramSettings.SaveProgramSettingsPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:BoolToStringConverter x:Key="boolToString"
+                                           FalseText="Zero"
+                                           TrueText="One" />
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style TargetType="Switch">
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Grid VerticalOptions="CenterAndExpand">
+            <Label Text="{Binding Source={x:Reference s3}, 
+                                  Path=IsToggled,
+                                  Converter={StaticResource boolToString}"
+                   Grid.Column="0" />
+            
+            <Label Text="{Binding Source={x:Reference s2}, 
+                                  Path=IsToggled,
+                                  Converter={StaticResource boolToString}"
+                   Grid.Column="1" />
+            
+            <Label Text="{Binding Source={x:Reference s1}, 
+                                  Path=IsToggled,
+                                  Converter={StaticResource boolToString}" 
+                   Grid.Column="2" />
+            
+            <Label Text="{Binding Source={x:Reference s0}, 
+                                  Path=IsToggled,
+                                  Converter={StaticResource boolToString}" 
+                   Grid.Column="3" />
+        </Grid>
+
+        <Grid x:Name="switchGrid"
+              VerticalOptions="CenterAndExpand">
+            <Switch x:Name="s3" Grid.Column="0"
+                    Toggled="OnSwitchToggled" />
+            
+            <Switch x:Name="s2" Grid.Column="1"
+                    Toggled="OnSwitchToggled" />
+
+            <Switch x:Name="s1" Grid.Column="2"
+                    Toggled="OnSwitchToggled" />
+
+            <Switch x:Name="s0" Grid.Column="3"
+                    Toggled="OnSwitchToggled" />
+        </Grid>
+    </StackLayout>
+</ContentPage>

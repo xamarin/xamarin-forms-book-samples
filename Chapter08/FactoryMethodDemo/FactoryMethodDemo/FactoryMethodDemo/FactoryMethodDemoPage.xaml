@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FactoryMethodDemo.FactoryMethodDemoPage">
+    
+    <StackLayout>
+        <BoxView WidthRequest="100"
+                 HeightRequest="100"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand">
+            <BoxView.Color>
+                <Color x:FactoryMethod="FromRgb">
+                    <x:Arguments>
+                        <x:Int32>255</x:Int32>
+                        <x:Int32>0</x:Int32>
+                        <x:Int32>0</x:Int32>
+                    </x:Arguments>
+                </Color>
+            </BoxView.Color>
+        </BoxView>
+
+        <BoxView WidthRequest="100"
+                 HeightRequest="100"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand">
+            <BoxView.Color>
+                <Color x:FactoryMethod="FromRgb">
+                    <x:Arguments>
+                        <x:Double>0</x:Double>
+                        <x:Double>1.0</x:Double>
+                        <x:Double>0</x:Double>
+                    </x:Arguments>
+                </Color>
+            </BoxView.Color>
+        </BoxView>
+
+        <BoxView WidthRequest="100"
+                 HeightRequest="100"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand">
+            <BoxView.Color>
+                <Color x:FactoryMethod="FromHsla">
+                    <x:Arguments>
+                        <x:Double>0.67</x:Double>
+                        <x:Double>1.0</x:Double>
+                        <x:Double>0.5</x:Double>
+                        <x:Double>1.0</x:Double>
+                    </x:Arguments>
+                </Color>
+            </BoxView.Color>
+        </BoxView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="DiscreteTabbedColors.NamedColorsPage"
+             Title="Toolkit">
+    <ContentPage.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource"
+                    iOS="ic_action_storage.png" />
+    </ContentPage.Icon>
+
+    <ListView ItemsSource="{x:Static toolkit:NamedColor.All}">
+        <ListView.RowHeight>
+            <OnPlatform x:TypeArguments="x:Int32"
+                        iOS="80"
+                        Android="80"
+                        WinPhone="90" />
+        </ListView.RowHeight>
+                
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <ContentView Padding="5">
+                        <StackLayout Orientation="Horizontal">
+                            <BoxView x:Name="boxView"
+                                     Color="{Binding Color}"
+                                     WidthRequest="50"
+                                     HeightRequest="50" />
+                            <StackLayout>
+                                <Label Text="{Binding Name}"
+                                       FontSize="Medium"
+                                       VerticalOptions="StartAndExpand" />
+                                <Label Text="{Binding RgbDisplay, StringFormat='RGB = {0}'}"
+                                       FontSize="Small"
+                                       VerticalOptions="CenterAndExpand" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ContentView>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

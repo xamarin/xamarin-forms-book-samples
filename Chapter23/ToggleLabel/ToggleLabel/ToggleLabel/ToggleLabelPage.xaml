@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="ToggleLabel.ToggleLabelPage">
+
+    <Label Text="Paused"
+           FontSize="Large"
+           HorizontalOptions="Center"
+           VerticalOptions="Center">
+        <Label.Behaviors>
+            <toolkit:ToggleBehavior x:Name="toggleBehavior" />
+        </Label.Behaviors>
+
+        <Label.Triggers>
+            <DataTrigger TargetType="Label"
+                         Binding="{Binding Source={x:Reference toggleBehavior},
+                                           Path=IsToggled}"
+                         Value="True">
+                <Setter Property="Text" Value="Playing" />
+            </DataTrigger>
+        </Label.Triggers>
+    </Label>
+</ContentPage>

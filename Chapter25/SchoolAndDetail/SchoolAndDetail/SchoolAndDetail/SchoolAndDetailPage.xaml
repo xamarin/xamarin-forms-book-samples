@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:school="clr-namespace:SchoolOfFineArt;assembly=SchoolOfFineArt"
+                  x:Class="SchoolAndDetail.SchoolAndDetailPage"
+                  IsPresented="True">
+    
+    <MasterDetailPage.Master>
+        <ContentPage Title="School">
+            <ContentPage.Padding>
+                <OnPlatform x:TypeArguments="Thickness"
+                            iOS="0, 20, 0, 0" />
+            </ContentPage.Padding>
+
+            <ContentPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            WinPhone="Images/refresh.png" />
+            </ContentPage.Icon>
+
+            <ContentPage.BindingContext>
+                <school:SchoolViewModel />
+            </ContentPage.BindingContext>
+
+            <StackLayout BindingContext="{Binding StudentBody}">
+                <Label Text="{Binding School}"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center" />
+
+                <ListView x:Name="listView"
+                          ItemsSource="{Binding Students}"
+                          ItemTapped="OnListViewItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell ImageSource="{Binding PhotoFilename}"
+                                       Text="{Binding FullName}"
+                                       Detail="{Binding GradePointAverage,
+                                                        StringFormat='G.P.A. = {0:F2}'}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+         </ContentPage>
+    </MasterDetailPage.Master>
+
+    <!-- Detail Page -->
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage Title="{Binding FirstName}"
+                             BindingContext="{Binding Source={x:Reference listView},
+                                                      Path=SelectedItem}">
+                    <StackLayout>
+                        <!-- Name -->
+                        <StackLayout Orientation="Horizontal"
+                                     HorizontalOptions="Center"
+                                     Spacing="0">
+                            <StackLayout.Resources>
+                                <ResourceDictionary>
+                                    <Style TargetType="Label">
+                                        <Setter Property="FontSize" Value="Large" />
+                                        <Setter Property="FontAttributes" Value="Bold" />
+                                    </Style>
+                                </ResourceDictionary>
+                            </StackLayout.Resources>
+
+                            <Label Text="{Binding LastName}" />
+                            <Label Text="{Binding FirstName, StringFormat=', {0}'}" />
+                            <Label Text="{Binding MiddleName, StringFormat=' {0}'}" />
+                        </StackLayout>
+
+                        <!-- Photo -->
+                        <Image Source="{Binding PhotoFilename}"
+                               VerticalOptions="FillAndExpand" />
+    
+                        <!-- Sex -->
+                        <Label Text="{Binding Sex, StringFormat='Sex = {0}'}"
+                               HorizontalOptions="Center" />
+
+                        <!-- GPA -->
+                        <Label Text="{Binding GradePointAverage, StringFormat='G.P.A. = {0:F2}'}"
+                               HorizontalOptions="Center" />
+                    </StackLayout>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

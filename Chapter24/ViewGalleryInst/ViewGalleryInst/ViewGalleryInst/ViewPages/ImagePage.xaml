@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ViewGalleryInst.ImagePage"
+             Title="Image">
+
+    <Image Source="https://developer.xamarin.com/guides/cross-platform/xamarin-forms/creating-mobile-apps-xamarin-forms/Images/Cover-Preview.png" />
+    
+</ContentPage>

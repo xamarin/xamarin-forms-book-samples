@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BlockText.BlockTextPage">
+    <Grid x:Name="grid"
+          BackgroundColor="White">
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Style TargetType="Label">
+                    <Setter Property="Text" Value="DEPTH" />
+                    <Setter Property="FontSize" Value="72" />
+                    <Setter Property="FontAttributes" Value="Bold" />
+                    <Setter Property="TextColor" Value="Gray" />
+                    <Setter Property="HorizontalOptions" Value="Center" />
+                    <Setter Property="VerticalOptions" Value="Center" />
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+
+        <Label TextColor="Black" />
+        
+    </Grid>
+</ContentPage>

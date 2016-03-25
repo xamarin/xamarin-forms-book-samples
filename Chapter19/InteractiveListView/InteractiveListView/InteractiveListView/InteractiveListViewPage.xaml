@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="InteractiveListView.InteractiveListViewPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="10, 20, 10, 0"
+                    Android="10, 0"
+                    WinPhone="10, 0" />
+    </ContentPage.Padding>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:ColorToContrastColorConverter x:Key="contrastColor" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ListView x:Name="listView"
+              HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="0, 5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                    
+                        <Slider Value="{Binding Hue, Mode=TwoWay}"
+                                Grid.Row="0" Grid.Column="0" />
+                    
+                        <Slider Value="{Binding Saturation, Mode=TwoWay}"
+                                Grid.Row="1" Grid.Column="0" />
+                        
+                        <Slider Value="{Binding Luminosity, Mode=TwoWay}"
+                                Grid.Row="2" Grid.Column="0" />
+
+                        <ContentView BackgroundColor="{Binding Color}"
+                                     Grid.Row="0" Grid.Column="1" Grid.RowSpan="3"
+                                     Padding="10">
+                    
+                            <StackLayout Orientation="Horizontal"
+                                         VerticalOptions="Center">
+                                <Label Text="{Binding Hue, StringFormat='{0:F2}, '}"
+                                       TextColor="{Binding Color, 
+                                               Converter={StaticResource contrastColor}" />
+                                       
+                                <Label Text="{Binding Saturation, StringFormat='{0:F2}, '}" 
+                                       TextColor="{Binding Color, 
+                                               Converter={StaticResource contrastColor}" />
+                                
+                                <Label Text="{Binding Luminosity, StringFormat='{0:F2}'}"
+                                       TextColor="{Binding Color, 
+                                               Converter={StaticResource contrastColor}" />
+                            </StackLayout>
+                        </ContentView>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>        
+    </ListView>
+</ContentPage>

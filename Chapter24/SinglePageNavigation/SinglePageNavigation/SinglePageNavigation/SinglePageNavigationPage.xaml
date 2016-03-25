@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SinglePageNavigation.SinglePageNavigationPage"
+             x:Name="page">
+    
+    <StackLayout>
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Style x:Key="baseStyle" TargetType="View">
+                    <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                </Style>
+
+                <Style TargetType="Button" BasedOn="{StaticResource baseStyle}">
+                    <Setter Property="HorizontalOptions" Value="Center" />
+                </Style>
+
+                <Style TargetType="Label" BasedOn="{StaticResource baseStyle}">
+                    <Setter Property="HorizontalTextAlignment" Value="Center" />
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+
+        <Label Text="{Binding Source={x:Reference page}, Path=Title}" />
+
+        <Button x:Name="modelessGoToButton"
+                Text="Go to Modeless Page"
+                Clicked="OnGoToModelessClicked" />
+
+        <Button x:Name="modelessBackButton"
+                Text="Back from Modeless Page"
+                Clicked="OnGoBackModelessClicked" />
+
+        <Button x:Name="modalGoToButton"
+                Text="Go to Modal Page"
+                Clicked="OnGoToModalClicked" />
+        
+        <Button x:Name="modalBackButton"
+                Text="Back from Modal Page"
+                Clicked="OnGoBackModalClicked" />
+        
+        <Label x:Name="currentPageLabel"
+               Text=" " />
+        
+        <Label x:Name="modelessStackLabel" 
+               Text=" " />
+        
+        <Label x:Name="modalStackLabel"
+               Text=" " />
+    </StackLayout>
+</ContentPage>

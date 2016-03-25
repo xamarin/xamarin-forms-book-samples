@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ViewGalleryInst.SwitchPage"
+             Title="Switch">
+
+    <StackLayout>
+        <Switch x:Name="switch"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center" />
+
+        <Label Text="{Binding Source={x:Reference switch},
+                              Path=IsToggled,
+                              StringFormat='The Switch is toggled {0}'}"
+               VerticalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center" />
+    </StackLayout>
+</ContentPage>

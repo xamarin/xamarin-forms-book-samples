@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleOverlay.SimpleOverlayPage">
+    <AbsoluteLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                     AbsoluteLayout.LayoutFlags="All">
+            <Label Text=
+"This might be a page full of user-interface objects except
+that the only functional user-interface object on the page
+is a Button."
+                   FontSize="Medium"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center" />
+
+            <Button Text="Run 5-Second Job"
+                    FontSize="Large"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    Clicked="OnButtonClicked" />
+
+            <Button Text="A Do-Nothing Button"
+                    FontSize="Large"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center" />
+
+            <Label Text=
+"This continues the page full of user-interface objects except
+that the only functional user-interface object on the page
+is the Button."
+                   FontSize="Medium"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center" />
+        </StackLayout> 
+        
+        <!-- Overlay -->
+        <ContentView x:Name="overlay" 
+                     AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                     AbsoluteLayout.LayoutFlags="All"
+                     IsVisible="False"
+                     BackgroundColor="#C0808080"
+                     Padding="10, 0">
+
+            <ProgressBar x:Name="progressBar"
+                         VerticalOptions="Center" />
+            
+        </ContentView>
+    </AbsoluteLayout>	
+</ContentPage>

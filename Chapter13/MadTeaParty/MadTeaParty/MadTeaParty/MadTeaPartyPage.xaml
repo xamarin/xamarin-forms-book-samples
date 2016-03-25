@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:MadTeaParty"
+             x:Class="MadTeaParty.MadTeaPartyPage"
+             BackgroundColor="White">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="5, 20, 5, 0"
+                    Android="5, 0"
+                    WinPhone="5, 0" />
+    </ContentPage.Padding>
+	
+    <ScrollView>
+        <StackLayout Spacing="10">
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style x:Key="titleLabel"
+                           TargetType="Label"
+                           BaseResourceKey="TitleStyle">
+                        <Setter Property="TextColor" Value="Black" />
+                        <Setter Property="HorizontalTextAlignment" Value="Center" />
+                    </Style>
+                    
+                    <!-- Implicit styles -->
+                    <Style TargetType="Label"
+                           BaseResourceKey="BodyStyle">
+                        <Setter Property="TextColor" Value="Black" />
+                    </Style>
+
+                    <!-- 1.5 inch image width -->
+                    <Style TargetType="Image">
+                        <Setter Property="WidthRequest" Value="240" />
+                    </Style>
+                
+                    <!-- 1/4 inch indent for poetry -->
+                    <Thickness x:Key="poemIndent">40, 0, 0, 0</Thickness>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+            
+            <!-- Text and images from http://ebooks.adelaide.edu.au/c/carroll/lewis/alice/ -->
+            <StackLayout Spacing="0">
+                <Label Text="Alice’s Adventures in Wonderland"
+                       Style="{DynamicResource titleLabel}"
+                       FontAttributes="Italic" />
+            
+                <Label Text="by Lewis Carroll"
+                       Style="{DynamicResource titleLabel}" />
+            </StackLayout>
+
+            <Label Style="{DynamicResource SubtitleStyle}"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Chapter VII" />
+                        <Span Text="{x:Static sys:Environment.NewLine}" />
+                        <Span Text="A Mad Tea-Party" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text=
+"There was a table set out under a tree in front of the
+house, and the March Hare and the Hatter were having tea at
+it: a Dormouse was sitting between them, fast asleep, and
+the other two were using it as a cushion, resting their
+elbows on it, and talking over its head. ‘Very uncomfortable
+for the Dormouse,’ thought Alice; ‘only, as it’s asleep, I
+suppose it doesn’t mind.’" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text=
+"The table was a large one, but the three were all crowded
+together at one corner of it: ‘No room! No room!’ they
+cried out when they saw Alice coming. ‘There’s " />
+                        <Span Text="plenty" FontAttributes="Italic" />
+                        <Span Text=
+" of room!’ said Alice indignantly, and she sat down in
+a large arm-chair at one end of the table." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text=
+"‘Have some wine,’ the March Hare said in an encouraging tone." />
+
+            <Label Text=
+"Alice looked all round the table, but there was nothing on it
+but tea. ‘I don’t see any wine,’ she remarked." />
+
+            <Label Text="‘There isn’t any,’ said the March Hare." />
+
+            <Label Text=
+"‘Then it wasn’t very civil of you to offer it,’ said Alice angrily." />
+
+            <Label Text=
+"‘It wasn’t very civil of you to sit down without being
+invited,’ said the March Hare." />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="‘I didn’t know it was " />
+                        <Span Text="your" FontAttributes="Italic" />
+                        <Span Text=
+" table,’ said Alice; ‘it’s laid for a great many more than three.’" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text=
+"‘Your hair wants cutting,’ said the Hatter. He had been 
+looking at Alice for some time with great curiosity, and
+this was his first speech." />
+
+            <Label Text=
+"‘You should learn not to make personal remarks,’ Alice said
+with some severity; ‘it’s very rude.’" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text=
+"The Hatter opened his eyes very wide on hearing this; but all he " />
+                        <Span Text="said" FontAttributes="Italic" />
+                        <Span Text=
+" was, ‘Why is a raven like a writing-desk?’" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text=
+"‘Come, we shall have some fun now!’ thought Alice. ‘I’m
+glad they’ve begun asking riddles. — I believe I can guess
+that,’ she added aloud." />
+
+            <Label Text=
+"‘Do you mean that you think you can find out the answer to
+it?’ said the March Hare." />
+
+            <Label Text="‘Exactly so,’ said Alice." />
+
+            <Label Text=
+"‘Then you should say what you mean,’ the March Hare went on." />
+
+            <Label Text=
+"‘I do,’ Alice hastily replied; ‘at least — at least I mean
+what I say — that’s the same thing, you know.’" />
+
+            <Label Text=
+"‘Not the same thing a bit!’ said the Hatter. ‘You might just
+as well say that “I see what I eat” is the same thing as “I
+eat what I see”!’" />
+
+            <Label Text=
+"‘You might just as well say,’ added the March Hare, ‘that “I
+like what I get” is the same thing as “I get what I like”!’" />
+
+            <Label Text=
+"‘You might just as well say,’ added the Dormouse, who seemed
+to be talking in his sleep, ‘that “I breathe when I sleep”
+is the same thing as “I sleep when I breathe”!’" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="‘It " />
+                        <Span Text="is" FontAttributes="Italic" />
+                        <Span Text=
+" the same thing with you,’ said the Hatter, and here the
+conversation dropped, and the party sat silent for a minute,
+while Alice thought over all she could remember about ravens
+and writing-desks, which wasn’t much." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Image Source="{local:ImageResource MadTeaParty.Images.image113.jpg}" />
+
+            <Label Text=
+"The Hatter was the first to break the silence. ‘What day of
+the month is it?’ he said, turning to Alice: he had taken
+his watch out of his pocket, and was looking at it uneasily,
+shaking it every now and then, and holding it to his ear." />
+
+            <Label Text="Alice considered a little, and then said ‘The fourth.’" />
+
+            <Label Text=
+"‘Two days wrong!’ sighed the Hatter. ‘I told you butter
+wouldn’t suit the works!’ he added looking angrily at the
+March Hare." />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="‘It was the " />
+                        <Span Text="best" FontAttributes="Italic" />
+                        <Span Text=" butter,’ the March Hare meekly replied." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text=
+"‘Yes, but some crumbs must have got in as well,’ the Hatter
+grumbled: ‘you shouldn’t have put it in with the
+bread-knife.’" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text=
+"The March Hare took the watch and looked at it gloomily: then
+he dipped it into his cup of tea, and looked at it again: but
+he could think of nothing better to say than his first remark, 
+‘It was the " />
+                        <Span Text="best" FontAttributes="Italic" />
+                        <Span Text=" butter, you know.’" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            
+            <Label Text=
+"Alice had been looking over his shoulder with some curiosity.
+‘What a funny watch!’ she remarked. ‘It tells the day of the
+month, and doesn’t tell what o’clock it is!’" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="‘Why should it?’ muttered the Hatter. ‘Does " />
+                        <Span Text="your" FontAttributes="Italic" />
+                        <Span Text=" watch tell you what year it is?’" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text=
+"‘Of course not,’ Alice replied very readily: ‘but that’s
+because it stays the same year for such a long time
+together.’" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="‘Which is just the case with " />
+                        <Span Text="mine" FontAttributes="Italic" />
+                        <Span Text=" said the Hatter." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            
+            <Label Text=
+"Alice felt dreadfully puzzled. The Hatter’s remark
+seemed to have no sort of meaning in it, and yet it
+was certainly English. ‘I don’t quite understand you,’
+she said, as politely as she could." />
+
+            <Label Text=
+"‘The Dormouse is asleep again,’ said the Hatter, and
+he poured a little hot tea upon its nose." />
+
+            <Label Text=
+"The Dormouse shook its head impatiently, and said,
+without opening its eyes, ‘Of course, of course; just
+what I was going to remark myself.’" />
+
+            <Label Text=
+"‘Have you guessed the riddle yet?’ the Hatter said,
+turning to Alice again." />
+
+            <Label Text="‘No, I give it up,’ Alice replied: ‘what’s the answer?’" />
+
+            <Label Text="‘I haven’t the slightest idea,’ said the Hatter." />
+
+            <Label Text="‘Nor I,’ said the March Hare." />
+
+            <Label Text=
+"Alice sighed wearily. ‘I think you might do something
+better with the time,’ she said, ‘than waste it in asking
+riddles that have no answers.’" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text=
+"‘If you knew Time as well as I do,’ said the Hatter, ‘you
+wouldn’t talk about wasting " />
+                        <Span Text="it" FontAttributes="Italic" />
+                        <Span Text=". It’s " />
+                        <Span Text="him" FontAttributes="Italic" />
+                        <Span Text=".’" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text="I don’t know what you mean,’ said Alice." />
+
+            <Label Text=
+"‘Of course you don’t!’ the Hatter said, tossing his head
+contemptuously. ‘I dare say you never even spoke to Time!’" />
+
+            <Label Text=
+"‘Perhaps not,’ Alice cautiously replied: ‘but I know I have
+to beat time when I learn music.’" />
+
+            <Label Text=
+"‘Ah! that accounts for it,’ said the Hatter. ‘He won’t stand
+beating. Now, if you only kept on good terms with him, he’d
+do almost anything you liked with the clock. For instance,
+suppose it were nine o’clock in the morning, just time to
+begin lessons: you’d only have to whisper a hint to Time,
+and round goes the clock in a twinkling! Half-past one, time
+for dinner!’" />
+
+            <Label Text="(‘I only wish it was,’ the March Hare said to itself in a whisper.)" />
+
+            <Label Text=
+"‘That would be grand, certainly,’ said Alice thoughtfully:
+‘but then — I shouldn’t be hungry for it, you know.’" />
+
+            <Label Text=
+"‘Not at first, perhaps,’ said the Hatter: ‘but you could
+keep it to half-past one as long as you liked.’" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="‘Is that the way " />
+                        <Span Text="you" FontAttributes="Italic" />
+                        <Span Text=" manage?’ Alice asked." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text=
+"The Hatter shook his head mournfully. ‘Not I!’ he replied.
+‘We quarrelled last March — just before" />
+                        <Span Text="he" FontAttributes="Italic" />
+                        <Span Text=
+"went mad, you know —’ (pointing with his tea spoon at the 
+March Hare,) ‘— it was at the great concert given by the 
+Queen of Hearts, and I had to sing" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <ContentView Padding="{StaticResource poemIndent}">
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="“Twinkle, twinkle, little bat!" />
+                            <Span Text="{x:Static sys:Environment.NewLine}" />
+                            <Span Text="How I wonder what you’re at!”" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </ContentView>
+
+            <Label Text="You know the song, perhaps?’" />
+
+            <Label Text="‘I’ve heard something like it,’ said Alice." />
+
+            <Label Text="‘It goes on, you know,’ the Hatter continued, ‘in this way:—" />
+            
+            <ContentView Padding="{StaticResource poemIndent}">
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="“Up above the world you fly," />
+                            <Span Text="{x:Static sys:Environment.NewLine}" />
+                            <Span Text="Like a tea-tray in the sky." />
+                            <Span Text="{x:Static sys:Environment.NewLine}" />
+                            <Span Text="&#x2003;&#x2003;&#x2003;&#x2003;Twinkle, twinkle —”’" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </ContentView>
+
+            <Label Text=
+"Here the Dormouse shook itself, and began singing in its
+sleep ‘Twinkle, twinkle, twinkle, twinkle —’ and went on so
+long that they had to pinch it to make it stop." />
+
+            <Label Text=
+"‘Well, I’d hardly finished the first verse,’ said the
+Hatter, ‘when the Queen jumped up and bawled out, “He’s
+murdering the time! Off with his head!”’" />
+
+            <Label Text="‘How dreadfully savage!’ exclaimed Alice." />
+
+            <Label Text=
+"‘And ever since that,’ the Hatter went on in a mournful
+tone, ‘he won’t do a thing I ask! It’s always six o’clock now.’" />
+
+            <Image Source="{local:ImageResource MadTeaParty.Images.image122.jpg}" />
+            
+            <Label Text=
+"A bright idea came into Alice’s head. ‘Is that the reason so
+many tea-things are put out here?’ she asked." />
+
+            <Label Text=
+"‘Yes, that’s it,’ said the Hatter with a sigh: ‘it’s always
+tea-time, and we’ve no time to wash the things between whiles.’" />
+
+            <Label Text="‘Then you keep moving round, I suppose?’ said Alice." />
+
+            <Label Text="‘Exactly so,’ said the Hatter: ‘as the things get used up.’" />
+
+            <Label Text=
+"‘But what happens when you come to the beginning again?’
+Alice ventured to ask." />
+
+            <Label Text=
+"‘Suppose we change the subject,’ the March Hare interrupted,
+yawning. ‘I’m getting tired of this. I vote the young lady
+tells us a story.’" />
+
+            <Label Text=
+"‘I’m afraid I don’t know one,’ said Alice, rather alarmed at
+the proposal." />
+
+            <Label Text=
+"‘Then the Dormouse shall!’ they both cried. ‘Wake up,
+Dormouse!’ And they pinched it on both sides at once." />
+
+            <Label Text=
+"The Dormouse slowly opened his eyes. ‘I wasn’t asleep,’ he
+said in a hoarse, feeble voice: ‘I heard every word you
+fellows were saying.’" />
+
+            <Label Text="‘Tell us a story!’ said the March Hare." />
+
+            <Label Text="‘Yes, please do!’ pleaded Alice." />
+
+            <Label Text=
+"‘And be quick about it,’ added the Hatter, ‘or you’ll be
+asleep again before it’s done.’" />
+
+            <Label Text=
+"‘Once upon a time there were three little sisters,’ the
+Dormouse began in a great hurry; ‘and their names were
+Elsie, Lacie, and Tillie; and they lived at the bottom
+of a well —’" />
+
+            <Label Text=
+"‘What did they live on?’ said Alice, who always took a great
+interest in questions of eating and drinking." />
+
+            <Label Text=
+"‘They lived on treacle,’ said the Dormouse, after thinking
+a minute or two." />
+
+            <Label Text=
+"‘They couldn’t have done that, you know,’ Alice gently
+remarked; ‘they’d have been ill.’" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="‘So they were,’ said the Dormouse; ‘" />
+                        <Span Text="very" FontAttributes="Italic" />
+                        <Span Text=" ill.’" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            
+            <Label Text=
+"Alice tried to fancy to herself what such an extraordinary
+ways of living would be like, but it puzzled her too much,
+so she went on: ‘But why did they live at the bottom of a
+well?’" />
+
+            <Label Text=
+"‘Take some more tea,’ the March Hare said to Alice, very earnestly." />
+
+            <Label Text=
+"‘I’ve had nothing yet,’ Alice replied in an offended tone,
+‘so I can’t take more.’" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="‘You mean you can’t take " />
+                        <Span Text="less" FontAttributes="Italic" />
+                        <Span Text=",’ said the Hatter: ‘it’s very easy to take " />
+                        <Span Text="more" FontAttributes="Italic" />
+                        <Span Text=" than nothing.’" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="‘Nobody asked " />
+                        <Span Text="your" FontAttributes="Italic" />
+                        <Span Text=" opinion,’ said Alice." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text=
+"‘Who’s making personal remarks now?’ the Hatter asked triumphantly." />
+
+            <Label Text=
+"Alice did not quite know what to say to this: so she helped
+herself to some tea and bread-and-butter, and then turned to 
+the Dormouse, and repeated her question. ‘Why did they live
+at the bottom of a well?’" />
+
+            <Label Text=
+"The Dormouse again took a minute or two to think about it,
+and then said, ‘It was a treacle-well.’" />
+
+            <Label Text=
+"‘There’s no such thing!’ Alice was beginning very angrily,
+but the Hatter and the March Hare went ‘Sh! sh!’ and the
+Dormouse sulkily remarked, ‘If you can’t be civil, you’d
+better finish the story for yourself.’" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text=
+"‘No, please go on!’ Alice said very humbly; ‘I won’t
+interrupt again. I dare say there may be" />
+                        <Span Text="one" FontAttributes="Italic" />
+                        <Span Text=".’" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text=
+"‘One, indeed!’ said the Dormouse indignantly. However, he
+consented to go on. ‘And so these three little sisters —
+they were learning to draw, you know —’" />
+
+            <Label Text=
+"‘What did they draw?’ said Alice, quite forgetting her promise." />
+
+            <Label Text=
+"‘Treacle,’ said the Dormouse, without considering at all this time." />
+
+            <Label Text=
+"‘I want a clean cup,’ interrupted the Hatter: ‘let’s all
+move one place on.’" />
+
+            <Label Text=
+"He moved on as he spoke, and the Dormouse followed him:
+the March Hare moved into the Dormouse’s place, and Alice
+rather unwillingly took the place of the March Hare. The
+Hatter was the only one who got any advantage from the
+change: and Alice was a good deal worse off than before,
+as the March Hare had just upset the milk-jug into his
+plate." />
+
+            <Label Text=
+"Alice did not wish to offend the Dormouse again, so she
+began very cautiously: ‘But I don’t understand. Where did
+they draw the treacle from?’" />
+
+            <Label Text=
+"‘You can draw water out of a water-well,’ said the Hatter;
+‘so I should think you could draw treacle out of a
+treacle-well — eh, stupid?’" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="‘But they were " />
+                        <Span Text="in" FontAttributes="Italic" />
+                        <Span Text=
+" the well,’ Alice said to the Dormouse, not choosing to notice this last remark." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text="‘Of course they were’, said the Dormouse; ‘— well in.’" />
+
+            <Label Text=
+"This answer so confused poor Alice, that she let the Dormouse
+go on for some time without interrupting it." />
+
+            <Label Text=
+"‘They were learning to draw,’ the Dormouse went on, yawning
+and rubbing its eyes, for it was getting very sleepy; ‘and
+they drew all manner of things — everything that begins with
+an M—’" />
+
+            <Label Text="‘Why with an M?’ said Alice." />
+
+            <Label Text="‘Why not?’ said the March Hare." />
+
+            <Label Text="Alice was silent." />
+
+            <Label Text=
+"The Dormouse had closed its eyes by this time, and was
+going off into a doze; but, on being pinched by the Hatter,
+it woke up again with a little shriek, and went on: ‘— that
+begins with an M, such as mouse-traps, and the moon, and
+memory, and muchness — you know you say things are “much of
+a muchness”— did you ever see such a thing as a drawing of
+a muchness?’" />
+
+            <Label Text=
+"‘Really, now you ask me,’ said Alice, very much confused,
+‘I don’t think —’" />
+
+            <Label Text="‘Then you shouldn’t talk,’ said the Hatter." />
+
+            <Label Text=
+"This piece of rudeness was more than Alice could bear:
+she got up in great disgust, and walked off; the Dormouse
+fell asleep instantly, and neither of the others took the
+least notice of her going, though she looked back once or
+twice, half hoping that they would call after her: the last
+time she saw them, they were trying to put the Dormouse
+into the teapot." />
+
+            <Image Source="{local:ImageResource MadTeaParty.Images.image129.jpg}" />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="‘At any rate I’ll never go " />
+                        <Span Text="there" FontAttributes="Italic" />
+                        <Span Text=
+" again!’ said Alice as she picked her way through the wood. ‘It’s
+the stupidest tea-party I ever was at in all my life!’" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text=
+"Just as she said this, she noticed that one of the trees
+had a door leading right into it. ‘That’s very curious!’
+she thought. ‘But everything’s curious today. I think I
+may as well go in at once.’ And in she went." />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text=
+"Once more she found herself in the long hall, and close to
+the little glass table. ‘Now, I’ll manage better this time,’
+she said to herself, and began by taking the little golden
+key, and unlocking the door that led into the garden. Then
+she went to work nibbling at the mushroom (she had kept a
+piece of it in her pocket) till she was about a foot high:
+then she walked down the little passage: and " />
+                        <Span Text="then" FontAttributes="Italic" />
+                        <Span Text=
+" — she found herself at last in the beautiful garden,
+among the bright flower-beds and the cool fountains." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

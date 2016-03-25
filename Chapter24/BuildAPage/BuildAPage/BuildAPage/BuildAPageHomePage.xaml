@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BuildAPage.BuildAPageHomePage"
+             Title="Build-a-Page"
+             Padding="10, 5">
+
+    <StackLayout>
+        <Label Text="Enter page title:" />
+        <Entry x:Name="titleEntry"
+               Placeholder="page title" />
+
+        <Grid VerticalOptions="FillAndExpand">
+            <ContentView Grid.Row="0">
+                <StackLayout>
+                <Label Text="Tap to add to generated page:" />
+                    <ListView x:Name="viewList"
+                              ItemSelected="OnViewListItemSelected">
+                        <ListView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>BoxView</x:String>
+                                <x:String>Button</x:String>
+                                <x:String>DatePicker</x:String>
+                                <x:String>Entry</x:String>
+                                <x:String>Slider</x:String>
+                                <x:String>Stepper</x:String>
+                                <x:String>Switch</x:String>
+                                <x:String>TimePicker</x:String>
+                            </x:Array>
+                        </ListView.ItemsSource>
+                    </ListView>
+                </StackLayout>
+            </ContentView>    
+        
+            <ContentView Grid.Row="1">
+                <StackLayout>
+                    <Label Text="Tap to remove from generated page:" />
+                    <ListView x:Name="pageList"
+                              ItemSelected="OnPageListItemSelected" />
+                </StackLayout>
+            </ContentView>    
+        </Grid>
+                    
+        <Button x:Name="generateButton"
+                Text="Generate the Page!"
+                IsEnabled="False"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="OnGenerateButtonClicked" />
+    </StackLayout>
+</ContentPage>

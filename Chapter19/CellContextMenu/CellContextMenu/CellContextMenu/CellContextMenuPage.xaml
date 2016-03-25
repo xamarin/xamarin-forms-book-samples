@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:school="clr-namespace:SchoolOfFineArt;assembly=SchoolOfFineArt"
+             x:Class="CellContextMenu.CellContextMenuPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+
+    <ContentPage.BindingContext>
+        <school:SchoolViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout BindingContext="{Binding StudentBody}">
+        <Label Text="{Binding School}"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+
+        <ListView ItemsSource="{Binding Students}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource="{Binding PhotoFilename}"
+                               Text="{Binding FullName}"
+                               Detail="{Binding GradePointAverage,
+                                                StringFormat='G.P.A. = {0:F2}'}">
+                        <ImageCell.ContextActions>
+                            <MenuItem Text="Reset GPA"
+                                      Command="{Binding ResetGpaCommand}" />
+                            
+                            <MenuItem Text="Move to top"
+                                      Command="{Binding MoveToTopCommand}" />
+
+                            <MenuItem Text="Move to bottom"
+                                      Command="{Binding MoveToBottomCommand}" />
+
+                            <MenuItem Text="Remove"
+                                      IsDestructive="True"
+                                      Command="{Binding RemoveCommand}" />
+                        </ImageCell.ContextActions>
+                    </ImageCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

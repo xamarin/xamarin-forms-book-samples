@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BoxView xmlns="http://xamarin.com/schemas/2014/forms"
+         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+         xmlns:toolkit=
+             "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+         x:Class="ShiverViews.ShiverView">
+    
+    <BoxView.Behaviors>
+        <toolkit:TapBehavior x:Name="tapBehavior" />
+    </BoxView.Behaviors>
+
+    <BoxView.Triggers>
+        <DataTrigger TargetType="BoxView"
+                     Binding="{Binding Source={x:Reference tapBehavior},
+                                       Path=IsTriggered}"
+                     Value="True">
+            <DataTrigger.EnterActions>
+                <toolkit:ShiverAction />
+            </DataTrigger.EnterActions>
+        </DataTrigger>
+    </BoxView.Triggers>
+</BoxView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="EmailValidationTrigger.EmailValidationTriggerPage"
+             Padding="50">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Entry Placeholder="Enter email address"
+                  HorizontalOptions="FillAndExpand">
+                <Entry.Behaviors>
+                    <toolkit:ValidEmailBehavior x:Name="validEmail" />
+                </Entry.Behaviors>
+            </Entry>
+
+            <Label Text="Not yet!"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center">
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label"
+                                 Binding="{Binding Source={x:Reference validEmail},
+                                                   Path=IsValid}"
+                                 Value="True">
+                        <Setter Property="Text" Value="OK!" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+        </StackLayout>
+
+        <Button Text="Send!"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                IsEnabled="{Binding Source={x:Reference validEmail},
+                                    Path=IsValid}" />
+    </StackLayout>
+</ContentPage>

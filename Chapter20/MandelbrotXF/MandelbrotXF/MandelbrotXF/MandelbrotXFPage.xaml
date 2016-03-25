@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="MandelbrotXF.MandelbrotXFPage"
+             SizeChanged="OnPageSizeChanged">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:BooleanNegationConverter x:Key="negate" />
+            <toolkit:BaseTwoLogConverter x:Key="base2log" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid x:Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0" />
+        </Grid.ColumnDefinitions>
+        
+        <!-- Image for determining pixels per unit. -->
+        <Image x:Name="testImage"
+               Grid.Row="0" Grid.Column="0"
+               Opacity="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <!-- Image for Mandelbrot Set. -->
+        <Image x:Name="image"
+               Grid.Row="0" Grid.Column="0"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand"
+               SizeChanged="OnImageSizeChanged" />
+
+        <AbsoluteLayout x:Name="crossHairLayout" 
+                        Grid.Row="0" Grid.Column="0"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        SizeChanged="OnCrossHairLayoutSizeChanged">
+
+            <AbsoluteLayout.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="BoxView">
+                        <Setter Property="Color" Value="White" />
+                        <Setter Property="AbsoluteLayout.LayoutBounds" Value="0,0,0,0" />
+                    </Style>
+                </ResourceDictionary>
+            </AbsoluteLayout.Resources>
+            
+            <BoxView x:Name="realCrossHair" />
+            <BoxView x:Name="imagCrossHair" />
+            <BoxView x:Name="topBox" />
+            <BoxView x:Name="bottomBox" />
+            <BoxView x:Name="leftBox" />
+            <BoxView x:Name="rightBox" />
+        </AbsoluteLayout>
+
+        <StackLayout x:Name="controlPanelStack"
+                     Grid.Row="1" Grid.Column="0"
+                     Padding="10">
+
+            <ProgressBar Progress="{Binding Progress}"
+                         VerticalOptions="CenterAndExpand" />
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Slider Value="{Binding RealOffset, Mode=TwoWay}"
+                        IsEnabled="{Binding IsBusy, Converter={StaticResource negate}}" />
+
+                <Slider Value="{Binding ImaginaryOffset, Mode=TwoWay}"
+                        IsEnabled="{Binding IsBusy, Converter={StaticResource negate}}" />
+
+                <Label Text="{Binding TargetCenter, StringFormat='{0}'}"
+                       FontSize="Small"
+                       HorizontalTextAlignment="Center" />
+            </StackLayout>
+
+            <Grid VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Magnification factor stepper and display. -->
+                <Stepper x:Name="magnificationStepper"
+                         Grid.Row="0" Grid.Column="0"
+                         Value="{Binding TargetMagnification, 
+                                         Converter={StaticResource base2log}}"
+                         IsEnabled="{Binding IsBusy, Converter={StaticResource negate}}"
+                         VerticalOptions="Center" />
+
+                <StackLayout Grid.Row="0" Grid.Column="1"
+                             Orientation="Horizontal"
+                             Spacing="0"
+                             VerticalOptions="Start">
+                    <Label Text="zoom 2"
+                           FontSize="Medium" />
+                    <Label Text="{Binding Source={x:Reference magnificationStepper},
+                                          Path=Value,
+                                          StringFormat='{0}'}"
+                           FontSize="Micro" />
+                </StackLayout>
+
+                <!-- Iterations factor stepper and display. -->
+                <Stepper x:Name="iterationsStepper"
+                         Grid.Row="1" Grid.Column="0"
+                         Value="{Binding Iterations, Converter={StaticResource base2log}}"
+                         IsEnabled="{Binding IsBusy, Converter={StaticResource negate}}"
+                         VerticalOptions="Center" />
+
+                <StackLayout Grid.Row="1" Grid.Column="1" 
+                             Orientation="Horizontal"
+                             Spacing="0"
+                             VerticalOptions="End">
+                    <Label Text="loop 2"
+                           FontSize="Medium" />
+                    <Label Text="{Binding Source={x:Reference iterationsStepper},
+                                          Path=Value,
+                                          StringFormat='{0}'}"
+                           FontSize="Micro" />
+                </StackLayout>
+
+                <!-- Go / Cancel buttons. -->
+                <Grid Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"
+                      HorizontalOptions="End"
+                      VerticalOptions="Center">
+                
+                    <Button Text="Go"
+                            Command="{Binding CalculateCommand}"
+                            IsVisible="{Binding IsBusy, Converter={StaticResource negate}}" />
+
+                    <Button Text="Cancel"
+                            Command="{Binding CancelCommand}"
+                            IsVisible="{Binding IsBusy}" />
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ButtonEnabler.ButtonEnablerPage"
+             Padding="20, 50">
+    
+    <StackLayout Spacing="20">
+        <Entry x:Name="entry"
+               Text=""
+               Keyboard="Url"
+               Placeholder="enter filename" />
+
+        <Button Text="Save"
+                FontSize="Medium"
+                HorizontalOptions="Center">
+            <Button.Triggers>
+                <DataTrigger TargetType="Button"
+                             Binding="{Binding Source={x:Reference entry},
+                                               Path=Text.Length}"
+                             Value="0">
+                    <Setter Property="IsEnabled" Value="False" />
+                </DataTrigger>
+            </Button.Triggers>
+        </Button>
+    </StackLayout>
+</ContentPage>

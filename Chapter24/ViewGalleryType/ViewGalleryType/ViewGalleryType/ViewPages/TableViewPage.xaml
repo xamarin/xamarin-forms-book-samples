@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ViewGalleryType.TableViewPage"
+             Title="TableView"
+             Padding="10, 0">
+
+    <TableView Intent="Form">
+        <TableRoot Title="Data Form">
+            <TableSection Title="Personal Information">
+                <EntryCell Label="Name:"
+                           Placeholder="Enter name"
+                           Keyboard="Text" />
+                
+                <EntryCell Label="Email:"
+                           Placeholder="Enter email address"
+                           Keyboard="Email" />
+                
+                <EntryCell Label="Phone:"
+                           Placeholder="Enter phone number"
+                           Keyboard="Telephone" />
+                
+                <EntryCell Label="Age:"
+                           Placeholder="Enter age"
+                           Keyboard="Numeric" />
+                
+                <SwitchCell Text="Are you a programmer?" />
+            </TableSection>
+        </TableRoot>
+    </TableView>
+
+
+</ContentPage>

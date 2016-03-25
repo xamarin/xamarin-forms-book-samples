@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridBarChart.GridBarChartPage">
+
+    <AbsoluteLayout>
+    
+        <!-- Grid occupying entire page. -->
+        <Grid x:Name="grid"
+              ColumnSpacing="1"
+              AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+              AbsoluteLayout.LayoutFlags="All" />
+        
+        <!-- Overlay in center of screen. -->
+        <Frame x:Name="overlay"
+               OutlineColor="Accent"
+               BackgroundColor="#404040"
+               Opacity="0"
+               AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional">
+            
+            <Label x:Name="label" 
+                   TextColor="White"
+                   FontSize="Large" />
+        </Frame>
+    </AbsoluteLayout>
+</ContentPage>

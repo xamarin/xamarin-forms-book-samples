@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="BoxViewTapShiver.BoxViewTapShiverPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="BoxView">
+                <Setter Property="WidthRequest" Value="200" />
+                <Setter Property="HeightRequest" Value="50" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions"   Value="CenterAndExpand" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <BoxView Color="Red">
+            <BoxView.Behaviors>
+                <toolkit:TapBehavior x:Name="tapBehavior1" />
+            </BoxView.Behaviors>
+
+            <BoxView.Triggers>
+                <DataTrigger TargetType="BoxView"
+                             Binding="{Binding Source={x:Reference tapBehavior1},
+                                               Path=IsTriggered}"
+                             Value="True">
+                    <DataTrigger.EnterActions>
+                        <toolkit:ShiverAction />
+                    </DataTrigger.EnterActions>
+                </DataTrigger>
+            </BoxView.Triggers>
+        </BoxView>
+
+        <BoxView Color="Green">
+            <BoxView.Behaviors>
+                <toolkit:TapBehavior x:Name="tapBehavior2" />
+            </BoxView.Behaviors>
+
+            <BoxView.Triggers>
+                <DataTrigger TargetType="BoxView"
+                             Binding="{Binding Source={x:Reference tapBehavior2},
+                                               Path=IsTriggered}"
+                             Value="True">
+                    <DataTrigger.EnterActions>
+                        <toolkit:ShiverAction />
+                    </DataTrigger.EnterActions>
+                </DataTrigger>
+            </BoxView.Triggers>
+        </BoxView>
+        
+        <BoxView Color="Blue">
+            <BoxView.Behaviors>
+                <toolkit:TapBehavior x:Name="tapBehavior3" />
+            </BoxView.Behaviors>
+
+            <BoxView.Triggers>
+                <DataTrigger TargetType="BoxView"
+                             Binding="{Binding Source={x:Reference tapBehavior3},
+                                               Path=IsTriggered}"
+                             Value="True">
+                    <DataTrigger.EnterActions>
+                        <toolkit:ShiverAction />
+                    </DataTrigger.EnterActions>
+                </DataTrigger>
+            </BoxView.Triggers>
+        </BoxView>
+    </StackLayout>
+</ContentPage>

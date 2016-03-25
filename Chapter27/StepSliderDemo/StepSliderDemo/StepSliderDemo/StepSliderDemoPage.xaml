@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:platform=
+                 "clr-namespace:Xamarin.FormsBook.Platform;assembly=Xamarin.FormsBook.Platform"
+             x:Class="StepSliderDemo.StepSliderDemoPage">
+    <StackLayout Padding="10, 0">
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Style TargetType="ContentView">
+                    <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                </Style>
+
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="Large" />
+                    <Setter Property="HorizontalOptions" Value="Center" />
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+
+        <ContentView>
+            <StackLayout>
+                <platform:StepSlider x:Name="stepSlider1" />
+                <Label Text="{Binding Source={x:Reference stepSlider1},
+                                      Path=Value}" />
+            </StackLayout>
+        </ContentView>
+
+        <ContentView>
+            <StackLayout>
+                <platform:StepSlider x:Name="stepSlider2"
+                                     Minimum="10"
+                                     Maximum="15" 
+                                     Steps="20"
+                                     ValueChanged="OnSliderValueChanged" />
+                <Label x:Name="label2" />
+            </StackLayout>
+        </ContentView>
+
+        <ContentView>
+            <StackLayout>
+                <platform:StepSlider x:Name="stepSlider3"
+                                     Steps="10" />
+                <Label Text="{Binding Source={x:Reference stepSlider3},
+                                      Path=Value}" />
+            </StackLayout>
+        </ContentView>
+
+        <ContentView>
+            <StackLayout>
+                <platform:StepSlider x:Name="stepSlider4"
+                                     Minimum="0"
+                                     Maximum="1"
+                                     Steps="100"
+                                     ValueChanged="OnSliderValueChanged" />
+                <Label x:Name="label4" />
+            </StackLayout>
+        </ContentView>
+
+        <ContentView>
+            <StackLayout>
+                <platform:StepSlider x:Name="stepSlider5"
+                                     Minimum="10"
+                                     Maximum="20"
+                                     Steps="2" />
+                <Label Text="{Binding Source={x:Reference stepSlider5},
+                                      Path=Value}" />
+            </StackLayout>
+        </ContentView>
+    </StackLayout>
+</ContentPage>

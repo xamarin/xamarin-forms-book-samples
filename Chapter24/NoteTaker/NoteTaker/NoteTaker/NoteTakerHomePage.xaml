@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NoteTaker.NoteTakerHomePage"
+             Title="Note Taker">
+
+    <ListView ItemsSource="{Binding Source={x:Static Application.Current},
+                                    Path=NoteFolder.Notes}"
+              ItemSelected="OnListViewItemSelected"
+              VerticalOptions="FillAndExpand">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Identifier}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Note"
+                     Order="Primary"
+                     Clicked="OnAddNoteClicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="new.png"
+                            Android="ic_action_new.png"
+                            WinPhone="Images/add.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+</ContentPage>

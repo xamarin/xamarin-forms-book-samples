@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConcurrentAnimations.ConcurrentAnimationsPage">
+    <StackLayout>
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Style TargetType="Button">
+                    <Setter Property="HorizontalOptions" Value="Center" />
+                    <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>        
+
+        <Button Text="Animation 1 (Scale)"
+                Clicked="OnButton1Clicked" />
+
+        <Button Text="Animation 2 (Repeated)"
+                Clicked="OnButton2Clicked" />
+        
+        <Button Text="Stop Animation 2"
+                Clicked="OnStop2Clicked" />
+        
+        <Button Text="Animation 3 (Scale up &amp; down)"
+                Clicked="OnButton3Clicked" />
+        
+        <Button Text="Animation 4 (Scale &amp; Rotate)"
+                Clicked="OnButton4Clicked" />
+        
+        <Button Text="Animation 5 (Dots)"
+                Clicked="OnButton5Clicked" />
+
+        <Label x:Name="dotLabel"
+               FontSize="Large"
+               WidthRequest="100" />
+        
+        <Button Text="Turn off dots"
+                Clicked="OnTurnOffButtonClicked" />
+        
+        <Button Text="Animation 6 (Color)"
+                Clicked="OnButton6Clicked" />
+
+    </StackLayout>
+</ContentPage>

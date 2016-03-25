@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="DataTransfer5.DataTransfer5InfoPage"
+             Title="Info Page"
+             BindingContext="{Binding Source={x:Static Application.Current},
+                                      Path=AppData.CurrentInfo}">
+             
+    <StackLayout Padding="20, 0"
+                 Spacing="20">
+        <Entry Text="{Binding Name}"
+               Placeholder="Enter Name" />
+
+        <Entry Text="{Binding Email}"
+               Placeholder="Enter Email Address" />
+
+        <Picker x:Name="languagePicker"
+                Title="Favorite Programming Language">
+            <Picker.Items>
+                <x:String>C#</x:String>
+                <x:String>F#</x:String>
+                <x:String>Objective C</x:String>
+                <x:String>Swift</x:String>
+                <x:String>Java</x:String>
+            </Picker.Items>
+
+            <Picker.SelectedIndex>
+                <Binding Path="Language">
+                    <Binding.Converter>
+                        <toolkit:ObjectToIndexConverter x:TypeArguments="x:String">
+                            <x:String>C#</x:String>
+                            <x:String>F#</x:String>
+                            <x:String>Objective C</x:String>
+                            <x:String>Swift</x:String>
+                            <x:String>Java</x:String>
+                        </toolkit:ObjectToIndexConverter>
+                    </Binding.Converter>
+                </Binding>
+            </Picker.SelectedIndex>
+        </Picker>
+        
+        <DatePicker Date="{Binding Date}" />
+    </StackLayout>
+</ContentPage>

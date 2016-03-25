@@ -1,0 +1,63 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="FormattedTextToggle.FormattedTextTogglePage">
+
+    <StackLayout>
+        <Frame HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               OutlineColor="Accent"
+               BackgroundColor="Transparent">
+
+            <Frame.Behaviors>
+                <toolkit:ToggleBehavior x:Name="toggleBehavior"
+                                        PropertyChanged="OnBehaviorPropertyChanged" />
+            </Frame.Behaviors>
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Paused / " 
+                                  FontSize="Large"
+                                  FontAttributes="Bold" />
+                            
+                            <Span Text="Playing"
+                                  FontSize="Small" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label"
+                                 Binding="{Binding Source={x:Reference toggleBehavior},
+                                                   Path=IsToggled}"
+                                 Value="True">
+                        <Setter Property="FormattedText">
+                            <Setter.Value>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="Paused"
+                                              FontSize="Small" />
+                                        
+                                        <Span Text=" / Playing" 
+                                              FontSize="Large"
+                                              FontAttributes="Bold" />
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Setter.Value>
+                        </Setter>
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>           
+        </Frame>
+
+        <Label x:Name="eventLabel"
+               Text=""
+               FontSize="Large"
+               Opacity="0"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+</ContentPage>

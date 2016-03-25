@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterDetailBehaviors.DetailPage"
+             Title="Detail Page"
+             Padding="10"
+             x:Name="detailPage">
+    
+    <Frame OutlineColor="Accent">
+        <StackLayout Orientation="Horizontal"
+                     Spacing="0"
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="Center">
+            <Label Text="{Binding Source={x:Reference detailPage},
+                                  Path=Width,
+                                  StringFormat='Detail: {0:F0}'}"
+                   FontSize="Large"/>
+
+            <Label Text="{Binding Source={x:Reference detailPage},
+                                  Path=Height,
+                                  StringFormat=' &#x00D7; {0:F0}'}"
+                   FontSize="Large" />
+        </StackLayout>
+    </Frame>
+</ContentPage>

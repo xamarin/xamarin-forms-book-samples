@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XorConditions.XorConditionsPage"
+             Padding="50, 20">
+
+    <StackLayout>
+        <Label Text="Enter:" />
+        
+        <Entry x:Name="entry1"
+               Text=""
+               Placeholder="filename" />
+
+        <!-- IsToggled is true if entry1 has no text -->
+        <Switch x:Name="switch1"
+                IsVisible="False">
+            <Switch.Triggers>
+                <DataTrigger TargetType="Switch"
+                             Binding="{Binding Source={x:Reference entry1},
+                                               Path=Text.Length}"
+                             Value="0">
+                    <Setter Property="IsToggled" Value="True" />
+                </DataTrigger>
+            </Switch.Triggers>
+        </Switch>
+
+        <Label Text="Or:" />
+        
+        <Entry x:Name="entry2"
+               Text=""
+               Placeholder="url" />
+
+        <!-- IsToggled is true if entry2 has no text -->
+        <Switch x:Name="switch2"
+                IsVisible="False">
+            <Switch.Triggers>
+                <DataTrigger TargetType="Switch"
+                             Binding="{Binding Source={x:Reference entry2},
+                                               Path=Text.Length}"
+                             Value="0">
+                    <Setter Property="IsToggled" Value="True" />
+                </DataTrigger>
+            </Switch.Triggers>
+        </Switch>
+
+        <!-- IsToggled is true if either Entry has some text (OR operation) -->
+        <Switch x:Name="switch3"
+                IsToggled="True"
+                IsVisible="False">
+            <Switch.Triggers>
+                <MultiTrigger TargetType="Switch">
+                    <MultiTrigger.Conditions>
+                        <BindingCondition Binding="{Binding Source={x:Reference switch1},
+                                                            Path=IsToggled}"
+                                          Value="True" />
+                        <BindingCondition Binding="{Binding Source={x:Reference switch2},
+                                                            Path=IsToggled}"
+                                          Value="True" />
+                    </MultiTrigger.Conditions>
+                    
+                    <Setter Property="IsToggled" Value="False" />
+                </MultiTrigger>
+            </Switch.Triggers>
+        </Switch>
+        
+        <!-- IsToggled is true if both Entry's have some text (AND operation) -->
+        <Switch x:Name="switch4"
+                IsVisible="False">
+            <Switch.Triggers>
+                <MultiTrigger TargetType="Switch">
+                    <MultiTrigger.Conditions>
+                        <BindingCondition Binding="{Binding Source={x:Reference switch1},
+                                                            Path=IsToggled}"
+                                          Value="False" />
+                        <BindingCondition Binding="{Binding Source={x:Reference switch2},
+                                                            Path=IsToggled}"
+                                          Value="False" />
+                    </MultiTrigger.Conditions>
+
+                    <Setter Property="IsToggled" Value="True" />
+                </MultiTrigger>
+            </Switch.Triggers>
+        </Switch>
+
+        <!-- Button is enabled if either Entry has some text but not both (XOR operation) -->
+        <Button Text="Load"
+                IsEnabled="False"
+                FontSize="Large">
+            <Button.Triggers>
+                <MultiTrigger TargetType="Button">
+                    <MultiTrigger.Conditions>
+                        <BindingCondition Binding="{Binding Source={x:Reference switch3},
+                                                            Path=IsToggled}"
+                                          Value="True" />
+                        <BindingCondition Binding="{Binding Source={x:Reference switch4},
+                                                            Path=IsToggled}"
+                                          Value="False" />
+                    </MultiTrigger.Conditions>
+
+                    <Setter Property="IsEnabled" Value="True" />
+                </MultiTrigger>                
+            </Button.Triggers>
+        </Button>
+    </StackLayout>
+</ContentPage>

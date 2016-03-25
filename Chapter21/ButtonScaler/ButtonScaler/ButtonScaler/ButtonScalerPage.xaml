@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ButtonScaler.ButtonScalerPage">
+    <StackLayout>
+        <!-- "Animate Scale" Button between two BoxViews -->
+        <BoxView Color="Accent"
+                 HeightRequest="4"
+                 VerticalOptions="EndAndExpand" />
+
+        <Button Text="Animate Scale"
+                FontSize="Large"
+                BorderWidth="1"
+                HorizontalOptions="Center"
+                Clicked="OnAnimateScaleClicked" />
+
+        <BoxView Color="Accent"
+                 HeightRequest="4"
+                 VerticalOptions="StartAndExpand" />
+        
+        <!-- "Animate FontSize" Button between two BoxViews -->
+        <BoxView Color="Accent"
+                 HeightRequest="4"
+                 VerticalOptions="EndAndExpand" />
+
+        <Button Text="Animate FontSize"
+                FontSize="Large"
+                BorderWidth="1"
+                HorizontalOptions="Center"
+                Clicked="OnAnimateFontSizeClicked" />
+
+        <BoxView Color="Accent"
+                 HeightRequest="4"
+                 VerticalOptions="StartAndExpand" />
+    </StackLayout>
+</ContentPage>

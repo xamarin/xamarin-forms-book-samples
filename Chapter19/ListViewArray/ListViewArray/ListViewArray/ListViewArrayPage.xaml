@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListViewArray.ListViewArrayPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="10, 20, 10, 0"
+                    Android="10, 0"
+                    WinPhone="10, 0" />
+    </ContentPage.Padding>
+
+    <StackLayout>
+        <ListView x:Name="listView"
+                  SelectedItem="{Binding Source={x:Reference boxView},
+                                         Path=Color,
+                                         Mode=TwoWay}">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type Color}">
+                    <x:Static Member="Color.Aqua" />
+                    <x:Static Member="Color.Black" />
+                    <x:Static Member="Color.Blue" />
+                    <x:Static Member="Color.Fuchsia" />
+                    <x:Static Member="Color.Gray" />
+                    <x:Static Member="Color.Green" />
+                    <x:Static Member="Color.Lime" />
+                    <x:Static Member="Color.Maroon" />
+                    <Color>Navy</Color>
+                    <Color>Olive</Color>
+                    <Color>Pink</Color>
+                    <Color>Purple</Color>
+                    <Color>Red</Color>
+                    <Color>Silver</Color>
+                    <Color>Teal</Color>
+                    <Color>White</Color>
+                    <Color>Yellow</Color>
+                </x:Array>
+            </ListView.ItemsSource>
+        </ListView>
+
+        <BoxView x:Name="boxView"
+                 Color="Lime"
+                 HeightRequest="100" />        
+        
+    </StackLayout>
+</ContentPage>

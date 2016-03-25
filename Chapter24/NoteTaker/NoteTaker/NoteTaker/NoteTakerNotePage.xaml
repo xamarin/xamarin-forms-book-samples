@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NoteTaker.NoteTakerNotePage"
+             Title="New Note">
+
+    <StackLayout>
+        <Label Text="Title:" />
+        
+        <Entry Text="{Binding Title}" 
+               Placeholder="Title (optional)" />
+        
+        <Label Text="Note:" />
+
+        <Editor Text="{Binding Text}"
+                Keyboard="Text"
+                VerticalOptions="FillAndExpand" />
+    </StackLayout>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel"
+                     Order="Primary"
+                     Clicked="OnCancelClicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="cancel.png"
+                            Android="ic_action_cancel.png"
+                            WinPhone="Images/cancel.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+        <ToolbarItem Text="Delete"
+                     Order="Primary"
+                     Clicked="OnDeleteClicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="discard.png"
+                            Android="ic_action_discard.png"
+                            WinPhone="Images/delete.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+</ContentPage>

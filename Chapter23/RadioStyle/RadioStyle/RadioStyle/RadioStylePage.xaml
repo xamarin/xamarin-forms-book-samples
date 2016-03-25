@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadioStyle"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="RadioStyle.RadioStylePage"
+             Padding="0, 50, 0, 0">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="baseStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="selectedStyle" TargetType="Label"
+                   BasedOn="{StaticResource baseStyle}">
+                <Setter Property="TextColor" Value="Green" />
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="FontAttributes" Value="Bold,Italic" />
+            </Style>
+
+            <!-- Implicit style -->
+            <Style TargetType="Label" BasedOn="{StaticResource baseStyle}" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Grid>
+            <Label Text="Small"
+                   Grid.Column="0">
+                <Label.Behaviors>
+                    <toolkit:RadioBehavior x:Name="smallRadio" />
+                </Label.Behaviors>
+
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label"
+                                 Binding="{Binding Source={x:Reference smallRadio},
+                                                   Path=IsChecked}"
+                                 Value="True">
+                        <Setter Property="Style" Value="{StaticResource selectedStyle}" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+
+            <Label Text="Medium"
+                   Grid.Column="1">
+                <Label.Behaviors>   
+                    <toolkit:RadioBehavior x:Name="mediumRadio"
+                                           IsChecked="True" />
+                </Label.Behaviors>
+
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label"
+                                 Binding="{Binding Source={x:Reference mediumRadio},
+                                                   Path=IsChecked}"
+                                 Value="True">
+                        <Setter Property="Style" Value="{StaticResource selectedStyle}" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+
+            <Label Text="Large"
+                   Grid.Column="2">
+                <Label.Behaviors>
+                    <toolkit:RadioBehavior x:Name="largeRadio" />
+                </Label.Behaviors>
+
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label"
+                                 Binding="{Binding Source={x:Reference largeRadio},
+                                                   Path=IsChecked}"
+                                 Value="True">
+                        <Setter Property="Style" Value="{StaticResource selectedStyle}" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+        </Grid>
+    
+        <Grid VerticalOptions="CenterAndExpand"
+              HorizontalOptions="Center">
+            
+            <Image Source="{local:ImageResource RadioStyle.Images.tee200.png}"
+                   IsVisible="{Binding Source={x:Reference smallRadio},
+                                       Path=IsChecked}" />
+            
+            <Image Source="{local:ImageResource RadioStyle.Images.tee250.png}"
+                   IsVisible="{Binding Source={x:Reference mediumRadio},
+                                       Path=IsChecked}" />
+
+            <Image Source="{local:ImageResource RadioStyle.Images.tee300.png}"
+                   IsVisible="{Binding Source={x:Reference largeRadio},
+                                       Path=IsChecked}" />
+        </Grid>
+    </StackLayout>    
+</ContentPage>

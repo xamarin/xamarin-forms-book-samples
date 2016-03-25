@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToolbarDemo.ToolbarDemoPage"
+             Title="Toolbar Demo">
+
+    <Label x:Name="label"
+           FontSize="Medium"
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+           
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="edit" 
+                     Order="Primary"
+                     Clicked="OnToolbarItemClicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="edit.png"
+                            Android="ic_action_edit.png"
+                            WinPhone="Images/edit.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+        <ToolbarItem Text="search"
+                     Order="Primary"
+                     Clicked="OnToolbarItemClicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="search.png"
+                            Android="ic_action_search.png"
+                            WinPhone="Images/feature.search.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+        <ToolbarItem Text="refresh"
+                     Order="Primary"
+                     Clicked="OnToolbarItemClicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="reload.png"
+                            Android="ic_action_refresh.png"
+                            WinPhone="Images/refresh.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+        <ToolbarItem Text="explore"
+                     Order="Secondary"
+                     Clicked="OnToolbarItemClicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            WinPhone="Images/Icon1F52D.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+        
+        <ToolbarItem Text="discover"
+                     Order="Secondary"
+                     Clicked="OnToolbarItemClicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            WinPhone="Images/Icon1F440.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+        
+        <ToolbarItem Text="evolve"
+                     Order="Secondary"
+                     Clicked="OnToolbarItemClicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            WinPhone="Images/Icon1F435.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+</ContentPage>

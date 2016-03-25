@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="StudentNotes.StudentNotesDataPage"
+            Title="Student Data">
+
+    <ContentPage Title="Info">
+        <ContentPage.Icon>
+            <OnPlatform x:TypeArguments="FileImageSource"
+                        iOS="ic_action_about.png" />
+        </ContentPage.Icon>
+        
+        <StackLayout>
+            <Label Text="{Binding FullName}"
+                   FontSize="Large"
+                   HorizontalOptions="Center" />
+
+            <StackLayout Spacing="12"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center">
+                <StackLayout.Resources>
+                    <ResourceDictionary>
+                        <Style TargetType="Label">
+                            <Setter Property="FontSize" Value="Large" />
+                        </Style>
+                    </ResourceDictionary>
+                </StackLayout.Resources>
+                
+                <Label Text="{Binding LastName, 
+                                      StringFormat='Last name: {0}'}" />
+                
+                <Label Text="{Binding FirstName, 
+                                      StringFormat='First name: {0}'}" />
+                
+                <Label Text="{Binding MiddleName, 
+                                      StringFormat='Middle name: {0}'}" />
+                
+                <Label Text="{Binding Sex, 
+                                      StringFormat='Sex: {0}'}" />
+                
+                <Label Text="{Binding GradePointAverage, 
+                                      StringFormat='G.P.A. = {0:F2}'}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Photo">
+        <ContentPage.Icon>
+            <OnPlatform x:TypeArguments="FileImageSource"
+                        iOS="ic_action_person.png" />
+        </ContentPage.Icon>
+        
+        <StackLayout>
+            <Label Text="{Binding FullName}"
+                   FontSize="Large"
+                   HorizontalOptions="Center" />
+
+            <Image Source="{Binding PhotoFilename}"
+                   VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Notes">
+        <ContentPage.Icon>
+            <OnPlatform x:TypeArguments="FileImageSource"
+                        iOS="ic_action_edit.png" />
+        </ContentPage.Icon>
+        
+        <StackLayout>
+            <Label Text="{Binding FullName}"
+                   FontSize="Large"
+                   HorizontalOptions="Center" />
+
+            <Editor Text="{Binding Notes}"
+                    Keyboard="Text"
+                    VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

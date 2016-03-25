@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AndConditions.AndConditionsPage">
+    <StackLayout>
+        <Grid VerticalOptions="CenterAndExpand">
+            <Switch x:Name="switch1" Grid.Column="0"
+                    HorizontalOptions="Center" />
+            
+            <Switch x:Name="switch2" Grid.Column="1"
+                    HorizontalOptions="Center" />
+            
+            <Switch x:Name="switch3" Grid.Column="2"
+                    HorizontalOptions="Center" />
+            
+            <Switch x:Name="switch4" Grid.Column="3"
+                    HorizontalOptions="Center" />
+        </Grid>
+
+        <BoxView WidthRequest="100"
+                 HeightRequest="100"
+                 VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="Center"
+                 Color="Blue">
+            <BoxView.Triggers>
+                <MultiTrigger TargetType="BoxView">
+                    <MultiTrigger.Conditions>
+                        <BindingCondition Binding="{Binding Source={x:Reference switch1}, 
+                                                            Path=IsToggled}"
+                                          Value="True" />
+
+                        <BindingCondition Binding="{Binding Source={x:Reference switch2}, 
+                                                            Path=IsToggled}"
+                                          Value="True" />
+
+                        <BindingCondition Binding="{Binding Source={x:Reference switch3}, 
+                                                            Path=IsToggled}"
+                                          Value="True" />
+
+                        <BindingCondition Binding="{Binding Source={x:Reference switch4}, 
+                                                            Path=IsToggled}"
+                                          Value="True" />
+                    </MultiTrigger.Conditions>
+
+                    <Setter Property="Color" Value="Red" />
+                </MultiTrigger>
+            </BoxView.Triggers>
+        </BoxView>
+    </StackLayout>
+</ContentPage>

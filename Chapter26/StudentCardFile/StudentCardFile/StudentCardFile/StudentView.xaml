@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentCardFile.StudentView"
+             BackgroundColor="White">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <x:Double x:Key="thickness">3</x:Double>
+            
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+
+            <Style TargetType="BoxView">
+                <Setter Property="Color" Value="Black" />
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
+    
+    <Grid>
+        <BoxView VerticalOptions="Start"
+                 HeightRequest="{StaticResource thickness}" />
+        
+        <BoxView VerticalOptions="End"
+                 HeightRequest="{StaticResource thickness}" />
+
+        <BoxView HorizontalOptions="Start"
+                 WidthRequest="{StaticResource thickness}" />
+
+        <BoxView HorizontalOptions="End"
+                 WidthRequest="{StaticResource thickness}" />
+
+        <StackLayout Padding="5">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding LastName, StringFormat='{0},'}"
+                       FontSize="Large" />
+
+                <Label Text="{Binding FirstName}"
+                       FontSize="Large" />
+
+                <Label Text="{Binding MiddleName}"
+                       FontSize="Large" />
+            </StackLayout>
+            
+            <BoxView Color="Accent"
+                     HeightRequest="2" />
+
+            <Image Source="{Binding PhotoFilename}" />
+
+            <Label Text="{Binding GradePointAverage, StringFormat='G.P.A. = {0:F2}'}"
+                   HorizontalTextAlignment="Center" />
+        </StackLayout>
+    </Grid>
+</ContentView>

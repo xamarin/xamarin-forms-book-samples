@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="TriggerEntryValidation.TriggerEntryValidationPage"
+             Padding="50">
+
+    <StackLayout>
+        <Entry Placeholder="Enter a System.Double">
+            <Entry.Triggers>
+                <EventTrigger Event="TextChanged">
+                    <toolkit:NumericValidationAction />
+                </EventTrigger>
+            </Entry.Triggers>
+        </Entry>
+    </StackLayout>
+</ContentPage>

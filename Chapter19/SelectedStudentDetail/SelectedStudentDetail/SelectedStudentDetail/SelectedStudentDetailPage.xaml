@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SelectedStudentDetail.SelectedStudentDetailPage"
+             SizeChanged="OnPageSizeChanged">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+    
+    <Grid x:Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+    
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0" />
+        </Grid.ColumnDefinitions>
+    
+        <ListView x:Name="listView"
+                  Grid.Row="0"
+                  Grid.Column="0"
+                  ItemsSource="{Binding StudentBody.Students}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource="{Binding PhotoFilename}"
+                               Text="{Binding FullName}"
+                               Detail="{Binding GradePointAverage,
+                                                StringFormat='G.P.A. = {0:F2}'}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    
+        <StackLayout x:Name="detailLayout"
+                     Grid.Row="1"
+                     Grid.Column="0"
+                     BindingContext="{Binding Source={x:Reference listView},
+                                              Path=SelectedItem}">
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Spacing="0">
+                <StackLayout.Resources>
+                    <ResourceDictionary>
+                        <Style TargetType="Label">
+                            <Setter Property="FontSize" Value="Large" />
+                            <Setter Property="FontAttributes" Value="Bold" />
+                        </Style>
+                    </ResourceDictionary>
+                </StackLayout.Resources>
+            
+                <Label Text="{Binding LastName}" />
+                <Label Text="{Binding FirstName, StringFormat=', {0}'}" />
+                <Label Text="{Binding MiddleName, StringFormat=' {0}'}" />
+            </StackLayout>
+            
+            <Image Source="{Binding PhotoFilename}"
+                   VerticalOptions="FillAndExpand" />
+            
+            <Label Text="{Binding Sex, StringFormat='Sex = {0}'}"
+                   HorizontalOptions="Center" />
+            <Label Text="{Binding GradePointAverage, StringFormat='G.P.A. = {0:F2}'}"
+                   HorizontalOptions="Center" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

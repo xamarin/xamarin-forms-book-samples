@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TextFileTryout.TextFileTryoutPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Entry x:Name="filenameEntry"
+               Grid.Row="0"
+               Placeholder="filename" />
+
+        <Editor x:Name="fileEditor"
+                Grid.Row="1">
+            <Editor.BackgroundColor>
+                <OnPlatform x:TypeArguments="Color"
+                            WinPhone="#D0D0D0" />
+            </Editor.BackgroundColor>
+        </Editor>
+
+        <Button x:Name="saveButton"
+                Text="Save"
+                Grid.Row="2"
+                HorizontalOptions="Center"
+                Clicked="OnSaveButtonClicked" />
+
+        <ListView x:Name="fileListView"
+                  Grid.Row="3"
+                  ItemSelected="OnFileListViewItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding}">
+                        <TextCell.ContextActions>
+                            <MenuItem Text="Delete"
+                                      IsDestructive="True"
+                                      Clicked="OnDeleteMenuItemClicked" />
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>            
+        </ListView>
+    </Grid>
+</ContentPage>

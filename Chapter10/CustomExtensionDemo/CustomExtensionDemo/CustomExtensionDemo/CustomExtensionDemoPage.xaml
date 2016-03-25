@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="CustomExtensionDemo.CustomExtensionDemoPage">
+
+    <StackLayout>
+        <!-- Red -->
+        <BoxView HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand">
+            <BoxView.Color>
+                <toolkit:HslColorExtension H="0" S="1" L="0.5" />
+            </BoxView.Color>    
+        </BoxView>
+            
+        <!-- Green -->
+        <BoxView HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand">
+            <BoxView.Color>
+                <toolkit:HslColorExtension H="0.33" S="1" L="0.5" />
+            </BoxView.Color>    
+        </BoxView>
+        
+        <!-- Blue -->
+        <BoxView Color="{toolkit:HslColorExtension H=0.67, S=1, L=0.5}"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand" />
+        
+        <!-- Gray -->
+        <BoxView Color="{toolkit:HslColor H=0, S=0, L=0.5}"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand" />
+        
+        <!-- Semitransparent white -->
+        <BoxView Color="{toolkit:HslColor H=0, S=0, L=1, A=0.5}"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand" />
+        
+        <!-- Semitransparent black -->
+        <BoxView Color="{toolkit:HslColor H=0, S=0, L=0, A=0.5}"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="ShiverButtonDemo.ShiverButtonDemoPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions"   Value="CenterAndExpand" />
+                <Setter Property="FontSize"          Value="Large" />
+
+                <Style.Triggers>
+                    <EventTrigger Event="Clicked">
+                        <toolkit:ShiverAction Length="3000" 
+                                              Angle="45" 
+                                              Vibrations="25" />
+                    </EventTrigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Button Text="Button #1" />
+        <Button Text="Button #2" />
+        <Button Text="Button #3" />
+    </StackLayout>
+</ContentPage>

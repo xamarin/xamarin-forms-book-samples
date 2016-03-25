@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="TraditionalCheckBox.TraditionalCheckBoxPage">
+
+    <StackLayout>
+        <toolkit:ToggleBase x:Name="checkbox" 
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand"
+                            Toggled="OnToggleBaseToggled">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="&#x2610;"
+                       FontSize="Large">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label"
+                                     Binding="{Binding Source={x:Reference checkbox},
+                                                       Path=IsToggled}"
+                                     Value="True">
+                            <Setter Property="Text" Value="&#x2611;" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+                
+                <Label Text="Italicize Text"
+                       FontSize="Large" />
+            </StackLayout>
+        </toolkit:ToggleBase>
+
+        <Label Text="Sample text to italicize"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand">
+            <Label.Triggers>
+                <DataTrigger TargetType="Label"
+                             Binding="{Binding Source={x:Reference checkbox},
+                                               Path=IsToggled}"
+                             Value="True">
+                    <Setter Property="FontAttributes" Value="Italic" />
+                </DataTrigger>
+            </Label.Triggers>            
+        </Label>
+        
+        <Label x:Name="eventLabel"
+               Text=""
+               FontSize="Large"
+               Opacity="0"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+        
+    </StackLayout>
+</ContentPage>

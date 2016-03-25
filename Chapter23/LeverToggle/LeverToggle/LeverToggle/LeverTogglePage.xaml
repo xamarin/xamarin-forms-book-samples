@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="LeverToggle.LeverTogglePage">
+    
+    <toolkit:ToggleBase x:Name="toggle"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+        <AbsoluteLayout>
+            <BoxView Color="Gray"
+                     AbsoluteLayout.LayoutBounds="0, 75, 100, 25">
+                <BoxView.Triggers>
+                    <DataTrigger TargetType="BoxView"
+                                 Binding="{Binding Source={x:Reference toggle},
+                                                   Path=IsToggled}"
+                                 Value="True">
+                        <Setter Property="Color" Value="Lime" />
+                    </DataTrigger>
+                </BoxView.Triggers>
+            </BoxView>
+
+            <BoxView Color="Gray"
+                     AbsoluteLayout.LayoutBounds="45, 0, 10, 100"
+                     AnchorX="0.5"
+                     AnchorY="1"
+                     Rotation="-30">
+                <BoxView.Triggers>
+                    <DataTrigger TargetType="BoxView"
+                                 Binding="{Binding Source={x:Reference toggle},
+                                                   Path=IsToggled}"
+                                 Value="True">
+                        
+                        <Setter Property="Color" Value="Lime" />
+
+                        <DataTrigger.EnterActions>
+                            <toolkit:RotateAction Anchor="0.5, 1" Rotation="30" />
+                        </DataTrigger.EnterActions>
+
+                        <DataTrigger.ExitActions>
+                            <toolkit:RotateAction Anchor="0.5, 1" Rotation="-30" />
+                        </DataTrigger.ExitActions>
+                    </DataTrigger>
+                </BoxView.Triggers>
+            </BoxView>
+        </AbsoluteLayout>
+    </toolkit:ToggleBase>
+</ContentPage>

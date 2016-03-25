@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlClock.XamlClockPage">
+    <StackLayout>
+        <Label x:Name="timeLabel"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand" />
+
+        <Label x:Name="dateLabel"
+               HorizontalOptions="Center"
+               VerticalOptions="StartAndExpand" />
+    </StackLayout>
+</ContentPage>

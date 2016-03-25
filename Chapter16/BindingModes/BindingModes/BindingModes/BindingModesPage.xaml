@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BindingModes.BindingModesPage"
+             Padding="10, 0">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="StackLayout">
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout VerticalOptions="Fill">
+        <StackLayout>
+            <Label Text="Default" 
+                   FontSize="{Binding Source={x:Reference slider1},
+                                      Path=Value}" />
+            <Slider x:Name="slider1"
+                    Maximum="50" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="OneWay" 
+                   FontSize="{Binding Source={x:Reference slider2},
+                                      Path=Value,
+                                      Mode=OneWay}" />
+            <Slider x:Name="slider2"
+                    Maximum="50" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="OneWayToSource" 
+                   FontSize="{Binding Source={x:Reference slider3},
+                                      Path=Value,
+                                      Mode=OneWayToSource}" />
+            <Slider x:Name="slider3"
+                    Maximum="50" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="TwoWay"
+                   FontSize="{Binding Source={x:Reference slider4},
+                                      Path=Value,
+                                      Mode=TwoWay}" />
+            <Slider x:Name="slider4"
+                    Maximum="50" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ViewGalleryInst;assembly=ViewGalleryInst"
+             x:Class="ViewGalleryInst.ViewGalleryInstPage"
+             Title="View Gallery">
+    <TableView Intent="Menu">
+        <TableRoot>
+            <TableSection Title="Presentation Views">
+                <ImageCell ImageSource="{local:ImageResource ViewGalleryInst.Images.Label.png}"
+                           Text="Display text"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:LabelPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+
+                <ImageCell ImageSource="{local:ImageResource ViewGalleryInst.Images.Image.png}"
+                           Text="Display a bitmap"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:ImagePage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+                
+                <ImageCell ImageSource=
+                           "{local:ImageResource ViewGalleryInst.Images.BoxView.png}" 
+                           Text="Display a block"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:BoxViewPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+                
+                <ImageCell ImageSource=
+                           "{local:ImageResource ViewGalleryInst.Images.WebView.png}"
+                           Text="Display a web site"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:WebViewPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+            </TableSection>
+
+            <TableSection Title="Command Views">
+                <ImageCell ImageSource="{local:ImageResource ViewGalleryInst.Images.Button.png}"
+                           Text="Initiate a command"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:ButtonPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+
+                <ImageCell ImageSource=
+                           "{local:ImageResource ViewGalleryInst.Images.SearchBar.png}"
+                           Text="Initiate a text search"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:SearchBarPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+            </TableSection>
+
+            <TableSection Title="Data-Type Views">
+                <ImageCell ImageSource="{local:ImageResource ViewGalleryInst.Images.Slider.png}"
+                           Text="Range of doubles"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:SliderPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+
+                <ImageCell ImageSource=
+                           "{local:ImageResource ViewGalleryInst.Images.Stepper.png}"
+                           Text="Discrete doubles"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:StepperPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+
+                <ImageCell ImageSource="{local:ImageResource ViewGalleryInst.Images.Switch.png}"
+                           Text="Select true or false"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:SwitchPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+                
+                <ImageCell ImageSource=
+                           "{local:ImageResource ViewGalleryInst.Images.DatePicker.png}"
+                           Text="Select a date"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:DatePickerPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+
+                <ImageCell ImageSource=
+                           "{local:ImageResource ViewGalleryInst.Images.TimePicker.png}"
+                           Text="Select a time"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:TimePickerPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+            </TableSection>
+
+            <TableSection Title="Text-Editing Views">
+                <ImageCell ImageSource="{local:ImageResource ViewGalleryInst.Images.Entry.png}"
+                           Text="Edit a single line"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:EntryPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+
+                <ImageCell ImageSource="{local:ImageResource ViewGalleryInst.Images.Editor.png}"
+                           Text="Edit a paragraph"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:EditorPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+            </TableSection>
+
+            <TableSection Title="Activity Indicator Views">
+                <ImageCell ImageSource=
+                           "{local:ImageResource ViewGalleryInst.Images.ActivityIndicator.png}"
+                           Text="Show activity"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:ActivityIndicatorPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+
+                <ImageCell ImageSource=
+                           "{local:ImageResource ViewGalleryInst.Images.ProgressBar.png}"
+                           Text="Show progress"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:ProgressBarPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+            </TableSection>
+
+            <TableSection Title="Collection Views">
+                <ImageCell ImageSource="{local:ImageResource ViewGalleryInst.Images.Picker.png}"
+                           Text="Pick item from list"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:PickerPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+
+                <ImageCell ImageSource=
+                           "{local:ImageResource ViewGalleryInst.Images.ListView.png}"
+                           Text="Show a collection"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:ListViewPage />
+                    </ImageCell.CommandParameter>
+                </ImageCell>
+
+                <ImageCell ImageSource=
+                           "{local:ImageResource ViewGalleryInst.Images.TableView.png}"
+                           Text="Show form or menu"
+                           Command="{Binding NavigateCommand}">
+                    <ImageCell.CommandParameter>
+                        <local:TableViewPage />
+                    </ImageCell.CommandParameter>
+            </ImageCell>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>

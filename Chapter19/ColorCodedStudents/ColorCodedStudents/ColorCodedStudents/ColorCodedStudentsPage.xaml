@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:school="clr-namespace:SchoolOfFineArt;assembly=SchoolOfFineArt"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="ColorCodedStudents.ColorCodedStudentsPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:ThresholdToObjectConverter x:Key="thresholdConverter"
+                                                x:TypeArguments="Color"
+                                                TrueObject="Default"
+                                                FalseObject="Red" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.BindingContext>
+        <school:SchoolViewModel />
+    </ContentPage.BindingContext>
+
+    <ListView ItemsSource="{Binding StudentBody.Students}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ImageCell ImageSource="{Binding PhotoFilename}"
+                           Text="{Binding FullName}"
+                           TextColor="{Binding GradePointAverage,
+                                               Converter={StaticResource thresholdConverter},
+                                               ConverterParameter=>2}"
+                           Detail="{Binding GradePointAverage,
+                                            StringFormat='G.P.A. = {0:F2}'}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

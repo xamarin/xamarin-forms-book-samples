@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadioImages"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="RadioImages.RadioImagesPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ContentView">
+                <Setter Property="WidthRequest"    Value="75" />
+                <Setter Property="HeightRequest"   Value="75" />
+                <Setter Property="Padding"         Value="10" />
+            </Style>
+
+            <Color x:Key="selectedColor">#80C0FF</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout HorizontalOptions="Start"
+                 VerticalOptions="Center"
+                 Padding="20, 0"
+                 Spacing="0">
+        <ContentView>
+            <ContentView.Behaviors>
+                <toolkit:RadioBehavior x:Name="pedestrianRadio" />
+            </ContentView.Behaviors>
+
+            <ContentView.Triggers>
+                <DataTrigger TargetType="ContentView"
+                             Binding="{Binding Source={x:Reference pedestrianRadio},
+                                               Path=IsChecked}"
+                             Value="True">
+                    <Setter Property="BackgroundColor" Value="{StaticResource selectedColor}" />
+                </DataTrigger>
+            </ContentView.Triggers>
+            
+            <Image Source="{local:ImageResource RadioImages.Images.pedestrian.png}" />
+        </ContentView>
+
+        <ContentView>
+            <ContentView.Behaviors>
+                <toolkit:RadioBehavior x:Name="carRadio" />
+            </ContentView.Behaviors>
+
+            <ContentView.Triggers>
+                <DataTrigger TargetType="ContentView"
+                             Binding="{Binding Source={x:Reference carRadio},
+                                               Path=IsChecked}"
+                             Value="True">
+                    <Setter Property="BackgroundColor" Value="{StaticResource selectedColor}" />
+                </DataTrigger>
+            </ContentView.Triggers>
+
+            <Image Source="{local:ImageResource RadioImages.Images.car.png}" />
+        </ContentView>
+
+        <ContentView>
+            <ContentView.Behaviors>
+                <toolkit:RadioBehavior x:Name="trainRadio" />
+            </ContentView.Behaviors>
+
+            <ContentView.Triggers>
+                <DataTrigger TargetType="ContentView"
+                             Binding="{Binding Source={x:Reference trainRadio},
+                                               Path=IsChecked}"
+                             Value="True">
+                    <Setter Property="BackgroundColor" Value="{StaticResource selectedColor}" />
+                </DataTrigger>
+            </ContentView.Triggers>
+
+            <Image Source="{local:ImageResource RadioImages.Images.train.png}" />
+        </ContentView>
+
+        <ContentView>
+            <ContentView.Behaviors>
+                <toolkit:RadioBehavior x:Name="busRadio" />
+            </ContentView.Behaviors>
+
+            <ContentView.Triggers>
+                <DataTrigger TargetType="ContentView"
+                             Binding="{Binding Source={x:Reference busRadio},
+                                               Path=IsChecked}"
+                             Value="True">
+                    <Setter Property="BackgroundColor" Value="{StaticResource selectedColor}" />
+                </DataTrigger>
+            </ContentView.Triggers>
+
+            <Image Source="{local:ImageResource RadioImages.Images.bus.png}" />
+        </ContentView>
+    </StackLayout>
+</ContentPage>
