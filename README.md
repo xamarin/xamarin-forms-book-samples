@@ -1,9 +1,5 @@
 # xamarin-forms-book-samples
-Sample code for the Evolve Edition of *Creating Mobile Apps with Xamarin.Forms*.
-
-This repo is currently private. It will be made public during Evolve week.
-
-Draft chapters are in the corporate Xamarin dropbox at \Education\Documentation\Content\Xamarin-Forms-Book\7-Evolve-2016-Edition.
+Sample code for *Creating Mobile Apps with Xamarin.Forms*. The book can be downloaded from http://developer.xamarin.com/guides/cross-platform/xamarin-forms/creating-mobile-apps-xamarin-forms/.
 
 ## Notes
 
@@ -11,11 +7,9 @@ Draft chapters are in the corporate Xamarin dropbox at \Education\Documentation\
 
 The Xamarin.Forms NuGet packages are not part of these projects. They must be downloaded for each project.
 
-To avoid hassles, start by loading the NuGet packages for the two solutions in the **Libraries** directory, and building those two projects. 
+To avoid hassles, download the NuGet packages for the solutions in the **Libraries** directory first. You'll want to load each library solutions into Visual Studio, right-click the solution name in the **Solution List** and select **Manage NuGet Packages for Solution**. A notice should appear at the top of the **Manage NuGet Packages** dialog that says "Some NuGet packages are missing from this solution. Click to restore from you online package sources." Click the **Restore** button and then the **Close** button. Build the library.
 
-First load the **Libraries/Xamarin.FormsBook.Toolkit** solution into Visual Studio. Right-click the solution name in the **Solution List** and select **Manage NuGet Packages for Solution**. A notice should appear at the top of the **Manage NuGet Packages** dialog that says "Some NuGet packages are missing from this solution. Click to restore from you online package sources." Click the **Restore** button and then the **Close** button. Build the library.
-
-Do the same thing with the **Libraries/ElPasoHighSchool** solution.
+Do the same thing with the other library solutions in the **Libraries** directory.
 
 You can then load any of the application projects. For each project, again right-click the solution name, select **Manage NuGet Packages for Solution** and go through the same process.
 
@@ -58,5 +52,7 @@ Currently, you can deploy the **UWP** project in several different ways based on
 
 - Select **Device** to deploy to a Windows 10 Mobile device. The **UWP** platform must be ARM.
 
+### Android AppCompat and Material Design
 
+The **appcompat** branch of the sample code repository contains Android projects that have been modified to use AppCompat and Material Design. The modification is the same as that described in the article [Adding AppCompat and Material Design](https://developer.xamarin.com/guides/xamarin-forms/platform-features/android/appcompat/).
 
