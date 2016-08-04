@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="MapDemos.MapCoordinatesPage"
+             Title="Map Coordinates">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <maps:Map x:Name="map"
+                  Grid.Row="0" />
+
+        <Grid Grid.Row="1">
+            <Label Text="Center Latitude: " Grid.Row="0" Grid.Column="0" 
+                   HorizontalTextAlignment="End" />
+            <Label x:Name="latitude" Grid.Row="0" Grid.Column="1" />
+
+            <Label Text="Center Longitude: " Grid.Row="1" Grid.Column="0" 
+                   HorizontalTextAlignment="End" />
+            <Label x:Name="longitude" Grid.Row="1" Grid.Column="1" />
+            
+            <Label Text="Latitude Span: " Grid.Row="2" Grid.Column="0" 
+                   HorizontalTextAlignment="End" />
+            <Label x:Name="latitudeSpan"  Grid.Row="2" Grid.Column="1" />
+
+            <Label Text="Longitude Span: " Grid.Row="3" Grid.Column="0" 
+                   HorizontalTextAlignment="End" />
+            <Label x:Name="longitudeSpan"  Grid.Row="3" Grid.Column="1" />
+
+            <Label Text="Radius: " Grid.Row="4" Grid.Column="0" 
+                   HorizontalTextAlignment="End" />
+            <Label x:Name="radius"  Grid.Row="4" Grid.Column="1" />
+        </Grid>
+    </Grid>
+</ContentPage>

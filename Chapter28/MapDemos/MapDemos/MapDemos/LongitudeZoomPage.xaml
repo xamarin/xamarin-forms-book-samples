@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:local="clr-namespace:MapDemos"
+             x:Class="MapDemos.LongitudeZoomPage"
+             Title="Longitude Zoom">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <maps:Map x:Name="map"
+                  Grid.Row="0"
+                  MapType="Hybrid" />
+
+        <Slider x:Name="slider"
+                Grid.Row="1"
+                Maximum="16"
+                Margin="10, 0"
+                ValueChanged="OnSliderValueChanged" />
+    </Grid>
+</ContentPage>
+

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MapDemos"
+             x:Class="MapDemos.MyLocationButton"
+             BackgroundColor="White"
+             Padding="10">
+    <ContentView.GestureRecognizers>
+        <TapGestureRecognizer Tapped="OnTapped" />
+    </ContentView.GestureRecognizers>
+
+    <Image InputTransparent="True">
+        <Image.Source>
+            <OnPlatform x:TypeArguments="ImageSource"
+                        iOS="{local:ImageResource MapDemos.Images.ic_my_location_black_48dp.png}"
+                        WinPhone="{local:ImageResource MapDemos.Images.ic_my_location_black_24dp.png}" />
+        </Image.Source>
+    </Image>
+</ContentView>

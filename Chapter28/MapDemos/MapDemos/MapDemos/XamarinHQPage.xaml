@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="MapDemos.XamarinHQPage"
+             Title="Xamarin HQ">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <maps:Map x:Name="map" 
+                  Grid.Row="0"
+                  MapType="Satellite">
+            <x:Arguments>
+                <maps:MapSpan x:FactoryMethod="FromCenterAndRadius">
+                    <x:Arguments>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>37.797787</x:Double>
+                                <x:Double>-122.401855</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                        <maps:Distance x:FactoryMethod="FromMiles">
+                            <x:Arguments>
+                                <x:Double>1</x:Double>
+                            </x:Arguments>
+                        </maps:Distance>
+                    </x:Arguments>
+                </maps:MapSpan>
+            </x:Arguments>
+        </maps:Map>
+
+        <Grid Grid.Row="1"
+              HorizontalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="Center: " Grid.Row="0" Grid.Column="0"
+                   HorizontalTextAlignment="End" />
+            <Label x:Name="center" Grid.Row="0" Grid.Column="1" />
+
+            <Label Text="Span: " Grid.Row="1" Grid.Column="0"
+                   HorizontalTextAlignment="End" />
+            <Label x:Name="span"  Grid.Row="1" Grid.Column="1" />
+
+            <Label Text="Radius: " Grid.Row="2" Grid.Column="0"
+                   HorizontalTextAlignment="End" />
+            <Label x:Name="radius"  Grid.Row="2" Grid.Column="1" />
+        </Grid>
+    </Grid>
+</ContentPage>

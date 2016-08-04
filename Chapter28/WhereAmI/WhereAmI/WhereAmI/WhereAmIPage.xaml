@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WhereAmI"
+             xmlns:platform=
+                 "clr-namespace:Xamarin.FormsBook.Platform;assembly=Xamarin.Formsbook.Platform"
+             x:Class="WhereAmI.WhereAmIPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0"
+              HorizontalOptions="Center"
+              VerticalOptions="Center">
+
+            <!-- Bitmap from http://maps.jpl.nasa.gov/earth.html, 
+                 and is used courtesy of NASA/JPL-Caltech -->
+            <Image x:Name="image"
+                   Source="{local:ImageResource WhereAmI.Images.ear0xuu2.jpg}"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+
+            <AbsoluteLayout x:Name="absLayout"
+                            WidthRequest="{Binding Source={x:Reference image},
+                                                   Path=Width}"
+                            HeightRequest="{Binding Source={x:Reference image},
+                                                    Path=Height}"
+                            SizeChanged="OnAbsoluteLayoutSizeChanged"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center">
+
+                <platform:EllipseView x:Name="ellipse"
+                                      Color="White"
+                                      WidthRequest="5"
+                                      HeightRequest="5"
+                                      TranslationX="-2.5"
+                                      TranslationY="-2.5" />
+            </AbsoluteLayout>
+        </Grid>
+        
+        <Grid Grid.Row="1"
+              Margin="10, 20"
+              HorizontalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="Location: "
+                   HorizontalTextAlignment="End"
+                   Grid.Row="0"
+                   Grid.Column="0" />
+
+            <Label x:Name="locationLabel"
+                   Grid.Row="0"
+                   Grid.Column="1" />
+
+            <Label Text="Time stamp: "
+                   HorizontalTextAlignment="End"
+                   Grid.Row="1"
+                   Grid.Column="0" />
+
+            <Label x:Name="timestampLabel"
+                   Grid.Row="1"
+                   Grid.Column="1" />
+        </Grid>
+    </Grid>
+</ContentPage>

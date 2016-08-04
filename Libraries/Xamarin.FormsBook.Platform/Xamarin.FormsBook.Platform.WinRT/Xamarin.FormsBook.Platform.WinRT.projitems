@@ -11,6 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)EllipseViewRenderer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FileHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LocationTracker.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SharedSoundPlayer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StepSliderRenderer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Toolkit.cs" />

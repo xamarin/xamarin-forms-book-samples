@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:local="clr-namespace:MapDemos"
+             x:Class="MapDemos.GoToLocationPage"
+             Title="Go to Location">
+
+    <Grid>
+        <maps:Map x:Name="map"
+                  IsShowingUser="True" />
+
+        <local:MyLocationButton x:Name="myLocationButton"
+                                IsVisible="False"
+                                Margin="10"
+                                HorizontalOptions="End"
+                                VerticalOptions="Start"
+                                Clicked="OnLocationButtonClicked" />
+    </Grid>
+</ContentPage>

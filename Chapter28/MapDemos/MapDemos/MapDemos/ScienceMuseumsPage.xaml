@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="MapDemos.ScienceMuseumsPage"
+             Title="Science Museums">
+    <Grid>
+        <maps:Map x:Name="map" />
+        
+        <AbsoluteLayout x:Name="absLayout"
+                        InputTransparent="True">
+            
+            <AbsoluteLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnAbsoluteLayoutTapped" />    
+            </AbsoluteLayout.GestureRecognizers>
+                
+            <Frame x:Name="popup"
+                   BackgroundColor="#C0FFFFFF"
+                   Margin="20"
+                   IsVisible="False"
+                   AbsoluteLayout.LayoutFlags="XProportional"
+                   AbsoluteLayout.LayoutBounds="0.5, 0">
+                <StackLayout>
+                    <StackLayout.Resources>
+                        <ResourceDictionary>
+                            <Style TargetType="Label">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="HorizontalOptions" Value="Center" />
+                            </Style>
+                        </ResourceDictionary>
+                    </StackLayout.Resources>
+                    
+                    <Label Text="{Binding LongName}" />
+                    <Label Text="{Binding Address}" />
+                    <Label Text="Website"
+                           FontSize="Large">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnLinkLabelTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </Frame>
+        </AbsoluteLayout>   
+    </Grid>
+</ContentPage>

@@ -1,0 +1,1777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Locations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>Science Museums</Title>
+  <Sites>
+    <Site
+      Name="A.C. Gilbert's Discovery Village"
+      LongName="A.C. Gilbert's Discovery Village"
+      Latitude="44.945"
+      Longitude="-123.04111"
+      Address="116 Marion St., NE, Salem, Oregon"
+      Website="http://www.acgilbert.org/" />
+    <Site
+      Name="A. E. Seaman Mineral Museum"
+      LongName="A. E. Seaman Mineral Museum"
+      Latitude="47.1108"
+      Longitude="-88.5526"
+      Address="Houghton, Michigan"
+      Website="http://www.museum.mtu.edu/" />
+    <Site
+      Name="The Academy of Natural Sciences"
+      LongName="The Academy of Natural Sciences"
+      Latitude="39.957"
+      Longitude="-75.1714"
+      Address="1900 Benjamin Franklin Parkway Philadelphia, Pennsylvania, United States"
+      Website="http://www.ansp.org" />
+    <Site
+      Name="Adler Planetarium &amp; Astronomy Museum"
+      LongName="The Adler Planetarium &amp; Astronomy Museum"
+      Latitude="41.86639"
+      Longitude="-87.60667"
+      Address="1300 S. Lake Shore Drive, Chicago, Illinois, United States"
+      Website="http://www.adlerplanetarium.org" />
+    <Site
+      Name="Air Zoo"
+      LongName="Air Zoo"
+      Latitude="42.23222"
+      Longitude="-85.56"
+      Address="Portage, Michigan"
+      Website="http://www.airzoo.org/" />
+    <Site
+      Name="Alabama Museum of Health Sciences"
+      LongName="Alabama Museum of Health Sciences"
+      Latitude="33.4992833"
+      Longitude="-86.8044389"
+      Address="Birmingham, Alabama"
+      Website="http://www.uab.edu/historical/museum.htm" />
+    <Site
+      Name="American Computer Museum"
+      LongName="American Computer Museum"
+      Latitude="45.67861"
+      Longitude="-111.04083"
+      Address="Bozeman, Montana"
+      Website="http://www.compustory.com" />
+    <Site
+      Name="American Museum of Natural History"
+      LongName="American Museum of Natural History"
+      Latitude="40.78056"
+      Longitude="-73.97472"
+      Address="Central Park West at 79th Street, New York City, U.S. 10024"
+      Website="http://www.amnh.org/" />
+    <Site
+      Name="American Museum of Radio and Electricity"
+      LongName="American Museum of Radio and Electricity"
+      Latitude="48.7514583"
+      Longitude="-122.4803861"
+      Address="Bellingham, Washington"
+      Website="http://www.sparkmuseum.org/" />
+    <Site
+      Name="American Museum of Science &amp; Energy"
+      LongName="American Museum of Science and Energy"
+      Latitude="36.01056"
+      Longitude="-84.25726"
+      Address="Oak Ridge, Tennessee"
+      Website="http://www.amse.org/" />
+    <Site
+      Name="Anchorage Museum"
+      LongName="Anchorage Museum at Rasmuson Center and Imaginarium Discovery Center"
+      Latitude="61.2161"
+      Longitude="-149.8845"
+      Address="Anchorage, Alaska"
+      Website="http://www.anchoragemuseum.org" />
+    <Site
+      Name="Ann Arbor Hands-On Museum"
+      LongName="Ann Arbor Hands-On Museum"
+      Latitude="42.2815"
+      Longitude="-83.7466"
+      Address="220 E. Ann Street, Ann Arbor, Michigan"
+      Website="http://www.aahom.org" />
+    <Site
+      Name="Anniston Museum of Natural History"
+      LongName="Anniston Museum of Natural History"
+      Latitude="33.4148"
+      Longitude="-85.491"
+      Address="Anniston, Alabama"
+      Website="http://www.annistonmuseum.org/" />
+    <Site
+      Name="Arizona Science Center"
+      LongName="Arizona Science Center"
+      Latitude="33.4486469"
+      Longitude="-112.0665931"
+      Address="Phoenix, Arizona"
+      Website="http://www.azscience.org" />
+    <Site
+      Name="The Arts and Science Center for Southeast Arkansas"
+      LongName="The Arts and Science Center for Southeast Arkansas"
+      Latitude="34.22248"
+      Longitude="-92.00279"
+      Address="Pine Bluff, Arkansas"
+      Website="http://www.artssciencecenter.org/" />
+    <Site
+      Name="Astronaut Memorial Planetarium &amp; Observatory"
+      LongName="Astronaut Memorial Planetarium &amp; Observatory"
+      Latitude="28.36944"
+      Longitude="-80.74389"
+      Address="Cocoa, Florida"
+      Website="http://www.cocoafl.org/" />
+    <Site
+      Name="Austin Children's Museum"
+      LongName="Austin Children's Museum"
+      Latitude="30.2975"
+      Longitude="-97.705"
+      Address="1830 Simond Ave, Austin, Texas,  United States"
+      Website="http://thinkeryaustin.org/" />
+    <Site
+      Name="Aviation Museum of Kentucky"
+      LongName="Aviation Museum of Kentucky"
+      Latitude="38.0373599"
+      Longitude="-84.5999958"
+      Address="Blue Grass Airport, Lexington, Kentucky"
+      Website="http://www.aviationky.org/" />
+    <Site
+      Name="The Bakken"
+      LongName="The Bakken Library and Museum"
+      Latitude="44.93806"
+      Longitude="-93.32083"
+      Address="3537 Zenith Avenue South, Minneapolis, Minnesota, USA"
+      Website="http://www.thebakken.org/" />
+    <Site
+      Name="Barlow Planetarium"
+      LongName="Barlow Planetarium"
+      Latitude="44.229778"
+      Longitude="-88.415225"
+      Address="Menasha, Wisconsin"
+      Website="http://www.uwfox.uwc.edu/barlow/" />
+    <Site
+      Name="Bell Museum of Natural History"
+      LongName="Bell Museum of Natural History"
+      Latitude="44.97778"
+      Longitude="-93.23333"
+      Address="University of Minnesota"
+      Website="http://www.bellmuseum.umn.edu/" />
+    <Site
+      Name="Bergen Museum of Art &amp; Science"
+      LongName="Bergen Museum of Art &amp; Science"
+      Latitude="40.881958"
+      Longitude="-74.042251"
+      Address="Hackensack, New Jersey"
+      Website="http://www.bergenmuseum.com/" />
+    <Site
+      Name="Berkshire Museum"
+      LongName="Berkshire Museum"
+      Latitude="42.4473"
+      Longitude="-73.2536"
+      Address="Pittsfield, Berkshire County, Massachusetts, United States"
+      Website="http://www.berkshiremuseum.org" />
+    <Site
+      Name="Bernice P. Bishop Museum"
+      LongName="Bernice P. Bishop Museum"
+      Latitude="21.3333333"
+      Longitude="-157.8706167"
+      Address="1525 Bernice Street, Honolulu, HI"
+      Website="http://www.bishopmuseum.org" />
+    <Site
+      Name="Birch Aquarium at Scripps"
+      LongName="Birch Aquarium at Scripps"
+      Latitude="32.8678"
+      Longitude="-117.2496"
+      Address="Scripps Institution of Oceanography, University of California, San Diego, La Jolla, San Diego, California, USA"
+      Website="http://aquarium.ucsd.edu" />
+    <Site
+      Name="Bishop Museum"
+      LongName="Bishop Museum"
+      Latitude="21.3333333"
+      Longitude="-157.8706167"
+      Address="1525 Bernice Street, Honolulu, HI"
+      Website="http://www.bishopmuseum.org" />
+    <Site
+      Name="Boonshoft Museum of Discovery"
+      LongName="Boonshoft Museum of Discovery"
+      Latitude="39.78882"
+      Longitude="-84.20179"
+      Address="Dayton, Ohio"
+      Website="http://www.boonshoftmuseum.org" />
+    <Site
+      Name="Boston Children's Museum"
+      LongName="Boston Children's Museum"
+      Latitude="42.351867"
+      Longitude="-71.049579"
+      Address="308 Congress Street Boston, MA 02210"
+      Website="http://www.bostonchildrensmuseum.org/" />
+    <Site
+      Name="Bradbury Science Museum"
+      LongName="Bradbury Science Museum"
+      Latitude="35.881575"
+      Longitude="-106.298518"
+      Address="Los Alamos, New Mexico"
+      Website="http://www.lanl.gov/museum/" />
+    <Site
+      Name="Brooklyn Children's Museum"
+      LongName="The Brooklyn Children's Museum"
+      Latitude="40.67448"
+      Longitude="-73.9439"
+      Address="145 Brooklyn Avenue, Crown Heights, Brooklyn, New York City, New York, United States"
+      Website="http://www.brooklynkids.org" />
+    <Site
+      Name="Bruce Museum"
+      LongName="Bruce Museum of Arts and Science"
+      Latitude="41.019"
+      Longitude="-73.6235"
+      Address="1 Museum Drive Greenwich, Connecticut, USA"
+      Website="http://www.brucemuseum.org" />
+    <Site
+      Name="Buffalo Museum of Science"
+      LongName="Buffalo Museum of Science"
+      Latitude="42.906132"
+      Longitude="-78.843314"
+      Address="Buffalo, New York, U.S."
+      Website="http://www.sciencebuff.org" />
+    <Site
+      Name="Burpee Museum of Natural History"
+      LongName="Burpee Museum of Natural History"
+      Latitude="42.2773"
+      Longitude="-89.0882"
+      Address="737 North Main St. Rockford, Illinois"
+      Website="http://www.burpee.org" />
+    <Site
+      Name="California Academy of Sciences"
+      LongName="California Academy of Sciences"
+      Latitude="37.7701"
+      Longitude="-122.466407"
+      Address="Golden Gate Park, San Francisco, California, United States"
+      Website="http://www.calacademy.org/" />
+    <Site
+      Name="California Science Center"
+      LongName="California Science Center"
+      Latitude="34.01556"
+      Longitude="-118.28583"
+      Address="Exposition Park, Los Angeles, California"
+      Website="http://www.californiasciencecenter.org/" />
+    <Site
+      Name="Cape Fear Museum"
+      LongName="Cape Fear Museum of History &amp; Science"
+      Latitude="34.2359"
+      Longitude="-77.9384"
+      Address="Wilmington, North Carolina"
+      Website="http://www.capefearmuseum.com/" />
+    <Site
+      Name="Carnegie Science Center"
+      LongName="Carnegie Science Center"
+      Latitude="40.445614"
+      Longitude="-80.018181"
+      Address="Pittsburgh, Pennsylvania"
+      Website="http://www.carnegiesciencecenter.org/" />
+    <Site
+      Name="Chabot Space &amp; Science Center"
+      LongName="Chabot Space &amp; Science Center"
+      Latitude="37.81861"
+      Longitude="-122.18056"
+      Address="Oakland, California"
+      Website="http://chabotspace.org/" />
+    <Site
+      Name="Chicago Children's Museum"
+      LongName="Chicago Children's Museum"
+      Latitude="41.89139"
+      Longitude="-87.60917"
+      Address="Navy Pier, Chicago, Illinois, USA"
+      Website="http://www.chicagochildrensmuseum.org/" />
+    <Site
+      Name="Children's Discovery Museum of San Jose"
+      LongName="Children's Discovery Museum of San Jose"
+      Latitude="37.32668"
+      Longitude="-121.89177"
+      Address="180 Woz Way San Jose, California 95110"
+      Website="http://www.cdm.org/" />
+    <Site
+      Name="The Children's Museum"
+      LongName="The Children's Museum, Connecticut"
+      Latitude="41.7619"
+      Longitude="-72.7379"
+      Address="950 Trout Brook Drive West Hartford, Connecticut, USA"
+      Website="http://www.thechildrensmuseumct.org/" />
+    <Site
+      Name="Children's Museum of Houston"
+      LongName="Children's Museum of Houston"
+      Latitude="29.722694"
+      Longitude="-95.385028"
+      Address="Houston, Texas"
+      Website="http://www.cmhouston.org" />
+    <Site
+      Name="The Children's Museum of Indianapolis"
+      LongName="The Children's Museum of Indianapolis"
+      Latitude="39.81083"
+      Longitude="-86.1575"
+      Address="3000 N. Meridian St., Indianapolis, Indiana, 46208-4716"
+      Website="http://www.childrensmuseum.org/" />
+    <Site
+      Name="Children's Museum of Pittsburgh"
+      LongName="Children's Museum of Pittsburgh"
+      Latitude="40.4529"
+      Longitude="-80.0064"
+      Address="Pittsburgh, Pennsylvania"
+      Website="http://www.pittsburghkids.org" />
+    <Site
+      Name="The Children's Museum of Science and Technology"
+      LongName="The Children's Museum of Science and Technology"
+      Latitude="42.676786"
+      Longitude="-73.697677"
+      Address="250 Jordan Road, Troy, New York"
+      Website="http://www.cmost.org/" />
+    <Site
+      Name="Cincinnati Museum Center at Union Terminal"
+      LongName="Cincinnati Museum Center (Museum of Natural History &amp; Science)"
+      Latitude="39.11"
+      Longitude="-84.53778"
+      Address="1301 Western Avenue&#xA;Cincinnati, OH"
+      Website="http://www.cincymuseum.org" />
+    <Site
+      Name="Clark Planetarium"
+      LongName="Clark Planetarium"
+      Latitude="40.7675"
+      Longitude="-111.90306"
+      Address="Salt Lake City, Utah"
+      Website="http://www.clarkplanetarium.org/" />
+    <Site
+      Name="Cleveland Museum of Natural History"
+      LongName="Cleveland Museum of Natural History"
+      Latitude="41.51139"
+      Longitude="-81.61333"
+      Address="Cleveland, Ohio"
+      Website="/wiki/File:Commons-logo.svg" />
+    <Site
+      Name="Columbia Memorial Space Center"
+      LongName="Columbia Memorial Space Center"
+      Latitude="33.91984"
+      Longitude="-118.13362"
+      Address="Downey, California"
+      Website="http://columbiaspacescience.org/" />
+    <Site
+      Name="Columbia River Exhibition of History, Science, and Technology"
+      LongName="Columbia River Exhibition of History, Science and Technology (CREHST)"
+      Latitude="46.2737306"
+      Longitude="-119.2724389"
+      Address="Richland, Washington"
+      Website="http://www.crehst.org/" />
+    <Site
+      Name="Computer History Museum"
+      LongName="Computer History Museum"
+      Latitude="37.414371"
+      Longitude="-122.076817"
+      Address="Mountain View, California"
+      Website="http://www.computerhistory.org/" />
+    <Site
+      Name="Connecticut Science Center"
+      LongName="Connecticut Science Center"
+      Latitude="41.7644"
+      Longitude="-72.6697"
+      Address="250 Columbus Boulevard Hartford, Connecticut, USA"
+      Website="http://www.ctsciencecenter.org" />
+    <Site
+      Name="COSI"
+      LongName="COSI Columbus"
+      Latitude="39.959923"
+      Longitude="-83.005794"
+      Address="Columbus, Ohio"
+      Website="http://www.cosi.org/" />
+    <Site
+      Name="Cranbrook Institute of Science"
+      LongName="Cranbrook Institute of Science"
+      Latitude="42.567611"
+      Longitude="-83.243583"
+      Address="39221 Woodward Avenue Bloomfield Hills, Michigan"
+      Website="http://www.cranbrook.edu/" />
+    <Site
+      Name="Creative Discovery Museum"
+      LongName="Creative Discovery Museum"
+      Latitude="35.05269"
+      Longitude="-85.31228"
+      Address="Chattanooga, Tennessee"
+      Website="http://www.cdmfun.org/" />
+    <Site
+      Name="Da Vinci Science Center"
+      LongName="Da Vinci Science Center"
+      Latitude="40.58394"
+      Longitude="-75.52207"
+      Address="Allentown, Pennsylvania, USA"
+      Website="http://www.davincisciencecenter.org" />
+    <Site
+      Name="Delaware Museum of Natural History"
+      LongName="Delaware Museum of Natural History"
+      Latitude="39.798307"
+      Longitude="-75.609804"
+      Address="4840 Kennett Pike, Wilmington, Delaware, 19807 USA 302.658.9111"
+      Website="http://www.delmnh.org" />
+    <Site
+      Name="Denver Museum of Nature &amp; Science"
+      LongName="Denver Museum of Nature and Science"
+      Latitude="39.7475"
+      Longitude="-104.9425"
+      Address="Denver, Colorado"
+      Website="http://www.dmns.org/" />
+    <Site
+      Name="Detroit Science Center"
+      LongName="Detroit Science Center"
+      Latitude="42.35844"
+      Longitude="-83.06213"
+      Address="Detroit, Michigan"
+      Website="http://www.mi-sci.org" />
+    <Site
+      Name="Discovery Center of Idaho"
+      LongName="The Discovery Center of Idaho, Inc."
+      Latitude="43.608325"
+      Longitude="-116.198933"
+      Address="Boise, Idaho"
+      Website="http://www.dcidaho.org" />
+    <Site
+      Name="Discovery Gateway"
+      LongName="Discovery Gateway"
+      Latitude="40.76778"
+      Longitude="-111.90389"
+      Address="Salt Lake City, Utah"
+      Website="http://www.discoverygateway.org/" />
+    <Site
+      Name="Discovery Museum, Inc."
+      LongName="Discovery Museum and Planetarium"
+      Latitude="41.214"
+      Longitude="-73.2334"
+      Address="4450 Park Avenue Bridgeport, Connecticut"
+      Website="http://www.discoverymuseum.org/" />
+    <Site
+      Name="Discovery Place"
+      LongName="Discovery Place, Inc."
+      Latitude="35.22944"
+      Longitude="-80.84083"
+      Address="301 N. Tryon Street, Charlotte, North Carolina, USA"
+      Website="http://www.discoveryplace.org/" />
+    <Site
+      Name="Discovery Science Center"
+      LongName="Discovery Science Center"
+      Latitude="33.770194"
+      Longitude="-117.867861"
+      Address="Santa Ana, California, U.S."
+      Website="http://www.discoverycube.org" />
+    <Site
+      Name="The Discovery Science Place"
+      LongName="The Discovery Science Place"
+      Latitude="32.3534"
+      Longitude="-95.3009"
+      Address="Tyler, Texas"
+      Website="http://www.discoveryscienceplace.org" />
+    <Site
+      Name="Discovery Station"
+      LongName="Discovery Station"
+      Latitude="39.64306"
+      Longitude="-77.72278"
+      Address="101 West Washington Street, Hagerstown, Maryland, 21740"
+      Website="http://www.discoverystation.org/" />
+    <Site
+      Name="Discovery World"
+      LongName="Discovery World"
+      Latitude="43.036818"
+      Longitude="-87.896045"
+      Address="Milwaukee, Wisconsin"
+      Website="http://www.discoveryworld.org/" />
+    <Site
+      Name="Dittrick Museum of Medical History"
+      LongName="Dittrick Museum of Medical History"
+      Latitude="41.50598"
+      Longitude="-81.608603"
+      Address="Cleveland, Ohio"
+      Website="http://www.case.edu/artsci/dittrick/site2/" />
+    <Site
+      Name="Don Harrington Discovery Center"
+      LongName="Don Harrington Discovery Center"
+      Latitude="35.199943"
+      Longitude="-101.913297"
+      Address="Amarillo, Texas"
+      Website="http://www.dhdc.org" />
+    <Site
+      Name="Durango Discovery Museum"
+      LongName="Durango Discovery Museum"
+      Latitude="37.27879"
+      Longitude="-107.87998"
+      Address="Durango, Colorado"
+      Website="http://powsci.org/" />
+    <Site
+      Name="EAA AirVenture Museum"
+      LongName="EAA AirVenture Museum"
+      Latitude="43.987813"
+      Longitude="-88.577785"
+      Address="Oshkosh, Wisconsin"
+      Website="http://www.eaa.org/en/eaa-museum" />
+    <Site
+      Name="East Kentucky Science Center"
+      LongName="East Kentucky Science Center"
+      Latitude="37.686"
+      Longitude="-82.781"
+      Address="7 Bert T. Combs Drive, Prestonsburg, Kentucky 41653"
+      Website="http://www.bigsandy.kctcs.edu/EKSC.aspx" />
+    <Site
+      Name="ECHO Lake Aquarium and Science Center"
+      LongName="ECHO Lake Aquarium and Science Center"
+      Latitude="44.4765"
+      Longitude="-73.2211"
+      Address="Burlington, Vermont"
+      Website="http://www.echovermont.org" />
+    <Site
+      Name="EcoTarium"
+      LongName="EcoTarium"
+      Latitude="42.264111"
+      Longitude="-71.766806"
+      Address="Worcester, Massachusetts"
+      Website="http://www.ecotarium.org" />
+    <Site
+      Name="EdVenture"
+      LongName="EdVenture Children's Museum"
+      Latitude="33.99722"
+      Longitude="-81.04806"
+      Address="211 Gervais Street, Columbia, South Carolina, USA"
+      Website="http://www.edventure.org" />
+    <Site
+      Name="Eli Whitney Museum"
+      LongName="Eli Whitney Museum"
+      Latitude="41.33583"
+      Longitude="-72.91056"
+      Address="Hamden, Connecticut"
+      Website="http://www.eliwhitney.org/" />
+    <Site
+      Name="Emerald Coast Science Center"
+      LongName="Emerald Coast Science Center"
+      Latitude="30.40888"
+      Longitude="-86.62894"
+      Address="Fort Walton Beach, Florida"
+      Website="http://ecscience.org/" />
+    <Site
+      Name="Evansville Museum of Arts, History and Science"
+      LongName="Evansville Museum of Arts, History and Science"
+      Latitude="37.96513"
+      Longitude="-87.5732"
+      Address="411 S.E. Riverside Drive Evansville, Indiana"
+      Website="http://www.emuseum.org/" />
+    <Site
+      Name="Evergreen Aviation &amp; Space Museum"
+      LongName="Evergreen Aviation &amp; Space Museum"
+      Latitude="45.20389"
+      Longitude="-123.14333"
+      Address="McMinnville, Oregon, United States"
+      Website="http://evergreenmuseum.org" />
+    <Site
+      Name="Explora"
+      LongName="¡Explora! Science Center and Children's Museum"
+      Latitude="35.097294"
+      Longitude="-106.664409"
+      Address="Albuquerque, New Mexico"
+      Website="http://www.explora.us" />
+    <Site
+      Name="Exploration Place"
+      LongName="Exploration Place, The Sedgwick County Science and Discovery Center"
+      Latitude="37.69"
+      Longitude="-97.35"
+      Address="300 North McLean Blvd, Wichita, KS 67203 USA"
+      Website="http://www.exploration.org/" />
+    <Site
+      Name="Exploratorium"
+      LongName="Exploratorium"
+      Latitude="37.801434"
+      Longitude="-122.397561"
+      Address="San Francisco, California, United States"
+      Website="http://www.exploratorium.edu/" />
+    <Site
+      Name="Fairbanks Museum and Planetarium"
+      LongName="Fairbanks Museum and Planetarium"
+      Latitude="44.420167"
+      Longitude="-72.019833"
+      Address="1302 Main St., St. Johnsbury, Vermont"
+      Website="http://www.fairbanksmuseum.org" />
+    <Site
+      Name="Fairchild Tropical Botanic Garden"
+      LongName="Fairchild Tropical Botanic Garden"
+      Latitude="25.678662"
+      Longitude="-80.273742"
+      Address="Coral Gables, (Miami-Dade County), Florida, United States"
+      Website="http://www.fairchildgarden.org/" />
+    <Site
+      Name="Fernbank Museum of Natural History"
+      LongName="Fernbank Museum of Natural History"
+      Latitude="33.773966"
+      Longitude="-84.3276"
+      Address="767 Clifton Road NE&#xA;Atlanta"
+      Website="http://www.fernbankmuseum.org/" />
+    <Site
+      Name="Fernbank Science Center"
+      LongName="Fernbank Science Center"
+      Latitude="33.77855"
+      Longitude="-84.318089"
+      Address="156 Heaton Park Drive NE&#xA;Atlanta&#xA;United States"
+      Website="http://fsc.fernbank.edu" />
+    <Site
+      Name="Field Museum of Natural History"
+      LongName="The Field Museum of Natural History"
+      Latitude="41.86611"
+      Longitude="-87.61694"
+      Address="1400 S. Lake Shore Drive, Chicago, Illinois, United States"
+      Website="http://www.fieldmuseum.org" />
+    <Site
+      Name="Flint Children's Museum"
+      LongName="Flint Children's Museum"
+      Latitude="43.01405"
+      Longitude="-83.71173"
+      Address="Flint, Michigan"
+      Website="http://www.flintchildrensmuseum.org/" />
+    <Site
+      Name="Flint Hills Discovery Center"
+      LongName="Flint Hills Discovery Center"
+      Latitude="39.177"
+      Longitude="-96.56"
+      Address="315 S. 3rd St., Manhattan, Kansas 66502"
+      Website="http://www.flinthillsdiscovery.org" />
+    <Site
+      Name="Florida Museum of Natural History"
+      LongName="Florida Museum of Natural History"
+      Latitude="29.63583"
+      Longitude="-82.37028"
+      Address="3215 Hull Rd., Gainesville, Florida"
+      Website="http://www.flmnh.ufl.edu/" />
+    <Site
+      Name="Fort Collins Museum &amp; Discovery Science Center"
+      LongName="Fort Collins Museum &amp; Discovery Science Center"
+      Latitude="40.5849"
+      Longitude="-105.0737"
+      Address="Ft. Collins, Colorado"
+      Website="http://fcmod.org/" />
+    <Site
+      Name="Fort Worth Museum of Science and History"
+      LongName="Fort Worth Museum of Science and History"
+      Latitude="32.74444"
+      Longitude="-97.36944"
+      Address="Fort Worth, Texas"
+      Website="http://www.fortworthmuseum.org/" />
+    <Site
+      Name="Franklin Institute"
+      LongName="The Franklin Institute"
+      Latitude="39.95806"
+      Longitude="-75.17361"
+      Address="Philadelphia, Pennsylvania, U.S."
+      Website="http://www.fi.edu/" />
+    <Site
+      Name="Great Explorations Children's Museum"
+      LongName="Great Explorations Children's Museum"
+      Latitude="27.79"
+      Longitude="-82.638"
+      Address="1925 4th Street North St. Petersburg, FL 33704"
+      Website="http://www.greatex.org/" />
+    <Site
+      Name="Great Lakes Science Center"
+      LongName="Great Lakes Science Center"
+      Latitude="41.507437"
+      Longitude="-81.696592"
+      Address="Cleveland, Ohio"
+      Website="/wiki/File:Commons-logo.svg" />
+    <Site
+      Name="Greensboro Science Center"
+      LongName="Greensboro Science Center, Inc."
+      Latitude="36.1299"
+      Longitude="-79.8341"
+      Address="Greensboro, North Carolina, USA"
+      Website="http://www.greensboroscience.org" />
+    <Site
+      Name="Grout Museum"
+      LongName="Grout Museum District: Bluedorn Science Imaginarium"
+      Latitude="42.4923"
+      Longitude="-92.344"
+      Address="503 South Street Waterloo, Iowa"
+      Website="http://www.groutmuseumdistrict.org" />
+    <Site
+      Name="Gulf Coast Exploreum"
+      LongName="Gulf Coast Exploreum Science Center"
+      Latitude="30.69028"
+      Longitude="-88.040028"
+      Address="65 Government Street Mobile, Alabama, USA"
+      Website="http://www.exploreum.com/" />
+    <Site
+      Name="Gwinnett Environmental &amp; Heritage Center"
+      LongName="Gwinnett Environmental &amp; Heritage Center"
+      Latitude="34.0640472"
+      Longitude="-84.0050917"
+      Address="Buford, Georgia"
+      Website="http://gwinnettehc.org/" />
+    <Site
+      Name="Haffenreffer Museum of Anthropology"
+      LongName="Haffenreffer Museum of Anthropology"
+      Latitude="41.826472"
+      Longitude="-71.403722"
+      Address="Providence, Rhode Island"
+      Website="https://www.brown.edu/Facilities/Haffenreffer/" />
+    <Site
+      Name="Hagley Museum and Library"
+      LongName="Hagley Museum and Library"
+      Latitude="39.78056"
+      Longitude="-75.575"
+      Address="Wilmington, Delaware"
+      Website="http://www.hagley.org/" />
+    <Site
+      Name="Happy Hollow Park &amp; Zoo"
+      LongName="Happy Hollow Park &amp; Zoo"
+      Latitude="37.3256806"
+      Longitude="-121.862056"
+      Address="1300 Senter Rd San Jose, California, 95112"
+      Website="http://www.hhpz.org" />
+    <Site
+      Name="Harvard Museum of Natural History"
+      LongName="Harvard Museum of Natural History"
+      Latitude="42.3784139"
+      Longitude="-71.1155528"
+      Address="Cambridge, Massachusetts"
+      Website="/wiki/File:Commons-logo.svg" />
+    <Site
+      Name="The Health Museum"
+      LongName="The Health Museum"
+      Latitude="29.7218"
+      Longitude="-95.386"
+      Address="Houston, Texas"
+      Website="http://www.thehealthmuseum.org/" />
+    <Site
+      Name="The Henry Ford"
+      LongName="The Henry Ford"
+      Latitude="42.3035833"
+      Longitude="-83.2340778"
+      Address="The Henry Ford&#xA;20900 Oakwood Boulevard&#xA;at Village Road Dearborn, Michigan United States"
+      Website="/wiki/File:Commons-logo.svg" />
+    <Site
+      Name="Hopewell Museum"
+      LongName="Hopewell Museum"
+      Latitude="40.39052"
+      Longitude="-74.76032"
+      Address="Paris, Kentucky"
+      Website="http://www.hopewellboro-nj.us/index.php?option=com_content&amp;amp;task=view&amp;amp;id=12&amp;amp;Itemid=42" />
+    <Site
+      Name="Houston Museum of Natural Science"
+      LongName="Houston Museum of Natural Science"
+      Latitude="29.7216"
+      Longitude="-95.3896"
+      Address="Houston, Texas"
+      Website="http://www.hmns.org/" />
+    <Site
+      Name="Hudson River Museum"
+      LongName="Hudson River Museum"
+      Latitude="40.954"
+      Longitude="-73.8963"
+      Address="511 Warburton Avenue Yonkers, NY 10701 (United States)"
+      Website="http://www.hrm.org/" />
+    <Site
+      Name="Humboldt State University Natural History Museum"
+      LongName="Humboldt State University Natural History Museum"
+      Latitude="40.872255"
+      Longitude="-124.084819"
+      Address="Arcata, California, United States"
+      Website="http://www.humboldt.edu/natmus/" />
+    <Site
+      Name="Huntington Botanical Gardens"
+      LongName="Huntington Botanical Gardens"
+      Latitude="34.12722"
+      Longitude="-118.11"
+      Address="San Marino, California"
+      Website="http://www.huntington.org/" />
+    <Site
+      Name="Imagination Station"
+      LongName="Imagination Station"
+      Latitude="41.651904"
+      Longitude="-83.531468"
+      Address="Toledo, Ohio"
+      Website="http://imaginationstationtoledo.org/" />
+    <Site
+      Name="Imagination Station Science Museum"
+      LongName="Imagination Station Science Museum"
+      Latitude="35.72417"
+      Longitude="-77.90972"
+      Address="224 East Nash Street, Wilson, North Carolina"
+      Website="http://scienceandhistory.org" />
+    <Site
+      Name="Imiloa Astronomy Center of Hawaii"
+      LongName="Imiloa Astronomy Center of Hawaii"
+      Latitude="19.70083"
+      Longitude="-155.08833"
+      Address="Hilo, Hawaii"
+      Website="http://www.imiloahawaii.org" />
+    <Site
+      Name="Impression 5 Science Center"
+      LongName="Impression 5 Science Center"
+      Latitude="42.73232"
+      Longitude="-84.54861"
+      Address="200 Museum Drive Lansing, Michigan"
+      Website="http://www.impression5.org/" />
+    <Site
+      Name="Information Age Learning Center"
+      LongName="Infoage Science/History Learning Center"
+      Latitude="40.18889"
+      Longitude="-74.06472"
+      Address="Wall, New Jersey"
+      Website="http://infoage.org" />
+    <Site
+      Name="International Museum of Art &amp; Science"
+      LongName="International Museum of Art &amp; Science"
+      Latitude="26.2415"
+      Longitude="-98.2336"
+      Address="McAllen, Texas"
+      Website="http://www.imasonline.org/" />
+    <Site
+      Name="Intrepid Sea, Air &amp; Space Museum"
+      LongName="Intrepid Sea, Air &amp; Space Museum"
+      Latitude="40.764832"
+      Longitude="-74.000763"
+      Address="West Side Highway and 46th Street, Manhattan, New York"
+      Website="http://www.intrepidmuseum.org/" />
+    <Site
+      Name="Jet Propulsion Laboratory"
+      LongName="Jet Propulsion Laboratory"
+      Latitude="34.201694"
+      Longitude="-118.17167"
+      Address="Pasadena, California"
+      Website="http://www.jpl.nasa.gov" />
+    <Site
+      Name="Kalamazoo Valley Museum"
+      LongName="Kalamazoo Valley Museum"
+      Latitude="42.29329"
+      Longitude="-85.58392"
+      Address="Kalamazoo, Michigan"
+      Website="http://kvm.kvcc.edu/" />
+    <Site
+      Name="Kansas Cosmosphere and Space Center"
+      LongName="Kansas Cosmosphere and Space Center"
+      Latitude="38.065304"
+      Longitude="-97.921344"
+      Address="1100 North Plum Street Hutchinson, KS 67501 USA"
+      Website="http://www.cosmo.org/" />
+    <Site
+      Name="Kern County Museum"
+      LongName="Kern County Museum"
+      Latitude="35.393"
+      Longitude="-119.02"
+      Address="Bakersfield, California"
+      Website="http://www.kcmuseum.org/" />
+    <Site
+      Name="Kidspace Children's Museum"
+      LongName="Kidspace Children's Museum"
+      Latitude="34.15528"
+      Longitude="-118.16389"
+      Address="480 N. Arroyo Blvd. Pasadena, California 91103"
+      Website="http://www.kidspacemuseum.org/" />
+    <Site
+      Name="Kingman Museum"
+      LongName="Kingman Museum"
+      Latitude="42.336985"
+      Longitude="-85.211383"
+      Address="175 Limit Street, Battle Creek, Michigan"
+      Website="http://www.kingmanmuseum.org" />
+    <Site
+      Name="Kopernik Observatory &amp; Science Center"
+      LongName="Kopernik Observatory &amp; Science Center"
+      Latitude="42.002129"
+      Longitude="-76.033467"
+      Address="Vestal, New York, USA"
+      Website="http://www.kopernik.org/" />
+    <Site
+      Name="Lake County Discovery Museum"
+      LongName="Lake County Discovery Museum"
+      Latitude="42.2626"
+      Longitude="-88.1068"
+      Address="27277 Forest Preserve Road, Wauconda, Illinois, 60084"
+      Website="http://lakecountydiscoverymuseum.org" />
+    <Site
+      Name="Las Vegas Natural History Museum"
+      LongName="Las Vegas Natural History Museum"
+      Latitude="36.1799"
+      Longitude="-115.1339"
+      Address="Las Vegas, Nevada"
+      Website="http://www.lvnhm.org/" />
+    <Site
+      Name="Lawrence Hall of Science"
+      LongName="Lawrence Hall of Science"
+      Latitude="37.87944"
+      Longitude="-122.24667"
+      Address="Berkeley, California, USA"
+      Website="http://www.lawrencehallofscience.org/" />
+    <Site
+      Name="Liberty Science Center"
+      LongName="Liberty Science Center"
+      Latitude="40.708312"
+      Longitude="-74.054246"
+      Address="Liberty State Park, Jersey City, New Jersey, U.S."
+      Website="http://lsc.org/" />
+    <Site
+      Name="Lied Discovery Children's Museum"
+      LongName="Lied Discovery Children's Museum"
+      Latitude="36.16889"
+      Longitude="-115.1525"
+      Address="Las Vegas, Nevada"
+      Website="http://www.discoverykidslv.org/" />
+    <Site
+      Name="Lindsay Wildlife Museum"
+      LongName="Lindsay Wildlife Museum"
+      Latitude="37.9235"
+      Longitude="-122.0757"
+      Address="Walnut Creek, California"
+      Website="http://www.wildlife-museum.org" />
+    <Site
+      Name="Louisiana Arts and Science Museum"
+      LongName="Louisiana Arts and Science Museum"
+      Latitude="30.44639"
+      Longitude="-91.19"
+      Address="100 S. River Rd., Baton Rouge, Louisiana"
+      Website="http://www.lasm.org" />
+    <Site
+      Name="Kentucky Science Center"
+      LongName="Kentucky Science Center"
+      Latitude="38.257638"
+      Longitude="-85.762687"
+      Address="Louisville, Kentucky"
+      Website="http://www.kysciencecenter.org/" />
+    <Site
+      Name="Lowell Observatory"
+      LongName="Lowell Observatory"
+      Latitude="35.20278"
+      Longitude="-111.66444"
+      Address="Flagstaff, Arizona"
+      Website="http://www.lowell.edu" />
+    <Site
+      Name="Madison Children's Museum"
+      LongName="Madison Children's Museum"
+      Latitude="43.0769"
+      Longitude="-89.3844"
+      Address="100 N. Hamilton St, Madison, Wisconsin, United States"
+      Website="http://www.madisonchildrensmuseum.org" />
+    <Site
+      Name="Maine Discovery Museum"
+      LongName="Maine Discovery Museum"
+      Latitude="44.8"
+      Longitude="-68.7717"
+      Address="74 Main Street Bangor, Maine, USA"
+      Website="http://www.mainediscoverymuseum.org/" />
+    <Site
+      Name="Marian Koshland Science Museum"
+      LongName="Marian Koshland Science Museum"
+      Latitude="38.8964"
+      Longitude="-77.0195"
+      Address="525 E Street NW&#xA;Washington, DC"
+      Website="https://koshland-science-museum.org/" />
+    <Site
+      Name="Maryland Science Center"
+      LongName="Maryland Science Center"
+      Latitude="39.28139"
+      Longitude="-76.61194"
+      Address="Baltimore Maryland U.S."
+      Website="http://www.marylandsciencecenter.org" />
+    <Site
+      Name="McAuliffe-Shepard Discovery Center"
+      LongName="McAuliffe-Shepard Discovery Center"
+      Latitude="43.224583"
+      Longitude="-71.533184"
+      Address="Concord, New Hampshire"
+      Website="http://www.starhop.com" />
+    <Site
+      Name="McWane Science Center"
+      LongName="McWane Science Center"
+      Latitude="33.515079"
+      Longitude="-86.808378"
+      Address="Birmingham, Alabama, United States"
+      Website="http://www.mcwane.org/" />
+    <Site
+      Name="Miami Science Museum"
+      LongName="Miami Science Museum"
+      Latitude="25.74658"
+      Longitude="-80.21157"
+      Address="3280 South Miami Avenue Miami, Florida, United States"
+      Website="http://www.miamisci.org/" />
+    <Site
+      Name="Mid-America Science Museum"
+      LongName="Mid-America Science Museum"
+      Latitude="34.5148"
+      Longitude="-93.1159"
+      Address="Hot Springs, Arkansas"
+      Website="http://www.midamericamuseum.org" />
+    <Site
+      Name="Mid-Hudson Children's Museum"
+      LongName="Mid-Hudson Children's Museum"
+      Latitude="41.70861"
+      Longitude="-73.93889"
+      Address="75 North Water Street, Poughkeepsie, NY"
+      Website="http://mhcm.org/" />
+    <Site
+      Name="Milwaukee Public Museum"
+      LongName="Milwaukee Public Museum"
+      Latitude="43.040744"
+      Longitude="-87.921095"
+      Address="800 West Wells Street Milwaukee, Wisconsin  United States"
+      Website="http://www.mpm.edu" />
+    <Site
+      Name="Mississippi Museum of Natural Science"
+      LongName="Mississippi Museum of Natural Science"
+      Latitude="32.3251"
+      Longitude="-90.1573"
+      Address="Jackson, Mississippi, United States"
+      Website="https://www.mdwfp.com/museum.aspx" />
+    <Site
+      Name="MIT Museum"
+      LongName="MIT Museum"
+      Latitude="42.362778"
+      Longitude="-71.099167"
+      Address="Cambridge, Massachusetts"
+      Website="http://web.mit.edu/museum/" />
+    <Site
+      Name="Montshire Museum of Science"
+      LongName="Montshire Museum of Science"
+      Latitude="43.70028"
+      Longitude="-72.30528"
+      Address="Norwich, Vermont"
+      Website="http://www.montshire.org" />
+    <Site
+      Name="Morehead Planetarium and Science Center"
+      LongName="Morehead Planetarium and Science Center"
+      Latitude="35.91399"
+      Longitude="-79.05025"
+      Address="Chapel Hill, North Carolina"
+      Website="http://www.moreheadplanetarium.org/" />
+    <Site
+      Name="MOSI (Museum of Science &amp; Industry)"
+      LongName="Museum of Science &amp; Industry (Tampa)"
+      Latitude="28.053333"
+      Longitude="-82.403889"
+      Address="Tampa, Florida, US"
+      Website="http://www.mosi.org" />
+    <Site
+      Name="The Museum of Arts &amp; Sciences"
+      LongName="Museum of Arts and Sciences (Macon)"
+      Latitude="32.864806"
+      Longitude="-83.695167"
+      Address="Macon, Georgia"
+      Website="http://www.masmacon.com/" />
+    <Site
+      Name="Museum of Arts and Sciences"
+      LongName="Museum of Arts and Sciences (Daytona Beach)"
+      Latitude="29.191757"
+      Longitude="-81.037216"
+      Address="352 South Nova Road&#xA;Daytona Beach, Florida"
+      Website="http://www.moas.org/" />
+    <Site
+      Name="Museum of Discovery"
+      LongName="Arkansas Museum of Discovery"
+      Latitude="34.747508"
+      Longitude="-92.265442"
+      Address="Little Rock, Arkansas"
+      Website="http://www.museumofdiscovery.org" />
+    <Site
+      Name="Museum of Discovery and Science"
+      LongName="Museum of Discovery and Science"
+      Latitude="26.120451"
+      Longitude="-80.14745"
+      Address="Fort Lauderdale, Florida"
+      Website="http://www.mods.org/home.htm" />
+    <Site
+      Name="The Museum of Flight"
+      LongName="The Museum of Flight"
+      Latitude="47.519"
+      Longitude="-122.3"
+      Address="King County International Airport (Boeing Field)&#xA;9404 E. Marginal Way Seattle, Washington, U.S."
+      Website="http://www.museumofflight.org/" />
+    <Site
+      Name="Museum of Life and Science"
+      LongName="Museum of Life and Science"
+      Latitude="36.02865"
+      Longitude="-78.89734"
+      Address="Durham, North Carolina"
+      Website="http://www.ncmls.org" />
+    <Site
+      Name="Museum of Mathematics"
+      LongName="Museum of Mathematics"
+      Latitude="40.74371"
+      Longitude="-73.9883"
+      Address="11 East 26th Street Manhattan, New York City"
+      Website="http://momath.org/" />
+    <Site
+      Name="Museum of Nature &amp; Science"
+      LongName="Museum of Nature &amp; Science"
+      Latitude="32.78689"
+      Longitude="-96.80665"
+      Address="Dallas, Texas, United States"
+      Website="http://www.perotmuseum.org/" />
+    <Site
+      Name="Museum of Science"
+      LongName="Museum of Science Boston"
+      Latitude="42.367778"
+      Longitude="-71.070997"
+      Address="Boston, Massachusetts"
+      Website="http://www.mos.org/" />
+    <Site
+      Name="Museum of Science and History"
+      LongName="Museum of Science &amp; History of Jacksonville, Inc."
+      Latitude="30.319525"
+      Longitude="-81.659901"
+      Address="Jacksonville, Florida"
+      Website="http://www.themosh.org" />
+    <Site
+      Name="Museum of Science and Industry"
+      LongName="Museum of Science and Industry (Chicago)"
+      Latitude="41.79056"
+      Longitude="-87.58278"
+      Address="5700 South Lake Shore Drive&#xA;(at East 57th Street), Chicago, Illinois, US, 60637"
+      Website="http://www.msichicago.org" />
+    <Site
+      Name="Museum of the Earth"
+      LongName="Museum of the Earth at the Paleontological Research Institution"
+      Latitude="42.466306"
+      Longitude="-76.536203"
+      Address="1259 Trumansburg Road, Ithaca, New York"
+      Website="http://museumoftheearth.org" />
+    <Site
+      Name="Museum of the Rockies"
+      LongName="Museum of the Rockies"
+      Latitude="45.65881"
+      Longitude="-111.0456"
+      Address="600 W. Kagy Boulevard, Bozeman, Montana, USA"
+      Website="http://www.museumoftherockies.org" />
+    <Site
+      Name="Mütter Museum"
+      LongName="Mütter Museum"
+      Latitude="39.95333"
+      Longitude="-75.17667"
+      Address="19 S. 22nd Street Philadelphia, PA"
+      Website="http://muttermuseum.org" />
+    <Site
+      Name="National Air and Space Museum"
+      LongName="National Air and Space Museum"
+      Latitude="38.888"
+      Longitude="-77.02"
+      Address="Washington, D.C."
+      Website="http://www.nasm.si.edu" />
+    <Site
+      Name="National Atomic Testing Museum"
+      LongName="National Atomic Testing Museum"
+      Latitude="36.11416"
+      Longitude="-115.1486"
+      Address="Las Vegas, Nevada"
+      Website="http://nationalatomictestingmuseum.org/" />
+    <Site
+      Name="National Children's Museum"
+      LongName="National Children's Museum"
+      Latitude="38.7833"
+      Longitude="-77.0142"
+      Address="National Harbor, Maryland"
+      Website="https://www.ncm.museum/" />
+    <Site
+      Name="National Cryptologic Museum"
+      LongName="National Cryptologic Museum"
+      Latitude="39.1148"
+      Longitude="-76.7748"
+      Address="8290 Colony Seven Road Annapolis Junction, Maryland 20701&#xA;United States of America"
+      Website="http://www.nsa.gov/about/cryptologic_heritage/museum/index.shtml" />
+    <Site
+      Name="National Electronics Museum"
+      LongName="National Electronics Museum"
+      Latitude="39.19556"
+      Longitude="-76.68389"
+      Address="Linthicum, Maryland"
+      Website="http://www.nationalelectronicsmuseum.org/" />
+    <Site
+      Name="National Museum of American History"
+      LongName="National Museum of American History"
+      Latitude="38.8913"
+      Longitude="-77.03"
+      Address="Washington D.C., United States"
+      Website="http://americanhistory.si.edu/" />
+    <Site
+      Name="National Museum of Dentistry"
+      LongName="National Museum of Dentistry"
+      Latitude="39.28778"
+      Longitude="-76.62333"
+      Address="Baltimore, Maryland"
+      Website="http://www.dentalmuseum.org/" />
+    <Site
+      Name="National Museum of Health and Medicine"
+      LongName="National Museum of Health and Medicine"
+      Latitude="39.00889"
+      Longitude="-77.05389"
+      Address="2500 Linden Lane, Silver Spring, Maryland"
+      Website="http://www.medicalmuseum.mil/" />
+    <Site
+      Name="National Museum of Natural History"
+      LongName="National Museum of Natural History"
+      Latitude="38.8913"
+      Longitude="-77.0259"
+      Address="National Mall in Washington, D.C., United States"
+      Website="http://www.mnh.si.edu/" />
+    <Site
+      Name="National Museum of Nuclear Science &amp; History"
+      LongName="National Museum of Nuclear Science &amp; History"
+      Latitude="35.066"
+      Longitude="-106.5339"
+      Address="601 Eubank SE (at Southern Blvd) Albuquerque, New Mexico&#xA;(505) 245-2137"
+      Website="http://www.nuclearmuseum.org/" />
+    <Site
+      Name="National Renewable Energy Laboratory"
+      LongName="National Renewable Energy Laboratory"
+      Latitude="39.740576"
+      Longitude="-105.155855"
+      Address="Golden, Colorado"
+      Website="/wiki/File:Commons-logo.svg" />
+    <Site
+      Name="National Soaring Museum"
+      LongName="National Soaring Museum"
+      Latitude="42.12167"
+      Longitude="-76.90139"
+      Address="Elmira (Harris Hill), New York"
+      Website="http://www.soaringmuseum.org" />
+    <Site
+      Name="Fort Discovery"
+      LongName="National Science Center (Fort Discovery)"
+      Latitude="33.4768"
+      Longitude="-81.9622"
+      Address="1 Seventh Street Augusta, Georgia,  United States"
+      Website="http://www.wrdw.com/home/headlines/105291253.html" />
+    <Site
+      Name="National Watch and Clock Museum"
+      LongName="National Watch and Clock Museum"
+      Latitude="40.0371"
+      Longitude="-76.5021"
+      Address="Columbia, Pennsylvania"
+      Website="http://www.nawcc.org/index.php/museumlibrary" />
+    <Site
+      Name="Natural History Museum of the Adirondacks"
+      LongName="Natural History Museum of the Adirondacks"
+      Latitude="44.219709"
+      Longitude="-74.438543"
+      Address="Tupper Lake, New York"
+      Website="http://www.wildcenter.org/" />
+    <Site
+      Name="Natural History Museum of Los Angeles County"
+      LongName="Natural History Museum of Los Angeles County and George C. Page Museum at the La Brea Tar Pits"
+      Latitude="34.01694"
+      Longitude="-118.28778"
+      Address="Exposition Park, Los Angeles, California"
+      Website="http://nhm.org" />
+    <Site
+      Name="Naval Undersea Museum"
+      LongName="Naval Undersea Museum"
+      Latitude="47.7004"
+      Longitude="-122.6249"
+      Address="Keyport, Washington"
+      Website="http://www.navalunderseamuseum.org/" />
+    <Site
+      Name="New England Wireless and Steam Museum"
+      LongName="New England Wireless and Steam Museum"
+      Latitude="41.62417"
+      Longitude="-71.51278"
+      Address="East Greenwich, Rhode Island"
+      Website="http://www.newsm.org/" />
+    <Site
+      Name="New Mexico Museum of Natural History and Science"
+      LongName="New Mexico Museum of Natural History and Science"
+      Latitude="35.0981"
+      Longitude="-106.6655"
+      Address="Albuquerque, New Mexico, USA"
+      Website="http://nmnaturalhistory.org/" />
+    <Site
+      Name="New Mexico Museum of Space History"
+      LongName="The New Mexico Museum of Space History"
+      Latitude="32.921024"
+      Longitude="-105.920734"
+      Address="Alamogordo, New Mexico"
+      Website="http://www.nmspacemuseum.org" />
+    <Site
+      Name="New York Hall of Science"
+      LongName="New York Hall of Science"
+      Latitude="40.7472"
+      Longitude="-73.8517"
+      Address="47-01 111th Street Corona, New York"
+      Website="http://nysci.org" />
+    <Site
+      Name="New York State Museum"
+      LongName="New York State Museum"
+      Latitude="42.64833"
+      Longitude="-73.76167"
+      Address="Empire State Plaza, Albany, New York, United States"
+      Website="http://www.nysm.nysed.gov/" />
+    <Site
+      Name="New York Transit Museum"
+      LongName="New York Transit Museum"
+      Latitude="40.6904"
+      Longitude="-73.99"
+      Address="Court Street (IND Fulton Street Line) station, Boerum Pl., Brooklyn, NY 11201 United States"
+      Website="http://www.mta.info/mta/museum/" />
+    <Site
+      Name="The Newark Museum"
+      LongName="The Newark Museum"
+      Latitude="40.742651"
+      Longitude="-74.171779"
+      Address="49 Washington Street Newark, New Jersey, USA"
+      Website="http://www.newarkmuseum.org" />
+    <Site
+      Name="Niagara Science Museum"
+      LongName="Niagara Science Museum"
+      Latitude="43.1209"
+      Longitude="-79.0442"
+      Address="3625 Highland Ave. Niagara Falls, New York 14305 United States"
+      Website="http://www.niagarasciencemuseum.org/" />
+    <Site
+      Name="North Carolina Arboretum"
+      LongName="North Carolina Arboretum"
+      Latitude="35.4976"
+      Longitude="-82.609"
+      Address="Asheville, North Carolina"
+      Website="http://www.ncarboretum.org/" />
+    <Site
+      Name="North Carolina Museum of Life and Science"
+      LongName="North Carolina Museum of Life and Science"
+      Latitude="36.02865"
+      Longitude="-78.89734"
+      Address="Durham, North Carolina"
+      Website="http://www.ncmls.org" />
+    <Site
+      Name="North Carolina Museum of Natural Sciences"
+      LongName="North Carolina Museum of Natural Sciences"
+      Latitude="35.782186"
+      Longitude="-78.639422"
+      Address="Raleigh, North Carolina"
+      Website="http://www.naturalsciences.org/" />
+    <Site
+      Name="Northern Maine Museum of Science"
+      LongName="Northern Maine Museum of Science"
+      Latitude="46.6723"
+      Longitude="-68.0172"
+      Address="Presque Isle, Maine"
+      Website="http://pages.umpi.edu/~nmms/" />
+    <Site
+      Name="Ocean Star Offshore Drilling Rig &amp; Museum"
+      LongName="Ocean Star Offshore Drilling Rig &amp; Museum"
+      Latitude="29.3056"
+      Longitude="-94.7904"
+      Address="Galveston, Texas"
+      Website="http://www.oceanstaroec.com" />
+    <Site
+      Name="Omniplex Science Museum"
+      LongName="Omniplex Science Museum"
+      Latitude="35.5236"
+      Longitude="-97.4751"
+      Address="Oklahoma City, Oklahoma"
+      Website="http://www.redearth.org/homepage/" />
+    <Site
+      Name="Oregon Museum of Science and Industry"
+      LongName="Oregon Museum of Science and Industry"
+      Latitude="45.508415"
+      Longitude="-122.665894"
+      Address="Portland, Oregon, United States"
+      Website="http://www.omsi.edu/" />
+    <Site
+      Name="Orlando Science Center"
+      LongName="Orlando Science Center"
+      Latitude="28.572321"
+      Longitude="-81.368394"
+      Address="Orlando, Florida"
+      Website="http://www.osc.org/" />
+    <Site
+      Name="Orpheum Children's Science Museum"
+      LongName="Orpheum Children's Science Museum"
+      Latitude="40.11944"
+      Longitude="-88.2425"
+      Address="346-352 N. Neil St. Champaign, Illinois"
+      Website="/wiki/File:Commons-logo.svg" />
+    <Site
+      Name="Pacific Science Center"
+      LongName="Pacific Science Center"
+      Latitude="47.6192"
+      Longitude="-122.3511"
+      Address="Seattle and Mercer Slough, Bellevue, Washington, USA"
+      Website="http://www.pacsci.org" />
+    <Site
+      Name="Paper Discovery Center"
+      LongName="Paper Discovery Center"
+      Latitude="44.25494"
+      Longitude="-88.41134"
+      Address="Appleton, Wisconsin"
+      Website="http://www.paperdiscoverycenter.org/" />
+    <Site
+      Name="Peggy Notebaert Nature Museum"
+      LongName="Peggy Notebaert Nature Museum"
+      Latitude="41.9267"
+      Longitude="-87.6352"
+      Address="2430 N Cannon Drive, Chicago, IL 60614"
+      Website="http://www.naturemuseum.org/" />
+    <Site
+      Name="Permian Basin Petroleum Museum"
+      LongName="Permian Basin Petroleum Museum"
+      Latitude="31.9724"
+      Longitude="-102.0853"
+      Address="Midland, Texas"
+      Website="http://www.petroleummuseum.org/" />
+    <Site
+      Name="Providence Children's Museum"
+      LongName="Providence Children's Museum"
+      Latitude="41.81665"
+      Longitude="-71.40957"
+      Address="Providence, Rhode Island"
+      Website="http://www.childrenmuseum.org/" />
+    <Site
+      Name="Putnam Museum"
+      LongName="Putnam Museum"
+      Latitude="41.531"
+      Longitude="-90.602"
+      Address="Davenport, Iowa, United States"
+      Website="http://www.putnam.org" />
+    <Site
+      Name="Randall Museum"
+      LongName="Randall Museum"
+      Latitude="37.764387"
+      Longitude="-122.43813"
+      Address="199 Museum Way San Francisco, California, US"
+      Website="http://www.randallmuseum.org" />
+    <Site
+      Name="Raven Hill Discovery Center"
+      LongName="Raven Hill Discovery Center"
+      Latitude="45.133375"
+      Longitude="-85.05538"
+      Address="4737 Fuller Rd. East Jordan, Michigan"
+      Website="http://www.ravenhilldiscoverycenter.org/" />
+    <Site
+      Name="Reading Public Museum"
+      LongName="Reading Public Museum"
+      Latitude="40.3274"
+      Longitude="-75.9513"
+      Address="Reading, Pennsylvania"
+      Website="http://www.readingpublicmuseum.org" />
+    <Site
+      Name="Reuben H. Fleet Science Center"
+      LongName="Reuben H. Fleet Science Center"
+      Latitude="32.73083"
+      Longitude="-117.14694"
+      Address="1875 El Prado, Balboa Park, San Diego, California 92101"
+      Website="http://www.rhfleet.org/" />
+    <Site
+      Name="Rhode Island Computer Museum"
+      LongName="Rhode Island Computer Museum"
+      Latitude="41.508556"
+      Longitude="-71.453889"
+      Address="North Kingstown, Rhode Island"
+      Website="http://www.ricomputermuseum.org/" />
+    <Site
+      Name="Roberson Museum and Science Center"
+      LongName="Roberson Museum and Science Center"
+      Latitude="42.0937"
+      Longitude="-75.9186"
+      Address="Binghamton, New York"
+      Website="http://www.roberson.org/" />
+    <Site
+      Name="Rochester Museum &amp; Science Center"
+      LongName="Rochester Museum and Science Center"
+      Latitude="43.152556"
+      Longitude="-77.587444"
+      Address="Rochester, New York"
+      Website="http://www.rmsc.org" />
+    <Site
+      Name="Roper Mountain Science Center"
+      LongName="Roper Mountain Science Center"
+      Latitude="34.84"
+      Longitude="-82.3075"
+      Address="402 Roper Mountain Road, Greenville, South Carolina 29615"
+      Website="http://www.ropermountain.org/" />
+    <Site
+      Name="Saint Louis Science Center"
+      LongName="Saint Louis Science Center"
+      Latitude="38.6289"
+      Longitude="-90.2708"
+      Address="5050 Oakland Ave, St. Louis, Missouri, USA"
+      Website="http://www.slsc.org" />
+    <Site
+      Name="San Diego Natural History Museum"
+      LongName="San Diego Natural History Museum"
+      Latitude="32.732111"
+      Longitude="-117.1473028"
+      Address="1788 El Prado, Balboa Park&#xA;San Diego, CA 92101&#xA;United States"
+      Website="http://www.sdnhm.org" />
+    <Site
+      Name="Santa Barbara Museum of Natural History"
+      LongName="Santa Barbara Museum of Natural History"
+      Latitude="34.4385472"
+      Longitude="-119.7148278"
+      Address="2559 Puesta del Sol Santa Barbara, CA"
+      Website="http://www.sbnature.org" />
+    <Site
+      Name="Science Center of Pinellas"
+      LongName="Science Center of Pinellas County, Inc."
+      Latitude="27.792982"
+      Longitude="-82.744547"
+      Address="Saint Petersburg, Florida"
+      Website="http://www.sciencecenterofpinellas.com/eic/" />
+    <Site
+      Name="Science City at Union Station"
+      LongName="Science City at Union Station"
+      Latitude="39.0847"
+      Longitude="-94.5855"
+      Address="30 West Pershing Road, Kansas City, Missouri, USA"
+      Website="http://www.sciencecity.com/" />
+    <Site
+      Name="Science Factory Children's Museum &amp; Planetarium"
+      LongName="Science Factory Children's Museum &amp; Planetarium"
+      Latitude="44.0564"
+      Longitude="-123.0726"
+      Address="2300 Leo Harris Parkway Eugene, Oregon"
+      Website="http://www.sciencefactory.org/" />
+    <Site
+      Name="Science Museum of Minnesota"
+      LongName="Science Museum of Minnesota"
+      Latitude="44.9425"
+      Longitude="-93.09861"
+      Address="120 W. Kellogg Boulevard, Saint Paul, Minnesota, USA"
+      Website="https://www.smm.org" />
+    <Site
+      Name="Science Museum of Virginia"
+      LongName="Science Museum of Virginia"
+      Latitude="37.5611"
+      Longitude="-77.46664"
+      Address="2500 West Broad Street, Richmond, Virginia"
+      Website="http://www.smv.org/" />
+    <Site
+      Name="Science Museum Oklahoma"
+      LongName="Science Museum Oklahoma"
+      Latitude="35.5236"
+      Longitude="-97.4751"
+      Address="Oklahoma City, Oklahoma"
+      Website="http://www.redearth.org/homepage/" />
+    <Site
+      Name="Science Spectrum"
+      LongName="Science Spectrum"
+      Latitude="33.52861"
+      Longitude="-101.87667"
+      Address="Lubbock, Texas"
+      Website="http://www.sciencespectrum.org" />
+    <Site
+      Name="Sciencenter"
+      LongName="Sciencenter"
+      Latitude="42.450056"
+      Longitude="-76.504389"
+      Address="Ithaca, New York, USA"
+      Website="http://www.sciencenter.org/" />
+    <Site
+      Name="SciWorks"
+      LongName="SciWorks, The Science Center and Environmental Park of Forsyth County"
+      Latitude="36.1834135"
+      Longitude="-80.2802162"
+      Address="Winston-Salem, North Carolina"
+      Website="http://www.sciworks.org" />
+    <Site
+      Name="South Florida Science Museum"
+      LongName="South Florida Science Museum, Inc."
+      Latitude="26.66978"
+      Longitude="-80.06878"
+      Address="4801 Dreher Trail North&#xA;West Palm Beach, Florida"
+      Website="http://www.sfsciencecenter.org/" />
+    <Site
+      Name="Southern Museum of Flight"
+      LongName="Southern Museum of Flight"
+      Latitude="33.56348"
+      Longitude="-86.73806"
+      Address="4343 73rd Street North&#xA;Birmingham, Alabama 35206"
+      Website="http://www.southernmuseumofflight.org/" />
+    <Site
+      Name="spectrUM Discovery Area"
+      LongName="SpectrUM Discovery Area"
+      Latitude="46.8585"
+      Longitude="-113.9857"
+      Address="Missoula, Montana"
+      Website="http://spectrum.umt.edu/" />
+    <Site
+      Name="Springfield Science Museum"
+      LongName="Springfield Museums Association"
+      Latitude="42.10361"
+      Longitude="-72.58528"
+      Address="Springfield, Massachusetts"
+      Website="http://www.springfieldlibrary.org/" />
+    <Site
+      Name="Stafford Air &amp; Space Museum"
+      LongName="Stafford Air &amp; Space Museum"
+      Latitude="35.54444"
+      Longitude="-98.67"
+      Address="Weatherford, Oklahoma"
+      Website="http://staffordmuseum.org/" />
+    <Site
+      Name="Staten Island Children's Museum"
+      LongName="Staten Island Children's Museum"
+      Latitude="40.64111"
+      Longitude="-74.10305"
+      Address="1000 Richmond Terrace, Staten Island, New York, USA"
+      Website="http://www.sichildrensmuseum.org/" />
+    <Site
+      Name="Staten Island Institute of Arts and Sciences"
+      LongName="Staten Island Institute of Arts and Sciences"
+      Latitude="40.64419"
+      Longitude="-74.07776"
+      Address="75 Stuyvesant Place, Staten Island, New York, United States"
+      Website="http://www.statenislandmuseum.org/" />
+    <Site
+      Name="Stepping Stones Museum for Children"
+      LongName="Stepping Stones Museum for Children"
+      Latitude="41.11"
+      Longitude="-73.4179"
+      Address="303 West Avenue Norwalk, Connecticut, USA"
+      Website="http://www.steppingstonesmuseum.org" />
+    <Site
+      Name="Sternberg Museum of Natural History"
+      LongName="Sternberg Museum of Natural History"
+      Latitude="38.87333"
+      Longitude="-99.34333"
+      Address="Hays, Kansas"
+      Website="http://www.fhsu.edu" />
+    <Site
+      Name="The Tech Museum"
+      LongName="Tech Museum of Innovation"
+      Latitude="37.3314374"
+      Longitude="-121.8907276"
+      Address="San Jose, California, US"
+      Website="http://www.thetech.org" />
+    <Site
+      Name="Trolley Museum of New York"
+      LongName="Trolley Museum of New York"
+      Latitude="41.9203083"
+      Longitude="-73.9799667"
+      Address="Kingston, New York"
+      Website="http://www.tmny.org" />
+    <Site
+      Name="Tulsa Air and Space Museum"
+      LongName="Tulsa Air and Space Museum"
+      Latitude="36.20694"
+      Longitude="-95.89556"
+      Address="Tulsa International Airport, Tulsa, Oklahoma"
+      Website="http://www.tulsaairandspacemuseum.org" />
+    <Site
+      Name="Turtle Bay Exploration Park"
+      LongName="Turtle Bay Exploration Park"
+      Latitude="40.59"
+      Longitude="-122.375"
+      Address="Redding, California"
+      Website="http://www.turtlebay.org/" />
+    <Site
+      Name="U.S. Space &amp; Rocket Center"
+      LongName="U.S. Space &amp; Rocket Center"
+      Latitude="34.71139"
+      Longitude="-86.65417"
+      Address="Huntsville, Alabama"
+      Website="http://www.rocketcenter.com/" />
+    <Site
+      Name="United States Army Medical Department Museum"
+      LongName="United States Army Medical Department Museum"
+      Latitude="29.46139"
+      Longitude="-98.43806"
+      Address="San Antonio, Texas"
+      Website="http://ameddmuseum.amedd.army.mil/index.html" />
+    <Site
+      Name="University of Kansas Natural History Museum"
+      LongName="University of Kansas Natural History Museum"
+      Latitude="38.95861"
+      Longitude="-95.24389"
+      Address="14th St. and Oread Ave., University of Kansas campus, Lawrence, Kansas"
+      Website="http://www2.ku.edu/~kuesp/links.shtml" />
+    <Site
+      Name="University of Nebraska State Museum"
+      LongName="University of Nebraska State Museum"
+      Latitude="40.82"
+      Longitude="-96.70194"
+      Address="645 North 14th Street Lincoln, Nebraska"
+      Website="http://www.museum.unl.edu/" />
+    <Site
+      Name="University of Oregon Museum of Natural and Cultural History"
+      LongName="University of Oregon Museum of Natural and Cultural History"
+      Latitude="44.04298"
+      Longitude="-123.068064"
+      Address="1680 East 15th Eugene, Oregon"
+      Website="http://natural-history.uoregon.edu/" />
+    <Site
+      Name="Utah Museum of Natural History"
+      LongName="Utah Museum of Natural History"
+      Latitude="40.76365"
+      Longitude="-111.823505"
+      Address="Salt Lake City, Utah, United States"
+      Website="http://nhmu.utah.edu/" />
+    <Site
+      Name="Virginia Air and Space Center"
+      LongName="Virginia Air and Space Center"
+      Latitude="37.023944"
+      Longitude="-76.344498"
+      Address="Hampton, Virginia"
+      Website="http://www.vasc.org/" />
+    <Site
+      Name="Virginia Discovery Museum"
+      LongName="Virginia Discovery Museum"
+      Latitude="38.029556"
+      Longitude="-78.478028"
+      Address="Charlottesville, Virginia"
+      Website="http://www.vadm.org" />
+    <Site
+      Name="Virginia Living Museum"
+      LongName="Virginia Living Museum"
+      Latitude="37.0546"
+      Longitude="-76.4887"
+      Address="Newport News, Virginia, United States"
+      Website="http://www.thevlm.org/" />
+    <Site
+      Name="Virginia Museum of Natural History"
+      LongName="Virginia Museum of Natural History"
+      Latitude="36.6866"
+      Longitude="-79.8633"
+      Address="21 Starling Avenue, Martinsville, Virginia, 24112"
+      Website="http://www.vmnh.net/" />
+    <Site
+      Name="Washington Pavilion of Arts and Science"
+      LongName="Washington Pavilion of Arts and Science"
+      Latitude="43.544073"
+      Longitude="-96.729035"
+      Address="Sioux Falls, South Dakota"
+      Website="http://www.washingtonpavilion.org" />
+    <Site
+      Name="Whitaker Center for Science and the Arts"
+      LongName="Whitaker Center for Science and the Arts"
+      Latitude="40.2604"
+      Longitude="-76.8807"
+      Address="Harrisburg, Pennsylvania"
+      Website="http://www.whitakercenter.org/" />
+    <Site
+      Name="The Wild Center/Natural History Museum of the Adirondacks"
+      LongName="The Wild Center/Natural History Museum of the Adirondacks"
+      Latitude="44.219709"
+      Longitude="-74.438543"
+      Address="Tupper Lake, New York"
+      Website="http://www.wildcenter.org/" />
+    <Site
+      Name="Witte Museum"
+      LongName="Witte Museum"
+      Latitude="29.46187"
+      Longitude="-98.467155"
+      Address="3801 Broadway, San Antonio, Texas,  United States"
+      Website="http://www.wittemuseum.org/" />
+    <Site
+      Name="WonderLab"
+      LongName="WonderLab Museum of Science, Health and Technology"
+      Latitude="39.16583"
+      Longitude="-86.53639"
+      Address="Bloomington, Indiana"
+      Website="http://www.wonderlab.org/" />
+    <Site
+      Name="Woods Hole Oceanographic Institution"
+      LongName="Woods Hole Oceanographic Institution"
+      Latitude="41.5245167"
+      Longitude="-70.6709722"
+      Address="Woods Hole, Massachusetts"
+      Website="http://www.whoi.edu" />
+    <Site
+      Name="Peabody Museum of Natural History"
+      LongName="Yale Peabody Museum of Natural History"
+      Latitude="41.317538"
+      Longitude="-72.919863"
+      Address="New Haven, Connecticut"
+      Website="http://peabody.yale.edu/" />
+    <Site
+      Name="Zeum"
+      LongName="Zeum: San Francisco's Children's Museum"
+      Latitude="37.783273"
+      Longitude="-122.401827"
+      Address="San Francisco, California"
+      Website="http://www.creativity.org/" />
+  </Sites>
+</Locations>

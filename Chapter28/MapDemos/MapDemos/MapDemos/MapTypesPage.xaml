@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MapDemos"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:toolkit=
+                 "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="MapDemos.MapTypesPage"
+             Title="Map Types">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <maps:Map Grid.Row="0"
+                  MapType="{Binding Source={x:Reference mapTypeRadios},
+                                    Path=SelectedValue}" />
+
+        <StackLayout Orientation="Horizontal"
+                     Grid.Row="1">
+            <StackLayout.BindingContext>
+                <toolkit:RadioButtonManager x:Name="mapTypeRadios"
+                                            x:TypeArguments="maps:MapType" />
+            </StackLayout.BindingContext>
+
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="local:MapTypeRadioButton">
+                        <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+
+            <local:MapTypeRadioButton BindingContext="{Binding Items[0]}" />
+            <local:MapTypeRadioButton BindingContext="{Binding Items[1]}" />
+            <local:MapTypeRadioButton BindingContext="{Binding Items[2]}" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

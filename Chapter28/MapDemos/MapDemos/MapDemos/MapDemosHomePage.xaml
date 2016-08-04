@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MapDemos;assembly=MapDemos"
+             x:Class="MapDemos.MapDemosHomePage"
+             Title="Map Demos">
+
+    <TableView Intent="Menu">
+        <TableRoot>
+            <TableSection>
+                <TextCell Text="Basic Map"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:BasicMapPage}" />
+
+                <TextCell Text="Map Types"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:MapTypesPage}" />
+                
+                <TextCell Text="Map Coordinates"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:MapCoordinatesPage}" />
+
+                <TextCell Text="Wyoming"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:WyomingPage}" />
+
+                <TextCell Text="Xamarin HQ"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:XamarinHQPage}" />
+                
+                <TextCell Text="Radius Zoom"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:RadiusZoomPage}" />
+
+                <TextCell Text="Longitude Zoom"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:LongitudeZoomPage}" />
+
+                <TextCell Text="Show Location"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:ShowLocationPage}" />
+
+                <TextCell Text="Go to Location"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:GoToLocationPage}" />
+                
+                <TextCell Text="Science Museums"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:ScienceMuseumsPage}" />
+
+                <TextCell Text="Local Museums"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:LocalMuseumsPage}" />
+
+                <TextCell Text="Geocoder Round Trip"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:GeocoderRoundTripPage}" />
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>
+

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="MapDemos.ShowLocationPage"
+             Title="Show Location">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <maps:Map Grid.Row="0"
+                  IsShowingUser="{Binding Source={x:Reference switch},
+                                          Path=IsToggled,
+                                          Mode=TwoWay}" />
+
+        <StackLayout Grid.Row="1"
+                     Orientation="Horizontal"
+                     HorizontalOptions="Center"
+                     Margin="0, 10">
+            
+            <Label Text="Show Location: "
+                   VerticalOptions="Center" />
+
+            <Switch x:Name="switch" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

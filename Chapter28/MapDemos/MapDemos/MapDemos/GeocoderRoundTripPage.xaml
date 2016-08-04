@@ -1,0 +1,48 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit=
+         "clr-namespace:Xamarin.FormsBook.Toolkit.Maps;assembly=Xamarin.FormsBook.Toolkit.Maps"
+             x:Class="MapDemos.GeocoderRoundTripPage"
+             Title="Geocoder Round Trip">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <SearchBar Grid.Row="0"
+                   Placeholder="Enter location"
+                   SearchButtonPressed="OnSearchButtonPressed" />
+
+        <Label Grid.Row="1"
+               Text="Locations:" />
+
+        <ListView x:Name="positionsListView"
+                  Grid.Row="2"
+                  ItemSelected="OnPositionItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell>
+                        <TextCell.Text>
+                            <Binding Path=".">
+                                <Binding.Converter>
+                                    <toolkit:PositionFormatConverter Format="S0" />
+                                </Binding.Converter>
+                            </Binding>
+                        </TextCell.Text>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Label Grid.Row="3"
+               Text="Addresses:" />
+
+        <ScrollView Grid.Row="4">
+            <StackLayout x:Name="addressesStack" />
+        </ScrollView>
+    </Grid>
+</ContentPage>
