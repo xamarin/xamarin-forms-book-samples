@@ -55,4 +55,4 @@ Currently, you can deploy the **UWP** project in several different ways based on
 ### Android AppCompat and Material Design
 
 The **appcompat** branch of the sample code repository contains Android projects that have been modified to use AppCompat and Material Design. The modification is the same as that described in the article [Adding AppCompat and Material Design](https://developer.xamarin.com/guides/xamarin-forms/platform-features/android/appcompat/).
-
+The two F# samples in Chapter 2 do not build in this branch. These are the only two samples that contain F# startup code.
