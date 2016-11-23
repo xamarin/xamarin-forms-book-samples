@@ -61,3 +61,5 @@ The two F# samples in Chapter 2 do not build in this branch. These are the only 
 
 As of August 12, 2016, all sample code has been upgraded to Xamarin.Forms version 2.3.1.114.
 
+As of November 23, 2016, all sample code has been upgrade to Xamarin.Forms version 2.3.3.168.
+
