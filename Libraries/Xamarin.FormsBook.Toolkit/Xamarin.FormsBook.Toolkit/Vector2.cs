@@ -62,6 +62,11 @@ namespace Xamarin.FormsBook.Toolkit
             return 180 * (Math.Atan2(v2.Y, v2.X) - Math.Atan2(v1.Y, v1.X)) / Math.PI;
         }
 
+        public static double DotProduct(Vector2 v1, Vector2 v2)
+        {
+            return v1.X * v2.X + v1.Y * v2.Y;
+        }
+
         // Operators
         public static Vector2 operator +(Vector2 v1, Vector2 v2)
         {
