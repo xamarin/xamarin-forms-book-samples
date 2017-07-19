@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
@@ -21,7 +21,7 @@
       <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
     <key>MinimumOSVersion</key>
-    <string>6.0</string>
+    <string>9.0</string>
     <key>CFBundleDisplayName</key>
     <string>RssFeed</string>
     <key>CFBundleIdentifier</key>
@@ -58,11 +58,11 @@
                   <key>NSExceptionMinimumTLSVersion</key>
                   <string>TLSv1.0</string>
                   <key>NSExceptionRequiresForwardSecrecy</key>
-                  <false/>
+                  <false />
                   <key>NSExceptionAllowsInsecureHTTPLoads</key>
-                  <true/>
+                  <true />
                   <key>NSIncludesSubdomains</key>
-                  <true/>
+                  <true />
               </dict>
           </dict>
       </dict>
