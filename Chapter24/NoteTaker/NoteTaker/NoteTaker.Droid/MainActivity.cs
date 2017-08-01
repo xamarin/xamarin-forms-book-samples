@@ -17,7 +17,7 @@ namespace NoteTaker.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            Xamarin.FormsBook.Platform.Android.Toolkit.Init();
+            Xamarin.FormsBook.Platform.Android.Toolkit.Init(this, bundle);
             LoadApplication(new App());
         }
     }
