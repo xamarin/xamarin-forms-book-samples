@@ -26,10 +26,10 @@ namespace TwoButtons
             };
             removeButton.Clicked += OnButtonClicked;
 
-            this.Padding = new Thickness(5, Device.OnPlatform(20, 0, 0), 5, 0);
+            Padding = new Thickness(5, Device.RuntimePlatform == Device.iOS ? 20 : 0, 5, 0);
 
             // Assemble the page.
-            this.Content = new StackLayout
+            Content = new StackLayout
             {
                 Children =
                 {

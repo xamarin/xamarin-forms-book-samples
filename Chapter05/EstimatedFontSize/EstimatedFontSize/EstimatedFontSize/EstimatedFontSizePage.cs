@@ -11,7 +11,7 @@ namespace EstimatedFontSize
         {
             label = new Label();
 
-            Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
+            Padding = new Thickness(0, Device.RuntimePlatform == Device.iOS ? 20 : 0, 0, 0);
             ContentView contentView = new ContentView
             {
                 Content = label
@@ -36,7 +36,9 @@ namespace EstimatedFontSize
             View view = (View)sender;
 
             // Define two values as multiples of font size.
-            double lineHeight = Device.OnPlatform(1.2, 1.2, 1.3);
+            double lineHeight = Device.RuntimePlatform == Device.iOS || 
+                                Device.RuntimePlatform == Device.Android ? 1.2 : 1.3;
+
             double charWidth = 0.5;
 
             // Format the text and get its character length.

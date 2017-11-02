@@ -79,13 +79,13 @@ namespace BlackCatSap
             mainStack.Children.Add(scrollView);
 
             // Set page content to mainStack.
-            this.Content = mainStack;
+            Content = mainStack;
 
             // White background for ebooks!
-            this.BackgroundColor = Color.White;
+            BackgroundColor = Color.White;
     
             // Add some iOS padding for the page
-            this.Padding = new Thickness (0, Device.OnPlatform (20, 0, 0), 0, 0);
+            Padding = new Thickness (0, Device.RuntimePlatform == Device.iOS ? 20 : 0, 0, 0);
         }
     }
 }

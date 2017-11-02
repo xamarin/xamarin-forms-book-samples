@@ -7,14 +7,28 @@ namespace PlatformBitmaps
     {
         public PlatformBitmapsPage()
         {
+            FileImageSource imgSrc = new FileImageSource();
+
+            switch (Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                    imgSrc.File = "Icon-Small-40.png";
+                    break;
+
+                case Device.Android:
+                    imgSrc.File = "icon.png";
+                    break;
+
+                case Device.WinRT:
+                case Device.WinPhone:
+                case Device.UWP:
+                    imgSrc.File = "Assets/StoreLogo.png";
+                    break;
+            }
+
             Image image = new Image
             {
-                Source = new FileImageSource
-                {
-                    File = Device.OnPlatform(iOS: "Icon-Small-40.png",
-                                             Android: "icon.png",
-                                             WinPhone: "Assets/StoreLogo.png")
-                },
+                Source = imgSrc,
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.CenterAndExpand
             };

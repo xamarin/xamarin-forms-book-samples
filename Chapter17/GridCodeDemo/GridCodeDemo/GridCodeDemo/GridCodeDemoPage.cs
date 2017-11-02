@@ -37,13 +37,31 @@ namespace GridCodeDemo
                 1,          // left
                 0);         // top
 
+
+            string imgSrc = null;
+
+            switch (Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                    imgSrc = "Icon-60.png";
+                    break;
+
+                case Device.Android:
+                    imgSrc = "icon.png";
+                    break;
+
+                case Device.WinRT:
+                case Device.WinPhone:
+                case Device.UWP:
+                    imgSrc = "Assets/StoreLogo.png";
+                    break;
+            }
+
             // Image element.
             grid.Children.Add(new Image
                 {
                     BackgroundColor = Color.Gray,
-                    Source = Device.OnPlatform("Icon-60.png",
-                                               "icon.png",
-                                               "Assets/StoreLogo.png")
+                    Source = imgSrc
                 },
                 0,          // left
                 2,          // right
@@ -72,7 +90,7 @@ namespace GridCodeDemo
             Grid.SetColumnSpan(boxView3, 2);
             grid.Children.Add(boxView3);
 
-            Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
+            Padding = new Thickness(0, Device.RuntimePlatform == Device.iOS ? 20 : 0, 0, 0);
             Content = grid;
         }
     }

@@ -31,8 +31,8 @@ namespace ChessboardDynamic
             };
             contentView.SizeChanged += OnContentViewSizeChanged;
 
-            this.Padding = new Thickness(5, Device.OnPlatform(25, 5, 5), 5, 5);
-            this.Content = contentView;
+            Padding = new Thickness(5, Device.RuntimePlatform == Device.iOS ? 25 : 5, 5, 5);
+            Content = contentView;
         }
 
         void OnContentViewSizeChanged(object sender, EventArgs args)

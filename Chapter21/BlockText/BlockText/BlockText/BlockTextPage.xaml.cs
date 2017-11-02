@@ -9,7 +9,7 @@ namespace BlockText
         {
             InitializeComponent();
 
-            for (int i = 0; i < Device.OnPlatform(12, 12, 18); i++)
+            for (int i = 0; i < 12; i++)
             {
                 grid.Children.Insert(0, new Label
                     {

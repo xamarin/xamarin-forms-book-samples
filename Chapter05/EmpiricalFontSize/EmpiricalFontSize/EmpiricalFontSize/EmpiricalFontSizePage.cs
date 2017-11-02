@@ -11,7 +11,7 @@ namespace EmpiricalFontSize
         {
             label = new Label();
 
-            Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
+            Padding = new Thickness(0, Device.RuntimePlatform == Device.iOS ? 20 : 0, 0, 0);
             ContentView contentView = new ContentView
             {
                 Content = label

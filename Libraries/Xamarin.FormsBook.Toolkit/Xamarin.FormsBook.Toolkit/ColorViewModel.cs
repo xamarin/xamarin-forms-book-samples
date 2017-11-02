@@ -152,7 +152,7 @@ namespace Xamarin.FormsBook.Toolkit
 
         double Round(double value)
         {
-            return Device.OnPlatform(value, Math.Round(value, 3), value);
+            return Device.RuntimePlatform == Device.Android ? Math.Round(value, 3) : value;
         }
     }
 }

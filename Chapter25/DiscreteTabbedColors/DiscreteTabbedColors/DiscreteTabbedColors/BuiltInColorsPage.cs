@@ -8,8 +8,8 @@ namespace DiscreteTabbedColors
         public BuiltInColorsPage()
         {
             Title = "Built-in";
-            Icon = Device.OnPlatform("ic_action_computer.png", null, null);
-            Padding = new Thickness(5, Device.OnPlatform(20, 5, 5), 5, 5);
+            Icon = Device.RuntimePlatform == Device.iOS ? "ic_action_computer.png" : null;
+            Padding = new Thickness(5, Device.RuntimePlatform == Device.iOS ? 20 : 5, 5, 5);
             double fontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
             Content = new ScrollView
             {
