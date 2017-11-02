@@ -11,10 +11,8 @@ namespace Xamarin.FormsBook.Toolkit
             return sourceType == typeof(string);
         }
 
-        public override object ConvertFrom(CultureInfo culture, object value)
+        public override object ConvertFromInvariantString(string str)
         {
-            string str = value as string;
-
             if (String.IsNullOrWhiteSpace(str))
                 return null;
 

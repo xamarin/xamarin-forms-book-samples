@@ -15,12 +15,12 @@ namespace Xamarin.FormsBook.Toolkit
             return (sourceType == typeof(string));
         }
 
-        public override object ConvertFrom(CultureInfo culture, object value)
+        public override object ConvertFromInvariantString(string str)
         {
-            if (value == null || !(value is string))
+            if (String.IsNullOrWhiteSpace(str))
                 return null;
 
-            string name = ((string)value).Trim();
+            string name = str.Trim();
 
             if (name.StartsWith("Easing"))
             {
@@ -35,7 +35,7 @@ namespace Xamarin.FormsBook.Toolkit
             }
 
             throw new InvalidOperationException(
-                String.Format("Cannot convert \"{0}\" into Xamarin.Forms.Easing", value));
+                String.Format("Cannot convert \"{0}\" into Xamarin.Forms.Easing", str));
         }
     }
 }
