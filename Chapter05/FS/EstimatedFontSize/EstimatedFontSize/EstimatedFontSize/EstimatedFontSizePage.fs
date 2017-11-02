@@ -4,7 +4,9 @@ open System
 open Xamarin.Forms
 
 type EstimatedFontSizePage() = 
-    inherit ContentPage(Padding = Thickness(0.0, Device.OnPlatform(20.0, 0.0, 0.0), 0.0, 0.0))
+    inherit ContentPage(Padding = match Device.RuntimePlatform with 
+                                        | Device.iOS -> Thickness(0.0, 20.0, 0.0, 0.0)
+                                        | _ -> Thickness())
 
     let label = Label()
     let contentView = ContentView(Content = label)
@@ -21,7 +23,10 @@ type EstimatedFontSizePage() =
                     per line. Does it work?"
 
         // Define two values as multiples of font size.
-        let lineHeight = Device.OnPlatform(1.2, 1.2, 1.3)
+        let lineHeight = match Device.RuntimePlatform with
+                                | Device.iOS -> 1.2
+                                | Device.Android -> 1.2
+                                | _ -> 1.3
         let charWidth = 0.5
 
         // Format the text and get its character length.

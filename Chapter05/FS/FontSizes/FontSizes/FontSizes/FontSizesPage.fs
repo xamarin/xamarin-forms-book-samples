@@ -15,7 +15,7 @@ type FontSizesPage() =
                                                                                            namedSize, fontSize),
                                                                       FontSize = fontSize,
                                                                       TextColor = Color.Black)))
-    let resolution = Device.OnPlatform(160.0, 160.0, 240.0)
+    let resolution = 160.0 
 
     do stackLayout.Children.Add(BoxView(Color = Color.Accent,
                                         HeightRequest = resolution / 80.0))

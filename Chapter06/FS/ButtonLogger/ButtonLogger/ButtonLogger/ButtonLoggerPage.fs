@@ -4,7 +4,9 @@ open System
 open Xamarin.Forms
 
 type ButtonLoggerPage() = 
-    inherit ContentPage(Padding = Thickness(5.0, Device.OnPlatform(20.0, 0.0, 0.0), 5.0, 0.0))
+    inherit ContentPage(Padding = match Device.RuntimePlatform with 
+                                        | Device.iOS -> Thickness(5.0, 20.0, 5.0, 0.0)
+                                        | _ -> Thickness(5.0, 0.0))
 
     let mainStack = StackLayout()
     let loggerLayout = StackLayout()

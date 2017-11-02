@@ -7,7 +7,9 @@ open Xamarin.Forms
 
 type BlackCatPage() = 
     inherit ContentPage(BackgroundColor = Color.White,
-                        Padding = Thickness(0.0, Device.OnPlatform(20.0, 0.0, 0.0), 0.0, 0.0))
+                        Padding = match Device.RuntimePlatform with 
+                                        | Device.iOS -> Thickness(0.0, 20.0, 0.0, 0.0)
+                                        | _ -> Thickness())
 
     // Create the two StackLayout's.
     let mainStack = StackLayout()

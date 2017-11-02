@@ -21,5 +21,8 @@ type VerticalOptionsDemoPage() =
                                        BackgroundColor = colors.[1 - stackLayout.Children.Count % 2]))
         |> Seq.iter (fun label -> stackLayout.Children.Add(label))
 
-    do base.Padding <- Thickness(0.0, Device.OnPlatform(20.0, 0.0, 0.0), 0.0, 0.0)
+    do base.Padding <- match Device.RuntimePlatform with 
+                            | Device.iOS -> Thickness(0.0, 20.0, 0.0, 0.0)
+                            | _ -> Thickness()
+
     do base.Content <- stackLayout

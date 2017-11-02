@@ -33,6 +33,9 @@ type ColorLoopPage() =
                                           TextColor = fst color,
                                           FontSize = Device.GetNamedSize(NamedSize.Large, typeof<Label>)))
 
-    do base.Padding <- Thickness(5.0, Device.OnPlatform(20.0, 5.0, 5.0), 5.0, 5.0)
+    do base.Padding <- match Device.RuntimePlatform with 
+                            | Device.iOS -> Thickness(5.0, 20.0, 5.0, 5.0)
+                            | _ -> Thickness(5.0, 5.0, 5.0, 5.0)
+
     do base.Content <- stackLayout
     
