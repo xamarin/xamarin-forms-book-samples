@@ -60,7 +60,8 @@ namespace Xamarin.FormsBook.Toolkit
                     await MainPage.Navigation.PushAsync(page, false);
 
                     // HACK: to allow page navigation to complete!
-                    if (Device.OS == TargetPlatform.Windows && 
+                    if ((Device.RuntimePlatform == Device.UWP || 
+                         Device.RuntimePlatform == Device.WinRT) && 
                             Device.Idiom != TargetIdiom.Phone)
                         await Task.Delay(250);
                 }
@@ -70,7 +71,7 @@ namespace Xamarin.FormsBook.Toolkit
                     await MainPage.Navigation.PushModalAsync(page, false);
 
                     // HACK: to allow page navigation to complete!
-                    if (Device.OS == TargetPlatform.iOS)
+                    if (Device.RuntimePlatform == Device.iOS)
                         await Task.Delay(100);
                 }
             }

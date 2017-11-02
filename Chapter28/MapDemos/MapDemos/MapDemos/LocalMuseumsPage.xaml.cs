@@ -45,7 +45,7 @@ namespace MapDemos
                 site.DistanceToUser = sitePosition.DistanceTo(userPosition).Miles;
             }
 
-            myLocationButton.IsVisible = Device.OS != TargetPlatform.Android;
+            myLocationButton.IsVisible = Device.RuntimePlatform != Device.Android;
         }
 
         protected override void OnAppearing()

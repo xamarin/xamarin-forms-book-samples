@@ -20,9 +20,9 @@ namespace ApmToTap
                 Stream stream = 
                         await GetStreamAsync("https://developer.xamarin.com/demo/IMG_1996.JPG");
 
-
-                if (Device.OS == TargetPlatform.WinPhone ||
-                    Device.OS == TargetPlatform.Windows)
+                if (Device.RuntimePlatform == Device.UWP ||
+                    Device.RuntimePlatform == Device.WinRT ||
+                    Device.RuntimePlatform == Device.WinPhone)
                 {
                     MemoryStream memStream = new MemoryStream();
                     stream.CopyTo(memStream);

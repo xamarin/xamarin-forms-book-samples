@@ -9,8 +9,7 @@ namespace MasterDetailBehaviors
         {
             InitializeComponent();
 
-            if (Device.OS == TargetPlatform.WinPhone ||
-                Device.OS == TargetPlatform.Windows)
+            if (Device.RuntimePlatform == Device.WinRT)
             {
                 Icon = new FileImageSource
                 {
