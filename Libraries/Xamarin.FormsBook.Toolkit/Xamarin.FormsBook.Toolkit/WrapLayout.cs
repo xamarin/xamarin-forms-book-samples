@@ -173,8 +173,9 @@ namespace Xamarin.FormsBook.Toolkit
                 visibleChildCount++;
 
                 // Get the child's requested size.
-                SizeRequest childSizeRequest = child.GetSizeRequest(Double.PositiveInfinity, 
-                                                                    Double.PositiveInfinity);
+                SizeRequest childSizeRequest = child.Measure(Double.PositiveInfinity, 
+                                                             Double.PositiveInfinity,
+                                                             MeasureFlags.IncludeMargins);
 
                 // Accumulate the maximum child size.
                 maxChildSize.Width = 

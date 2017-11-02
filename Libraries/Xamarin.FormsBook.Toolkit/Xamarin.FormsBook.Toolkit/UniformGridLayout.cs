@@ -64,8 +64,9 @@ namespace Xamarin.FormsBook.Toolkit
                 {
                     if (view.IsVisible)
                     {
-                        SizeRequest sizeRequest = view.GetSizeRequest(Double.PositiveInfinity, 
-                                                                      Double.PositiveInfinity);
+                        SizeRequest sizeRequest = view.Measure(Double.PositiveInfinity, 
+                                                               Double.PositiveInfinity,
+                                                               MeasureFlags.IncludeMargins);
 
                         if (sizeRequest.Request.Width > 0 && sizeRequest.Request.Height > 0)
                         {
