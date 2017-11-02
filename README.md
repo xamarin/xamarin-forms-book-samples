@@ -1,4 +1,5 @@
 # xamarin-forms-book-samples
+
 Sample code for *Creating Mobile Apps with Xamarin.Forms*. The book can be downloaded from http://developer.xamarin.com/guides/cross-platform/xamarin-forms/creating-mobile-apps-xamarin-forms/.
 
 ## Notes
@@ -63,5 +64,8 @@ As of August 12, 2016, all sample code has been upgraded to Xamarin.Forms versio
 
 As of November 23, 2016, all sample code has been upgraded to Xamarin.Forms version 2.3.3.168.
 
-As of May 2, 2016, all sample code has been upgraded to Xamarin.Forms version 2.3.4.231.
+As of May 2, 2017, all sample code has been upgraded to Xamarin.Forms version 2.3.4.231.
+
+As of November 2, 2017, all sample code has been upgraded to Xamarin.Forms version 2.4.0.38779.
+
 
