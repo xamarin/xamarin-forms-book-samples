@@ -18,7 +18,7 @@ namespace Xamarin.FormsBook.Platform
             get { return (Color)GetValue(ColorProperty); }
         }
 
-        protected override SizeRequest OnSizeRequest(double widthConstraint, double heightConstraint)
+        protected override SizeRequest OnMeasure(double widthConstraint, double heightConstraint)
         {
             return new SizeRequest(new Size(40, 40));
         }

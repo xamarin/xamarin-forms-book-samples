@@ -22,8 +22,8 @@ namespace Xamarin.FormsBook.Toolkit
             get { return (AspectRatio)GetValue(AspectRatioProperty); }
         }
 
-        protected override SizeRequest OnSizeRequest(double widthConstraint, 
-                                                     double heightConstraint)
+        protected override SizeRequest OnMeasure(double widthConstraint, 
+                                                 double heightConstraint)
         {
             if (Double.IsInfinity(widthConstraint) || Double.IsInfinity(heightConstraint))
                 throw new InvalidOperationException(

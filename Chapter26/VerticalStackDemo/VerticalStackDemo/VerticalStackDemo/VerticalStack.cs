@@ -5,8 +5,8 @@ namespace VerticalStackDemo
 { 
     public class VerticalStack : Layout<View>
     {
-        protected override SizeRequest OnSizeRequest(double widthConstraint, 
-                                                     double heightConstraint)
+        protected override SizeRequest OnMeasure(double widthConstraint, 
+                                                 double heightConstraint)
         {
             Size reqSize = new Size();
             Size minSize = new Size();

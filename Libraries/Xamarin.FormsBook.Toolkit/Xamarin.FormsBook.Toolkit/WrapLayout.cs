@@ -78,7 +78,7 @@ namespace Xamarin.FormsBook.Toolkit
             get { return (double)GetValue(RowSpacingProperty); }
         }
 
-        protected override SizeRequest OnSizeRequest(double widthConstraint, double heightConstraint)
+        protected override SizeRequest OnMeasure(double widthConstraint, double heightConstraint)
         {
             LayoutInfo layoutInfo = GetLayoutInfo(widthConstraint, heightConstraint);
 

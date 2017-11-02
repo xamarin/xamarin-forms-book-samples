@@ -79,8 +79,8 @@ namespace Xamarin.FormsBook.Toolkit
             }
         }
 
-        protected override SizeRequest OnSizeRequest(double widthConstraint, 
-                                                     double heightConstraint)
+        protected override SizeRequest OnMeasure(double widthConstraint, 
+                                                 double heightConstraint)
         {
             int visibleChildCount = 0;
             Size maxChildSize = new Size();
