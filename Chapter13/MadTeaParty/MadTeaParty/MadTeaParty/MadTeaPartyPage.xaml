@@ -7,10 +7,10 @@
              BackgroundColor="White">
 
     <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness"
-                    iOS="5, 20, 5, 0"
-                    Android="5, 0"
-                    WinPhone="5, 0" />
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="5, 20, 5, 0" />
+            <On Platform="Android, UWP, WinRT, WinPhone" Value="5, 0" />
+        </OnPlatform>
     </ContentPage.Padding>
 	
     <ScrollView>

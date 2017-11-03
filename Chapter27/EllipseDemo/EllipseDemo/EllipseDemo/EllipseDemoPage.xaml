@@ -9,8 +9,9 @@
 
         <StackLayout>
             <StackLayout.Padding>
-                <OnPlatform x:TypeArguments="Thickness"
-                            iOS="0, 20, 0, 0" />
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="0, 20, 0, 0" />
+                </OnPlatform>
             </StackLayout.Padding>
 
             <platform:EllipseView Color="Red"

@@ -22,10 +22,11 @@
                      Order="Primary"
                      Clicked="OnCancelClicked">
             <ToolbarItem.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource"
-                            iOS="cancel.png"
-                            Android="ic_action_cancel.png"
-                            WinPhone="Images/cancel.png" />
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="cancel.png" />
+                    <On Platform="Android" Value="ic_action_cancel.png" />
+                    <On Platform="UWP, WinRT, WinPhone" Value="Images/cancel.png" />
+                </OnPlatform>
             </ToolbarItem.Icon>
         </ToolbarItem>
 
@@ -33,10 +34,11 @@
                      Order="Primary"
                      Clicked="OnDeleteClicked">
             <ToolbarItem.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource"
-                            iOS="discard.png"
-                            Android="ic_action_discard.png"
-                            WinPhone="Images/delete.png" />
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="discard.png" />
+                    <On Platform="Android" Value="ic_action_discard.png" />
+                    <On Platform="UWP, WinRT, WinPhone" Value="Images/delete.png" />
+                </OnPlatform>
             </ToolbarItem.Icon>
         </ToolbarItem>
     </ContentPage.ToolbarItems>

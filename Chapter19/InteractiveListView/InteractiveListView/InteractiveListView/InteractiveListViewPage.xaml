@@ -5,10 +5,10 @@
                  "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
              x:Class="InteractiveListView.InteractiveListViewPage">
     <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness"
-                    iOS="10, 20, 10, 0"
-                    Android="10, 0"
-                    WinPhone="10, 0" />
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="10, 20, 10, 0" />
+            <On Platform="Android, UWP, WinRT, WinPhone" Value="10, 0" />
+        </OnPlatform>
     </ContentPage.Padding>
 
     <ContentPage.Resources>

@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TextFileAsync.TextFileAsyncPage">
     <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness"
-                    iOS="0, 20, 0, 0" />
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0, 20, 0, 0" />
+        </OnPlatform>
     </ContentPage.Padding>
     
     <Grid>
@@ -22,8 +23,9 @@
         <Editor x:Name="fileEditor"
                 Grid.Row="1">
             <Editor.BackgroundColor>
-                <OnPlatform x:TypeArguments="Color"
-                            WinPhone="#D0D0D0" />
+                <OnPlatform x:TypeArguments="Color">
+                    <On Platform="UWP, WinRT, WinPhone" Value="#D0D0D0" />
+                </OnPlatform>
             </Editor.BackgroundColor>
         </Editor>
 

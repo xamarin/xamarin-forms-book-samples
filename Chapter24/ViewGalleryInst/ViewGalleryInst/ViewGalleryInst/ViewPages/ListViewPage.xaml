@@ -10,10 +10,10 @@
     <ListView SeparatorVisibility="None"
               ItemsSource="{x:Static toolkit:NamedColor.All}">
         <ListView.RowHeight>
-            <OnPlatform x:TypeArguments="x:Int32"
-                        iOS="90"
-                        Android="90"
-                        WinPhone="120" />
+            <OnPlatform x:TypeArguments="x:Int32">
+                <On Platform="iOS, Android" Value="90" />
+                <On Platform="UWP, WinRT, WinPhone" Value="120" />
+            </OnPlatform>
         </ListView.RowHeight>
       
         <ListView.ItemTemplate>

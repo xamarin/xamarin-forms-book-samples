@@ -10,13 +10,15 @@
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand">
             <Button.BackgroundColor>
-                <OnPlatform x:TypeArguments="Color"
-                            Android="#404040" />
+                <OnPlatform x:TypeArguments="Color">
+                    <On Platform="Android" Value="#404040" />
+                </OnPlatform>
             </Button.BackgroundColor>
             <Button.BorderColor>
-                <OnPlatform x:TypeArguments="Color"
-                            Android="#C0C0C0"
-                            WinPhone="Black" />
+                <OnPlatform x:TypeArguments="Color">
+                    <On Platform="Android" Value="#C0C0C0" />
+                    <On Platform="UWP, WinRT, WinPhone" Value="Black" />
+                </OnPlatform>
             </Button.BorderColor>
         </Button>
 

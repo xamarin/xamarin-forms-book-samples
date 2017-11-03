@@ -4,8 +4,9 @@
              x:Class="DiscreteTabbedColors.ColorTestPage"
              Title="Test">
     <ContentPage.Icon>
-        <OnPlatform x:TypeArguments="FileImageSource"
-                    iOS="ic_action_gamepad.png" />
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <On Platform="iOS" Value="ic_action_gamepad.png" />
+        </OnPlatform>
     </ContentPage.Icon>
 
     <StackLayout Padding="20, 40">

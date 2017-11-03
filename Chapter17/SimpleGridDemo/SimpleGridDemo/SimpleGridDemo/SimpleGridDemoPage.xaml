@@ -4,8 +4,9 @@
              x:Class="SimpleGridDemo.SimpleGridDemoPage">
     
     <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness"
-                    iOS="0, 20, 0, 0" />
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0, 20, 0, 0" />
+        </OnPlatform>
     </ContentPage.Padding>
 
     <Grid>
@@ -35,10 +36,11 @@
         <Image BackgroundColor="Gray"
                Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
             <Image.Source>
-                <OnPlatform x:TypeArguments="ImageSource"
-                            iOS="Icon-60.png"
-                            Android="icon.png"
-                            WinPhone="Assets/StoreLogo.png" />
+                <OnPlatform x:TypeArguments="ImageSource">
+                    <On Platform="iOS" Value="Icon-60.png" />
+                    <On Platform="Android" Value="icon.png" />
+                    <On Platform="UWP, WinRT, WinPhone" Value="Assets/StoreLogo.png" />
+                </OnPlatform>
             </Image.Source>
         </Image>
 

@@ -4,8 +4,9 @@
              xmlns:school="clr-namespace:SchoolOfFineArt;assembly=SchoolOfFineArt"
              x:Class="GenderColors.GenderColorsPage">
     <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness"
-                    iOS="0, 20, 0, 0" />
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0, 20, 0, 0" />
+        </OnPlatform>
     </ContentPage.Padding>
     
     <ContentPage.BindingContext>
@@ -21,10 +22,10 @@
         <ListView ItemsSource="{Binding Students}"
                   VerticalOptions="FillAndExpand">
             <ListView.RowHeight>
-                <OnPlatform x:TypeArguments="x:Int32"
-                            iOS="70"
-                            Android="70"
-                            WinPhone="100" />
+                <OnPlatform x:TypeArguments="x:Int32">
+                    <On Platform="iOS, Android" Value="70" />
+                    <On Platform="UWP, WinRT, WinPhone" Value="100" />
+                </OnPlatform>
             </ListView.RowHeight>
             
             <ListView.ItemTemplate>

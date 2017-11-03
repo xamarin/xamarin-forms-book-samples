@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProportionalCoordinateCalc.ProportionalCoordinateCalcPage">
     <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness"
-                    iOS="5, 25, 5, 5"
-                    Android="5"
-                    WinPhone="5" />
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="5, 25, 5, 5" />
+            <On Platform="Android, UWP, WinRT, WinPhone" Value="5" />
+        </OnPlatform>
     </ContentPage.Padding>
 
     <ContentView SizeChanged="OnContentViewSizeChanged">

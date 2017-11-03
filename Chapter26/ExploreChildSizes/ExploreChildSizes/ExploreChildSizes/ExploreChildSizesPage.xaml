@@ -9,13 +9,15 @@
     <MasterDetailPage.Master>
         <ContentPage Title="swap">
             <ContentPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource"
-                            WinPhone="Images/refresh.png" />
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="UWP, WinRT, WinPhone" Value="Images/refresh.png" />
+                </OnPlatform>
             </ContentPage.Icon>
             
             <ContentPage.Padding>
-                <OnPlatform x:TypeArguments="Thickness"
-                            iOS="0, 20, 0, 0" />
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="0, 20, 0, 0" />
+                </OnPlatform>
             </ContentPage.Padding>
 
             <ScrollView>
@@ -75,8 +77,9 @@
     <MasterDetailPage.Detail>
         <ContentPage>
             <ContentPage.Padding>
-                <OnPlatform x:TypeArguments="Thickness"
-                            iOS="0, 20, 0, 0" />
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="0, 20, 0, 0" />
+                </OnPlatform>
             </ContentPage.Padding>
 
             <Grid>

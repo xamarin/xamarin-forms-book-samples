@@ -23,28 +23,31 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="edit" Order="Primary">
             <ToolbarItem.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource"
-                            iOS="edit.png"
-                            Android="ic_action_edit.png"
-                            WinPhone="Images/edit.png" />
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="edit.png" />
+                    <On Platform="Android" Value="ic_action_edit.png" />
+                    <On Platform="UWP, WinRT, WinPhone" Value="Images/edit.png" />
+                </OnPlatform>
             </ToolbarItem.Icon>
         </ToolbarItem>
 
         <ToolbarItem Text="search" Order="Primary">
             <ToolbarItem.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource"
-                            iOS="search.png"
-                            Android="ic_action_search.png"
-                            WinPhone="Images/feature.search.png" />
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="search.png" />
+                    <On Platform="Android" Value="ic_action_search.png" />
+                    <On Platform="UWP, WinRT, WinPhone" Value="Images/feature.search.png" />
+                </OnPlatform>
             </ToolbarItem.Icon>
         </ToolbarItem>
 
         <ToolbarItem Text="refresh" Order="Primary">
             <ToolbarItem.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource"
-                            iOS="reload.png"
-                            Android="ic_action_refresh.png"
-                            WinPhone="Images/refresh.png" />
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="reload.png" />
+                    <On Platform="Android" Value="ic_action_refresh.png" />
+                    <On Platform="UWP, WinRT, WinPhone" Value="Images/refresh.png" />
+                </OnPlatform>
             </ToolbarItem.Icon>
         </ToolbarItem>
 

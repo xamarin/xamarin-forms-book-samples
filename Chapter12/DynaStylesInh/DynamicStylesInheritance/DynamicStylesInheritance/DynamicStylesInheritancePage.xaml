@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DynamicStylesInheritance.DynamicStylesInheritancePage">
     <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness"
-                    iOS="0, 20, 0, 0"
-                    Android="0"
-                    WinPhone="0" />
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0, 20, 0, 0" />
+            <On Platform="Android, UWP, WinRT, WinPhone" Value="0" />
+        </OnPlatform>
     </ContentPage.Padding>
 
     <ContentPage.Resources>
@@ -43,10 +43,11 @@
                    BaseResourceKey="buttonStyle">
                 <Setter Property="BackgroundColor">
                     <Setter.Value>
-                        <OnPlatform x:TypeArguments="Color"
-                                    iOS="#C0C0C0"
-                                    Android="#404040"
-                                    WinPhone="Gray" />
+                        <OnPlatform x:TypeArguments="Color">
+                            <On Platform="iOS" Value="#C0C0C0" />
+                            <On Platform="Android" Value="#404040" />
+                            <On Platform="UWP, WinRT, WinPhone" Value="Gray" />
+                        </OnPlatform>
                     </Setter.Value>
                 </Setter>
                 <Setter Property="BorderColor" Value="Red" />

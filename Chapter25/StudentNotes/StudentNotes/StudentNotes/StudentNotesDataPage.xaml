@@ -6,8 +6,9 @@
 
     <ContentPage Title="Info">
         <ContentPage.Icon>
-            <OnPlatform x:TypeArguments="FileImageSource"
-                        iOS="ic_action_about.png" />
+            <OnPlatform x:TypeArguments="FileImageSource">
+                <On Platform="iOS" Value="ic_action_about.png" />
+            </OnPlatform>
         </ContentPage.Icon>
         
         <StackLayout>
@@ -46,8 +47,9 @@
 
     <ContentPage Title="Photo">
         <ContentPage.Icon>
-            <OnPlatform x:TypeArguments="FileImageSource"
-                        iOS="ic_action_person.png" />
+            <OnPlatform x:TypeArguments="FileImageSource">
+                <On Platform="iOS" Value="ic_action_person.png" />
+            </OnPlatform>
         </ContentPage.Icon>
         
         <StackLayout>
@@ -62,8 +64,9 @@
 
     <ContentPage Title="Notes">
         <ContentPage.Icon>
-            <OnPlatform x:TypeArguments="FileImageSource"
-                        iOS="ic_action_edit.png" />
+            <OnPlatform x:TypeArguments="FileImageSource">
+                <On Platform="iOS" Value="ic_action_edit.png" />
+            </OnPlatform>
         </ContentPage.Icon>
         
         <StackLayout>
