@@ -21,7 +21,7 @@ namespace JustNotes
 
         void OnEditorFocused(object sender, FocusEventArgs args)
         {
-            if (Device.OS == TargetPlatform.iOS)
+            if (Device.RuntimePlatform == Device.iOS)
             {
                 AbsoluteLayout.SetLayoutBounds(editor, new Rectangle(0, 0, 1, 0.5));
             }
@@ -29,7 +29,7 @@ namespace JustNotes
 
         void OnEditorUnfocused(object sender, FocusEventArgs args)
         {
-            if (Device.OS == TargetPlatform.iOS)
+            if (Device.RuntimePlatform == Device.iOS)
             {
                 AbsoluteLayout.SetLayoutBounds(editor, new Rectangle(0, 0, 1, 1));
             }

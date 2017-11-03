@@ -1,6 +1,6 @@
 # xamarin-forms-book-samples
 
-Sample code for *Creating Mobile Apps with Xamarin.Forms*. The book can be downloaded from http://developer.xamarin.com/guides/cross-platform/xamarin-forms/creating-mobile-apps-xamarin-forms/.
+Sample code for the book *Creating Mobile Apps with Xamarin.Forms*. The book can be downloaded from http://developer.xamarin.com/guides/cross-platform/xamarin-forms/creating-mobile-apps-xamarin-forms/.
 
 ## Notes
 
@@ -13,6 +13,21 @@ To avoid hassles, download the NuGet packages for the solutions in the **Librari
 Do the same thing with the other library solutions in the **Libraries** directory.
 
 You can then load any of the application projects. For each project, again right-click the solution name, select **Manage NuGet Packages for Solution** and go through the same process.
+
+### The Branches
+
+The **original-code-from-book** branch of this repository contains the code as it appeared in the *Creating Mobile Apps with Xamarin.Forms* book. The only change is that the projects have been updated to the latest Xamarin.Forms version.
+
+The projects in the **master** branch reflect changes in Xamarin.Forms since the writing of the book. These changes are:
+
+- In code files, the deprecated `Device.OnPlatform` calls have been replaced with logic using the `Device.RuntimePlatform` property.
+- In XAML files, deprecated properties of the `OnPlatform` class have been replaced with `On` objects.
+- The use of the deprecated `Device.TargetPlatform` property have been replaced with `Device.RuntimePlatform`.
+- Calls to the deprecated `VisualElement.GetSizeRequest` method have been replaced with calls to `Measure`.
+- Overrides of the deprecated `VisualElement.OnSizeRequest` method have been replaced with overrides of `OnMeasure`.
+- Calls to and implementations of the deprecated `TypeConverter.ConvertFrom` method have been replaced with `ConvertFromInvariantString`.
+- The Android projects have been upgraded to use AppCompat and Material Design. This is consistent with recent Xamarin.Forms project templates.
+- The blank bitmaps in the **Assets** folder of the UWP projects have been replaced with Xamagon images. 
 
 ### The Projects
 
@@ -53,11 +68,6 @@ Currently, you can deploy the **UWP** project in several different ways based on
 
 - Select **Device** to deploy to a Windows 10 Mobile device. The **UWP** platform must be ARM.
 
-### Android AppCompat and Material Design
-
-The **appcompat** branch of the sample code repository contains Android projects that have been modified to use AppCompat and Material Design. The modification is the same as that described in the article [Adding AppCompat and Material Design](https://developer.xamarin.com/guides/xamarin-forms/platform-features/android/appcompat/).
-The two F# samples in Chapter 2 do not build in this branch. These are the only two samples that contain F# startup code.
-
 ### Version upgrades
 
 As of August 12, 2016, all sample code has been upgraded to Xamarin.Forms version 2.3.1.114.
@@ -66,6 +76,6 @@ As of November 23, 2016, all sample code has been upgraded to Xamarin.Forms vers
 
 As of May 2, 2017, all sample code has been upgraded to Xamarin.Forms version 2.3.4.231.
 
-As of November 2, 2017, all sample code has been upgraded to Xamarin.Forms version 2.4.0.38779.
+As of November 3, 2017, all sample code has been upgraded to Xamarin.Forms version 2.4.0.38779.
 
 

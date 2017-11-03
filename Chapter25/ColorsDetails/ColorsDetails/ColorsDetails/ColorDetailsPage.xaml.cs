@@ -12,7 +12,7 @@ namespace ColorsDetails
             IsGestureEnabled = false;
 
             // Special processing for iPads.
-            if (Device.OS == TargetPlatform.iOS &&
+            if (Device.RuntimePlatform == Device.iOS &&
                 Device.Idiom == TargetIdiom.Tablet)
             {
                 SizeChanged += (sender, args) =>

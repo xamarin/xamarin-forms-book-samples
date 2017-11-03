@@ -22,7 +22,8 @@ namespace PhotoGrid
         }
 
         WebRequest request;
-        static readonly int imageDimension = Device.OnPlatform(240, 240, 180);
+        static readonly int imageDimension = Device.RuntimePlatform == Device.iOS || 
+                                             Device.RuntimePlatform == Device.Android ? 240 : 180;
         static readonly string urlSuffix =
             String.Format("?width={0}&height={0}&mode=max", imageDimension);
 

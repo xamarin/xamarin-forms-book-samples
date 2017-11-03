@@ -10,8 +10,9 @@
     <MasterDetailPage.Master>
         <ContentPage Title="Colors">
             <ContentPage.Padding>
-                <OnPlatform x:TypeArguments="Thickness"
-                            iOS="0, 20, 0, 0" />
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="0, 20, 0, 0" />
+                </OnPlatform>
             </ContentPage.Padding>
 
             <ListView x:Name="listView"
@@ -19,10 +20,10 @@
                       ItemsSource="{x:Static toolkit:NamedColor.All}"
                       ItemTapped="OnListViewItemTapped">
                 <ListView.RowHeight>
-                    <OnPlatform x:TypeArguments="x:Int32"
-                                iOS="80"
-                                Android="80"
-                                WinPhone="90" />
+                    <OnPlatform x:TypeArguments="x:Int32">
+                        <On Platform="iOS, Android" Value="80" />
+                        <On Platform="UWP, WinRT, WinPhone" Value="90" />
+                    </OnPlatform>
                 </ListView.RowHeight>
                 
                 <ListView.ItemTemplate>
@@ -62,8 +63,9 @@
                              BindingContext="{Binding Source={x:Reference listView},
                                                       Path=SelectedItem}">
                     <ContentPage.Padding>
-                        <OnPlatform x:TypeArguments="Thickness"
-                                    iOS="0, 20, 0, 0" />
+                        <OnPlatform x:TypeArguments="Thickness">
+                            <On Platform="iOS" Value="0, 20, 0, 0" />
+                        </OnPlatform>
                     </ContentPage.Padding>
 
                     <StackLayout>

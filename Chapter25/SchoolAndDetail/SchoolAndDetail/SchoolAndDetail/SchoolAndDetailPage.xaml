@@ -8,13 +8,15 @@
     <MasterDetailPage.Master>
         <ContentPage Title="School">
             <ContentPage.Padding>
-                <OnPlatform x:TypeArguments="Thickness"
-                            iOS="0, 20, 0, 0" />
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="0, 20, 0, 0" />
+                </OnPlatform>
             </ContentPage.Padding>
 
             <ContentPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource"
-                            WinPhone="Images/refresh.png" />
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="UWP, WinRT, WinPhone" Value="Images/refresh.png" />
+                </OnPlatform>
             </ContentPage.Icon>
 
             <ContentPage.BindingContext>

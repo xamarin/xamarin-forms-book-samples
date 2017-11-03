@@ -54,7 +54,10 @@
     <Compile Include="Resources\Resource.designer.fs" />
     <None Include="Resources\AboutResources.txt" />
     <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\style.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <Compile Include="Properties\AssemblyInfo.fs" />
     <Content Include="Properties\AndroidManifest.xml" />

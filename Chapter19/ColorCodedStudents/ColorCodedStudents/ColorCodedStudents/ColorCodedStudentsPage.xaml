@@ -6,8 +6,9 @@
                  "clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
              x:Class="ColorCodedStudents.ColorCodedStudentsPage">
     <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness"
-                    iOS="0, 20, 0, 0" />
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0, 20, 0, 0" />
+        </OnPlatform>
     </ContentPage.Padding>
 
     <ContentPage.Resources>

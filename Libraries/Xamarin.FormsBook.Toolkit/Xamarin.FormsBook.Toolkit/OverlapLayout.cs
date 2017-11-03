@@ -79,8 +79,8 @@ namespace Xamarin.FormsBook.Toolkit
             }
         }
 
-        protected override SizeRequest OnSizeRequest(double widthConstraint, 
-                                                     double heightConstraint)
+        protected override SizeRequest OnMeasure(double widthConstraint, 
+                                                 double heightConstraint)
         {
             int visibleChildCount = 0;
             Size maxChildSize = new Size();
@@ -97,13 +97,15 @@ namespace Xamarin.FormsBook.Toolkit
 
                 if (Orientation == StackOrientation.Vertical)
                 {
-                    childSizeRequest = child.GetSizeRequest(widthConstraint, 
-                                                            Double.PositiveInfinity);
+                    childSizeRequest = child.Measure(widthConstraint, 
+                                                     Double.PositiveInfinity,
+                                                     MeasureFlags.IncludeMargins);
                 }
                 else // Orientation == StackOrientation.Horizontal
                 {
-                    childSizeRequest = child.GetSizeRequest(Double.PositiveInfinity, 
-                                                            heightConstraint);
+                    childSizeRequest = child.Measure(Double.PositiveInfinity, 
+                                                     heightConstraint,
+                                                     MeasureFlags.IncludeMargins);
                 }
 
                 // Find the maximum child width and height.
@@ -138,7 +140,7 @@ namespace Xamarin.FormsBook.Toolkit
                 if (!child.IsVisible)
                     continue;
 
-                SizeRequest childSizeRequest = child.GetSizeRequest(width, height);
+                SizeRequest childSizeRequest = child.Measure(width, height, MeasureFlags.IncludeMargins);
                 double childOffset = Offset * GetRenderOrder(child);
 
                 if (Orientation == StackOrientation.Vertical)

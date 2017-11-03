@@ -20,10 +20,11 @@
                      Order="Primary"
                      Clicked="OnAddNoteClicked">
             <ToolbarItem.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource"
-                            iOS="new.png"
-                            Android="ic_action_new.png"
-                            WinPhone="Images/add.png" />
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="new.png" />
+                    <On Platform="Android" Value="ic_action_new.png" />
+                    <On Platform="UWP, WinRT, WinPhone" Value="Images/add.png" />
+                </OnPlatform>
             </ToolbarItem.Icon>
         </ToolbarItem>
     </ContentPage.ToolbarItems>

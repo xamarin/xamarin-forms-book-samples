@@ -22,8 +22,8 @@ namespace Xamarin.FormsBook.Toolkit
             get { return (AspectRatio)GetValue(AspectRatioProperty); }
         }
 
-        protected override SizeRequest OnSizeRequest(double widthConstraint, 
-                                                     double heightConstraint)
+        protected override SizeRequest OnMeasure(double widthConstraint, 
+                                                 double heightConstraint)
         {
             if (Double.IsInfinity(widthConstraint) || Double.IsInfinity(heightConstraint))
                 throw new InvalidOperationException(
@@ -64,8 +64,9 @@ namespace Xamarin.FormsBook.Toolkit
                 {
                     if (view.IsVisible)
                     {
-                        SizeRequest sizeRequest = view.GetSizeRequest(Double.PositiveInfinity, 
-                                                                      Double.PositiveInfinity);
+                        SizeRequest sizeRequest = view.Measure(Double.PositiveInfinity, 
+                                                               Double.PositiveInfinity,
+                                                               MeasureFlags.IncludeMargins);
 
                         if (sizeRequest.Request.Width > 0 && sizeRequest.Request.Height > 0)
                         {

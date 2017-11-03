@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MapDemos"
@@ -11,9 +11,10 @@
 
     <Image InputTransparent="True">
         <Image.Source>
-            <OnPlatform x:TypeArguments="ImageSource"
-                        iOS="{local:ImageResource MapDemos.Images.ic_my_location_black_48dp.png}"
-                        WinPhone="{local:ImageResource MapDemos.Images.ic_my_location_black_24dp.png}" />
+            <OnPlatform x:TypeArguments="ImageSource">
+                <On Platform="iOS" Value="{local:ImageResource MapDemos.Images.ic_my_location_black_48dp.png}" />
+                <On Platform="UWP, WinRT, WinPhone" Value="{local:ImageResource MapDemos.Images.ic_my_location_black_24dp.png}" />
+            </OnPlatform>
         </Image.Source>
     </Image>
 </ContentView>

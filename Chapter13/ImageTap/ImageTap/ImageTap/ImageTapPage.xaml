@@ -17,10 +17,10 @@
         <ContentView>
             <Image>
                 <Image.Source>
-                    <OnPlatform x:TypeArguments="ImageSource"
-                                iOS="Venus.jpg"
-                                Android="Venus.jpg"
-                                WinPhone="Images/Venus.jpg" />
+                    <OnPlatform x:TypeArguments="ImageSource">
+                        <On Platform="iOS, Android" Value="Venus.jpg" />
+                        <On Platform="UWP, WinRT, WinPhone" Value="Images/Venus.jpg" />
+                    </OnPlatform>
                 </Image.Source>
                 
                 <Image.GestureRecognizers>
@@ -32,10 +32,10 @@
         <ContentView>
             <Image>
                 <Image.Source>
-                    <OnPlatform x:TypeArguments="ImageSource"
-                                iOS="Scream.jpg"
-                                Android="Scream.jpg"
-                                WinPhone="Images/Scream.jpg" />
+                    <OnPlatform x:TypeArguments="ImageSource">
+                        <On Platform="iOS, Android" Value="Scream.jpg" />
+                        <On Platform="UWP, WinRT, WinPhone" Value="Images/Scream.jpg" />
+                    </OnPlatform>
                 </Image.Source>
 
                 <Image.GestureRecognizers>

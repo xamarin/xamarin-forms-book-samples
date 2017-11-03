@@ -36,7 +36,7 @@ namespace VerticalOptionsDemo
                 stackLayout.Children.Add(label);
             }
 
-            Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
+            Padding = new Thickness(0, Device.RuntimePlatform == Device.iOS ? 20 : 0, 0, 0);
             Content = stackLayout;
         }
     }

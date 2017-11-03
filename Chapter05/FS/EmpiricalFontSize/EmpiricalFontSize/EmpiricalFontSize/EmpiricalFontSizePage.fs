@@ -3,8 +3,9 @@ namespace EmpiricalFontSize
 open Xamarin.Forms
 
 type EmpiricalFontSizePage() = 
-    inherit ContentPage(Padding = Thickness(0.0, Device.OnPlatform(20.0, 0.0, 0.0), 0.0, 0.0))
-
+    inherit ContentPage(Padding = match Device.RuntimePlatform with 
+                                        | Device.iOS -> Thickness(0.0, 20.0, 0.0, 0.0)
+                                        | _ -> Thickness())
     let label = Label()
     let contentView = ContentView(Content = label)
     do base.Content <- contentView

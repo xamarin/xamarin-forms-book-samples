@@ -16,19 +16,19 @@
         
         <Button Text="Oh Yeah">
             <Button.Image>
-                <OnPlatform x:TypeArguments="FileImageSource"
-                            iOS="ic_action_good.png"
-                            Android="ic_action_good.png"
-                            WinPhone="Images/ic_action_good.png" />
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS, Android" Value="ic_action_good.png" />
+                    <On Platform="UWP, WinRT, WinPhone" Value="Images/ic_action_good.png" />
+                </OnPlatform>
             </Button.Image>
         </Button>
         
         <Button Text="No Way">
             <Button.Image>
-                <OnPlatform x:TypeArguments="FileImageSource"
-                            iOS="ic_action_bad.png"
-                            Android="ic_action_bad.png"
-                            WinPhone="Images/ic_action_bad.png" />
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS, Android" Value="ic_action_bad.png" />
+                    <On Platform="UWP, WinRT, WinPhone" Value="Images/ic_action_bad.png" />
+                </OnPlatform>
             </Button.Image>
         </Button>
     </StackLayout>

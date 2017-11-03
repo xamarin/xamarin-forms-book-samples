@@ -6,16 +6,17 @@
              x:Class="DiscreteTabbedColors.NamedColorsPage"
              Title="Toolkit">
     <ContentPage.Icon>
-        <OnPlatform x:TypeArguments="FileImageSource"
-                    iOS="ic_action_storage.png" />
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <On Platform="iOS" Value="ic_action_storage.png" />
+        </OnPlatform>
     </ContentPage.Icon>
 
     <ListView ItemsSource="{x:Static toolkit:NamedColor.All}">
         <ListView.RowHeight>
-            <OnPlatform x:TypeArguments="x:Int32"
-                        iOS="80"
-                        Android="80"
-                        WinPhone="90" />
+            <OnPlatform x:TypeArguments="x:Int32">
+                <On Platform="iOS, Android" Value="80" />
+                <On Platform="UWP, WinRT, WinPhone" Value="90" />
+            </OnPlatform>
         </ListView.RowHeight>
                 
         <ListView.ItemTemplate>

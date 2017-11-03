@@ -14,7 +14,7 @@ namespace MapDemos
         {
             InitializeComponent();
 
-            if (Device.OS != TargetPlatform.Android)
+            if (Device.RuntimePlatform != Device.Android)
             {
                 locationTracker = DependencyService.Get<ILocationTracker>();
                 locationTracker.LocationChanged += OnLocationTracker;
@@ -24,14 +24,14 @@ namespace MapDemos
         void OnLocationTracker(object sender, GeographicLocation args)
         {
             position = new Position(args.Latitude, args.Longitude);
-            myLocationButton.IsVisible = Device.OS != TargetPlatform.Android;
+            myLocationButton.IsVisible = Device.RuntimePlatform != Device.Android;
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
 
-            if (Device.OS != TargetPlatform.Android)
+            if (Device.RuntimePlatform != Device.Android)
             {
                 locationTracker.StartTracking();
             }
@@ -41,7 +41,7 @@ namespace MapDemos
         {
             base.OnDisappearing();
 
-            if (Device.OS != TargetPlatform.Android)
+            if (Device.RuntimePlatform != Device.Android)
             {
                 locationTracker.PauseTracking();
             }

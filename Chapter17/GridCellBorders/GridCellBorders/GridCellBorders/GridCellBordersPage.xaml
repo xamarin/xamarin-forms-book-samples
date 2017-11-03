@@ -4,10 +4,10 @@
              x:Class="GridCellBorders.GridCellBordersPage">
 
     <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness"
-                    iOS="10, 20, 10, 10"
-                    Android="10"
-                    WinPhone="10" />
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="10, 20, 10, 10" />
+            <On Platform="Android, UWP, WinRT, WinPhone" Value="10" />
+        </OnPlatform>
     </ContentPage.Padding>
 
     <Grid>

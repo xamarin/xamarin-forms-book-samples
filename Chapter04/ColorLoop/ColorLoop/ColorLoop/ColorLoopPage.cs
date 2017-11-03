@@ -41,7 +41,7 @@ namespace ColorLoop
                     });
             }
 
-            Padding = new Thickness(5, Device.OnPlatform(20, 5, 5), 5, 5);
+            Padding = new Thickness(5, Device.RuntimePlatform == Device.iOS ? 20 : 5, 5, 5);
             Content = stackLayout;
         }
     }

@@ -14,7 +14,7 @@ namespace EmpiricalFontSize
             // Recalculate the Label height.
             label.FontSize = fontSize;
             SizeRequest sizeRequest =
-                label.GetSizeRequest(containerWidth, Double.PositiveInfinity);
+                label.Measure(containerWidth, Double.PositiveInfinity);
 
             // Save that height.
             TextHeight = sizeRequest.Request.Height;

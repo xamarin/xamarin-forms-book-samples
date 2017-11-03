@@ -8,13 +8,15 @@
             <x:String x:Key="fontSize">Large</x:String>
 
             <OnPlatform x:Key="backgroundColor"
-                        x:TypeArguments="Color"
-                        Android="#404040" />
+                        x:TypeArguments="Color">
+                <On Platform="Android" Value="#404040" />
+            </OnPlatform>
 
             <OnPlatform x:Key="borderColor"
-                        x:TypeArguments="Color"
-                        Android="White"
-                        WinPhone="Black" />
+                        x:TypeArguments="Color">
+                <On Platform="Android" Value="White" />
+                <On Platform="UWP, WinRT, WinPhone" Value="Black" />
+            </OnPlatform>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

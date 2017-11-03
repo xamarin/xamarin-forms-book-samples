@@ -6,8 +6,9 @@
 
     <Editor Text="Type more stuff here...">
         <Editor.BackgroundColor>
-            <OnPlatform x:TypeArguments="Color"
-                        WinPhone="#D0D0D0" />
+            <OnPlatform x:TypeArguments="Color">
+                <On Platform="UWP, WinRT, WinPhone" Value="#D0D0D0" />
+            </OnPlatform>
         </Editor.BackgroundColor>
     </Editor>
     

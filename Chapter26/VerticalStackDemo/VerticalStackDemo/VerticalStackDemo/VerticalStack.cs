@@ -5,8 +5,8 @@ namespace VerticalStackDemo
 { 
     public class VerticalStack : Layout<View>
     {
-        protected override SizeRequest OnSizeRequest(double widthConstraint, 
-                                                     double heightConstraint)
+        protected override SizeRequest OnMeasure(double widthConstraint, 
+                                                 double heightConstraint)
         {
             Size reqSize = new Size();
             Size minSize = new Size();
@@ -19,8 +19,9 @@ namespace VerticalStackDemo
                     continue;
 
                 // Get the child's requested size.
-                SizeRequest childSizeRequest = child.GetSizeRequest(widthConstraint, 
-                                                                    Double.PositiveInfinity);
+                SizeRequest childSizeRequest = child.Measure(widthConstraint, 
+                                                             Double.PositiveInfinity,
+                                                             MeasureFlags.IncludeMargins);
 
                 // Find the maximum width and accumulate the height.
                 reqSize.Width = Math.Max(reqSize.Width, childSizeRequest.Request.Width);
@@ -43,7 +44,8 @@ namespace VerticalStackDemo
                     continue;
 
                 // Get the child's requested size.
-                SizeRequest childSizeRequest = child.GetSizeRequest(width, Double.PositiveInfinity);
+                SizeRequest childSizeRequest = child.Measure(width, Double.PositiveInfinity,
+                                                             MeasureFlags.IncludeMargins);
 
                 // Initialize child position and size.
                 double xChild = x;

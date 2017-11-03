@@ -12,10 +12,11 @@
                             Expands="True" />
 
             <OnPlatform x:Key="textColor"
-                        x:TypeArguments="Color"
-                        iOS="Red"
-                        Android="Pink"
-                        WinPhone="Blue" />
+                        x:TypeArguments="Color">
+                <On Platform="iOS" Value="Red" />
+                <On Platform="Android" Value="Pink" />
+                <On Platform="UWP, WinRT, WinPhone" Value="Blue" />
+            </OnPlatform>
         </ResourceDictionary>
     </ContentPage.Resources>
 
