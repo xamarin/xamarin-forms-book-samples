@@ -61,10 +61,10 @@ namespace ExploreChildSizes
             get { return (Rectangle)GetValue(ElementBoundsProperty); }
         }
 
-        public override SizeRequest GetSizeRequest(double widthConstraint, double heightConstraint)
+        protected override SizeRequest OnMeasure(double widthConstraint, double heightConstraint)
         {
             Constraint = new Size(widthConstraint, heightConstraint);
-            SizeRequest sizeRequest = base.GetSizeRequest(widthConstraint, heightConstraint);
+            SizeRequest sizeRequest = base.OnMeasure(widthConstraint, heightConstraint);
             SizeRequest = sizeRequest;
             return sizeRequest;
         }
