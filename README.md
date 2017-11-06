@@ -26,6 +26,7 @@ The projects in the **master** branch reflect changes in Xamarin.Forms since the
 - Calls to the deprecated `VisualElement.GetSizeRequest` method have been replaced with calls to `Measure`.
 - Overrides of the deprecated `VisualElement.OnSizeRequest` method have been replaced with overrides of `OnMeasure`.
 - Calls to and implementations of the deprecated `TypeConverter.ConvertFrom` method have been replaced with `ConvertFromInvariantString`.
+- The `NamedColor` class is now based on the `Color` structure rather than its own static fields.
 - The Android projects have been upgraded to use AppCompat and Material Design. This is consistent with recent Xamarin.Forms project templates.
 - The blank bitmaps in the **Assets** folder of the UWP projects have been replaced with Xamagon images. 
 
