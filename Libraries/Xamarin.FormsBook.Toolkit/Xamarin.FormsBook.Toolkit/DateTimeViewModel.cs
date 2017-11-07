@@ -30,12 +30,7 @@ namespace Xamarin.FormsBook.Toolkit
                     dateTime = value;
 
                     // Fire the event.
-                    PropertyChangedEventHandler handler = PropertyChanged;
-
-                    if (handler != null)
-                    {
-                        handler(this, new PropertyChangedEventArgs("DateTime"));
-                    }
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("DateTime"));
                 }
             }
 

@@ -42,11 +42,7 @@ namespace Xamarin.FormsBook.Toolkit
                     checkbox.boxLabel.Text = (bool)newValue ? "\u2611" : "\u2610";
 
                     // Fire the event.
-                    EventHandler<bool> eventHandler = checkbox.CheckedChanged;
-                    if (eventHandler != null)
-                    {
-                        eventHandler(checkbox, (bool)newValue);
-                    }
+                    checkbox.CheckedChanged?.Invoke(checkbox, (bool)newValue);
                 });
                                                     
         public event EventHandler<bool> CheckedChanged;

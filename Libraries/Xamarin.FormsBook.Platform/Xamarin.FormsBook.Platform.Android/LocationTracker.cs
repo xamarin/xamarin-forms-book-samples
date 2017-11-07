@@ -50,13 +50,8 @@ namespace Xamarin.FormsBook.Platform.Android
         // Four methods to implement ILocationListener (the Android interface).
         public void OnLocationChanged(Location location)
         {
-            EventHandler<GeographicLocation> handler = LocationChanged;
-
-            if (handler != null)
-            {
-                handler(this, new GeographicLocation(location.Latitude,
-                                                     location.Longitude));
-            }
+            LocationChanged?.Invoke(this, new GeographicLocation(location.Latitude,
+                                                                 location.Longitude));
         }
 
         public void OnProviderDisabled(string provider)

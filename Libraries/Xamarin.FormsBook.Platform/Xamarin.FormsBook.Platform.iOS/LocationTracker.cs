@@ -27,13 +27,8 @@ namespace Xamarin.FormsBook.Platform.iOS
                 (object sender, CLLocationsUpdatedEventArgs args) =>
                 {
                     CLLocationCoordinate2D coordinate = args.Locations[0].Coordinate;
-                    EventHandler<GeographicLocation> handler = LocationChanged;
-
-                    if (handler != null)
-                    {
-                        handler(this, new GeographicLocation(coordinate.Latitude, 
-                                                             coordinate.Longitude));
-                    }
+                    LocationChanged?.Invoke(this, new GeographicLocation(coordinate.Latitude,
+                                                                         coordinate.Longitude));
                 };
         }
         public void StartTracking()

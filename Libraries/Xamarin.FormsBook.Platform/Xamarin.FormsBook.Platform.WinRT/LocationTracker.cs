@@ -62,13 +62,8 @@ namespace Xamarin.FormsBook.Platform.WinRT
 
             Device.BeginInvokeOnMainThread(() =>
             {
-                EventHandler<GeographicLocation> handler = LocationChanged;
-
-                if (handler != null)
-                {
-                    handler(this, new GeographicLocation(coordinate.Latitude, 
-                                                         coordinate.Longitude));
-                }
+                LocationChanged?.Invoke(this, new GeographicLocation(coordinate.Latitude,
+                                                                     coordinate.Longitude));
             });
         }
     }

@@ -22,7 +22,7 @@
     <MandroidI18n />
     <JavaMaximumHeapSize />
     <JavaOptions />
-    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>

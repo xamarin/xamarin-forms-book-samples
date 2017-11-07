@@ -80,11 +80,7 @@ namespace Xamarin.FormsBook.Toolkit
                 {
                     // Fire the event.
                     NewCheckBox checkbox = (NewCheckBox)bindable;
-                    EventHandler<bool> eventHandler = checkbox.CheckedChanged;
-                    if (eventHandler != null)
-                    {
-                        eventHandler(checkbox, (bool)newValue);
-                    }
+                    checkbox.CheckedChanged?.Invoke(checkbox, (bool)newValue);
                 });
 
         public bool IsChecked

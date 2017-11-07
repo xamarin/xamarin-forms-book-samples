@@ -13,9 +13,7 @@ namespace Xamarin.FormsBook.Toolkit
                                     BindingMode.TwoWay,
                 propertyChanged: (bindable, oldValue, newValue) =>
                 {
-                    EventHandler<ToggledEventArgs> handler = ((ToggleBase)bindable).Toggled;
-                    if (handler != null)
-                        handler(bindable, new ToggledEventArgs((bool)newValue));
+                    ((ToggleBase)bindable).Toggled?.Invoke(bindable, new ToggledEventArgs((bool)newValue));
                 });
 
         public ToggleBase()

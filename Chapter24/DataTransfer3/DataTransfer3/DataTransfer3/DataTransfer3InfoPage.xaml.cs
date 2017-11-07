@@ -6,7 +6,7 @@ namespace DataTransfer3
     public partial class DataTransfer3InfoPage : ContentPage
     {
         // Define a public event for transferring data.
-        public EventHandler<Information> InformationReady;
+        public event EventHandler<Information> InformationReady;
 
         // Instantiate an Information object for this page instance.
         Information info = new Information();
@@ -46,10 +46,7 @@ namespace DataTransfer3
             info.Date = datePicker.Date;
 
             // Raise the InformationReady event.
-            EventHandler<Information> handler = InformationReady;
-
-            if (handler != null)
-                handler(this, info);
+            InformationReady?.Invoke(this, info);
         }
     }
 }

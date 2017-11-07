@@ -64,9 +64,7 @@ namespace Xamarin.FormsBook.Platform
                 propertyChanged: (obj, oldValue, newValue) =>
                 {
                     StepSlider stepSlider = (StepSlider)obj;
-                    EventHandler<ValueChangedEventArgs> handler = stepSlider.ValueChanged;
-                    if (handler != null)
-                        handler(obj, new ValueChangedEventArgs((double)oldValue, (double)newValue));
+                    stepSlider.ValueChanged?.Invoke(obj, new ValueChangedEventArgs((double)oldValue, (double)newValue));
                 });
 
         public double Minimum

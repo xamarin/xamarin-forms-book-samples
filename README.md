@@ -18,7 +18,7 @@ You can then load any of the application projects. For each project, again right
 
 The **original-code-from-book** branch of this repository contains the code as it appeared in the *Creating Mobile Apps with Xamarin.Forms* book. The only change is that the projects have been updated to the latest Xamarin.Forms version.
 
-The projects in the **master** branch reflect changes in Xamarin.Forms since the writing of the book. These changes are:
+The projects in the **master** branch reflect changes in C# and Xamarin.Forms since the writing of the book. These changes are:
 
 - In code files, the deprecated `Device.OnPlatform` calls have been replaced with logic using the `Device.RuntimePlatform` property.
 - In XAML files, deprecated properties of the `OnPlatform` class have been replaced with `On` objects.
@@ -29,6 +29,7 @@ The projects in the **master** branch reflect changes in Xamarin.Forms since the
 - The `NamedColor` class is now based on the `Color` structure rather than its own static fields.
 - The Android projects have been upgraded to use AppCompat and Material Design. This is consistent with recent Xamarin.Forms project templates.
 - The blank bitmaps in the **Assets** folder of the UWP projects have been replaced with Xamagon images. 
+- Event firing uses the null-conditional operator (`?.`) and the `Invoke` method.
 
 ### The Projects
 
