@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms;
 
@@ -13,8 +14,13 @@ namespace StackedBitmap
         {
             if (Source == null)
                 return null;
+                
+            var assembly = typeof(ImageResourceExtension).GetTypeInfo().Assembly;
 
-            return ImageSource.FromResource(Source); 
+            if (assembly == null)
+                return null;
+
+            return ImageSource.FromResource(Source, assembly); 
         }
     }
 }
