@@ -1,6 +1,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
+using Android.Content;
 using Android.Util;
 using Android.Widget;
 
@@ -11,6 +12,10 @@ namespace HelloRenderers.Droid
 {
     public class HelloViewRenderer : ViewRenderer<HelloView, TextView>
     {
+        public HelloViewRenderer(Context context) : base(context)
+        {
+        }
+
         protected override void OnElementChanged(ElementChangedEventArgs<HelloView> args)
         {
             base.OnElementChanged(args);
