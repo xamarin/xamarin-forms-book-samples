@@ -81,5 +81,6 @@ As of May 2, 2017, all sample code has been upgraded to Xamarin.Forms version 2.
 
 As of November 3, 2017, all sample code has been upgraded to Xamarin.Forms version 2.4.0.38779.
 
+As of March 22, 2018, all sample code has been upgraded to Xamarin.Forms version 2.5.0.280555.
 
 
