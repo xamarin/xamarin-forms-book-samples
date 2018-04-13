@@ -30,7 +30,6 @@ The projects in the **master** branch reflect changes in C# and Xamarin.Forms si
 - The Android projects have been upgraded to use AppCompat and Material Design. This is consistent with recent Xamarin.Forms project templates.
 - The blank bitmaps in the **Assets** folder of the UWP projects have been replaced with Xamagon images. 
 - Event firing uses the null-conditional operator (`?.`) and the `Invoke` method.
-- For Xamarin.Forms 2.5, the constructor in Android renderers now has a Context argument.
 
 ### The Projects
 
@@ -81,6 +80,4 @@ As of May 2, 2017, all sample code has been upgraded to Xamarin.Forms version 2.
 
 As of November 3, 2017, all sample code has been upgraded to Xamarin.Forms version 2.4.0.38779.
 
-As of March 22, 2018, all sample code has been upgraded to Xamarin.Forms version 2.5.0.280555.
-
-
+As of April 13, 2018, all sample code has been upgraded to Xamarin.Forms. version 2.5.0.280555.
