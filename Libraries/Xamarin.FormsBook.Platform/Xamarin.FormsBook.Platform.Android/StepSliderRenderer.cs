@@ -1,5 +1,6 @@
 using System.ComponentModel;
 
+using Android.Content;
 using Android.Widget;
 
 using Xamarin.Forms;
@@ -13,6 +14,10 @@ namespace Xamarin.FormsBook.Platform.Android
     public class StepSliderRenderer : ViewRenderer<StepSlider, SeekBar>, SeekBar.IOnSeekBarChangeListener
     {
         double minimum, maximum;
+
+        public StepSliderRenderer(Context context) : base(context)
+        {
+        }
 
         protected override void OnElementChanged(ElementChangedEventArgs<StepSlider> args)
         {
