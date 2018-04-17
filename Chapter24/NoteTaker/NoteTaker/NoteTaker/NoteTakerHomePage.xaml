@@ -23,7 +23,7 @@
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="new.png" />
                     <On Platform="Android" Value="ic_action_new.png" />
-                    <On Platform="UWP, WinRT, WinPhone" Value="Images/add.png" />
+                    <On Platform="UWP" Value="Images/add.png" />
                 </OnPlatform>
             </ToolbarItem.Icon>
         </ToolbarItem>

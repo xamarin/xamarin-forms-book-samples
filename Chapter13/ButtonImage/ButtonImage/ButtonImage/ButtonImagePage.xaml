@@ -18,7 +18,7 @@
             <Button.Image>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS, Android" Value="ic_action_good.png" />
-                    <On Platform="UWP, WinRT, WinPhone" Value="Images/ic_action_good.png" />
+                    <On Platform="UWP" Value="Images/ic_action_good.png" />
                 </OnPlatform>
             </Button.Image>
         </Button>
@@ -27,7 +27,7 @@
             <Button.Image>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS, Android" Value="ic_action_bad.png" />
-                    <On Platform="UWP, WinRT, WinPhone" Value="Images/ic_action_bad.png" />
+                    <On Platform="UWP" Value="Images/ic_action_bad.png" />
                 </OnPlatform>
             </Button.Image>
         </Button>

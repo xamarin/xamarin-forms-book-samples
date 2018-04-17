@@ -10,14 +10,14 @@
         <Grid.WidthRequest>
             <OnPlatform x:TypeArguments="x:Double">
                 <On Platform="iOS, Android" Value="180" />
-                <On Platform="UWP, WinRT, WinPhone" Value="240" />
+                <On Platform="UWP" Value="240" />
             </OnPlatform>
         </Grid.WidthRequest>
         
         <Grid.HeightRequest>
             <OnPlatform x:TypeArguments="x:Double">
                 <On Platform="iOS, Android" Value="300" />
-                <On Platform="UWP, WinRT, WinPhone" Value="400" />
+                <On Platform="UWP" Value="400" />
             </OnPlatform>
         </Grid.HeightRequest>
 

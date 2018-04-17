@@ -5,7 +5,7 @@
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness">
             <On Platform="iOS" Value="0, 20, 0, 0" />
-            <On Platform="Android, UWP, WinRT, WinPhone" Value="0" />
+            <On Platform="Android, UWP" Value="0" />
         </OnPlatform>
     </ContentPage.Padding>
 
@@ -46,7 +46,7 @@
                         <OnPlatform x:TypeArguments="Color">
                             <On Platform="iOS" Value="#C0C0C0" />
                             <On Platform="Android" Value="#404040" />
-                            <On Platform="UWP, WinRT, WinPhone" Value="Gray" />
+                            <On Platform="UWP" Value="Gray" />
                         </OnPlatform>
                     </Setter.Value>
                 </Setter>

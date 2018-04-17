@@ -25,7 +25,7 @@
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="cancel.png" />
                     <On Platform="Android" Value="ic_action_cancel.png" />
-                    <On Platform="UWP, WinRT, WinPhone" Value="Images/cancel.png" />
+                    <On Platform="UWP" Value="Images/cancel.png" />
                 </OnPlatform>
             </ToolbarItem.Icon>
         </ToolbarItem>
@@ -37,7 +37,7 @@
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="discard.png" />
                     <On Platform="Android" Value="ic_action_discard.png" />
-                    <On Platform="UWP, WinRT, WinPhone" Value="Images/delete.png" />
+                    <On Platform="UWP" Value="Images/delete.png" />
                 </OnPlatform>
             </ToolbarItem.Icon>
         </ToolbarItem>

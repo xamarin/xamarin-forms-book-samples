@@ -15,7 +15,7 @@
 
             <ContentPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="UWP, WinRT, WinPhone" Value="Images/refresh.png" />
+                    <On Platform="UWP" Value="Images/refresh.png" />
                 </OnPlatform>
             </ContentPage.Icon>
 

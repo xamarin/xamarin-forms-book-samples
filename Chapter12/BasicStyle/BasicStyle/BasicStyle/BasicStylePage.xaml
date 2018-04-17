@@ -22,7 +22,7 @@
                     <Setter.Value>
                         <OnPlatform x:TypeArguments="Color">
                             <On Platform="Android" Value="White" />
-                            <On Platform="UWP, WinRT, WinPhone" Value="Black" />
+                            <On Platform="UWP" Value="Black" />
                         </OnPlatform>
                     </Setter.Value>
                 </Setter>
