@@ -7,7 +7,7 @@ using UIKit;
 #elif __ANDROID__
 using Android.OS;
 
-#elif WINDOWS_APP || WINDOWS_PHONE_APP || WINDOWS_UWP
+#elif WINDOWS_UWP
 using Windows.Security.ExchangeActiveSyncProvisioning;
 
 #endif
@@ -33,7 +33,7 @@ namespace PlatInfoSap1
                                                        Build.Model);
             versionLabel.Text = Build.VERSION.Release.ToString();
 
-#elif WINDOWS_APP || WINDOWS_PHONE_APP || WINDOWS_UWP
+#elif WINDOWS_UWP
 
             EasClientDeviceInformation devInfo = new EasClientDeviceInformation();
             modelLabel.Text = String.Format("{0} {1}", devInfo.SystemManufacturer, 
