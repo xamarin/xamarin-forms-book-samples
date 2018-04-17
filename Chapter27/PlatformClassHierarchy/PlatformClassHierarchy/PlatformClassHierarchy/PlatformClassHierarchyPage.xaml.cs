@@ -29,13 +29,6 @@ namespace PlatformClassHierarchy
                     assemblyNames = new string[] { "Xamarin.Forms.Platform.Android" };
                     break;
 
-                case Device.WinRT:
-                case Device.WinPhone:
-                    assemblyNames = new string[] { "Xamarin.Forms.Platform.WinRT",
-                                                   "Xamarin.Forms.Platform.WinRT.Tablet",
-                                                   "Xamarin.Forms.Platform.WinRT.Phone" };
-                    break;
-
                 case Device.UWP:
                     assemblyNames = new string[] { "Xamarin.Forms.Platform.UAP",
                                                    "Xamarin.Forms.Platform.WinRT",

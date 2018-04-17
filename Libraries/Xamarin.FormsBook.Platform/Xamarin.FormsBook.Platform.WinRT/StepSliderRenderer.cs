@@ -5,11 +5,7 @@ using Xamarin.Forms;
 using Win = Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 
-#if WINDOWS_UWP
 using Xamarin.Forms.Platform.UWP;
-#else
-using Xamarin.Forms.Platform.WinRT;
-#endif
 
 [assembly: ExportRenderer(typeof(Xamarin.FormsBook.Platform.StepSlider),
                           typeof(Xamarin.FormsBook.Platform.WinRT.StepSliderRenderer))]

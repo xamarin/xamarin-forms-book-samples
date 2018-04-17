@@ -8,14 +8,6 @@ namespace MasterDetailBehaviors
         public MasterPage()
         {
             InitializeComponent();
-
-            if (Device.RuntimePlatform == Device.WinRT)
-            {
-                Icon = new FileImageSource
-                {
-                    File = "Images/ApplicationBar.Select.png"
-                };
-            }
         }
     }
 }

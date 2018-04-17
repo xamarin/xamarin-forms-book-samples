@@ -39,7 +39,7 @@
                 <OnPlatform x:TypeArguments="ImageSource">
                     <On Platform="iOS" Value="Icon-60.png" />
                     <On Platform="Android" Value="icon.png" />
-                    <On Platform="UWP, WinRT, WinPhone" Value="Assets/StoreLogo.png" />
+                    <On Platform="UWP" Value="Assets/StoreLogo.png" />
                 </OnPlatform>
             </Image.Source>
         </Image>

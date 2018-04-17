@@ -1,6 +1,6 @@
 # xamarin-forms-book-samples
 
-Sample code for the book *Creating Mobile Apps with Xamarin.Forms*. The book can be downloaded from http://developer.xamarin.com/guides/cross-platform/xamarin-forms/creating-mobile-apps-xamarin-forms/.
+Sample code for the book *Creating Mobile Apps with Xamarin.Forms*. The book can be downloaded from https://docs.microsoft.com/en-us/xamarin/xamarin-forms/creating-mobile-apps-xamarin-forms/.
 
 ## Notes
 
@@ -8,7 +8,7 @@ Sample code for the book *Creating Mobile Apps with Xamarin.Forms*. The book can
 
 The Xamarin.Forms NuGet packages are not part of these projects. They must be downloaded for each project.
 
-To avoid hassles, download the NuGet packages for the solutions in the **Libraries** directory first. You'll want to load each library solutions into Visual Studio, right-click the solution name in the **Solution List** and select **Manage NuGet Packages for Solution**. A notice should appear at the top of the **Manage NuGet Packages** dialog that says "Some NuGet packages are missing from this solution. Click to restore from you online package sources." Click the **Restore** button and then the **Close** button. Build the library.
+To avoid hassles, download the NuGet packages for the solutions in the **Libraries** directory first. You'll want to load each library solutions into Visual Studio, right-click the solution name in the **Solution List** and select **Manage NuGet Packages for Solution**. A notice might appear at the top of the **Manage NuGet Packages** dialog that says "Some NuGet packages are missing from this solution. Click to restore from you online package sources." If so, click the **Restore** button and then the **Close** button. Build the library.
 
 Do the same thing with the other library solutions in the **Libraries** directory.
 
@@ -33,11 +33,14 @@ The projects in the **master** branch reflect changes in C# and Xamarin.Forms si
 
 ### The Projects
 
-These solutions contain five application projects:
+These solutions contain three application projects:
 
 - **iOS**: iPhone and iPads
 - **Droid**: Android phones and tablets
 - **UWP**: The Universal Windows Platform, targeting Windows 10 tablets and desktop computers, and Windows 10 Mobile
+
+The **original-code-from-book** branch also contains the following two applicatin projects:
+
 - **Windows**: Windows 8.1 tablets and desktop computers using the Windows Runtime API
 - **WinPhone**: Windows Phone 8.1 devices using the Windows Phone API.
 
@@ -81,3 +84,5 @@ As of May 2, 2017, all sample code has been upgraded to Xamarin.Forms version 2.
 As of November 3, 2017, all sample code has been upgraded to Xamarin.Forms version 2.4.0.38779.
 
 As of April 13, 2018, all sample code has been upgraded to Xamarin.Forms. version 2.5.0.280555.
+
+As of April 17, 2018, all **Windows** (Windows 8.1) and **WinPhone** (Windows Phone 8.1) projects have been removed from the samples. The **Windows** and **WinPhone** projects can still be found in the **original-code-from-book** branch.

@@ -24,7 +24,7 @@
             <ListView.RowHeight>
                 <OnPlatform x:TypeArguments="x:Int32">
                     <On Platform="iOS, Android" Value="70" />
-                    <On Platform="UWP, WinRT, WinPhone" Value="100" />
+                    <On Platform="UWP" Value="100" />
                 </OnPlatform>
             </ListView.RowHeight>
             

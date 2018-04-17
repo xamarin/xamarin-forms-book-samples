@@ -3,11 +3,7 @@ using System.ComponentModel;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Shapes;
 
-#if WINDOWS_UWP
 using Xamarin.Forms.Platform.UWP;
-#else
-using Xamarin.Forms.Platform.WinRT;
-#endif
 
 [assembly: ExportRenderer(typeof(Xamarin.FormsBook.Platform.EllipseView), 
                           typeof(Xamarin.FormsBook.Platform.WinRT.EllipseViewRenderer))]

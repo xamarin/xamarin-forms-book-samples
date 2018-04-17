@@ -60,8 +60,7 @@ namespace Xamarin.FormsBook.Toolkit
                     await MainPage.Navigation.PushAsync(page, false);
 
                     // HACK: to allow page navigation to complete!
-                    if ((Device.RuntimePlatform == Device.UWP || 
-                         Device.RuntimePlatform == Device.WinRT) && 
+                    if ((Device.RuntimePlatform == Device.UWP) && 
                             Device.Idiom != TargetIdiom.Phone)
                         await Task.Delay(250);
                 }

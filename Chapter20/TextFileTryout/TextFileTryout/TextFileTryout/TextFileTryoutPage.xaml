@@ -24,7 +24,7 @@
                 Grid.Row="1">
             <Editor.BackgroundColor>
                 <OnPlatform x:TypeArguments="Color">
-                    <On Platform="UWP, WinRT, WinPhone" Value="#D0D0D0" />
+                    <On Platform="UWP" Value="#D0D0D0" />
                 </OnPlatform>
             </Editor.BackgroundColor>
         </Editor>

@@ -25,10 +25,6 @@ namespace BlackCatSap
             string resource = "BlackCatSap.Droid.Texts.TheBlackCat.txt";
 #elif WINDOWS_UWP
             string resource = "BlackCatSap.UWP.Texts.TheBlackCat.txt";
-#elif WINDOWS_APP
-            string resource = "BlackCatSap.Windows.Texts.TheBlackCat.txt";
-#elif WINDOWS_PHONE_APP
-            string resource = "BlackCatSap.WinPhone.Texts.TheBlackCat.txt";
 #endif
 
             using (Stream stream = assembly.GetManifestResourceStream (resource)) 

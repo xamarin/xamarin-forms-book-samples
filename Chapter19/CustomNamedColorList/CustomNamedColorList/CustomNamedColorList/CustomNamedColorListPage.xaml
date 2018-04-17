@@ -7,7 +7,7 @@
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness">
             <On Platform="iOS" Value="10, 20, 10, 0" />
-            <On Platform="Android, UWP, WinRT, WinPhone" Value="10, 0" />
+            <On Platform="Android, UWP" Value="10, 0" />
         </OnPlatform>
     </ContentPage.Padding>
 
@@ -16,7 +16,7 @@
         <ListView.RowHeight>
             <OnPlatform x:TypeArguments="x:Int32">
                 <On Platform="iOS, Android" Value="80" />
-                <On Platform="UWP, WinRT, WinPhone" Value="90" />
+                <On Platform="UWP" Value="90" />
             </OnPlatform>
         </ListView.RowHeight>
 
