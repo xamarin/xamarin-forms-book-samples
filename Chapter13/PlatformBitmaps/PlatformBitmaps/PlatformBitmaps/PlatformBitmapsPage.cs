@@ -19,8 +19,6 @@ namespace PlatformBitmaps
                     imgSrc.File = "icon.png";
                     break;
 
-                case Device.WinRT:
-                case Device.WinPhone:
                 case Device.UWP:
                     imgSrc.File = "Assets/StoreLogo.png";
                     break;

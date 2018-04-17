@@ -50,8 +50,6 @@ namespace GridCodeDemo
                     imgSrc = "icon.png";
                     break;
 
-                case Device.WinRT:
-                case Device.WinPhone:
                 case Device.UWP:
                     imgSrc = "Assets/StoreLogo.png";
                     break;
