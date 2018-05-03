@@ -85,4 +85,21 @@ As of November 3, 2017, all sample code has been upgraded to Xamarin.Forms versi
 
 As of April 13, 2018, all sample code has been upgraded to Xamarin.Forms. version 2.5.0.280555.
 
+### Removing Obsolete Project Types
+
 As of April 17, 2018, all **Windows** (Windows 8.1) and **WinPhone** (Windows Phone 8.1) projects have been removed from the samples. The **Windows** and **WinPhone** projects can still be found in the **original-code-from-book** branch.
+
+### .NET Standard
+
+As of May 3, 2018, all solutions in the **master** branch have been converted from using Portable Class Libraries (PCL) to .NET Standard 2.0 libraries. In addition, the application projects have been converted to a new format using **PackageReference**. This conversion makes the solutions much closer to what Visual Studio 2017 creates today as a new Xamarin.Forms solution. 
+
+The new features of the **.csproj** files simplify the references to NuGet libraries. There are no longer any **packages.config** files in any of the projects, and the references to NuGet libraries in the **.csproj** files are greatly reduced in bulk. The .NET Standard Library project no longer has an **AssemblyInfo.cs** file, and the UWP project no longer has any **project.json** or **project.lock.json** files.
+
+The solutions using PCL's have been archived in the **archive-pcl** branch. That branch will not be updated.
+
+It is recommended that all new Xamarin.Forms projects be created with Visual Studio 2017, and that Visual Studio 2017 also be used for existing Xamarin.Forms projects.
+
+
+
+
+
