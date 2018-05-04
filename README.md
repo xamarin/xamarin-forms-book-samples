@@ -83,7 +83,7 @@ As of May 2, 2017, all sample code has been upgraded to Xamarin.Forms version 2.
 
 As of November 3, 2017, all sample code has been upgraded to Xamarin.Forms version 2.4.0.38779.
 
-As of April 13, 2018, all sample code has been upgraded to Xamarin.Forms. version 2.5.0.280555.
+As of April 13, 2018, all sample code has been upgraded to Xamarin.Forms version 2.5.0.280555.
 
 ### Removing Obsolete Project Types
 
@@ -98,6 +98,8 @@ The new features of the **.csproj** files simplify the references to NuGet libra
 The solutions using PCL's have been archived in the **archive-pcl** branch. That branch will not be updated.
 
 It is recommended that all new Xamarin.Forms projects be created with Visual Studio 2017, and that Visual Studio 2017 also be used for existing Xamarin.Forms projects.
+
+As of May 4, 2018, all solutions in the **master** branch have been upgraded to Xamarin.Forms 2.5.1.527436.
 
 
 

@@ -42,12 +42,12 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Android.Support.Design" Version="23.0.1.1" />
-    <PackageReference Include="Xamarin.Android.Support.v4" Version="23.0.1.1" />
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="23.0.1.1" />
-    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="23.0.1.1" />
-    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="23.0.1.1" />
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="25.4.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="25.4.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="25.4.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="25.4.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="25.4.0.2" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.1.527436" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
