@@ -101,6 +101,8 @@ It is recommended that all new Xamarin.Forms projects be created with Visual Stu
 
 As of May 4, 2018, all solutions in the **master** branch have been upgraded to Xamarin.Forms 2.5.1.527436.
 
+As of May 9, 2018, all solutions in the **master** branch have been upgraded to Xamarin.Forms 3.0.0.446417.
+
 
 
 
