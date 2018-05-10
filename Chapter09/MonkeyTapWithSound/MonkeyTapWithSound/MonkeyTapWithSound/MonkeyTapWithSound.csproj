@@ -9,9 +9,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="..\..\..\..\Chapter08\MonkeyTap\MonkeyTap\MonkeyTap\MonkeyTapPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    <Compile Include="..\..\..\..\Chapter08\MonkeyTap\MonkeyTap\MonkeyTap\MonkeyTapPage.xaml.cs">
+      <Link>MonkeyTapPage.xaml.cs</Link>
+      <DependentUpon>MonkeyTapPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\..\Chapter08\MonkeyTap\MonkeyTap\MonkeyTap\MonkeyTapPage.xaml">
+      <Link>MonkeyTapPage.xaml</Link>
     </EmbeddedResource>
   </ItemGroup>
-
 </Project>
