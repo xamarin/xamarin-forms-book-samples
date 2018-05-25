@@ -1,157 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{58EEAFFF-D1BB-4375-AEFC-8270F8415DCE}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Xamarin.FormsBook.Toolkit</RootNamespace>
-    <AssemblyName>Xamarin.FormsBook.Toolkit</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
-    <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Compile Include="AdderViewModel.cs" />
-    <Compile Include="AltLabel.cs" />
-    <Compile Include="AnalogClockViewModel.cs" />
-    <Compile Include="AnimatedCartesianLayout.cs" />
-    <Compile Include="AspectRatio.cs" />
-    <Compile Include="AspectRatioTypeConverter.cs" />
-    <Compile Include="BaseTwoLogConverter.cs" />
-    <Compile Include="BezierSpline.cs" />
-    <Compile Include="BezierTangent.cs" />
-    <Compile Include="BmpMaker.cs" />
-    <Compile Include="BooleanNegationConverter.cs" />
-    <Compile Include="BoolToColorConverter.cs" />
-    <Compile Include="BoolToObjectConverter.cs" />
-    <Compile Include="BoolToStringConverter.cs" />
-    <Compile Include="CartesianLayout.cs" />
-    <Compile Include="CheckBox.xaml.cs">
-      <DependentUpon>CheckBox.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ColorToContrastColorConverter.cs" />
-    <Compile Include="ColorViewModel.cs" />
-    <Compile Include="Complex.cs" />
-    <Compile Include="CountedLabel.cs" />
-    <Compile Include="DateTimeViewModel.cs" />
-    <Compile Include="DelayedScaleAction.cs" />
-    <Compile Include="DoubleToIntConverter.cs" />
-    <Compile Include="EasingConverter.cs" />
-    <Compile Include="FadeEnableAction.cs" />
-    <Compile Include="GridOrientationBehavior.cs" />
-    <Compile Include="HslColorExtension.cs" />
-    <Compile Include="IntToBoolConverter.cs" />
-    <Compile Include="IPersistentPage.cs" />
-    <Compile Include="JiggleButton.cs" />
-    <Compile Include="MoreViewExtensions.cs" />
-    <Compile Include="MultiPageRestorableApp.cs" />
-    <Compile Include="NamedColor.cs" />
-    <Compile Include="NamedColorGroup.cs" />
-    <Compile Include="NewCheckBox.xaml.cs">
-      <DependentUpon>NewCheckBox.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="NumericValidationAction.cs" />
-    <Compile Include="NumericValidationBehavior.cs" />
-    <Compile Include="ObjectToIndexConverter.cs" />
-    <Compile Include="OverlapLayout.cs" />
-    <Compile Include="PickerCell.xaml.cs">
-      <DependentUpon>PickerCell.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RadioBehavior.cs" />
-    <Compile Include="RadioButtonItem.cs" />
-    <Compile Include="RadioButtonManager.cs" />
-    <Compile Include="RotateAction.cs" />
-    <Compile Include="ScaleAction.cs" />
-    <Compile Include="ScaleUpAndDownAction.cs" />
-    <Compile Include="SecondBackEaseConverter.cs" />
-    <Compile Include="SecondTickConverter.cs" />
-    <Compile Include="ShiverAction.cs" />
-    <Compile Include="TapBehavior.cs" />
-    <Compile Include="ThresholdToObjectConverter.cs" />
-    <Compile Include="ToggleBase.cs" />
-    <Compile Include="ToggleBehavior.cs" />
-    <Compile Include="Toolkit.cs" />
-    <Compile Include="TranslateAction.cs" />
-    <Compile Include="UniformGridLayout.cs" />
-    <Compile Include="ValidEmailBehavior.cs" />
-    <Compile Include="Vector2.cs" />
-    <Compile Include="ViewModelBase.cs" />
-    <Compile Include="WrapLayout.cs" />
-    <Compile Include="WrapOrientation.cs" />
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.446417" />
   </ItemGroup>
+
   <ItemGroup>
-    <EmbeddedResource Include="CheckBox.xaml">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Update="CheckBox.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="NewCheckBox.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PickerCell.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="NewCheckBox.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="PickerCell.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xamarin.Forms.2.4.0.38779\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xamarin.Forms.2.4.0.38779\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Platform.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xamarin.Forms.2.4.0.38779\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Xaml.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <Import Project="..\packages\Xamarin.Forms.2.4.0.38779\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.38779\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.4.0.38779\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.4.0.38779\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets'))" />
-  </Target>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>

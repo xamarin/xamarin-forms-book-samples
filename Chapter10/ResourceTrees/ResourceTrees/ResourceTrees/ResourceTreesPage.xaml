@@ -15,7 +15,7 @@
                         x:TypeArguments="Color">
                 <On Platform="iOS" Value="Red" />
                 <On Platform="Android" Value="Pink" />
-                <On Platform="UWP, WinRT, WinPhone" Value="Blue" />
+                <On Platform="UWP" Value="Blue" />
             </OnPlatform>
         </ResourceDictionary>
     </ContentPage.Resources>

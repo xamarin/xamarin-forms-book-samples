@@ -1,5 +1,7 @@
 using System.ComponentModel;
 
+using Android.Content;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
@@ -11,6 +13,10 @@ namespace Xamarin.FormsBook.Platform.Android
     public class EllipseViewRenderer : ViewRenderer<EllipseView, EllipseDrawableView>
     {
         double width, height;
+
+        public EllipseViewRenderer(Context context) : base(context)
+        {
+        }
 
         protected override void OnElementChanged(ElementChangedEventArgs<EllipseView> args)
         {

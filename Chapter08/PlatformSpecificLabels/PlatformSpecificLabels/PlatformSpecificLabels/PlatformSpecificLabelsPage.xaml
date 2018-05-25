@@ -10,7 +10,7 @@
             <OnPlatform x:TypeArguments="x:String">
                 <On Platform="iOS" Value="This is an iOS device" />
                 <On Platform="Android" Value="This is an Android device" />
-                <On Platform="UWP, WinRT, WinPhone" Value="This is a Windows device" />
+                <On Platform="UWP" Value="This is a Windows device" />
             </OnPlatform>
         </Label.Text>
     </Label>

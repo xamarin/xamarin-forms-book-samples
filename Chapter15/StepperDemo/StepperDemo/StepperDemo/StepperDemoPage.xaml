@@ -17,7 +17,7 @@
             <Button.BorderColor>
                 <OnPlatform x:TypeArguments="Color">
                     <On Platform="Android" Value="#C0C0C0" />
-                    <On Platform="UWP, WinRT, WinPhone" Value="Black" />
+                    <On Platform="UWP" Value="Black" />
                 </OnPlatform>
             </Button.BorderColor>
         </Button>
