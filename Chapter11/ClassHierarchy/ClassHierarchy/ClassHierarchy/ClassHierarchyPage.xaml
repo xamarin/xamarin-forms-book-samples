@@ -10,7 +10,7 @@
         </OnPlatform>
     </ContentPage.Padding>
     
-    <ScrollView>
+    <ScrollView Orientation="Both">
         <StackLayout x:Name="stackLayout"
                      Spacing="0" />
     </ScrollView>

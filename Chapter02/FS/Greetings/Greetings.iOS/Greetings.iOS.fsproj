@@ -99,7 +99,7 @@
     <PropertyGroup />
   </Target>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.446417" />
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.637273" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />

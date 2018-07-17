@@ -107,6 +107,14 @@ namespace ClassHierarchy
             string name = parentClass.IsXamarinForms ? parentClass.Type.Name :
                                                        parentClass.Type.FullName;
 
+            // If namespace is not "Xamarin.Forms", display full name.
+            // This code added 7/17/18 for PlatformSpecific classes, 
+            //  rendering the IsXamarinForms property used above obsolete.
+            if (parentClass.Type.Namespace != "Xamarin.Forms")
+            {
+                name = parentClass.Type.FullName;
+            }
+
             TypeInfo typeInfo = parentClass.Type.GetTypeInfo();
 
             // If generic, display angle brackets and parameters.

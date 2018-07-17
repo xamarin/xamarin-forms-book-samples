@@ -11,11 +11,6 @@ namespace PlatformClassHierarchy
         public TypeInformation(Type type, bool isXamarinForms)
         {
             Type = type;
-
-            if (type.FullName.Length > 100)
-                System.Diagnostics.Debug.WriteLine(type.FullName);
-
-
             IsXamarinForms = isXamarinForms;
             TypeInfo typeInfo = type.GetTypeInfo();
             BaseType = typeInfo.BaseType;
