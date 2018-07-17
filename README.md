@@ -103,6 +103,8 @@ As of May 4, 2018, all solutions in the **master** branch have been upgraded to 
 
 As of May 9, 2018, all solutions in the **master** branch have been upgraded to Xamarin.Forms 3.0.0.446417.
 
+As of July 17, 2018, all solutions in the **master** branch have been upgraded to Xamarin.Forms 3.1.0.637273.
+
 
 
 
