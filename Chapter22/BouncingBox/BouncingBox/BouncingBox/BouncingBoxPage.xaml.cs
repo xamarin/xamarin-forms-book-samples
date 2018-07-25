@@ -33,6 +33,7 @@ namespace BouncingBox
             if (!animationGoing && layoutSize > 100)
             {
                 animationGoing = true;
+                boxView.IsVisible = true;
                 AnimationLoop();
             }
         }
