@@ -105,6 +105,10 @@ As of May 9, 2018, all solutions in the **master** branch have been upgraded to 
 
 As of July 17, 2018, all solutions in the **master** branch have been upgraded to Xamarin.Forms 3.1.0.637273.
 
+As of September 4, 2018, all iOS projects in the **master** branch have been restricted to 64-bit architectures.
+
+
+
 
 
 
