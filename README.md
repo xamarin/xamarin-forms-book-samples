@@ -107,7 +107,7 @@ As of July 17, 2018, all solutions in the **master** branch have been upgraded t
 
 As of September 4, 2018, all iOS projects in the **master** branch have been restricted to 64-bit architectures.
 
-
+As of September 10, 2018, the deprecated **AndroidUseLastestPlatformSdk** element has been removed from all Android project files in the **master** branch.
 
 
 
