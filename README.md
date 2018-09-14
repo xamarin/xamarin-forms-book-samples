@@ -109,7 +109,6 @@ As of September 4, 2018, all iOS projects in the **master** branch have been res
 
 As of September 10, 2018, the deprecated **AndroidUseLastestPlatformSdk** element has been removed from all Android project files in the **master** branch.
 
-
-
+As of September 14, 2018, another **PropertyGroup** has been added to the .NET Standard library with a **DebugType** element. This is required for setting breakpoints when deploying to the UWP.
 
 
