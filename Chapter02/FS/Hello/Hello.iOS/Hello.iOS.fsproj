@@ -105,13 +105,13 @@
     <None Include="Info.plist" />
     <Compile Include="AppDelegate.fs" />
     <None Include="GettingStarted.Xamarin" />
-    <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hello\Hello.fsproj">
