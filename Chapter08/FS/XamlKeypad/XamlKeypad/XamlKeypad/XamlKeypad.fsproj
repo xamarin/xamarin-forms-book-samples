@@ -18,4 +18,8 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Include="XamlKeypadPage.fs" />
+    <Compile Include="AssemblyInfo.fs" />
+  </ItemGroup>
 </Project>
