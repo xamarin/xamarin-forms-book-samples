@@ -18,4 +18,8 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Include="CodePlusXamlPage.fs" />
+    <Compile Include="AssemblyInfo.fs" />
+  </ItemGroup>
 </Project>
