@@ -106,9 +106,9 @@
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <Compile Include="PlatformInfo.fs" />
     <Compile Include="AppDelegate.fs" />
     <None Include="packages.config" />
-    <Compile Include="PlatformInfo.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.FSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.3.0.0.482510\build\netstandard2.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.0.0.482510\build\netstandard2.0\Xamarin.Forms.targets')" />
