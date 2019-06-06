@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DisplayPlatformInfo.MainPage">
+    <StackLayout Padding="20">
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="Device Model:" />
+            <ContentView Padding="50, 0, 0, 0">
+                <Label x:Name="modelLabel"
+                       FontSize="Large"
+                       FontAttributes="Bold" />
+            </ContentView>
+        </StackLayout>
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="Operating System Version:" />
+            <ContentView Padding="50, 0, 0, 0">
+                <Label x:Name="versionLabel"
+                       FontSize="Large"
+                       FontAttributes="Bold" />
+            </ContentView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
