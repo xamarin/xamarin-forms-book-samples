@@ -1,6 +1,6 @@
 ---
 name: 'Xamarin.Forms Book - Hello F#'
-description: "Simple Xamarin.Forms application written in F# #getstarted"
+description: "Simple Xamarin.Forms app written in F# #getstarted"
 page_type: sample
 languages:
 - fsharp
