@@ -8,6 +8,7 @@ products:
 - xamarin
 urlFragment: chapter03-fs-variableformtext
 ---
+
 # Greetings F\#
 
 Simple Xamarin.Forms application written in F#, showing formatted text spans:
