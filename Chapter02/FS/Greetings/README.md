@@ -1,6 +1,6 @@
 ---
 name: 'Xamarin.Forms Book - Greetings F#'
-description: "Simple Xamarin.Forms app written in F# #getstarted"
+description: "Simple Xamarin.Forms app written in F#"
 page_type: sample
 languages:
 - fsharp
@@ -8,6 +8,7 @@ products:
 - xamarin
 urlFragment: chapter02-fs-greetings
 ---
+
 # Greetings F\#
 
 Simple Xamarin.Forms application written in F#:
