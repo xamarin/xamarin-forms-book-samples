@@ -8,7 +8,7 @@ products:
 - xamarin
 urlFragment: chapter04-fs-colorblocks
 ---
-# Greetings F\#
+# Greetings F\# in Xamarin.Forms
 
 Simple Xamarin.Forms application written in F#, rendering blocks of color:
 

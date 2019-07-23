@@ -9,6 +9,7 @@
 *.user
 *.sln.docstates
 *.userprefs
+*.DS_Store
 
 # Xamarin.Android
 Resource.designer.cs
