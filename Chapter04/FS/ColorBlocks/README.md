@@ -8,9 +8,13 @@ products:
 - xamarin
 urlFragment: chapter04-fs-colorblocks
 ---
-# Greetings F\# in Xamarin.Forms
+# ColorBlocks
 
-Simple Xamarin.Forms application written in F#, rendering blocks of color:
+[Xamarin.Forms docs](https://docs.microsoft.com/xamarin/xamarin-forms/) / [eBook](https://docs.microsoft.com/xamarin/xamarin-forms/creating-mobile-apps-xamarin-forms/) / [Related samples](https://docs.microsoft.com/samples/browse/?term=Xamarin.Forms%20Book)
+
+Simple Xamarin.Forms application for Android and iOS, written in F#. The app renders blocks of color:
+
+![iOS app showing color blocks](Screenshots/01.png)
 
 ```fsharp
 let vertStack = StackLayout(HorizontalOptions = LayoutOptions.End)
@@ -28,3 +32,18 @@ vertStack.Children.Add(Label(Text = String.Format("{0:F2}-{1:F2}-{2:F2}",
                                 IsVisible = (color <> Color.Default)))
 horzStack.Children.Add(vertStack)
 ```
+
+## Prerequisites
+
+- [Visual Studio](https://visualstudio.microsoft.com/) on Mac or Windows.
+  - _Mobile Development with .NET (Xamarin)_ workload installed.
+  - F\#
+- To test and deploy to iOS devices:  
+  - Mac computer with the latest version of macOS.
+  - Latest version of [Xcode](https://developer.apple.com/xcode/) from Apple on the Mac.
+  - If you're using Windows, the Mac should be available on the network.
+
+## Running the sample
+
+1. Open the solution file (**.sln**) in Visual Studio.
+1. Use the **Run** button or menu to start the app.
