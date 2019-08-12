@@ -1,6 +1,8 @@
 # xamarin-forms-book-samples
 
-Sample code for the book *Creating Mobile Apps with Xamarin.Forms*. The book can be downloaded from https://docs.microsoft.com/en-us/xamarin/xamarin-forms/creating-mobile-apps-xamarin-forms/.
+Sample code for the book *Creating Mobile Apps with Xamarin.Forms*. The book can be downloaded from https://docs.microsoft.com/xamarin/xamarin-forms/creating-mobile-apps-xamarin-forms/.
+
+A handful of F# samples in this repo are available via the [Microsoft code sample browser](https://docs.microsoft.com/samples/browse/?products=xamarin&languages=fsharp), but there are over 1,000 projects and the majority of them are only available by cloning the repo.
 
 ## Notes
 
@@ -28,7 +30,7 @@ The projects in the **master** branch reflect changes in C# and Xamarin.Forms si
 - Calls to and implementations of the deprecated `TypeConverter.ConvertFrom` method have been replaced with `ConvertFromInvariantString`.
 - The `NamedColor` class is now based on the `Color` structure rather than its own static fields.
 - The Android projects have been upgraded to use AppCompat and Material Design. This is consistent with recent Xamarin.Forms project templates.
-- The blank bitmaps in the **Assets** folder of the UWP projects have been replaced with Xamagon images. 
+- The blank bitmaps in the **Assets** folder of the UWP projects have been replaced with Xamagon images.
 - Event firing uses the null-conditional operator (`?.`) and the `Invoke` method.
 
 ### The Projects
@@ -44,13 +46,13 @@ The **original-code-from-book** branch also contains the following two applicati
 - **Windows**: Windows 8.1 tablets and desktop computers using the Windows Runtime API
 - **WinPhone**: Windows Phone 8.1 devices using the Windows Phone API.
 
-You can deploy the **UWP** project to devices or emulators. 
-However, you must select the correct platform for the deployment target. 
+You can deploy the **UWP** project to devices or emulators.
+However, you must select the correct platform for the deployment target.
 You generally do this by selecting a platform for the solution in the **Solution Platform** dropdown on the **Standard** toolbar.
 Or, you can invoke the **Configuration Manager** dialog form the **Build | Configuration Manager** menu item, and select an item from the **Active solution platform** dropdown at the top right.
 
-The six possible **Solution Platform** options are listed below. 
-Each is associated with a particular platform for the **UWP** project. 
+The six possible **Solution Platform** options are listed below.
+Each is associated with a particular platform for the **UWP** project.
 This platform refers to processor architectures:
 
 - Any CPU: UWP platform is x86
@@ -60,7 +62,7 @@ This platform refers to processor architectures:
 - x86: UWP platform is x86
 - x64: UWP platform is x64
 
-These reflect the only three possibilities for the **UWP** project. 
+These reflect the only three possibilities for the **UWP** project.
 As you can see, x86 (32-bit Intel architecture) is considered to be the default.
 
 Currently, you can deploy the **UWP** project in several different ways based on a selection in the dropdown on the **Standard** toolbar.
@@ -110,5 +112,3 @@ As of September 4, 2018, all iOS projects in the **master** branch have been res
 As of September 10, 2018, the deprecated **AndroidUseLastestPlatformSdk** element has been removed from all Android project files in the **master** branch.
 
 As of September 14, 2018, another **PropertyGroup** has been added to the .NET Standard library with a **DebugType** element. This is required for setting breakpoints when deploying to the UWP.
-
-
