@@ -1,5 +1,7 @@
 # xamarin-forms-book-samples
 
+*This repo has been archived. The samples are no longer current, or updated. However, they still make a great learning resource.*
+
 Sample code for the book *Creating Mobile Apps with Xamarin.Forms*. The book can be downloaded from https://docs.microsoft.com/xamarin/xamarin-forms/creating-mobile-apps-xamarin-forms/.
 
 A handful of F# samples in this repo are available via the [Microsoft code sample browser](https://docs.microsoft.com/samples/browse/?products=xamarin&languages=fsharp), but there are over 1,000 projects and the majority of them are only available by cloning the repo.
